@@ -12,7 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    self.MainMenu = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
+    self.window.rootViewController = self.MainMenu;
+    self.navController = [[UINavigationController alloc] init];
+    
+    [self.window addSubview: self.navController.view];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
