@@ -13,6 +13,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MainMenuViewController* MainMenu;
-@property (strong, nonatomic) UINavigationController* navController;
 
 @end

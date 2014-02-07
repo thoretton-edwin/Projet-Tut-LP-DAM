@@ -26,12 +26,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    UIImage *image = [UIImage imageNamed: @"1383836131_Library.png"];
-    [mImageVitrine setImage: image];
-    mImageVitrine.frame = CGRectMake(0, 0, 64, 64);
-    mImageVitrine.center = mImageVitrine.superview.center;
-    [self.view addSubview: mImageVitrine];
+    _imagesViewArray = [[NSMutableArray alloc] init];
+    [_imagesViewArray addObject: mImageVitrine];
+    [_imagesViewArray addObject: mImageCalendar];
+    [_imagesViewArray addObject: mImageMarks];
+    [_imagesViewArray addObject: mImagePostBac];
+    [_imagesViewArray addObject: mImageAnnuaire];
+    [_imagesViewArray addObject: mImageJobDating];
+    [_imagesViewArray addObject: mImageMap];
+    [_imagesViewArray addObject: mImageSUAPS];
+    [_imagesViewArray addObject: mImageTwitter];
+    
+    _imagesRefArray = [[NSMutableArray alloc] init];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836131_Library.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836124_college_3D.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836370_Test-paper-128.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836150_calendar.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836248_addressbook.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836301_Manager.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836200_map-icon.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836168_Soccer_Ball.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"twitter-button-05.jpg"]];
+    
+    for (int i = 0; i < _imagesViewArray.count; i++) {
+        [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
+        UIImageView* mImv = [_imagesViewArray objectAtIndex: i];
+        mImv.frame = CGRectMake(0, 0, 64, 64);
+        mImv.center = mImv.superview.center;
+        [self.view addSubview: mImv];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

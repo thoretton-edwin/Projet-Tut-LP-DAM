@@ -11,7 +11,19 @@
 @interface MainMenuViewController : UIViewController
 {
     IBOutlet UIImageView* mImageVitrine;
+    IBOutlet UIImageView* mImageCalendar;
+    IBOutlet UIImageView* mImageMarks;
+    IBOutlet UIImageView* mImagePostBac;
+    IBOutlet UIImageView* mImageAnnuaire;
+    IBOutlet UIImageView* mImageJobDating;
+    IBOutlet UIImageView* mImageMap;
+    IBOutlet UIImageView* mImageSUAPS;
+    IBOutlet UIImageView* mImageTwitter;
+    
 }
-@property (weak, nonatomic) IBOutlet UIButton *mButt;
+@property NSMutableArray* imagesViewArray;
+@property NSMutableArray* imagesRefArray;
+
+
 
 @end

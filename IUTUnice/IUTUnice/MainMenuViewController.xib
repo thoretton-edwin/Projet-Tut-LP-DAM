@@ -6,7 +6,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
             <connections>
-                <outlet property="mButt" destination="dvt-VM-owv" id="jCV-Zx-dsw"/>
+                <outlet property="mImageAnnuaire" destination="CBJ-WY-6OH" id="89O-8Z-o0N"/>
+                <outlet property="mImageCalendar" destination="Nlc-Sq-Pff" id="8ud-4m-MKd"/>
+                <outlet property="mImageJobDating" destination="EQS-8G-mr4" id="IyG-Ca-Sae"/>
+                <outlet property="mImageMap" destination="cDf-8n-Adk" id="Ehr-Ar-Abw"/>
+                <outlet property="mImageMarks" destination="fSw-rq-vEz" id="40W-H9-sA8"/>
+                <outlet property="mImagePostBac" destination="C3E-LE-KRs" id="eWw-RI-7XH"/>
+                <outlet property="mImageSUAPS" destination="1sK-IV-pEK" id="ogZ-pq-NN5"/>
+                <outlet property="mImageTwitter" destination="GDv-6a-kDA" id="deU-bI-QDi"/>
                 <outlet property="mImageVitrine" destination="KO0-xI-qLw" id="iSU-io-ZOM"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -17,16 +24,41 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO0-xI-qLw">
-                    <rect key="frame" x="20" y="68" width="64" height="64"/>
+                    <rect key="frame" x="20" y="288" width="64" height="64"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvt-VM-owv">
-                    <rect key="frame" x="20" y="177" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nlc-Sq-Pff">
+                    <rect key="frame" x="128" y="288" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSw-rq-vEz">
+                    <rect key="frame" x="236" y="288" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-LE-KRs">
+                    <rect key="frame" x="20" y="384" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-WY-6OH">
+                    <rect key="frame" x="128" y="384" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQS-8G-mr4">
+                    <rect key="frame" x="236" y="384" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-8n-Adk">
+                    <rect key="frame" x="20" y="484" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sK-IV-pEK">
+                    <rect key="frame" x="128" y="484" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDv-6a-kDA">
+                    <rect key="frame" x="236" y="484" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
