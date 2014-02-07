@@ -46,7 +46,7 @@
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836301_Manager.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836200_map-icon.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836168_Soccer_Ball.png"]];
-    [_imagesRefArray addObject: [UIImage imageNamed:@"twitter-button-05.jpg"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"Twitter_logo_blue.png"]];
     
     for (int i = 0; i < _imagesViewArray.count; i++) {
         [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
@@ -55,6 +55,25 @@
         mImv.center = mImv.superview.center;
         [self.view addSubview: mImv];
     }
+    
+    /*UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(theEditMethod:)];
+    [self.navigationItem setLeftBarButtonItem:leftBarButton animated:NO];*/
+    
+    /*UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(theAddMethod:)];
+    [self.navigationItem setRightBarButtonItem:rightBarButton animated:NO];*/
+    
+    UIImage* imageSettings = [UIImage imageNamed:@"settings-24-512.png"];
+    CGRect rect = CGRectMake(0,0,32,32);
+    UIGraphicsBeginImageContext( rect.size );
+    [imageSettings drawInRect:rect];
+    UIImage *picture1 = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    NSData *imageData = UIImagePNGRepresentation(picture1);
+    UIImage *img=[UIImage imageWithData:imageData];
+    
+    UIBarButtonItem* settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:nil];
+    [self.navigationItem setRightBarButtonItem:settings animated:NO];
     
 }
 

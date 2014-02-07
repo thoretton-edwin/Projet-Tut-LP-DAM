@@ -12,13 +12,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    
+    /*self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.MainMenu = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:MainMenuViewController];
     self.window.rootViewController = self.MainMenu;
     [self.window makeKeyAndVisible];
+    return YES;*/
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil]];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:navigationController];
+    [self.window setBackgroundColor:[UIColor redColor]];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
