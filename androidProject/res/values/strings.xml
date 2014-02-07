@@ -3,6 +3,9 @@
 
     <string name="app_name">IUTUNice</string>
     <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_list">Switch to list</string>
+    <string name="title_activity_icon_menu">IconMenuActivity</string>
     <string name="hello_world">Hello world!</string>
 
 </resources>
