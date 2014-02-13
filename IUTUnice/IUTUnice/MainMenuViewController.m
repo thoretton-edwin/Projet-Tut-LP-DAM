@@ -52,6 +52,13 @@
         [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
         UIImageView* mImv = [_imagesViewArray objectAtIndex: i];
         
+			//custom border and bounds rect
+		mImv.clipsToBounds=YES;
+		mImv.layer.cornerRadius=6.0;
+		mImv.layer.borderColor=[UIColor grayColor].CGColor;
+		mImv.layer.borderWidth=2.0;
+
+		
         [mImv setUserInteractionEnabled:YES];
         mImv.tag = i;
         UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector (singleTapping:)];
