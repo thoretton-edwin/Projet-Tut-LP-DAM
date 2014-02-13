@@ -20,6 +20,9 @@ public class MainActivity extends FragmentActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		
+		IconMenuFragment iconMenuFragment = new IconMenuFragment();
+		getSupportFragmentManager().beginTransaction().replace(R.id.flContent, iconMenuFragment).commit();
+		
 		return super.onCreateOptionsMenu(menu);
 
 	}
