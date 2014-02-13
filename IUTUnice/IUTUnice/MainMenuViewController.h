@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VitrinePageViewController.h"
 
 @interface MainMenuViewController : UIViewController
 {

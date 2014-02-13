@@ -51,6 +51,13 @@
     for (int i = 0; i < _imagesViewArray.count; i++) {
         [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
         UIImageView* mImv = [_imagesViewArray objectAtIndex: i];
+        
+        [mImv setUserInteractionEnabled:YES];
+        mImv.tag = i;
+        UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector (singleTapping:)];
+        [singleTap setNumberOfTapsRequired:1];
+        [[_imagesViewArray objectAtIndex:i] addGestureRecognizer:singleTap];
+        
         mImv.frame = CGRectMake(0, 0, 64, 64);
         mImv.center = mImv.superview.center;
         [self.view addSubview: mImv];
@@ -73,7 +80,7 @@
     UIImage *img=[UIImage imageWithData:imageData];
     
     UIBarButtonItem* settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:nil];
-    [self.navigationItem setRightBarButtonItem:settings animated:NO];
+    [self.navigationItem setLeftBarButtonItem:settings animated:NO];
     
 }
 
@@ -81,6 +88,44 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)singleTapping:(id)sender
+{
+    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
+    NSLog(@"image click N°:%ld",(long)gesture.view.tag);
+    
+    switch((long)gesture.view.tag)
+    {
+        case 0: // Page Vitrine
+        {
+            VitrinePageViewController *viewController = [[VitrinePageViewController alloc] initWithNibName:@"VitrinePageViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+            break;
+        case 1: // Post Bac
+            break;
+        case 2: // Notes
+            break;
+        case 3: // EDT
+            break;
+        case 4: // Annuaire
+            break;
+        case 5: // Job Dating
+            break;
+        case 6: // Map
+            break;
+        case 7: // SUAPS
+            break;
+        case 8: // Twitter
+            break;
+        default:
+            // lancer une exception ? ..
+            break;
+            
+    }
+    
+    
 }
 
 @end

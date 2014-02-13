@@ -44,6 +44,9 @@
 		929E0177189BA45900694030 /* 1383836355_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0162189BA45900694030 /* 1383836355_info.png */; };
 		929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */; };
 		929E0179189BA45900694030 /* twitter-button-05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 929E0164189BA45900694030 /* twitter-button-05.jpg */; };
+		92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0518ACC24D0047DA1E /* RootNavigationController.m */; };
+		92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */; };
+		92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,11 @@
 		929E0162189BA45900694030 /* 1383836355_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836355_info.png; sourceTree = "<group>"; };
 		929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1383836370_Test-paper-128.png"; sourceTree = "<group>"; };
 		929E0164189BA45900694030 /* twitter-button-05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "twitter-button-05.jpg"; sourceTree = "<group>"; };
+		92A53D0418ACC24D0047DA1E /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		92A53D0518ACC24D0047DA1E /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		92A53D0818ACD3CC0047DA1E /* VitrinePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitrinePageViewController.h; sourceTree = "<group>"; };
+		92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VitrinePageViewController.m; sourceTree = "<group>"; };
+		92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VitrinePageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,10 +166,13 @@
 		92138DBB189260B1000488BC /* IUTUnice */ = {
 			isa = PBXGroup;
 			children = (
+				92A53D0718ACD2FC0047DA1E /* Vitrine */,
 				929E014F189BA45900694030 /* images */,
 				929E014B189B9E0800694030 /* MainPage */,
 				92138DC4189260B1000488BC /* AppDelegate.h */,
 				92138DC5189260B1000488BC /* AppDelegate.m */,
+				92A53D0418ACC24D0047DA1E /* RootNavigationController.h */,
+				92A53D0518ACC24D0047DA1E /* RootNavigationController.m */,
 				92138DD0189260B2000488BC /* Images.xcassets */,
 				92138DBC189260B1000488BC /* Supporting Files */,
 			);
@@ -236,6 +247,16 @@
 			);
 			path = images;
 			sourceTree = SOURCE_ROOT;
+		};
+		92A53D0718ACD2FC0047DA1E /* Vitrine */ = {
+			isa = PBXGroup;
+			children = (
+				92A53D0818ACD3CC0047DA1E /* VitrinePageViewController.h */,
+				92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */,
+				92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */,
+			);
+			name = Vitrine;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -323,6 +344,7 @@
 				929E0177189BA45900694030 /* 1383836355_info.png in Resources */,
 				929E0172189BA45900694030 /* 1383836276_kdeprint-printer-infos.png in Resources */,
 				929E0175189BA45900694030 /* 1383836328_addressbook-edit.png in Resources */,
+				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
 				929E016C189BA45900694030 /* 1383836175_calendar.png in Resources */,
 				929E016F189BA45900694030 /* 1383836210_package_graphics.png in Resources */,
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
@@ -358,7 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
+				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
+				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

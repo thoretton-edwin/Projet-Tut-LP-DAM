@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MainMenuViewController.h"
+#import "RootNavigationController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
