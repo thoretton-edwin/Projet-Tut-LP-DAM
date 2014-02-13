@@ -6,15 +6,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
             <connections>
-                <outlet property="mImageAnnuaire" destination="CBJ-WY-6OH" id="89O-8Z-o0N"/>
-                <outlet property="mImageCalendar" destination="Nlc-Sq-Pff" id="8ud-4m-MKd"/>
-                <outlet property="mImageJobDating" destination="EQS-8G-mr4" id="IyG-Ca-Sae"/>
-                <outlet property="mImageMap" destination="cDf-8n-Adk" id="Ehr-Ar-Abw"/>
-                <outlet property="mImageMarks" destination="fSw-rq-vEz" id="40W-H9-sA8"/>
-                <outlet property="mImagePostBac" destination="C3E-LE-KRs" id="eWw-RI-7XH"/>
-                <outlet property="mImageSUAPS" destination="1sK-IV-pEK" id="ogZ-pq-NN5"/>
-                <outlet property="mImageTwitter" destination="GDv-6a-kDA" id="deU-bI-QDi"/>
-                <outlet property="mImageVitrine" destination="KO0-xI-qLw" id="iSU-io-ZOM"/>
+                <outlet property="iconView1" destination="rpu-Ck-3Wy" id="Jjj-45-bt9"/>
+                <outlet property="iconView2" destination="P1e-WY-YbA" id="1tV-Tk-fhj"/>
+                <outlet property="iconView3" destination="RTe-V8-b3T" id="D1b-S4-h16"/>
+                <outlet property="iconView4" destination="npR-kl-YNH" id="zw8-We-GKN"/>
+                <outlet property="iconView5" destination="aTD-57-eHB" id="UKJ-x8-JCb"/>
+                <outlet property="iconView6" destination="1Jt-dE-QKe" id="Q1c-Dz-w52"/>
+                <outlet property="iconView7" destination="bGL-yQ-2EC" id="5XE-xr-uUA"/>
+                <outlet property="iconView8" destination="WeZ-Dq-2Tw" id="pmK-mA-elI"/>
+                <outlet property="iconView9" destination="kSZ-fw-IY5" id="dFK-Up-RYF"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -23,42 +23,51 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO0-xI-qLw">
-                    <rect key="frame" x="20" y="288" width="64" height="64"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-Ck-3Wy">
+                    <rect key="frame" x="26" y="309" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nlc-Sq-Pff">
-                    <rect key="frame" x="128" y="288" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-WY-YbA">
+                    <rect key="frame" x="125" y="309" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSw-rq-vEz">
-                    <rect key="frame" x="236" y="288" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-V8-b3T">
+                    <rect key="frame" x="223" y="309" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-LE-KRs">
-                    <rect key="frame" x="20" y="384" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npR-kl-YNH">
+                    <rect key="frame" x="26" y="393" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-WY-6OH">
-                    <rect key="frame" x="128" y="384" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTD-57-eHB">
+                    <rect key="frame" x="125" y="393" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQS-8G-mr4">
-                    <rect key="frame" x="236" y="384" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jt-dE-QKe">
+                    <rect key="frame" x="223" y="393" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-8n-Adk">
-                    <rect key="frame" x="20" y="484" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSZ-fw-IY5">
+                    <rect key="frame" x="223" y="480" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sK-IV-pEK">
-                    <rect key="frame" x="128" y="484" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-Dq-2Tw">
+                    <rect key="frame" x="125" y="480" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDv-6a-kDA">
-                    <rect key="frame" x="236" y="484" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-yQ-2EC">
+                    <rect key="frame" x="26" y="480" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

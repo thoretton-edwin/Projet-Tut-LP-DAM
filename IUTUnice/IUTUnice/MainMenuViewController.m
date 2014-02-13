@@ -14,6 +14,17 @@
 
 @implementation MainMenuViewController
 
+@synthesize cadreViewArray;
+@synthesize iconView1;
+@synthesize iconView2;
+@synthesize iconView3;
+@synthesize iconView4;
+@synthesize iconView5;
+@synthesize iconView6;
+@synthesize iconView7;
+@synthesize iconView8;
+@synthesize iconView9;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,20 +34,42 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+	for (int i = 0; i < _imagesViewArray.count; i++)
+	{
+		UIView *cadre  = [cadreViewArray objectAtIndex:i];
+		cadre.backgroundColor=nil;
+
+	}
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	
+	cadreViewArray =[[NSMutableArray alloc] init];
+	[cadreViewArray addObject:iconView1];
+	[cadreViewArray addObject:iconView2];
+	[cadreViewArray addObject:iconView3];
+	[cadreViewArray addObject:iconView4];
+	[cadreViewArray addObject:iconView5];
+	[cadreViewArray addObject:iconView6];
+	[cadreViewArray addObject:iconView7];
+	[cadreViewArray addObject:iconView8];
+	[cadreViewArray addObject:iconView9];
+	
+	
+	
     _imagesViewArray = [[NSMutableArray alloc] init];
-    [_imagesViewArray addObject: mImageVitrine];
-    [_imagesViewArray addObject: mImageCalendar];
-    [_imagesViewArray addObject: mImageMarks];
-    [_imagesViewArray addObject: mImagePostBac];
-    [_imagesViewArray addObject: mImageAnnuaire];
-    [_imagesViewArray addObject: mImageJobDating];
-    [_imagesViewArray addObject: mImageMap];
-    [_imagesViewArray addObject: mImageSUAPS];
-    [_imagesViewArray addObject: mImageTwitter];
-    
+	
+    for(int j= 0;j<9;j++)
+	{
+		[_imagesViewArray addObject:[[UIImageView alloc]init]];
+	}
     _imagesRefArray = [[NSMutableArray alloc] init];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836131_Library.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836124_college_3D.png"]];
@@ -50,31 +83,38 @@
     
     for (int i = 0; i < _imagesViewArray.count; i++) {
         [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
+		
+		UIView *cadre  = [cadreViewArray objectAtIndex:i];
         UIImageView* mImv = [_imagesViewArray objectAtIndex: i];
-        
-			//custom border and bounds rect
-		mImv.clipsToBounds=YES;
-		mImv.layer.cornerRadius=6.0;
-		mImv.layer.borderColor=[UIColor grayColor].CGColor;
-		mImv.layer.borderWidth=2.0;
+		
+			// on identifie chaque item
+		
+		mImv.tag = i;
+        mImv.frame = CGRectMake(10,10,50,50);
+			// customisation de l'imageView
+		
+		[cadre addSubview:mImv];
+		cadre.frame = CGRectMake(0,0,70,70);
+		cadre.clipsToBounds=YES;
+		cadre.layer.cornerRadius=6.0;
+		cadre.layer.borderColor=[UIColor grayColor].CGColor;
+		cadre.layer.borderWidth=2.0;
+		cadre.contentMode = UIViewContentModeCenter;
+		cadre.backgroundColor=nil;
 
 		
-        [mImv setUserInteractionEnabled:YES];
-        mImv.tag = i;
+		// gestion des clicks
+		[mImv setUserInteractionEnabled:YES];
+        
         UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector (singleTapping:)];
+		
         [singleTap setNumberOfTapsRequired:1];
         [[_imagesViewArray objectAtIndex:i] addGestureRecognizer:singleTap];
-        
-        mImv.frame = CGRectMake(0, 0, 64, 64);
-        mImv.center = mImv.superview.center;
-        [self.view addSubview: mImv];
+
+		
+        [self.view addSubview: cadre];
     }
     
-    /*UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(theEditMethod:)];
-    [self.navigationItem setLeftBarButtonItem:leftBarButton animated:NO];*/
-    
-    /*UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(theAddMethod:)];
-    [self.navigationItem setRightBarButtonItem:rightBarButton animated:NO];*/
     
     UIImage* imageSettings = [UIImage imageNamed:@"settings-24-512.png"];
     CGRect rect = CGRectMake(0,0,32,32);
@@ -99,6 +139,7 @@
 
 -(void)singleTapping:(id)sender
 {
+
     UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
     NSLog(@"image click N°:%ld",(long)gesture.view.tag);
     
@@ -106,8 +147,12 @@
     {
         case 0: // Page Vitrine
         {
+				// Set vertical effect
+			iconView1.backgroundColor = [UIColor grayColor];
+			
             VitrinePageViewController *viewController = [[VitrinePageViewController alloc] initWithNibName:@"VitrinePageViewController" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
+			
         }
             break;
         case 1: // Post Bac

@@ -11,19 +11,23 @@
 
 @interface MainMenuViewController : UIViewController
 {
-    IBOutlet UIImageView* mImageVitrine;
-    IBOutlet UIImageView* mImageCalendar;
-    IBOutlet UIImageView* mImageMarks;
-    IBOutlet UIImageView* mImagePostBac;
-    IBOutlet UIImageView* mImageAnnuaire;
-    IBOutlet UIImageView* mImageJobDating;
-    IBOutlet UIImageView* mImageMap;
-    IBOutlet UIImageView* mImageSUAPS;
-    IBOutlet UIImageView* mImageTwitter;
+    
     
 }
+@property (weak, nonatomic) IBOutlet UIView *iconView1;
+@property (weak, nonatomic) IBOutlet UIView *iconView2;
+@property (weak, nonatomic) IBOutlet UIView *iconView3;
+@property (weak, nonatomic) IBOutlet UIView *iconView4;
+@property (weak, nonatomic) IBOutlet UIView *iconView5;
+@property (weak, nonatomic) IBOutlet UIView *iconView6;
+@property (weak, nonatomic) IBOutlet UIView *iconView7;
+@property (weak, nonatomic) IBOutlet UIView *iconView8;
+@property (weak, nonatomic) IBOutlet UIView *iconView9;
+
+
 @property NSMutableArray* imagesViewArray;
 @property NSMutableArray* imagesRefArray;
+@property NSMutableArray* cadreViewArray;
 
 
 
