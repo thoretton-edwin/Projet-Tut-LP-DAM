@@ -104,12 +104,12 @@
 
 		
 		// gestion des clicks
-		[mImv setUserInteractionEnabled:YES];
+		[cadre setUserInteractionEnabled:YES];
         
         UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector (singleTapping:)];
 		
         [singleTap setNumberOfTapsRequired:1];
-        [[_imagesViewArray objectAtIndex:i] addGestureRecognizer:singleTap];
+        [[cadreViewArray objectAtIndex:i] addGestureRecognizer:singleTap];
 
 		
         [self.view addSubview: cadre];
