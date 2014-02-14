@@ -157,16 +157,34 @@ xcuserdata
 # We're using source-control, so this is a "feature" that we do not want!
 
 *.moved-aside
-*.xcuserstate
 
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
 # ...none. Everything is now explained.
-IUTUnice/IUTUnice.xcodeproj/project.xcworkspace/xcuserdata/wazany.xcuserdatad/UserInterfaceState.xcuserstate
 
+
+# Mac OS X
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
 *.xcuserstate
+project.xcworkspace/
+xcuserdata/
 
-IUTUnice/IUTUnice.xcodeproj/project.xcworkspace/xcuserdata/wazany.xcuserdatad/UserInterfaceState.xcuserstate
+# Generated files
+*.o
+*.pyc
 
-*.xcuserstate
+
+#Python modules
+MANIFEST
+dist/
+build/
+
+# Backup files
+*~.nib
