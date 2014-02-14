@@ -49,7 +49,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	//self.view.backgroundColor = [UIColor redColor];
 	
 	cadreViewArray =[[NSMutableArray alloc] init];
 	[cadreViewArray addObject:iconView1];
