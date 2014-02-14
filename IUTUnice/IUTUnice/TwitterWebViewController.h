@@ -11,6 +11,6 @@
 @interface TwitterWebViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong,nonatomic) UIWebView* webView;
-@property (strong,nonatomic) UIActivityIndicatorView *spinner;
+@property (strong,nonatomic) UIActivityIndicatorView *activityIndicator;
 @end
 

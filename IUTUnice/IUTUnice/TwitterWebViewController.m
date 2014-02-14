@@ -14,13 +14,16 @@
 
 @implementation TwitterWebViewController
 @synthesize webView;
-@synthesize spinner;
+@synthesize activityIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        
     }
     return self;
 }
@@ -43,6 +46,8 @@
 	// load page
     [webView loadRequest:request];
 	
+    
+    
 	
 	
 	[self.view addSubview:webView];
@@ -56,24 +61,37 @@
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
 	NSLog(@"start web view");
-	spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//	spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//    
+//    spinner.center = CGPointMake(160, 240);
+//	
+//	[spinner startAnimating];
 	
-	[spinner startAnimating];
-	
-	[self.view addSubview:spinner];
+//	[self.view addSubview:spinner];
+    
+    activityIndicator.frame = CGRectMake(150, 200, 50, 50);
+    activityIndicator.color = [UIColor redColor];
+    [self.view addSubview:activityIndicator];
+    
+    [activityIndicator startAnimating];
 
+    
+    
 }
 
 -(void )webViewDidFinishLoad:(UIWebView *)webView
 {
 	NSLog(@"end load web view");
-	[spinner stopAnimating];
-	
+    
+//	[spinner stopAnimating];
+	[activityIndicator stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
+    
     // Dispose of any resources that can be recreated.
 }
 
