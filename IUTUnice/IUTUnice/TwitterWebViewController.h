@@ -10,4 +10,6 @@
 
 @interface TwitterWebViewController : UIViewController
 
+@property (strong,nonatomic) UIWebView* webView;
 @end
+

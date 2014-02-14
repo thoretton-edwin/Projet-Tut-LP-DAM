@@ -13,6 +13,7 @@
 @end
 
 @implementation TwitterWebViewController
+@synthesize webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +27,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	
+	//init
+	webView =
+	[[UIWebView alloc]initWithFrame:
+	 CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height)];
+	 
+	 
+	NSURL* url = [[NSURL alloc]initWithString:@"https://twitter.com/Univ_Nice"];
+	NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
+	
+	
+	// load page
+    [webView loadRequest:request];
+	[self.view addSubview:webView];
 }
 
 - (void)didReceiveMemoryWarning
