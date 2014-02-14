@@ -89,7 +89,7 @@
 		
 			// on identifie chaque item
 		
-		mImv.tag = i;
+		cadre.tag = i;
         mImv.frame = CGRectMake(10,10,50,50);
 			// customisation de l'imageView
 		
@@ -155,24 +155,89 @@
 			
         }
             break;
-        case 1: // Post Bac
+        case 1: // Post Bac UIViewController accordion
+        {
+				// Set vertical effect
+			iconView2.backgroundColor = [UIColor grayColor];
+			
+            PostBacViewController *viewController = [[PostBacViewController alloc] initWithNibName:@"PostBacViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
-        case 2: // Notes
+        case 2: // Notes UIViewController accordion
+        {
+				// Set vertical effect
+			iconView3.backgroundColor = [UIColor grayColor];
+			
+            NotesViewController *viewController = [[NotesViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
-        case 3: // EDT
+        case 3: // EDT lib calendarView
+        {
+				// Set vertical effect
+			iconView4.backgroundColor = [UIColor grayColor];
+			
+            EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
-        case 4: // Annuaire
+        case 4: // Annuaire UItableView
+        {
+				// Set vertical effect
+			iconView5.backgroundColor = [UIColor grayColor];
+			
+            AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
-        case 5: // Job Dating
+        case 5: // Job Dating UIViewController accordion
+        {
+				// Set vertical effect
+			iconView6.backgroundColor = [UIColor grayColor];
+			
+            JobDatingViewController *viewController = [[JobDatingViewController alloc] initWithNibName:@"JobDatingViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
-        case 6: // Map
+        case 6: // Map UiVIewController
+        {
+				// Set vertical effect
+			iconView7.backgroundColor = [UIColor grayColor];
+			
+            MapViewController *viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+            
+        }
             break;
-        case 7: // SUAPS
+        case 7: // SUAPS UIViewController accordion
+        {
+				// Set vertical effect
+			iconView8.backgroundColor = [UIColor grayColor];
+			
+            SUAPSViewController *viewController = [[SUAPSViewController alloc] initWithNibName:@"SUAPSViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
-        case 8: // Twitter
+        case 8: // Twitter webview
+        {
+				// Set vertical effect
+			iconView9.backgroundColor = [UIColor grayColor];
+			
+            TwitterWebViewController *viewController = [[TwitterWebViewController alloc] initWithNibName:@"TwitterWebViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+			
+        }
             break;
         default:
-            // lancer une exception ? ..
+				// lancer une exception ? ..
             break;
             
     }

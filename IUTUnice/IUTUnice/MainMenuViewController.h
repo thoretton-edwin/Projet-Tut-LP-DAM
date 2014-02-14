@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "VitrinePageViewController.h"
+#import "TwitterWebViewController.h"
+#import "SUAPSViewController.h"
+#import "JobDatingViewController.h"
+#import "AnnuaireViewController.h"
+#import "NotesViewController.h"
+#import "PostBacViewController.h"
+#import "MapViewController.h"
+#import "EDTViewController.h"
 
 @interface MainMenuViewController : UIViewController
 {
