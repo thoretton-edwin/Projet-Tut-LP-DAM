@@ -52,7 +52,7 @@
     
     UITextView *myUITextView = [[UITextView alloc] initWithFrame:CGRectMake(0,0,_descriptionScrollView.frame.size.width,_descriptionScrollView.frame.size.height)];
     myUITextView.text = presentationText;
-    myUITextView.textColor = [UIColor lightGrayColor];
+    myUITextView.textColor = [UIColor blackColor];
     myUITextView.font = [UIFont systemFontOfSize:14];
     [myUITextView setBackgroundColor:[UIColor clearColor]];
     myUITextView.editable = NO;
