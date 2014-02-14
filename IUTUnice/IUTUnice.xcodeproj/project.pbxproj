@@ -38,6 +38,8 @@
 		9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1518A513BD0087E126 /* settings-24-512.png */; };
 		9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */; };
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
+		9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */; };
+		9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */; };
 		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
@@ -113,6 +115,9 @@
 		9246DA1518A513BD0087E126 /* settings-24-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-24-512.png"; sourceTree = "<group>"; };
 		9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_logo_blue.png; sourceTree = "<group>"; };
 		9257A1A518AE309900CDECF4 /* appBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackground.png; sourceTree = "<group>"; };
+		9257A1AC18AE3E5500CDECF4 /* FormationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormationListViewController.h; sourceTree = "<group>"; };
+		9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationListViewController.m; sourceTree = "<group>"; };
+		9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationListViewController.xib; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -364,6 +369,9 @@
 				92A53D0818ACD3CC0047DA1E /* VitrinePageViewController.h */,
 				92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */,
 				92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */,
+				9257A1AC18AE3E5500CDECF4 /* FormationListViewController.h */,
+				9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */,
+				9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */,
 			);
 			name = Vitrine;
 			sourceTree = "<group>";
@@ -474,6 +482,7 @@
 				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
 				929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
+				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
@@ -503,6 +512,7 @@
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
+				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
 				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,

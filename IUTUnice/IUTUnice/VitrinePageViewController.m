@@ -66,4 +66,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)goToFormationListPage:(id)sender {
+    FormationListViewController *viewController = [[FormationListViewController alloc] initWithNibName:@"FormationListViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+
+}
 @end
