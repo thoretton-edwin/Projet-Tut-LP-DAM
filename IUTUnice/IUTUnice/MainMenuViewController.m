@@ -49,7 +49,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	//self.view.backgroundColor = [UIColor redColor];
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 	
 	cadreViewArray =[[NSMutableArray alloc] init];
 	[cadreViewArray addObject:iconView1];

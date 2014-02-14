@@ -26,6 +26,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
     _presentationImage.animationImages = [NSArray arrayWithObjects:
                                           [UIImage imageNamed:@"IUT NICE.JPG"],
                                           [UIImage imageNamed:@"IUT SOPHIA.JPG"],

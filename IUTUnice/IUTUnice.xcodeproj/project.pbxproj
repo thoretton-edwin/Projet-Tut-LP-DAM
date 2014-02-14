@@ -37,6 +37,7 @@
 		92138DE4189260B2000488BC /* IUTUniceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92138DE3189260B2000488BC /* IUTUniceTests.m */; };
 		9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1518A513BD0087E126 /* settings-24-512.png */; };
 		9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */; };
+		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
 		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
@@ -111,6 +112,7 @@
 		92138DE3189260B2000488BC /* IUTUniceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IUTUniceTests.m; sourceTree = "<group>"; };
 		9246DA1518A513BD0087E126 /* settings-24-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-24-512.png"; sourceTree = "<group>"; };
 		9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_logo_blue.png; sourceTree = "<group>"; };
+		9257A1A518AE309900CDECF4 /* appBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackground.png; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 		929E014F189BA45900694030 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9257A1A518AE309900CDECF4 /* appBackground.png */,
 				92A53D3718AD0C8F0047DA1E /* menton.jpg */,
 				92A53D2F18AD0BCD0047DA1E /* IUT MENTON195.JPG */,
 				92A53D3018AD0BCD0047DA1E /* IUT NICE.JPG */,
@@ -454,6 +457,7 @@
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
+				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
