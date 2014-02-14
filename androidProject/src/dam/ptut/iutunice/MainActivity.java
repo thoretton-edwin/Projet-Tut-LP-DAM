@@ -1,5 +1,6 @@
 package dam.ptut.iutunice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -49,9 +50,9 @@ public class MainActivity extends FragmentActivity {
 
 	private void openSettings() {
 		// TODO Auto-generated method stub
-//		Intent intent = new Intent(MainActivity.this,
-//				ClassName.class);
-//		startActivity(intent);
+		Intent intent = new Intent(MainActivity.this,
+				ParameterActivity.class);
+		startActivity(intent);
 	}
 	
 

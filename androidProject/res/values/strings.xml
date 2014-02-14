@@ -7,5 +7,6 @@
     <string name="action_list">Switch to list</string>
     <string name="title_activity_icon_menu">IconMenuActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_parameter">Paramètres</string>
 
 </resources>
