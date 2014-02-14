@@ -14,6 +14,7 @@
 
 @implementation TwitterWebViewController
 @synthesize webView;
+@synthesize spinner;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,12 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	self.title=@"Twitter UNS";
 	//init
 	webView =
 	[[UIWebView alloc]initWithFrame:
 	 CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height)];
 	 
+	[self.webView setDelegate:self];
 	 
 	NSURL* url = [[NSURL alloc]initWithString:@"https://twitter.com/Univ_Nice"];
 	NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
@@ -40,7 +42,33 @@
 	
 	// load page
     [webView loadRequest:request];
+	
+	
+	
 	[self.view addSubview:webView];
+	
+		
+	
+	
+	
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView
+{
+	NSLog(@"start web view");
+	spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	
+	[spinner startAnimating];
+	
+	[self.view addSubview:spinner];
+
+}
+
+-(void )webViewDidFinishLoad:(UIWebView *)webView
+{
+	NSLog(@"end load web view");
+	[spinner stopAnimating];
+	
 }
 
 - (void)didReceiveMemoryWarning

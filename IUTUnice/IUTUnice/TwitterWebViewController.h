@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TwitterWebViewController : UIViewController
+@interface TwitterWebViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong,nonatomic) UIWebView* webView;
+@property (strong,nonatomic) UIActivityIndicatorView *spinner;
 @end
 
