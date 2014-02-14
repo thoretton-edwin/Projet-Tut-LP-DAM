@@ -26,14 +26,15 @@ public final class R {
         public static final int ic_action_view_as_list=0x7f020002;
         public static final int ic_launcher=0x7f020003;
         public static final int logo_addressbook=0x7f020004;
-        public static final int logo_calendar=0x7f020005;
-        public static final int logo_compagny_partnership=0x7f020006;
-        public static final int logo_grades=0x7f020007;
-        public static final int logo_iut_window=0x7f020008;
-        public static final int logo_map=0x7f020009;
-        public static final int logo_post_bac=0x7f02000a;
-        public static final int logo_suaps=0x7f02000b;
-        public static final int logo_twitter=0x7f02000c;
+        public static final int logo_btn_bg=0x7f020005;
+        public static final int logo_calendar=0x7f020006;
+        public static final int logo_compagny_partnership=0x7f020007;
+        public static final int logo_grades=0x7f020008;
+        public static final int logo_iut_window=0x7f020009;
+        public static final int logo_map=0x7f02000a;
+        public static final int logo_post_bac=0x7f02000b;
+        public static final int logo_suaps=0x7f02000c;
+        public static final int logo_twitter=0x7f02000d;
     }
     public static final class id {
         public static final int action_list=0x7f080011;
