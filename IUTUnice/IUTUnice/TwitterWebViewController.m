@@ -62,8 +62,8 @@
 {
 	NSLog(@"start web view");
 
-    activityIndicator.frame = CGRectMake(150, 200, 50, 50);
-    activityIndicator.color = [UIColor redColor];
+    activityIndicator.frame = CGRectMake(50, 200, 250, 250);
+    activityIndicator.color = [UIColor blueColor];
     [self.view addSubview:activityIndicator];
     
     [activityIndicator startAnimating];
