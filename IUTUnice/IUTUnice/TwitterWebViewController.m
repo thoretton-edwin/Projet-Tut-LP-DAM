@@ -22,7 +22,7 @@
     if (self) {
         // Custom initialization
         
-        activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        
         
     }
     return self;
@@ -46,7 +46,7 @@
 	// load page
     [webView loadRequest:request];
 	
-    
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     
 	
 	
@@ -61,14 +61,7 @@
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
 	NSLog(@"start web view");
-//	spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-//    
-//    spinner.center = CGPointMake(160, 240);
-//	
-//	[spinner startAnimating];
-	
-//	[self.view addSubview:spinner];
-    
+
     activityIndicator.frame = CGRectMake(150, 200, 50, 50);
     activityIndicator.color = [UIColor redColor];
     [self.view addSubview:activityIndicator];
@@ -83,7 +76,6 @@
 {
 	NSLog(@"end load web view");
     
-//	[spinner stopAnimating];
 	[activityIndicator stopAnimating];
 }
 
