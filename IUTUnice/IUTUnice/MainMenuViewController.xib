@@ -6,72 +6,72 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
             <connections>
-                <outlet property="iconView1" destination="rpu-Ck-3Wy" id="Jjj-45-bt9"/>
-                <outlet property="iconView2" destination="P1e-WY-YbA" id="1tV-Tk-fhj"/>
-                <outlet property="iconView3" destination="RTe-V8-b3T" id="D1b-S4-h16"/>
-                <outlet property="iconView4" destination="npR-kl-YNH" id="zw8-We-GKN"/>
-                <outlet property="iconView5" destination="aTD-57-eHB" id="UKJ-x8-JCb"/>
-                <outlet property="iconView6" destination="1Jt-dE-QKe" id="Q1c-Dz-w52"/>
-                <outlet property="iconView7" destination="bGL-yQ-2EC" id="5XE-xr-uUA"/>
-                <outlet property="iconView8" destination="WeZ-Dq-2Tw" id="pmK-mA-elI"/>
-                <outlet property="iconView9" destination="kSZ-fw-IY5" id="dFK-Up-RYF"/>
+                <outlet property="iconView1" destination="hDJ-Il-Vyv" id="wMF-jD-tMC"/>
+                <outlet property="iconView2" destination="q96-ID-B74" id="iNh-H7-wFN"/>
+                <outlet property="iconView3" destination="pFt-xb-nhw" id="Gin-QK-jeW"/>
+                <outlet property="iconView4" destination="DMA-ik-nLJ" id="8ZC-gy-e9D"/>
+                <outlet property="iconView5" destination="fWt-x4-gaM" id="b3A-Yb-lP0"/>
+                <outlet property="iconView6" destination="UfU-q7-m6V" id="Ndr-dy-2du"/>
+                <outlet property="iconView7" destination="hI2-09-9FB" id="o56-q1-2lN"/>
+                <outlet property="iconView8" destination="FTJ-ho-la1" id="f2T-M5-t1I"/>
+                <outlet property="iconView9" destination="vWj-li-0IO" id="WSa-Le-04C"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-Ck-3Wy">
-                    <rect key="frame" x="26" y="309" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-Il-Vyv">
+                    <rect key="frame" x="27" y="219" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-WY-YbA">
-                    <rect key="frame" x="125" y="309" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q96-ID-B74">
+                    <rect key="frame" x="126" y="219" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-V8-b3T">
-                    <rect key="frame" x="223" y="309" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFt-xb-nhw">
+                    <rect key="frame" x="224" y="219" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npR-kl-YNH">
-                    <rect key="frame" x="26" y="393" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMA-ik-nLJ">
+                    <rect key="frame" x="27" y="303" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTD-57-eHB">
-                    <rect key="frame" x="125" y="393" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-x4-gaM">
+                    <rect key="frame" x="126" y="303" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jt-dE-QKe">
-                    <rect key="frame" x="223" y="393" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfU-q7-m6V">
+                    <rect key="frame" x="224" y="303" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSZ-fw-IY5">
-                    <rect key="frame" x="223" y="480" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWj-li-0IO">
+                    <rect key="frame" x="224" y="390" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-Dq-2Tw">
-                    <rect key="frame" x="125" y="480" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTJ-ho-la1">
+                    <rect key="frame" x="126" y="390" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-yQ-2EC">
-                    <rect key="frame" x="26" y="480" width="70" height="70"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hI2-09-9FB">
+                    <rect key="frame" x="27" y="390" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>
