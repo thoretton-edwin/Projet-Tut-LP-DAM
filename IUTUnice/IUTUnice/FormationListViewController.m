@@ -26,6 +26,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //select design
+	_mDegreeSelector.clipsToBounds=YES;
+	_mDegreeSelector.layer.cornerRadius=6.0;
+	_mDegreeSelector.layer.borderColor=[UIColor grayColor].CGColor;
+	_mDegreeSelector.layer.borderWidth=2.0;
+	_mDegreeSelector.contentMode = UIViewContentModeCenter;
+	_mDegreeSelector.backgroundColor=nil;
+	_mDegreeSelector.tintColor = [UIColor grayColor];
+    
     _mFormationArray = [[NSMutableArray alloc] init];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.iut.unice.fr/api/formations"]];
