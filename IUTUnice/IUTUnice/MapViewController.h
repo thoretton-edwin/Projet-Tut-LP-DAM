@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "Campus.h";
 
 @interface MapViewController :UIViewController <MKMapViewDelegate>
 {
@@ -17,5 +18,16 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mapSelect;
 @property (weak, nonatomic) IBOutlet UITextView *mapText;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *campusSelect;
+
+//campus
+
+@property (strong,nonatomic) Campus* nice;
+@property (strong,nonatomic) Campus* sophia;
+@property (strong,nonatomic) Campus* cannes;
+@property (strong,nonatomic) Campus* menton;
+@property (strong,nonatomic) Campus* bocca;
+
+
+
 
 @end

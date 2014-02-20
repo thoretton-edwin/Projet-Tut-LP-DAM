@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
+		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
 		43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */; };
 		43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3318AE2F62004F709B /* MapViewController.m */; };
@@ -75,6 +76,8 @@
 
 /* Begin PBXFileReference section */
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
+		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
 		43E6FD2D18AE2F52004F709B /* JobDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDatingViewController.h; sourceTree = "<group>"; };
 		43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDatingViewController.m; sourceTree = "<group>"; };
 		43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDatingViewController.xib; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				43E6FD3218AE2F62004F709B /* MapViewController.h */,
 				43E6FD3318AE2F62004F709B /* MapViewController.m */,
 				43E6FD3418AE2F62004F709B /* MapViewController.xib */,
+				4368CA9B18B60985008C7ACD /* Campus.h */,
+				4368CA9C18B60985008C7ACD /* Campus.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
 				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
+				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

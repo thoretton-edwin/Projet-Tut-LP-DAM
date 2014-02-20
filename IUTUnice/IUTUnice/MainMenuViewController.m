@@ -50,6 +50,7 @@
 {
     [super viewDidLoad];
     
+	//background
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
