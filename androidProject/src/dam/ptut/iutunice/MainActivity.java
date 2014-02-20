@@ -1,10 +1,14 @@
 package dam.ptut.iutunice;
 
 import android.content.Intent;
+import android.os.Build;
+import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
 
@@ -13,6 +17,10 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		this.setTitle("IUT Nice Côte d'Azur");
+		
+		Toast.makeText(getApplicationContext(),"version Android  1= "+Build.DISPLAY, Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(),"version Android  2= "+VERSION.CODENAME, Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(),"version Android  3= "+VERSION.SDK_INT, Toast.LENGTH_SHORT).show();
 
 	}
 

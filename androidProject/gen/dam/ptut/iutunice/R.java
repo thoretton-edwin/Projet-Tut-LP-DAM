@@ -21,40 +21,43 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_action_search=0x7f020000;
-        public static final int ic_action_settings=0x7f020001;
-        public static final int ic_action_view_as_list=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int logo_addressbook=0x7f020004;
-        public static final int logo_btn_bg=0x7f020005;
-        public static final int logo_calendar=0x7f020006;
-        public static final int logo_compagny_partnership=0x7f020007;
-        public static final int logo_grades=0x7f020008;
-        public static final int logo_iut_window=0x7f020009;
-        public static final int logo_map=0x7f02000a;
-        public static final int logo_post_bac=0x7f02000b;
-        public static final int logo_suaps=0x7f02000c;
-        public static final int logo_twitter=0x7f02000d;
+        public static final int app_background=0x7f020000;
+        public static final int ic_action_search=0x7f020001;
+        public static final int ic_action_settings=0x7f020002;
+        public static final int ic_action_view_as_list=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int logo_addressbook=0x7f020005;
+        public static final int logo_btn_bg=0x7f020006;
+        public static final int logo_calendar=0x7f020007;
+        public static final int logo_compagny_partnership=0x7f020008;
+        public static final int logo_grades=0x7f020009;
+        public static final int logo_iut_window=0x7f02000a;
+        public static final int logo_map=0x7f02000b;
+        public static final int logo_post_bac=0x7f02000c;
+        public static final int logo_suaps=0x7f02000d;
+        public static final int logo_twitter=0x7f02000e;
     }
     public static final class id {
-        public static final int action_list=0x7f080011;
-        public static final int action_settings=0x7f080010;
+        public static final int action_list=0x7f080013;
+        public static final int action_settings=0x7f080012;
         public static final int flContent=0x7f080000;
-        public static final int imgBtCalendar=0x7f080007;
-        public static final int imgBtCompanyPartnership=0x7f08000c;
-        public static final int imgBtDirectory=0x7f08000b;
-        public static final int imgBtGrades=0x7f080006;
-        public static final int imgBtIutWindow=0x7f080005;
-        public static final int imgBtMap=0x7f080008;
-        public static final int imgBtPostBac=0x7f08000a;
-        public static final int imgBtSuaps=0x7f080009;
-        public static final int imgBtTwitter=0x7f08000d;
-        public static final int imgMenuItem=0x7f08000e;
-        public static final int listViewMenu=0x7f080001;
-        public static final int textView1=0x7f080002;
-        public static final int tvSuapsActuality=0x7f080003;
-        public static final int tvTweetsActuality=0x7f080004;
-        public static final int txtMenuItem=0x7f08000f;
+        public static final int imgBtCalendar=0x7f080009;
+        public static final int imgBtCompanyPartnership=0x7f08000e;
+        public static final int imgBtDirectory=0x7f08000d;
+        public static final int imgBtGrades=0x7f080008;
+        public static final int imgBtIutWindow=0x7f080007;
+        public static final int imgBtMap=0x7f08000a;
+        public static final int imgBtPostBac=0x7f08000c;
+        public static final int imgBtSuaps=0x7f08000b;
+        public static final int imgBtTwitter=0x7f08000f;
+        public static final int imgMenuItem=0x7f080010;
+        public static final int listViewMenu=0x7f080002;
+        public static final int listViewParameter=0x7f080001;
+        public static final int scrollView1=0x7f080003;
+        public static final int textView1=0x7f080004;
+        public static final int tvSuapsActuality=0x7f080005;
+        public static final int tvTweetsActuality=0x7f080006;
+        public static final int txtMenuItem=0x7f080011;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

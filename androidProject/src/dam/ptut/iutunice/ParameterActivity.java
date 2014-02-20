@@ -1,6 +1,7 @@
 package dam.ptut.iutunice;
 
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuItem;
 
 public class ParameterActivity extends Activity {
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
