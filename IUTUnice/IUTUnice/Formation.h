@@ -18,4 +18,7 @@
 -(id) init;
 -(id) initWithId:(NSString*)ident withType:(NSString*)type withTitle:(NSString*)title;
 
+-(NSString*) getId;
+-(NSString*) getTitle;
+
 @end

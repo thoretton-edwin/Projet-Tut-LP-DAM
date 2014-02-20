@@ -24,6 +24,14 @@
     return  self;
 }
 
+- (NSString*) getId{
+    return self->_mId;
+}
+
+- (NSString*) getTitle{
+    return self->_mTitle;
+}
+
 
 
 @end
