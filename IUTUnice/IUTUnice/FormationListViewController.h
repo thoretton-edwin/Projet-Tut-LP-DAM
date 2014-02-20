@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "Formation.h"
 
-@interface FormationListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+@interface FormationListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>{
     UITableView *tableView;
 }
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mDegreeSelector;
 @property (weak, nonatomic) IBOutlet UISearchBar *mSearchBar;
-@property NSMutableArray *mFormationArray ,*mDisplayedArray;
+@property NSMutableArray *mFormationArray ,*mDisplayedArray, *mFilteredArray;
 
 @end
