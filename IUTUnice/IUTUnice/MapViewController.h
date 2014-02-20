@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "Campus.h";
+#import "Campus.h"
 
 @interface MapViewController :UIViewController <MKMapViewDelegate>
 {
@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mapSelect;
 @property (weak, nonatomic) IBOutlet UITextView *mapText;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *campusSelect;
+@property CLLocationManager* manager;
 
 //campus
 

@@ -12,7 +12,7 @@
 {
 	
 }
-
+@synthesize desc;
 -(id)init
 {
 	self= [super init];
@@ -20,6 +20,7 @@
 	{
 		self.services = [[NSMutableArray alloc]init];
 		self.infos = nil;
+		desc=@" ";
 	}
 	return self;
 }
