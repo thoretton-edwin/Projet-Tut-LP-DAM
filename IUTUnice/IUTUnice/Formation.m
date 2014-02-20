@@ -32,6 +32,10 @@
     return self->_mTitle;
 }
 
+- (NSString*) getType{
+    return self->_mTypeFormation;
+}
+
 
 
 @end

@@ -20,5 +20,6 @@
 
 -(NSString*) getId;
 -(NSString*) getTitle;
+-(NSString*) getType;
 
 @end
