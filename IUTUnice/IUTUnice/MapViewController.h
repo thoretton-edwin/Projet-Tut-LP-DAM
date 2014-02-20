@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <MapKit/MKAnnotation.h>
+#import <MapKit/MKOverlay.h>
+#import <MapKit/MKOverlayView.h>
 #import "Campus.h"
 
-@interface MapViewController :UIViewController <MKMapViewDelegate>
+@interface MapViewController :UIViewController <MKMapViewDelegate,CLLocationManagerDelegate>
 {
 }
 
@@ -19,6 +22,10 @@
 @property (weak, nonatomic) IBOutlet UITextView *mapText;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *campusSelect;
 @property CLLocationManager* manager;
+@property CLLocationCoordinate2D userLoc;
+@property (nonatomic, retain) MKPolyline *routeLine; //your line
+@property (nonatomic, retain) MKPolylineView *routeLineView; //overlay view
+@property MKUserLocation *userLocation;
 
 //campus
 
