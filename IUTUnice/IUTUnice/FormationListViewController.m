@@ -26,6 +26,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.iut.unice.fr/api/formations"]];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSError *jsonParsingError = nil;
+    NSArray *publicTimeline = [NSJSONSerialization JSONObjectWithData:response
+                                                              options:0 error:&jsonParsingError];
+    NSDictionary *formation;
+    for(int i=0; i<[publicTimeline count];i++)
+    {
+        formation = [publicTimeline objectAtIndex:i];
+        NSLog(@"Title: %@", [formation objectForKey:@"title"]);
+        NSLog(@"Type: %@", [formation objectForKey:@"type_code"]);
+        
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

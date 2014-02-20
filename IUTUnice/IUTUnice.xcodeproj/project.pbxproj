@@ -60,6 +60,7 @@
 		92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */; };
 		92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */; };
 		92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3718AD0C8F0047DA1E /* menton.jpg */; };
+		92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC9CB018B5FC65001D0E6E /* Formation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,8 @@
 		92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT NICE2.JPG"; sourceTree = "<group>"; };
 		92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT SOPHIA.JPG"; sourceTree = "<group>"; };
 		92A53D3718AD0C8F0047DA1E /* menton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menton.jpg; sourceTree = "<group>"; };
+		92CC9CAF18B5FC65001D0E6E /* Formation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formation.h; sourceTree = "<group>"; };
+		92CC9CB018B5FC65001D0E6E /* Formation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +379,8 @@
 				9257A1AC18AE3E5500CDECF4 /* FormationListViewController.h */,
 				9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */,
 				9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */,
+				92CC9CAF18B5FC65001D0E6E /* Formation.h */,
+				92CC9CB018B5FC65001D0E6E /* Formation.m */,
 			);
 			name = Vitrine;
 			sourceTree = "<group>";
@@ -518,6 +523,7 @@
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
+				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
 				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
 				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
