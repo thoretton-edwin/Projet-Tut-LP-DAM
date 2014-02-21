@@ -45,22 +45,41 @@
 		
 		campusData = [[NSMutableArray alloc]init];
 		
-		for(NSDictionary* dico in data)
+		for(NSDictionary* campus in data)
 		{
 			Campus* item = [[Campus alloc]init];
 			
 			CLLocationCoordinate2D loc;
-			loc.latitude = [[dico objectForKey:@"lat"]floatValue];
-			loc.longitude = [[dico objectForKey:@"lon"]floatValue];
+			loc.latitude = [[campus objectForKey:@"lat"]floatValue];
+			loc.longitude = [[campus objectForKey:@"lon"]floatValue];
 			//item.infos.coordinate =loc;
 			
 			MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-			point.title = [dico objectForKey:@"nom"];
-			point.subtitle = [dico objectForKey:@"adresse"];
+			point.title = [campus objectForKey:@"nom"];
+			point.subtitle = [campus objectForKey:@"adresse"];
 			point.coordinate=loc;
 			item.infos= point;
-			item.desc=[dico objectForKey:@"desc"];
+			item.desc=[campus objectForKey:@"desc"];
 			
+			for(NSDictionary* service in [campus objectForKey:@"services"])
+			{
+				Campus* itemService = [[Campus alloc]init];
+				
+					//Do stuff there
+				CLLocationCoordinate2D loc;
+				loc.latitude = [[campus objectForKey:@"lat"]floatValue];
+				loc.longitude = [[campus objectForKey:@"lon"]floatValue];
+					//item.infos.coordinate =loc;
+				
+				MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+				point.title = [campus objectForKey:@"nom"];
+				point.subtitle = [campus objectForKey:@"adresse"];
+				point.coordinate=loc;
+				itemService.infos= point;
+				itemService.desc=[campus objectForKey:@"desc"];
+				
+				[item.services addObject:itemService];
+			}
 			
 			[campusData addObject:item];
 			
