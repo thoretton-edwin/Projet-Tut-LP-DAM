@@ -36,10 +36,15 @@
             android:name="dam.ptut.iutunice.ParameterActivity"
             android:label="@string/title_activity_parameter"
             android:parentActivityName="dam.ptut.iutunice.MainActivity" >
-            <!-- Parent activity meta-data to support API level 7+ -->
+
+            <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="dam.ptut.iutunice.IconMenuListeFragment"
+            android:label="@string/title_activity_icon_menu_liste_fragment" >
         </activity>
     </application>
 

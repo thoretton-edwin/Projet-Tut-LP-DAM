@@ -1,8 +1,6 @@
 package dam.ptut.iutunice;
 
 import android.content.Intent;
-import android.os.Build;
-import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -18,10 +16,8 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		this.setTitle("IUT Nice Côte d'Azur");
 		
-		Toast.makeText(getApplicationContext(),"version Android  1= "+Build.DISPLAY, Toast.LENGTH_SHORT).show();
-		Toast.makeText(getApplicationContext(),"version Android  2= "+VERSION.CODENAME, Toast.LENGTH_SHORT).show();
-		Toast.makeText(getApplicationContext(),"version Android  3= "+VERSION.SDK_INT, Toast.LENGTH_SHORT).show();
-
+		//Toast.makeText(getApplicationContext(),"version Android  3= "+VERSION.SDK_INT, Toast.LENGTH_SHORT).show();
+		//Affichage de la version d'android du device
 	}
 
 	@Override
@@ -30,7 +26,15 @@ public class MainActivity extends FragmentActivity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		
 		IconMenuFragment iconMenuFragment = new IconMenuFragment();
-		getSupportFragmentManager().beginTransaction().replace(R.id.flContent, iconMenuFragment).commit();
+		IconMenuListeFragment iconMenuListeFragment = new IconMenuListeFragment();
+		
+		int orientation = getResources().getConfiguration().orientation;		
+		if (orientation == 1)//portrait
+			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, iconMenuFragment).commit();
+		else //2 = paysage
+			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, iconMenuListeFragment).commit();
+		
+		//getSupportFragmentManager().beginTransaction().replace(R.id.flContent, iconMenuFragment).commit();
 		
 		return super.onCreateOptionsMenu(menu);
 

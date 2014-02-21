@@ -6,22 +6,22 @@ import android.support.v4.app.Fragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
-import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class IconMenuFragment extends Fragment {
+public class IconMenuListeFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-
-		View iconMenu = inflater.inflate(R.layout.icon_menu_fragment, container, false);
-
+		
+		View iconMenu = inflater.inflate(R.layout.icon_menu_liste_fragment, container, false);
+		
 		TextView tvSuapsActuality = (TextView) iconMenu
 				.findViewById(R.id.tvSuapsActuality);
 		TextView tvTweetActuality = (TextView) iconMenu
@@ -258,7 +258,8 @@ public class IconMenuFragment extends Fragment {
 				return false;
 			}
 		});
-
+		
 		return iconMenu;
 	}
+
 }
