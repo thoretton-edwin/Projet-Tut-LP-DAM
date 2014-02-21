@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
+		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
 		43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */; };
 		43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3318AE2F62004F709B /* MapViewController.m */; };
@@ -80,6 +81,7 @@
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
+		43B9C5F218B75217001A3D75 /* mapServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapServices.plist; sourceTree = "<group>"; };
 		43E6FD2D18AE2F52004F709B /* JobDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDatingViewController.h; sourceTree = "<group>"; };
 		43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDatingViewController.m; sourceTree = "<group>"; };
 		43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDatingViewController.xib; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				43E6FD3418AE2F62004F709B /* MapViewController.xib */,
 				4368CA9B18B60985008C7ACD /* Campus.h */,
 				4368CA9C18B60985008C7ACD /* Campus.m */,
+				43B9C5F218B75217001A3D75 /* mapServices.plist */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
 				43E6FD3B18AE2F74004F709B /* NotesViewController.xib in Resources */,
+				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

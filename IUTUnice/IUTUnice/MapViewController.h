@@ -26,6 +26,8 @@
 @property (nonatomic, retain) MKPolyline *routeLine; //your line
 @property (nonatomic, retain) MKPolylineView *routeLineView; //overlay view
 @property MKUserLocation *userLocation;
+@property NSMutableArray* data;
+@property NSMutableArray* campusData;
 
 //campus
 
