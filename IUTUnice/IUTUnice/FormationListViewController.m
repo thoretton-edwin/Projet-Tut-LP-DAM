@@ -88,14 +88,12 @@
     [_mFilteredArray removeAllObjects];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.mTitle contains[c] %@",searchText];
     _mFilteredArray = [NSMutableArray arrayWithArray:[_mDisplayedArray filteredArrayUsingPredicate:predicate]];
-    NSLog(@"PREDICATE");
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     // Tells the table data source to reload when text changes
     [self filterContentForSearchText:searchString scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
-    NSLog(@"search string");
     // Return YES to cause the search result table view to be reloaded.
     return YES;
 }
@@ -104,7 +102,6 @@
     // Tells the table data source to reload when scope bar selection changes
     [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
-    NSLog(@"search option");
     // Return YES to cause the search result table view to be reloaded.
     return YES;
 }
@@ -155,14 +152,19 @@
     //cell.textLabel.text = [[_mDisplayedArray objectAtIndex: indexPath.row] getTitle];
     
     if (self->tableView == self.searchDisplayController.searchResultsTableView) {
-        NSLog(@"FILTER");
         cell.textLabel.text = [[_mFilteredArray objectAtIndex: indexPath.row] getTitle];
     } else {
-        NSLog(@"NOT FILTER");
         cell.textLabel.text = [[_mDisplayedArray objectAtIndex: indexPath.row] getTitle];
     }
 
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    FormationDetailViewController *anotherViewController=[[FormationDetailViewController alloc]   initWithNibName:@"FormationDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:anotherViewController animated:YES];
+    
 }
 
 @end

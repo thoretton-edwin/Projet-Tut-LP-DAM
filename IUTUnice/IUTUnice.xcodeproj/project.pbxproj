@@ -37,6 +37,8 @@
 		92138DDA189260B2000488BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB9189260B1000488BC /* UIKit.framework */; };
 		92138DE2189260B2000488BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92138DE0189260B2000488BC /* InfoPlist.strings */; };
 		92138DE4189260B2000488BC /* IUTUniceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92138DE3189260B2000488BC /* IUTUniceTests.m */; };
+		92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92139A8418B74D2700FF0157 /* FormationDetailViewController.m */; };
+		92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */; };
 		9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1518A513BD0087E126 /* settings-24-512.png */; };
 		9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */; };
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
@@ -118,6 +120,9 @@
 		92138DDF189260B2000488BC /* IUTUniceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IUTUniceTests-Info.plist"; sourceTree = "<group>"; };
 		92138DE1189260B2000488BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92138DE3189260B2000488BC /* IUTUniceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IUTUniceTests.m; sourceTree = "<group>"; };
+		92139A8318B74D2700FF0157 /* FormationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormationDetailViewController.h; sourceTree = "<group>"; };
+		92139A8418B74D2700FF0157 /* FormationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationDetailViewController.m; sourceTree = "<group>"; };
+		92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationDetailViewController.xib; sourceTree = "<group>"; };
 		9246DA1518A513BD0087E126 /* settings-24-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-24-512.png"; sourceTree = "<group>"; };
 		9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_logo_blue.png; sourceTree = "<group>"; };
 		9257A1A518AE309900CDECF4 /* appBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackground.png; sourceTree = "<group>"; };
@@ -386,6 +391,9 @@
 				9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */,
 				92CC9CAF18B5FC65001D0E6E /* Formation.h */,
 				92CC9CB018B5FC65001D0E6E /* Formation.m */,
+				92139A8318B74D2700FF0157 /* FormationDetailViewController.h */,
+				92139A8418B74D2700FF0157 /* FormationDetailViewController.m */,
+				92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */,
 			);
 			name = Vitrine;
 			sourceTree = "<group>";
@@ -483,6 +491,7 @@
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
+				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
 				43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */,
@@ -538,6 +547,7 @@
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
+				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

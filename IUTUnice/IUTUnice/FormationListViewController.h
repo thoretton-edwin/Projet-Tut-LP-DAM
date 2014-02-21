@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Formation.h"
+#import "FormationDetailViewController.h"
 
 @interface FormationListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>{
     UITableView *tableView;
