@@ -98,6 +98,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="5dp"
                             android:paddingTop="10dp"
+                            android:clickable="true"
                             android:src="@drawable/logo_iut_window" />
                     </LinearLayout>
 

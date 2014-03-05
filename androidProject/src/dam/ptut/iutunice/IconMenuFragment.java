@@ -28,7 +28,7 @@ public class IconMenuFragment extends Fragment {
 				.findViewById(R.id.tvSuapsActuality);
 		TextView tvTweetActuality = (TextView) iconMenu
 				.findViewById(R.id.tvTweetsActuality);
-		ImageView imgIutWindow = (ImageView) iconMenu.findViewById(R.id.imgIutWindow);
+		final ImageView imgIutWindow = (ImageView) iconMenu.findViewById(R.id.imgIutWindow);
 		ImageView imgGrades = (ImageView) iconMenu.findViewById(R.id.imgGrades);
 		ImageView imgCalendar = (ImageView) iconMenu.findViewById(R.id.imgCalendar);
 		ImageView imgMap = (ImageView) iconMenu.findViewById(R.id.imgMap);

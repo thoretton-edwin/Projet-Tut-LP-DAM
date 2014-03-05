@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:orientation="horizontal" >
+    android:orientation="horizontal" 
+    android:background="#566">
 
     <ImageView
         android:id="@+id/imgMenuItem"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="10dp"
