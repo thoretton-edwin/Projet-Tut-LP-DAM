@@ -26,11 +26,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
     NSData *htmlData = [self.headTitle dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@",self.headTitle);
     TFHpple *xpathParser = [[TFHpple alloc] initWithHTMLData:htmlData];
-    NSArray *elements  = [xpathParser searchWithXPathQuery:@"//h3"]; // get the page title - this is xpath notation
-    TFHppleElement *element = [elements objectAtIndex:0];
-    NSString *myTitle = [element content];
+    
+    NSArray *elements  = [xpathParser searchWithXPathQuery: @"//p"]; // get the page title - this is xpath notation
+    TFHppleElement *element = [elements objectAtIndex:1];
+    NSString *myTitle = [element text];
+    
     NSLog(@"%@",myTitle);
     // Do any additional setup after loading the view from its nib.
 }

@@ -21,5 +21,7 @@
 -(NSString*) getId;
 -(NSString*) getTitle;
 -(NSString*) getType;
+-(NSString*) getBody;
+-(void) setBody: (NSString*)body;
 
 @end

@@ -36,6 +36,14 @@
     return self->_mTypeFormation;
 }
 
+- (NSString*) getBody{
+    return self->_mBody;
+}
+
+- (void) setBody:(NSString *)body{
+    self->_mBody = body;
+}
+
 
 
 @end
