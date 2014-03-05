@@ -18,4 +18,6 @@
 @property (weak, nonatomic) IBOutlet UISearchBar *mSearchBar;
 @property NSMutableArray *mFormationArray ,*mDisplayedArray, *mFilteredArray;
 
+@property NSDictionary* formation;
+
 @end

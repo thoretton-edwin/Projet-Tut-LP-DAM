@@ -44,11 +44,10 @@
     NSError *jsonParsingError = nil;
     NSArray *publicTimeline = [NSJSONSerialization JSONObjectWithData:response
                                                               options:0 error:&jsonParsingError];
-    NSDictionary *formation;
     for(int i=0; i<[publicTimeline count];i++)
     {
-        formation = [publicTimeline objectAtIndex:i];
-        Formation *lFormation = [[Formation alloc] initWithId:[formation objectForKey:@"id"] withType:[formation objectForKey:@"type_code"] withTitle:[formation objectForKey:@"title"]];
+        self.formation = [publicTimeline objectAtIndex:i];
+        Formation *lFormation = [[Formation alloc] initWithId:[self.formation objectForKey:@"id"] withType:[self.formation objectForKey:@"type_code"] withTitle:[self.formation objectForKey:@"title"]];
         
         [_mFormationArray addObject: lFormation];
         
@@ -163,6 +162,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     FormationDetailViewController *anotherViewController=[[FormationDetailViewController alloc]   initWithNibName:@"FormationDetailViewController" bundle:nil];
+    anotherViewController.headTitle = [self.formation objectForKey:@"body"];
     [self.navigationController pushViewController:anotherViewController animated:YES];
     
 }

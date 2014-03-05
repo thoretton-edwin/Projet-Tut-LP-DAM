@@ -26,6 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSData *htmlData = [self.headTitle dataUsingEncoding:NSUTF8StringEncoding];
+    TFHpple *xpathParser = [[TFHpple alloc] initWithHTMLData:htmlData];
+    NSArray *elements  = [xpathParser searchWithXPathQuery:@"//h3"]; // get the page title - this is xpath notation
+    TFHppleElement *element = [elements objectAtIndex:0];
+    NSString *myTitle = [element content];
+    NSLog(@"%@",myTitle);
     // Do any additional setup after loading the view from its nib.
 }
 

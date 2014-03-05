@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "hpple/TFHpple.h"
+#import "hpple/TFHppleElement.h"
+#import "XPathQuery.h"
 
 @interface FormationDetailViewController : UIViewController
+
+@property NSString* headTitle;
 
 @end
