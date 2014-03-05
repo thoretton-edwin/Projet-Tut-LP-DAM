@@ -42,6 +42,17 @@
 		
 		data = [[NSMutableArray alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"mapServices" ofType:@"plist"]];
 		
+		UIBarButtonItem *btn = [[UIBarButtonItem alloc]
+								initWithTitle:@"Bus"
+								style:UIBarButtonItemStyleBordered
+								target:self
+								action:@selector(GoBus:)];
+		
+		
+		
+		
+		self.navigationItem.rightBarButtonItem = btn;
+		
 		
 		campusData = [[NSMutableArray alloc]init];
 		
@@ -98,6 +109,19 @@
     return self;
 }
 
+-(void)GoBus:(id)sender
+{
+	NSLog(@"goBus action button");
+	
+	BusViewController *second =
+				[[BusViewController alloc] initWithNibName:@"BusViewController" bundle:nil];
+	[self presentViewController:second animated:YES completion:nil];
+	
+		// in the second view controller add
+	
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 
 // MAJ position de l'utilisateur
@@ -119,12 +143,7 @@
 	
 	// center map to user location
 	userLocation = mapView.userLocation;
-	/*
-	MKCoordinateRegion region =
-	MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate,
-									   50, 50);
-	[mapView setRegion:region animated:YES];
-	*/
+
 	
 	//Background design
 	UIGraphicsBeginImageContext(self.view.frame.size);
@@ -196,14 +215,21 @@
 - (IBAction)mapChoice:(id)sender
 {
    NSLog(@"Map choice");
+   [self drawMap];
+   
 }
 - (IBAction)campusChoice:(id)sender
+{
+	[self drawMap];
+}
+
+-(void) drawMap
 {
 	Campus* itemSelected =[campusData objectAtIndex:campusSelect.selectedSegmentIndex];
 	
 	[mapView removeAnnotations:[mapView annotations]];
-	NSLog(@"%f", itemSelected.infos.coordinate.latitude);
-	NSLog(@"%f", itemSelected.infos.coordinate.longitude);
+		//NSLog(@"%f", itemSelected.infos.coordinate.latitude);
+		//NSLog(@"%f", itemSelected.infos.coordinate.longitude);
 	[mapText setText:[[NSString alloc]initWithFormat: @"%@",itemSelected.infos.subtitle]];
 	mapText.contentMode = UIViewContentModeCenter;
 	mapText.textAlignment = NSTextAlignmentCenter;
@@ -211,7 +237,8 @@
 	[mapView addAnnotation:itemSelected.infos];
 	
 	[mapView setCenterCoordinate:itemSelected.infos.coordinate];
-	if(mapSelect.selectedSegmentIndex==0)
+	
+	if(mapSelect.selectedSegmentIndex==0)// mode trajet
 	{
 		
 		CLLocationCoordinate2D coordinateArray[2];
@@ -253,7 +280,12 @@
 			 }
 		 }];
 	}
-	
+	else
+	{
+			//[mapView addAnnotation:itemSelected.infos];
+		[mapView removeOverlays:mapView.overlays];
+	}
+
 }
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay

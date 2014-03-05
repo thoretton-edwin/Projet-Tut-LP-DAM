@@ -16,4 +16,5 @@
 @property (strong,nonatomic) MKPointAnnotation* infos;
 @property (strong,nonatomic) NSMutableArray* services;
 @property (strong,nonatomic) NSString* desc;
+
 @end

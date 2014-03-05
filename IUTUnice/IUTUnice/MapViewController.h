@@ -11,6 +11,7 @@
 #import <MapKit/MKAnnotation.h>
 #import <MapKit/MKOverlay.h>
 #import <MapKit/MKOverlayView.h>
+#import "BusViewController.h"
 #import "Campus.h"
 
 @interface MapViewController :UIViewController <MKMapViewDelegate,CLLocationManagerDelegate>
