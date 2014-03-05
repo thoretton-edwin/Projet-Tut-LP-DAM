@@ -3,16 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ParameterActivity"
     android:background="@drawable/app_background"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:context=".ParameterActivity" >
 
-    <ListView
-        android:id="@+id/listViewParameter"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@null"
-        android:drawSelectorOnTop="true" >
-    </ListView>
+        android:background="#333"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" />
+
+    <FrameLayout
+        android:id="@+id/vgContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" />
 
 </LinearLayout>
