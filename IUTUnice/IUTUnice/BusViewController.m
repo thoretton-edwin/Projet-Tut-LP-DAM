@@ -7,7 +7,7 @@
 //
 
 #import "BusViewController.h"
-
+#import "hpple/TFHpple.h"
 @interface BusViewController ()
 {
 	
@@ -38,7 +38,68 @@
     [super viewDidLoad];
 	
 	busTableView.delegate=self;
+	NSData *busData = [[NSData alloc]initWithContentsOfFile:
+					   [[NSBundle mainBundle] pathForResource:@"bus" ofType:@"xml"]];
 	
+
+/*
+	NSXMLParser *parser = [[NSXMLParser alloc]initWithData:busData];
+	[parser setDelegate:self];
+	NSLog(@"parsing...");
+	BOOL result = [parser parse];
+	
+*/
+
+	TFHpple *xpathParser = [[TFHpple alloc] initWithXMLData:busData];
+	
+		//Get all the cells main body
+	NSMutableArray* tabBus = [[NSMutableArray alloc]initWithArray:
+							  [xpathParser searchWithXPathQuery:@"root"]];
+				
+	
+
+	
+	NSLog(@"nb element: %d", [tabBus count]);
+	
+	
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
+{
+
+	if ( [elementName isEqualToString:@"root"])
+	{
+		NSLog(@"found rootElement");
+		return;
+	}
+	
+	if ( [elementName isEqualToString:@"ville"])
+	{
+	
+		NSLog(@"found ville element:%@ %@ %@",elementName,qualifiedName,namespaceURI);
+
+		
+		return;
+	}
+	
+	if ( [elementName isEqualToString:@"ligne"])
+	{
+		NSLog(@"found ville element");
+		
+		
+		return;
+	}
+		  
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+	if ([elementName isEqualToString:@"root"])
+	{
+		NSLog(@"rootelement end");
+	}
+	
+
 	
 }
 
