@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusViewController : UIViewController <UITableViewDelegate,NSXMLParserDelegate>
+@interface BusViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,NSXMLParserDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *busTableView;
-
+@property NSMutableArray* tabBus;
 @end

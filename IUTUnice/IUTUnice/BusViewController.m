@@ -18,12 +18,13 @@
 
 @implementation BusViewController
 @synthesize busTableView;
+@synthesize tabBus;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [busTableView reloadData];
     }
     return self;
 }
@@ -38,75 +39,62 @@
     [super viewDidLoad];
 	
 	busTableView.delegate=self;
+	busTableView.dataSource=self;
+	
 	NSData *busData = [[NSData alloc]initWithContentsOfFile:
 					   [[NSBundle mainBundle] pathForResource:@"bus" ofType:@"xml"]];
 	
+	TFHpple *xpathParser = [[TFHpple alloc] initWithXMLData:busData];
+	
+	
 
-/*
-	NSXMLParser *parser = [[NSXMLParser alloc]initWithData:busData];
-	[parser setDelegate:self];
-	NSLog(@"parsing...");
-	BOOL result = [parser parse];
+		//Get all the cells main body
+	tabBus = [[NSMutableArray alloc]initWithArray:
+							  [xpathParser searchWithXPathQuery:@"//ville"]];
+				
+	[busTableView reloadData];
+	NSLog(@"%d",tabBus.count);
+	
+	/*
+	for (TFHppleElement *station in tabBus)
+    {
+	
+		NSLog(@"campus %@",[station text]);
+		NSArray* arrets = [station children];
+		NSArray* lignes;
+		
+		for (TFHppleElement *arret in arrets)
+		{
+			if([arret text]!=nil)
+			{
+				NSLog(@"arret: %@",[arret text]);
+				lignes = [arret children];
+				for (TFHppleElement *ligne in lignes)
+				{
+					if([ligne text]!=nil)
+					{
+						NSLog(@"ligne: %@",[ligne text]);
+					}
+				}
+			}
+			
+		}
+		
+		
+
+    }
+	
 	
 */
 
-	TFHpple *xpathParser = [[TFHpple alloc] initWithXMLData:busData];
-	
-		//Get all the cells main body
-	NSMutableArray* tabBus = [[NSMutableArray alloc]initWithArray:
-							  [xpathParser searchWithXPathQuery:@"root"]];
-				
-	
-
-	
-	NSLog(@"nb element: %d", [tabBus count]);
 	
 	
 }
 
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
-{
-
-	if ( [elementName isEqualToString:@"root"])
-	{
-		NSLog(@"found rootElement");
-		return;
-	}
-	
-	if ( [elementName isEqualToString:@"ville"])
-	{
-	
-		NSLog(@"found ville element:%@ %@ %@",elementName,qualifiedName,namespaceURI);
-
-		
-		return;
-	}
-	
-	if ( [elementName isEqualToString:@"ligne"])
-	{
-		NSLog(@"found ville element");
-		
-		
-		return;
-	}
-		  
-}
-
-- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
-{
-	if ([elementName isEqualToString:@"root"])
-	{
-		NSLog(@"rootelement end");
-	}
-	
-
-	
-}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 //override methods
@@ -119,7 +107,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 0;//[tab count];
+	return[tabBus count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -130,6 +118,10 @@
 	if (cell == nil)
 	{
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+		
+		TFHppleElement *station = [tabBus objectAtIndex:indexPath.row];
+		[cell.textLabel setText:[station text]];
+		NSLog(@"%@",[station text]);
 		
 			// Configure the cell...
 		//cell.textLabel.text = [[tab objectAtIndex:indexPath.row] objectForKey:@"nom"];
