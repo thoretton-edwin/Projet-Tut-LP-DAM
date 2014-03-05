@@ -1,5 +1,6 @@
 package dam.ptut.iutunice;
 
+import dam.ptut.iutunice.R.id;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,24 +28,15 @@ public class IconMenuFragment extends Fragment {
 				.findViewById(R.id.tvSuapsActuality);
 		TextView tvTweetActuality = (TextView) iconMenu
 				.findViewById(R.id.tvTweetsActuality);
-		ImageButton imgBtIutWindow = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtIutWindow);
-		ImageButton imgBtGrades = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtGrades);
-		ImageButton imgBtCalendar = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtCalendar);
-		ImageButton imgBtMap = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtMap);
-		ImageButton imgBtSuaps = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtSuaps);
-		ImageButton imgBtPostBac = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtPostBac);
-		ImageButton imgBtDirectory = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtDirectory);
-		ImageButton imgBtCompanyPartnership = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtCompanyPartnership);
-		ImageButton imgBtTwitter = (ImageButton) iconMenu
-				.findViewById(R.id.imgBtTwitter);
+		ImageView imgIutWindow = (ImageView) iconMenu.findViewById(R.id.imgIutWindow);
+		ImageView imgGrades = (ImageView) iconMenu.findViewById(R.id.imgGrades);
+		ImageView imgCalendar = (ImageView) iconMenu.findViewById(R.id.imgCalendar);
+		ImageView imgMap = (ImageView) iconMenu.findViewById(R.id.imgMap);
+		ImageView imgSuaps = (ImageView) iconMenu.findViewById(R.id.imgSuaps);
+		ImageView imgPostBac = (ImageView) iconMenu.findViewById(R.id.imgPostBac);
+		ImageView imgDirectory = (ImageView) iconMenu.findViewById(R.id.imgDirectory);
+		ImageView imgCompanyPartnership = (ImageView) iconMenu.findViewById(R.id.imgCompanyPartership);
+		ImageView imgTwitter = (ImageView) iconMenu.findViewById(R.id.imgTwitter);
 
 		tvSuapsActuality.setText("Titre Suaps");
 		tvTweetActuality.setText("Dernier Tweet");
@@ -68,18 +61,17 @@ public class IconMenuFragment extends Fragment {
 
 			}
 		});
-
-		imgBtIutWindow.setOnClickListener(new OnClickListener() {
-
+		imgIutWindow.setOnClickListener(new OnClickListener() {
+			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				
 			}
 		});
-		// Affichage msg quand long click
-		imgBtIutWindow.setOnLongClickListener(new OnLongClickListener() {
-
+		
+		imgIutWindow.setOnLongClickListener(new OnLongClickListener() {
+			
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
@@ -90,7 +82,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtGrades.setOnClickListener(new OnClickListener() {
+		imgGrades.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -99,7 +91,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtGrades.setOnLongClickListener(new OnLongClickListener() {
+		imgGrades.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {
@@ -111,7 +103,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtCalendar.setOnClickListener(new OnClickListener() {
+		imgCalendar.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -120,7 +112,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtCalendar.setOnLongClickListener(new OnLongClickListener() {
+		imgCalendar.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {
@@ -132,7 +124,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtMap.setOnClickListener(new OnClickListener() {
+		imgMap.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -141,7 +133,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtMap.setOnLongClickListener(new OnLongClickListener() {
+		imgMap.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {
@@ -153,7 +145,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtSuaps.setOnClickListener(new OnClickListener() {
+		imgSuaps.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -162,7 +154,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtSuaps.setOnLongClickListener(new OnLongClickListener() {
+		imgSuaps.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {
@@ -174,7 +166,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtPostBac.setOnClickListener(new OnClickListener() {
+		imgPostBac.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -183,7 +175,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtPostBac.setOnLongClickListener(new OnLongClickListener() {
+		imgPostBac.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {
@@ -195,7 +187,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtDirectory.setOnClickListener(new OnClickListener() {
+		imgDirectory.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -204,7 +196,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtDirectory.setOnLongClickListener(new OnLongClickListener() {
+		imgDirectory.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {
@@ -216,7 +208,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 
-		imgBtCompanyPartnership.setOnClickListener(new OnClickListener() {
+		imgCompanyPartnership.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -225,7 +217,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtCompanyPartnership
+		imgCompanyPartnership
 				.setOnLongClickListener(new OnLongClickListener() {
 
 					@Override
@@ -238,7 +230,7 @@ public class IconMenuFragment extends Fragment {
 					}
 				});
 
-		imgBtTwitter.setOnClickListener(new OnClickListener() {
+		imgTwitter.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -247,7 +239,7 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgBtTwitter.setOnLongClickListener(new OnLongClickListener() {
+		imgTwitter.setOnLongClickListener(new OnLongClickListener() {
 
 			@Override
 			public boolean onLongClick(View v) {

@@ -83,46 +83,56 @@
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal" >
 
-                    
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtIutWindow"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_iut_window" />
+                        <ImageView
+                            android:id="@+id/imgIutWindow"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/logo_iut_window" />
+                    </LinearLayout>
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgGrades"
-                android:layout_width="0dip"
-                android:layout_height="80dp"
-                android:layout_weight="0.3"
-                android:src="@drawable/logo_grades" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtGrades"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_grades" />
+                        <ImageView
+                            android:id="@+id/imgGrades"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/logo_grades" />
+                    </LinearLayout>
 
-                    
-                    <ImageButton
-                        android:id="@+id/imgBtCalendar"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_calendar" />
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgCalendar"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/logo_calendar" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -133,61 +143,53 @@
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal" >
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgMap"
-                android:layout_width="0dip"
-                android:layout_height="80dp"
-                android:layout_weight="0.3"
-                android:src="@drawable/logo_map" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtMap"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_map" />
+                        <ImageView
+                            android:id="@+id/imgMap"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:padding="6dp"
+                            android:src="@drawable/logo_maps" />
+                    </LinearLayout>
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgSuaps"
-                android:layout_width="0dip"
-                android:layout_height="80dp"
-                android:layout_weight="0.3"
-                android:src="@drawable/logo_suaps" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtSuaps"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_suaps" />
+                        <ImageView
+                            android:id="@+id/imgSuaps"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_suaps" />
+                    </LinearLayout>
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgPostBac"
-                android:layout_width="0dip"
-                android:layout_height="80dp"
-                android:layout_weight="0.3"
-                android:src="@drawable/logo_post_bac" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtPostBac"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_post_bac" />
+                        <ImageView
+                            android:id="@+id/imgPostBac"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="7dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_post_bac" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -199,60 +201,54 @@
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal" >
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgDirectory"
-                android:layout_width="0dip"
-                android:layout_height="80dp"
-                android:layout_weight="0.21"
-                android:src="@drawable/logo_addressbook" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtDirectory"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_addressbook" />
+                        <ImageView
+                            android:id="@+id/imgDirectory"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_addressbook" />
+                    </LinearLayout>
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgCompanyPartership"
-                android:layout_width="0dip"
-                android:layout_height="80dp"
-                android:layout_weight="0.28"
-                android:src="@drawable/logo_compagny_partnership" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtCompanyPartnership"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_compagny_partnership" />
+                        <ImageView
+                            android:id="@+id/imgCompanyPartership"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_compagny_partnership" />
+                    </LinearLayout>
 
-                    <!--
-                 <ImageView
-                android:id="@+id/imgTwitter"
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_twitter" />
-                    -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
 
-                    <ImageButton
-                        android:id="@+id/imgBtTwitter"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="0.30"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo_twitter" />
+                        <ImageView
+                            android:id="@+id/imgTwitter"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_twitter" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
