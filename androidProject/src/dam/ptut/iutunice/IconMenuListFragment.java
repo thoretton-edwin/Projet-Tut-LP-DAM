@@ -70,8 +70,9 @@ public class IconMenuListFragment extends Fragment implements OnItemClickListene
 	}
 
 	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int positon, long id) {
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		// TODO Auto-generated method stub
+		((MainActivity) getActivity()).itemClick(position);
 		
 	}
 }
