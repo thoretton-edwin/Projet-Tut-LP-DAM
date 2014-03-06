@@ -40,6 +40,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
       
+		[mapText setEditable:NO];
 		itemSelected =nil;
 		data = [[NSMutableArray alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"mapServices" ofType:@"plist"]];
 		
@@ -210,6 +211,8 @@
 	campusSelect.contentMode = UIViewContentModeCenter;
 	campusSelect.backgroundColor=nil;
 	campusSelect.tintColor = [UIColor grayColor];
+	
+	[self drawMap];
 }
 
 -(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id<MKOverlay>)overlay
@@ -249,6 +252,7 @@
 
 -(void) drawMap
 {
+	
 	itemSelected =[campusData objectAtIndex:campusSelect.selectedSegmentIndex];
 	
 	[mapView removeAnnotations:[mapView annotations]];
@@ -309,6 +313,8 @@
 			//[mapView addAnnotation:itemSelected.infos];
 		[mapView removeOverlays:mapView.overlays];
 	}
+	
+	[mapText setEditable:NO];
 
 }
 
