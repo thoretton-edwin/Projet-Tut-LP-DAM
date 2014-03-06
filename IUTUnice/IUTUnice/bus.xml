@@ -31,9 +31,9 @@ and open the template in the editor.
         </ville>
         
         <ville>
-			<nom>Cannes La Bocca</nom>
+			<nom>Cannes la Bocca</nom>
 			<arret>
-			<nom>Villa Arson</nom>
+				<nom>Villa Arson</nom>
                 <ligne>36</ligne>
             </arret>   
         </ville>

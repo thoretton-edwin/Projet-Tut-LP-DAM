@@ -12,6 +12,7 @@
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andCampus:(NSString*)maVille;
+@property (weak, nonatomic) IBOutlet UILabel *campusName;
 
 @property (weak, nonatomic) IBOutlet UITableView *busTableView;
 @property NSMutableArray* tabBus;

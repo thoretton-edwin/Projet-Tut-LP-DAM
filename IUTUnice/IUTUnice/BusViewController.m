@@ -20,6 +20,7 @@
 @synthesize busTableView;
 @synthesize tabBus;
 @synthesize ville;
+@synthesize campusName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andCampus:(NSString*)maVille
 {
@@ -27,16 +28,20 @@
     if (self) {
 	
 		//NSLog(@"init : %@",maVille);
+		self.navigationController.title =@"Lignes de Bus";
+		self.title = @"Lignes de Bus";
 		self.ville=maVille;
         [busTableView reloadData];
     }
     return self;
 }
+/*
 - (IBAction)BackAction:(id)sender
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
 	
 }
+*/
 
 - (void)viewDidLoad
 {
@@ -57,9 +62,7 @@
 							  [xpathParser searchWithXPathQuery:@"//ville"]];
 				
 	
-	NSLog(@"%d",tabBus.count);
-	
-	
+	 tabBus = [[NSMutableArray alloc]init];
 	for (TFHppleElement *station in tab)
     {
 
@@ -67,9 +70,29 @@
 			
 		for (TFHppleElement *child in childrens)
 		{
+			//NSLog(@"%@ - %@",[child text],ville);
 			if([[child text]isEqualToString:ville])
 			{
-			    tabBus = [[NSMutableArray alloc]initWithArray:[station children]];
+				NSArray* tmp = [[NSArray alloc]initWithArray:[station children]];
+				for(TFHppleElement* obj in tmp)
+				{
+					if([obj text]!=nil)
+					{
+						//NSLog(@"%@",[obj tagName]);
+						if([[obj tagName]isEqualToString:@"nom"])
+						{
+							NSMutableString* tmpstr = [[NSMutableString alloc]init];
+							[tmpstr appendString:@"Campus de "];
+							[tmpstr appendString:[obj text]];
+							[campusName setText:tmpstr];
+						}
+						if([[obj tagName]isEqualToString:@"arret"])
+						{
+							[tabBus addObject:obj];
+						}
+						
+					}
+				}
 			}
 			
 		}
@@ -102,6 +125,11 @@
 	return[tabBus count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return 80;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -109,31 +137,38 @@
 	
 	if (cell == nil)
 	{
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 		
 		TFHppleElement *arret = [tabBus objectAtIndex:indexPath.row];
-		[cell.textLabel setText:[arret text]];
-		NSLog(@"cell text :%@",[arret text]);
+		
 		
 		NSMutableString* textLignes=[[NSMutableString alloc]init];
-		NSArray* lignes = [arret children];
+		NSArray* childrens = [arret children];
 		
-		for (TFHppleElement *ligne in lignes)
+		for (TFHppleElement *child in childrens)
 		{
-			if([ligne text]!=nil)
+			
+			if([child text]!=nil&&[[child tagName]isEqualToString:@"nom"])
+			{
+				[cell.textLabel setText:[child text]];
+				//NSLog(@"cell text :%@",[child text]);
+			}
+			
+			if([child text]!=nil&&[[child tagName]isEqualToString:@"ligne"])
 			{
 				[textLignes appendString:@"ligne n° "];
-				[textLignes appendString:[ligne text]];
-				[textLignes appendString:@"\n"];
-				//NSLog(@"ligne: %@",[ligne text]);
+				[textLignes appendString:[child text]];
+				[textLignes appendString:@".  "];
+				//NSLog(@"ligne: %@",[child text]);
 			}
 		}
 		
 		NSLog(@"cell detail\n: %@",textLignes);
 		[cell.detailTextLabel setText:textLignes];
+		cell.detailTextLabel.numberOfLines=4;
 		
-		[[cell textLabel]setFont:[UIFont boldSystemFontOfSize:24]];
-		[[cell detailTextLabel]setFont:[UIFont systemFontOfSize:16]];
+		//[[cell textLabel]setFont:[UIFont boldSystemFontOfSize:24]];
+		//[[cell detailTextLabel]setFont:[UIFont systemFontOfSize:16]];
 
 
     }

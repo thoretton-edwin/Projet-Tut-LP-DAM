@@ -135,13 +135,14 @@
 			break;
 		case 4: // Cannes la Bocca
 			campusSelected =@"Cannes la Bocca";
-			break;
+			break; 	
 	}
 
 	
 	BusViewController *second =
 	[[BusViewController alloc] initWithNibName:@"BusViewController" bundle:nil andCampus:campusSelected];
-	[self presentViewController:second animated:YES completion:nil];
+	[self.navigationController pushViewController:second animated:YES];
+	//[self presentViewController:second animated:YES completion:nil];
 	//[self dismissViewControllerAnimated:YES completion:nil];
 }
 
