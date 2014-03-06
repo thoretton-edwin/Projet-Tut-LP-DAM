@@ -50,7 +50,7 @@ public final class R {
         public static final int action_settings=0x7f080021;
         public static final int flContent=0x7f080000;
         public static final int horizontalScrollView1=0x7f080006;
-        public static final int imageView1=0x7f08001d;
+        public static final int imgArrow=0x7f08001d;
         public static final int imgBtCalendar=0x7f080009;
         public static final int imgBtCompanyPartnership=0x7f08000e;
         public static final int imgBtDirectory=0x7f08000d;
@@ -76,9 +76,9 @@ public final class R {
         public static final int lvMenu=0x7f08001a;
         public static final int scrollView1=0x7f080010;
         public static final int textView1=0x7f080003;
+        public static final int tvMenuItem=0x7f08001c;
         public static final int tvSuapsActuality=0x7f080004;
         public static final int tvTweetsActuality=0x7f080005;
-        public static final int txtMenuItem=0x7f08001c;
         public static final int txtParameterItem=0x7f08001f;
         public static final int vgContent=0x7f080001;
     }
