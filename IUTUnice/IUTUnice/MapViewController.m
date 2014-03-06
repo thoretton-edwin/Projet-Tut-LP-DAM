@@ -33,13 +33,14 @@
 
 @synthesize data;
 @synthesize campusData;
+@synthesize itemSelected;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
       
-		
+		itemSelected =nil;
 		data = [[NSMutableArray alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"mapServices" ofType:@"plist"]];
 		
 		UIBarButtonItem *btn = [[UIBarButtonItem alloc]
@@ -113,13 +114,35 @@
 {
 	NSLog(@"goBus action button");
 	
+	
+	NSString* campusSelected=@"";
+	
+	// on precise le campus dont on veut les lignes de Bus.
+
+	switch(campusSelect.selectedSegmentIndex)
+	{
+		case 0: // Nice
+			campusSelected =@"Nice";
+			break;
+		case 1: //Sophia
+			campusSelected =@"Sophia Antipolis";
+			break;
+		case 2: // Cannes
+			campusSelected =@"Cannes";
+			break;
+		case 3: // Menton
+			campusSelected =@"Menton";
+			break;
+		case 4: // Cannes la Bocca
+			campusSelected =@"Cannes la Bocca";
+			break;
+	}
+
+	
 	BusViewController *second =
-				[[BusViewController alloc] initWithNibName:@"BusViewController" bundle:nil];
+	[[BusViewController alloc] initWithNibName:@"BusViewController" bundle:nil andCampus:campusSelected];
 	[self presentViewController:second animated:YES completion:nil];
-	
-		// in the second view controller add
-	
-	[self dismissViewControllerAnimated:YES completion:nil];
+	//[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -225,7 +248,7 @@
 
 -(void) drawMap
 {
-	Campus* itemSelected =[campusData objectAtIndex:campusSelect.selectedSegmentIndex];
+	itemSelected =[campusData objectAtIndex:campusSelect.selectedSegmentIndex];
 	
 	[mapView removeAnnotations:[mapView annotations]];
 		//NSLog(@"%f", itemSelected.infos.coordinate.latitude);

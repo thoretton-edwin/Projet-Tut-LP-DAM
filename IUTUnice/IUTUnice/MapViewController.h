@@ -37,6 +37,7 @@
 @property (strong,nonatomic) Campus* cannes;
 @property (strong,nonatomic) Campus* menton;
 @property (strong,nonatomic) Campus* bocca;
+@property (strong,nonatomic) Campus* itemSelected ;
 
 
 

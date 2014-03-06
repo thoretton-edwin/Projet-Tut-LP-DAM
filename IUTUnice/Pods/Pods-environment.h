@@ -6,6 +6,12 @@
 // project.
 
 
+// OCBorghettiView
+#define COCOAPODS_POD_AVAILABLE_OCBorghettiView
+#define COCOAPODS_VERSION_MAJOR_OCBorghettiView 0
+#define COCOAPODS_VERSION_MINOR_OCBorghettiView 0
+#define COCOAPODS_VERSION_PATCH_OCBorghettiView 5
+
 // hpple
 #define COCOAPODS_POD_AVAILABLE_hpple
 #define COCOAPODS_VERSION_MAJOR_hpple 0

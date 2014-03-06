@@ -19,11 +19,15 @@
 @implementation BusViewController
 @synthesize busTableView;
 @synthesize tabBus;
+@synthesize ville;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andCampus:(NSString*)maVille
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+	
+		//NSLog(@"init : %@",maVille);
+		self.ville=maVille;
         [busTableView reloadData];
     }
     return self;
@@ -49,43 +53,31 @@
 	
 
 		//Get all the cells main body
-	tabBus = [[NSMutableArray alloc]initWithArray:
+	NSArray* tab = [[NSMutableArray alloc]initWithArray:
 							  [xpathParser searchWithXPathQuery:@"//ville"]];
 				
-	[busTableView reloadData];
+	
 	NSLog(@"%d",tabBus.count);
 	
-	/*
-	for (TFHppleElement *station in tabBus)
-    {
 	
-		NSLog(@"campus %@",[station text]);
-		NSArray* arrets = [station children];
-		NSArray* lignes;
-		
-		for (TFHppleElement *arret in arrets)
+	for (TFHppleElement *station in tab)
+    {
+
+		NSArray* childrens = [station children];
+			
+		for (TFHppleElement *child in childrens)
 		{
-			if([arret text]!=nil)
+			if([[child text]isEqualToString:ville])
 			{
-				NSLog(@"arret: %@",[arret text]);
-				lignes = [arret children];
-				for (TFHppleElement *ligne in lignes)
-				{
-					if([ligne text]!=nil)
-					{
-						NSLog(@"ligne: %@",[ligne text]);
-					}
-				}
+			    tabBus = [[NSMutableArray alloc]initWithArray:[station children]];
 			}
 			
 		}
-		
-		
-
+		[busTableView reloadData];
     }
 	
 	
-*/
+
 
 	
 	
@@ -119,24 +111,31 @@
 	{
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 		
-		TFHppleElement *station = [tabBus objectAtIndex:indexPath.row];
-		[cell.textLabel setText:[station text]];
-		NSLog(@"%@",[station text]);
+		TFHppleElement *arret = [tabBus objectAtIndex:indexPath.row];
+		[cell.textLabel setText:[arret text]];
+		NSLog(@"cell text :%@",[arret text]);
 		
-			// Configure the cell...
-		//cell.textLabel.text = [[tab objectAtIndex:indexPath.row] objectForKey:@"nom"];
-		//cell.backgroundColor = [[tab objectAtIndex:indexPath.row]objectForKey:@"couleur"];
+		NSMutableString* textLignes=[[NSMutableString alloc]init];
+		NSArray* lignes = [arret children];
 		
-		/* other methods of standard cell
-		 [cell.textLabel setText:@"text"];
-		 [cell.detailTextLabel setText:@"text"];
-		 
-		 [[cell textLabel]setFont:[UIFont boldSystemFontOfSize:24]];
-		 [[cell detailTextLabel]setFont:[UIFont systemFontOfSize:16]];
-		 
-		 
-		 We can config the imageView of cell too ...
-		 */
+		for (TFHppleElement *ligne in lignes)
+		{
+			if([ligne text]!=nil)
+			{
+				[textLignes appendString:@"ligne n° "];
+				[textLignes appendString:[ligne text]];
+				[textLignes appendString:@"\n"];
+				//NSLog(@"ligne: %@",[ligne text]);
+			}
+		}
+		
+		NSLog(@"cell detail\n: %@",textLignes);
+		[cell.detailTextLabel setText:textLignes];
+		
+		[[cell textLabel]setFont:[UIFont boldSystemFontOfSize:24]];
+		[[cell detailTextLabel]setFont:[UIFont systemFontOfSize:16]];
+
+
     }
 	
     return cell;

@@ -10,6 +10,10 @@
 
 @interface BusViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,NSXMLParserDelegate>
 
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andCampus:(NSString*)maVille;
+
 @property (weak, nonatomic) IBOutlet UITableView *busTableView;
 @property NSMutableArray* tabBus;
+@property NSString* ville;
 @end
