@@ -10,9 +10,11 @@
 #import "TFHpple.h"
 #import "TFHppleElement.h"
 #import "XPathQuery.h"
+#import "OCBorghettiView.h"
 
-@interface FormationDetailViewController : UIViewController
+@interface FormationDetailViewController : UIViewController <OCBorghettiViewDelegate>
 
 @property NSString* headTitle;
+@property OCBorghettiView *accordion;
 
 @end
