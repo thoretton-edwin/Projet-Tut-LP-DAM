@@ -26,7 +26,7 @@ public class MainActivity extends FragmentActivity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		
 		IconMenuFragment iconMenuFragment = new IconMenuFragment();
-		IconMenuListeFragment iconMenuListeFragment = new IconMenuListeFragment();
+		IconMenuCarouselFragment iconMenuListeFragment = new IconMenuCarouselFragment();
 		
 		int orientation = getResources().getConfiguration().orientation;		
 		if (orientation == 1)//portrait
