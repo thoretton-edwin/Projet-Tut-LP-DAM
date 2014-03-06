@@ -98,6 +98,22 @@ public class ParameterActivity extends FragmentActivity {
 	 * affichant la liste, quand un élément de la liste est cliqué
 	 */
 	void clickItem(int position) {
+		App app = (App) getApplication();
+		ParameterItem parameterItem = app.parameterListe.get(position);
+		switch(parameterItem.image){
+			case R.drawable.connexion:
+				break;
+			case R.drawable.wifi:
+				break;
+			case R.drawable.apropos:
+				break;
+			case R.drawable.sondage:
+				break;
+			case R.drawable.flag:
+				break;
+			case R.drawable.credit:
+				break;
+		}
 //		DetailFragment detailFragment = new DetailFragment();
 //		Bundle args = new Bundle(1);
 //		args.putInt(DetailFragment.POSITION, position);
