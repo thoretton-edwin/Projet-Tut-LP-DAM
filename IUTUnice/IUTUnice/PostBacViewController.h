@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OCBorghettiView.h"
 
-@interface PostBacViewController : UIViewController
+@interface PostBacViewController : UIViewController <OCBorghettiViewDelegate>
 
 
 
