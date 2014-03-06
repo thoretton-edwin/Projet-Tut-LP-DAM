@@ -16,3 +16,4 @@ C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\obj\Debu
 C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\obj\Debug\IUTUNice.dll
 C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\obj\Debug\IUTUNice.pdb
 C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\obj\Debug\XapCacheFile.xml
+C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\Properties\WMAppManifest.xml

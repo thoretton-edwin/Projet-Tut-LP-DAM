@@ -14,11 +14,15 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Icones/app_background.png"/>
+        </Grid.Background>
 
         <!-- REMARQUE CONCERNANT LA LOCALISATION :
             Pour localiser les chaînes affichées, copiez leurs valeurs dans les clés correctes
@@ -37,17 +41,67 @@
             chaînes d'interface utilisateur. La liaison dans ces exemples peut entraîner le retrait de la valeur des
             attributs du fichier .resx qui correspond à la valeur
             CurrentUICulture de l'application au moment de l'exécution.
+        
+        <Grid.Background>
+        <ImageBrush ImageSource="//icones/app_background.png" Stretch="UniformToFill" />
+    </Grid.Background>
          -->
 
         <!--TitlePanel contient le nom de l'application et le titre de la page-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MON APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="nom de la page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="IUT Unice" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="Accueil" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0" RenderTransformOrigin="0.5,0.474">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="231" Width="456" Foreground="#FFF0F0F0"/>
 
+            <Button HorizontalAlignment="Left" Margin="304,474,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/twitter.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" ></Image>
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="170,481,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="123" Height="119">
+                <StackPanel>
+                    <Image Source="/Icones/manager.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="10,474,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/address.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="304,231,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/calendar.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="162,231,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/notes.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/library.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/map.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="162,348,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/sports.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                </StackPanel>
+            </Button>
+            <Button HorizontalAlignment="Left" Margin="309,348,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="{x:Null}" Width="142" Height="133">
+                <StackPanel>
+                    <Image Source="/Icones/iut.png" Stretch="Fill" Height="70" Width="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                </StackPanel>
+            </Button>
         </Grid>
 
         <!--Supprimez les commentaires pour voir une grille d'alignement qui vous aidera à vous assurer que vos contrôles sont
@@ -58,5 +112,6 @@
             Avant l'envoi, supprimez ce XAML et l'image proprement dite.-->
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
     </Grid>
+
 
 </phone:PhoneApplicationPage>

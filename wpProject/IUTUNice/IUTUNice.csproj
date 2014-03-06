@@ -140,6 +140,16 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Icones\address.png" />
+    <Content Include="Icones\app_background.png" />
+    <Content Include="Icones\calendar.png" />
+    <Content Include="Icones\iut.png" />
+    <Content Include="Icones\library.png" />
+    <Content Include="Icones\manager.png" />
+    <Content Include="Icones\map.png" />
+    <Content Include="Icones\notes.png" />
+    <Content Include="Icones\sports.png" />
+    <Content Include="Icones\twitter.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
@@ -147,6 +157,7 @@
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
