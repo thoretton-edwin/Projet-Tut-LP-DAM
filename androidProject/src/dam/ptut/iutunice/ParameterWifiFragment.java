@@ -1,22 +1,26 @@
 package dam.ptut.iutunice;
 
-
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-
-/**
- * Affiche le détail d'un élément
- */
-public class ParameterWifiFragment extends Fragment implements View.OnClickListener {
+public class ParameterWifiFragment extends Fragment {
 
 	@Override
-	public void onClick(View arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 
+		View content = inflater.inflate(R.layout.fragment_wifi, container,
+				false);
+
+		//ajouter élément sur la vue
+		//...
+		
+		return content;
+	}
 
 
 }

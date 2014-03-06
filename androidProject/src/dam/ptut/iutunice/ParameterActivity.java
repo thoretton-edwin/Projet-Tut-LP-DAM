@@ -104,6 +104,13 @@ public class ParameterActivity extends FragmentActivity {
 			case R.drawable.connexion:
 				break;
 			case R.drawable.wifi:
+				ParameterWifiFragment wifiFragment = new ParameterWifiFragment();
+				getSupportFragmentManager()
+					.beginTransaction()
+					.setCustomAnimations(R.anim.in_from_right, R.anim.out_to_left,
+						R.anim.in_details, R.anim.out_list)
+				.replace(R.id.vgContent, wifiFragment).addToBackStack(null)
+				.commit();
 				break;
 			case R.drawable.apropos:
 				break;
@@ -114,15 +121,5 @@ public class ParameterActivity extends FragmentActivity {
 			case R.drawable.credit:
 				break;
 		}
-//		DetailFragment detailFragment = new DetailFragment();
-//		Bundle args = new Bundle(1);
-//		args.putInt(DetailFragment.POSITION, position);
-//		detailFragment.setArguments(args);
-//		getSupportFragmentManager()
-//				.beginTransaction()
-//				.setCustomAnimations(R.anim.in_from_right, R.anim.out_to_left,
-//						R.anim.in_from_left, R.anim.out_to_right)
-//				.replace(R.id.vgContent, detailFragment).addToBackStack(null)
-//				.commit();
 	}
 }
