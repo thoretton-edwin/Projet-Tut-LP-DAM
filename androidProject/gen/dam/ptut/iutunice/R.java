@@ -36,23 +36,25 @@ public final class R {
         public static final int ic_action_search=0x7f020006;
         public static final int ic_action_settings=0x7f020007;
         public static final int ic_action_view_as_list=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int logo_addressbook=0x7f02000a;
-        public static final int logo_bg=0x7f02000b;
-        public static final int logo_calendar=0x7f02000c;
-        public static final int logo_compagny_partnership=0x7f02000d;
-        public static final int logo_grades=0x7f02000e;
-        public static final int logo_iut_window=0x7f02000f;
-        public static final int logo_map=0x7f020010;
-        public static final int logo_maps=0x7f020011;
-        public static final int logo_post_bac=0x7f020012;
-        public static final int logo_suaps=0x7f020013;
-        public static final int logo_twitter=0x7f020014;
-        public static final int sondage=0x7f020015;
-        public static final int wifi=0x7f020016;
+        public static final int ic_icons=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int logo_addressbook=0x7f02000b;
+        public static final int logo_bg=0x7f02000c;
+        public static final int logo_calendar=0x7f02000d;
+        public static final int logo_compagny_partnership=0x7f02000e;
+        public static final int logo_grades=0x7f02000f;
+        public static final int logo_iut_window=0x7f020010;
+        public static final int logo_map=0x7f020011;
+        public static final int logo_maps=0x7f020012;
+        public static final int logo_post_bac=0x7f020013;
+        public static final int logo_suaps=0x7f020014;
+        public static final int logo_twitter=0x7f020015;
+        public static final int sondage=0x7f020016;
+        public static final int wifi=0x7f020017;
     }
     public static final class id {
-        public static final int action_list=0x7f090023;
+        public static final int action_icon=0x7f090023;
+        public static final int action_list=0x7f090024;
         public static final int action_settings=0x7f090022;
         public static final int flContent=0x7f090000;
         public static final int horizontalScrollView1=0x7f090007;
@@ -102,12 +104,13 @@ public final class R {
     }
     public static final class menu {
         public static final int icon_menu=0x7f080000;
-        public static final int icon_menu_list_framgment=0x7f080001;
-        public static final int icon_menu_liste=0x7f080002;
+        public static final int icon_menu_carousel=0x7f080001;
+        public static final int icon_menu_list_fragment=0x7f080002;
         public static final int main=0x7f080003;
         public static final int parameter=0x7f080004;
     }
     public static final class string {
+        public static final int action_icon=0x7f060009;
         public static final int action_list=0x7f060003;
         public static final int action_search=0x7f060002;
         public static final int action_settings=0x7f060001;

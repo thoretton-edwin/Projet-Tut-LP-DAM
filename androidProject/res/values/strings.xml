@@ -10,5 +10,6 @@
     <string name="title_activity_parameter">Paramètres</string>
     <string name="title_activity_icon_menu_liste_fragment">IconMenuListeFragment</string>
     <string name="title_activity_icon_menu_list_framgment">IconMenuListFramgment</string>
+    <string name="action_icon">Switch to icon</string>
 
 </resources>
