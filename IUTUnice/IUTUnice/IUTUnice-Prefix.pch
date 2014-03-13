@@ -16,7 +16,5 @@
     #import "OCBorghettiView.h"
     #import "TFHpple.h"
     #import "TFHppleElement.h"
-	#import "MACalendarUI/MADayView.h"
-	#import "MACalendarUI/MAWeekView.h"
-	#import "MACalendarUI/MAGridView.h"
+
 #endif
