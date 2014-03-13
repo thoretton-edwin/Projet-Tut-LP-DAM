@@ -1,6 +1,7 @@
 package dam.ptut.iutunice;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.Gravity;
@@ -235,7 +236,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				Intent i = new Intent(getActivity().getApplicationContext(), TwitterActivity.class);
+				startActivity(i);
 			}
 		});
 		// Affichage msg quand long click

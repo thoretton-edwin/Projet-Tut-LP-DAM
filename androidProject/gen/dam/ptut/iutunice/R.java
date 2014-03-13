@@ -53,62 +53,64 @@ public final class R {
         public static final int wifi=0x7f020017;
     }
     public static final class id {
-        public static final int action_icon=0x7f09002a;
-        public static final int action_list=0x7f09002b;
-        public static final int action_settings=0x7f090029;
+        public static final int action_icon=0x7f09002b;
+        public static final int action_list=0x7f09002c;
+        public static final int action_settings=0x7f09002a;
         public static final int flContent=0x7f090000;
-        public static final int horizontalScrollView1=0x7f090009;
-        public static final int imageView1=0x7f090003;
-        public static final int imgArrow=0x7f090020;
-        public static final int imgBtCalendar=0x7f09000c;
-        public static final int imgBtCompanyPartnership=0x7f090011;
-        public static final int imgBtDirectory=0x7f090010;
-        public static final int imgBtGrades=0x7f09000b;
-        public static final int imgBtIutWindow=0x7f09000a;
-        public static final int imgBtMap=0x7f09000d;
-        public static final int imgBtPostBac=0x7f09000f;
-        public static final int imgBtSuaps=0x7f09000e;
-        public static final int imgBtTwitter=0x7f090012;
-        public static final int imgCalendar=0x7f090016;
-        public static final int imgCompanyPartership=0x7f09001b;
-        public static final int imgDirectory=0x7f09001a;
-        public static final int imgGrades=0x7f090015;
-        public static final int imgIutWindow=0x7f090014;
-        public static final int imgMap=0x7f090017;
-        public static final int imgMenuItem=0x7f09001e;
-        public static final int imgParameterArrow=0x7f090023;
-        public static final int imgParameterItem=0x7f090021;
-        public static final int imgPostBac=0x7f090019;
-        public static final int imgSuaps=0x7f090018;
-        public static final int imgTwitter=0x7f09001c;
-        public static final int listViewParameter=0x7f090002;
-        public static final int listViewWifi=0x7f090005;
-        public static final int lvMenu=0x7f09001d;
-        public static final int progressBarWifi=0x7f090004;
-        public static final int scrollView1=0x7f090013;
-        public static final int textView1=0x7f090006;
-        public static final int tvMenuItem=0x7f09001f;
-        public static final int tvSuapsActuality=0x7f090007;
-        public static final int tvTweetsActuality=0x7f090008;
-        public static final int txtClef=0x7f090026;
-        public static final int txtLogin=0x7f090027;
-        public static final int txtMdp=0x7f090028;
-        public static final int txtParameterItem=0x7f090022;
-        public static final int txtSite=0x7f090024;
-        public static final int txtSsid=0x7f090025;
+        public static final int horizontalScrollView1=0x7f09000a;
+        public static final int imageView1=0x7f090004;
+        public static final int imgArrow=0x7f090021;
+        public static final int imgBtCalendar=0x7f09000d;
+        public static final int imgBtCompanyPartnership=0x7f090012;
+        public static final int imgBtDirectory=0x7f090011;
+        public static final int imgBtGrades=0x7f09000c;
+        public static final int imgBtIutWindow=0x7f09000b;
+        public static final int imgBtMap=0x7f09000e;
+        public static final int imgBtPostBac=0x7f090010;
+        public static final int imgBtSuaps=0x7f09000f;
+        public static final int imgBtTwitter=0x7f090013;
+        public static final int imgCalendar=0x7f090017;
+        public static final int imgCompanyPartership=0x7f09001c;
+        public static final int imgDirectory=0x7f09001b;
+        public static final int imgGrades=0x7f090016;
+        public static final int imgIutWindow=0x7f090015;
+        public static final int imgMap=0x7f090018;
+        public static final int imgMenuItem=0x7f09001f;
+        public static final int imgParameterArrow=0x7f090024;
+        public static final int imgParameterItem=0x7f090022;
+        public static final int imgPostBac=0x7f09001a;
+        public static final int imgSuaps=0x7f090019;
+        public static final int imgTwitter=0x7f09001d;
+        public static final int listViewParameter=0x7f090003;
+        public static final int listViewWifi=0x7f090006;
+        public static final int lvMenu=0x7f09001e;
+        public static final int progressBarWifi=0x7f090005;
+        public static final int scrollView1=0x7f090014;
+        public static final int textView1=0x7f090007;
+        public static final int tvMenuItem=0x7f090020;
+        public static final int tvSuapsActuality=0x7f090008;
+        public static final int tvTweetsActuality=0x7f090009;
+        public static final int txtClef=0x7f090027;
+        public static final int txtLogin=0x7f090028;
+        public static final int txtMdp=0x7f090029;
+        public static final int txtParameterItem=0x7f090023;
+        public static final int txtSite=0x7f090025;
+        public static final int txtSsid=0x7f090026;
         public static final int vgContent=0x7f090001;
+        public static final int webViewTwitter=0x7f090002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_parameter=0x7f030001;
-        public static final int fragment_item_parameter=0x7f030002;
-        public static final int fragment_wifi=0x7f030003;
-        public static final int icon_menu_carousel_fragment=0x7f030004;
-        public static final int icon_menu_fragment=0x7f030005;
-        public static final int icon_menu_list_fragment=0x7f030006;
-        public static final int item_list_menu=0x7f030007;
-        public static final int item_list_parameter=0x7f030008;
-        public static final int item_list_wifi=0x7f030009;
+        public static final int activity_twitter=0x7f030002;
+        public static final int fragment_item_parameter=0x7f030003;
+        public static final int fragment_wifi=0x7f030004;
+        public static final int icon_menu_carousel_fragment=0x7f030005;
+        public static final int icon_menu_fragment=0x7f030006;
+        public static final int icon_menu_list_fragment=0x7f030007;
+        public static final int item_list_menu=0x7f030008;
+        public static final int item_list_parameter=0x7f030009;
+        public static final int item_list_wifi=0x7f03000a;
     }
     public static final class menu {
         public static final int icon_menu=0x7f080000;
@@ -116,6 +118,7 @@ public final class R {
         public static final int icon_menu_list_fragment=0x7f080002;
         public static final int main=0x7f080003;
         public static final int parameter=0x7f080004;
+        public static final int twitter=0x7f080005;
     }
     public static final class string {
         public static final int action_icon=0x7f060009;
@@ -128,6 +131,7 @@ public final class R {
         public static final int title_activity_icon_menu_list_framgment=0x7f060008;
         public static final int title_activity_icon_menu_liste_fragment=0x7f060007;
         public static final int title_activity_parameter=0x7f060006;
+        public static final int title_activity_twitter=0x7f06000a;
     }
     public static final class style {
         /** 

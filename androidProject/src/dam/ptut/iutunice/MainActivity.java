@@ -155,6 +155,8 @@ public class MainActivity extends FragmentActivity {
 		case R.drawable.logo_compagny_partnership:
 			break;
 		case R.drawable.logo_twitter:
+			Intent i = new Intent(this, TwitterActivity.class);
+			startActivity(i);
 			break;
 		}
 	}

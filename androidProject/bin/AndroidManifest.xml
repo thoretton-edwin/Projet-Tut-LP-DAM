@@ -51,6 +51,10 @@
             android:name="dam.ptut.iutunice.IconMenuListFragment"
             android:label="@string/title_activity_icon_menu_list_framgment" >
         </activity>
+        <activity
+            android:name="dam.ptut.iutunice.TwitterActivity"
+            android:label="@string/title_activity_twitter" >
+        </activity>
     </application>
 
 </manifest>
