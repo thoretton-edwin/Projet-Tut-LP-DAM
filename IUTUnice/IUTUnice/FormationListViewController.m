@@ -163,7 +163,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     FormationDetailViewController *anotherViewController=[[FormationDetailViewController alloc]   initWithNibName:@"FormationDetailViewController" bundle:nil];
-    anotherViewController.headTitle = [[_mFormationArray objectAtIndex: indexPath.row] getBody];
+    anotherViewController.htmlBody = [[_mFormationArray objectAtIndex: indexPath.row] getBody];
     [self.navigationController pushViewController:anotherViewController animated:YES];
     
 }
