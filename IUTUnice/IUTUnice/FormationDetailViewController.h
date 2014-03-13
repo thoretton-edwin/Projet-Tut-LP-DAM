@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TFHpple.h"
-#import "TFHppleElement.h"
-#import "XPathQuery.h"
-#import "OCBorghettiView.h"
 
-@interface FormationDetailViewController : UIViewController <OCBorghettiViewDelegate>
+@interface FormationDetailViewController : UIViewController <UIWebViewDelegate>
 
-@property NSString* headTitle;
-@property OCBorghettiView *accordion;
+@property NSString* htmlBody;
+@property UIWebView* webView;
 
 @end
