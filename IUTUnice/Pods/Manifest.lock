@@ -1,13 +1,16 @@
 PODS:
   - hpple (0.2.0)
+  - MACalendarUI (1.0.0)
   - OCBorghettiView (0.0.5)
 
 DEPENDENCIES:
   - hpple
+  - MACalendarUI
   - OCBorghettiView
 
 SPEC CHECKSUMS:
   hpple: dde62f905f482bbec50186280d1a1be2c881241b
+  MACalendarUI: 0faba279a7cef8361afcaba32d13aef4827b84d0
   OCBorghettiView: 908b35fc500f63155a93353ffe4e7b34a0030188
 
 COCOAPODS: 0.29.0

@@ -6,6 +6,12 @@
 // project.
 
 
+// MACalendarUI
+#define COCOAPODS_POD_AVAILABLE_MACalendarUI
+#define COCOAPODS_VERSION_MAJOR_MACalendarUI 1
+#define COCOAPODS_VERSION_MINOR_MACalendarUI 0
+#define COCOAPODS_VERSION_PATCH_MACalendarUI 0
+
 // OCBorghettiView
 #define COCOAPODS_POD_AVAILABLE_OCBorghettiView
 #define COCOAPODS_VERSION_MAJOR_OCBorghettiView 0
