@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
+		430BAD6D18D1B82F000EA59B /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD6C18D1B82F000EA59B /* WeekViewController.m */; };
+		430BAD7018D1B839000EA59B /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD6F18D1B839000EA59B /* DayViewController.m */; };
+		430BAD7218D1C5BB000EA59B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
@@ -28,8 +31,6 @@
 		43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */; };
 		43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */; };
 		43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */; };
-		43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD5418AE3094004F709B /* EDTViewController.m */; };
-		43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD5518AE3094004F709B /* EDTViewController.xib */; };
 		92138DB6189260B1000488BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB5189260B1000488BC /* Foundation.framework */; };
 		92138DB8189260B1000488BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB7189260B1000488BC /* CoreGraphics.framework */; };
 		92138DBA189260B1000488BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB9189260B1000488BC /* UIKit.framework */; };
@@ -49,7 +50,6 @@
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
 		9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */; };
 		9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */; };
-		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
 		929E0167189BA45900694030 /* 1383836131_Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0152189BA45900694030 /* 1383836131_Library.png */; };
@@ -83,6 +83,11 @@
 
 /* Begin PBXFileReference section */
 		1C52802A03B34C639CF2F6D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		430BAD6B18D1B82F000EA59B /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
+		430BAD6C18D1B82F000EA59B /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
+		430BAD6E18D1B839000EA59B /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		430BAD6F18D1B839000EA59B /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
@@ -112,9 +117,6 @@
 		43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
 		43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
 		43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
-		43E6FD5318AE3094004F709B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
-		43E6FD5418AE3094004F709B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
-		43E6FD5518AE3094004F709B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
 		7F25446731F043D681901659 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92138DB2189260B1000488BC /* IUTUnice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUTUnice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92138DB5189260B1000488BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,7 +144,6 @@
 		9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationListViewController.m; sourceTree = "<group>"; };
 		9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationListViewController.xib; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		929E0151189BA45900694030 /* 1383836124_college_3D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836124_college_3D.png; sourceTree = "<group>"; };
 		929E0152189BA45900694030 /* 1383836131_Library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836131_Library.png; sourceTree = "<group>"; };
@@ -273,9 +274,10 @@
 		43E6FD5218AE3086004F709B /* EDT */ = {
 			isa = PBXGroup;
 			children = (
-				43E6FD5318AE3094004F709B /* EDTViewController.h */,
-				43E6FD5418AE3094004F709B /* EDTViewController.m */,
-				43E6FD5518AE3094004F709B /* EDTViewController.xib */,
+				430BAD6B18D1B82F000EA59B /* WeekViewController.h */,
+				430BAD6C18D1B82F000EA59B /* WeekViewController.m */,
+				430BAD6E18D1B839000EA59B /* DayViewController.h */,
+				430BAD6F18D1B839000EA59B /* DayViewController.m */,
 			);
 			name = EDT;
 			sourceTree = "<group>";
@@ -371,7 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				929E0146189B9BC900694030 /* MainMenuViewController.h */,
-				929E0147189B9BC900694030 /* MainMenuViewController.m */,
+				430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */,
 				929E0148189B9BC900694030 /* MainMenuViewController.xib */,
 			);
 			name = MainPage;
@@ -526,7 +528,6 @@
 				92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
 				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
-				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
 				929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
@@ -589,16 +590,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430BAD6D18D1B82F000EA59B /* WeekViewController.m in Sources */,
 				43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
+				430BAD7218D1C5BB000EA59B /* MainMenuViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
-				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
-				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
@@ -607,6 +608,7 @@
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
+				430BAD7018D1B839000EA59B /* DayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
