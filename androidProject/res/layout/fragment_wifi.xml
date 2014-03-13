@@ -31,6 +31,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/txtLoadingWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chargement des données depuis internet..."
+        android:textSize="20sp" />
+
     <ListView
         android:id="@+id/listViewWifi"
         android:layout_width="match_parent"
