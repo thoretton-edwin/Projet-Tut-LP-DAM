@@ -15,9 +15,8 @@
 #import "NotesViewController.h"
 #import "PostBacViewController.h"
 #import "MapViewController.h"
-#import "EDTTabViewController.h"
-#import "DayViewController.h"
-#import "WeekViewController.h"
+#import "EDTViewController.h"
+
 
 @interface MainMenuViewController : UIViewController
 {

@@ -186,26 +186,9 @@
         {
 				// Set vertical effect
 			iconView4.backgroundColor = [UIColor grayColor];
-			
-			UITabBarController *EDTTabBar =[[UITabBarController alloc]init];
-			WeekViewController* weekView =[[WeekViewController alloc]init];
-			DayViewController* dayView= [[DayViewController alloc]init];
-			
-			NSLog(@"View did load...");
-			EDTTabBar.viewControllers =[NSArray arrayWithObjects: weekView, dayView, nil];
-			EDTTabBar.selectedIndex=0;
-			
-			UITabBarItem *item1 = [[UITabBarItem alloc]initWithTitle:@"Semaine" image:nil tag:0];
-			UITabBarItem *item2 = [[UITabBarItem alloc]initWithTitle:@"Jour" image:nil tag:0];
-			
-			
-			[weekView setTabBarItem:item1];
-			[dayView setTabBarItem:item2];
-			
-			
-			NSLog(@"EDT View controller");
-            //EDTTabViewController *viewController = [[EDTTabViewController alloc] init];
-            [self.navigationController pushViewController:EDTTabBar animated:YES];
+		
+            EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
 			
         }
             break;

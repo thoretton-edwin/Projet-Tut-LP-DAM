@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
-		430BAD6D18D1B82F000EA59B /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD6C18D1B82F000EA59B /* WeekViewController.m */; };
-		430BAD7018D1B839000EA59B /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD6F18D1B839000EA59B /* DayViewController.m */; };
 		430BAD7218D1C5BB000EA59B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */; };
+		430BAD7618D1D141000EA59B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD7418D1D141000EA59B /* EDTViewController.m */; };
+		430BAD7718D1D141000EA59B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430BAD7518D1D141000EA59B /* EDTViewController.xib */; };
+		430BAD7918D1D2C9000EA59B /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430BAD7818D1D2C8000EA59B /* EventKit.framework */; };
+		430BAD7B18D1D36B000EA59B /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430BAD7A18D1D36B000EA59B /* EventKitUI.framework */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
@@ -83,11 +85,12 @@
 
 /* Begin PBXFileReference section */
 		1C52802A03B34C639CF2F6D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		430BAD6B18D1B82F000EA59B /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
-		430BAD6C18D1B82F000EA59B /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
-		430BAD6E18D1B839000EA59B /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
-		430BAD6F18D1B839000EA59B /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
 		430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		430BAD7318D1D141000EA59B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
+		430BAD7418D1D141000EA59B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
+		430BAD7518D1D141000EA59B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
+		430BAD7818D1D2C8000EA59B /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		430BAD7A18D1D36B000EA59B /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430BAD7B18D1D36B000EA59B /* EventKitUI.framework in Frameworks */,
+				430BAD7918D1D2C9000EA59B /* EventKit.framework in Frameworks */,
 				4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */,
 				92138DB8189260B1000488BC /* CoreGraphics.framework in Frameworks */,
 				92138DBA189260B1000488BC /* UIKit.framework in Frameworks */,
@@ -274,10 +279,9 @@
 		43E6FD5218AE3086004F709B /* EDT */ = {
 			isa = PBXGroup;
 			children = (
-				430BAD6B18D1B82F000EA59B /* WeekViewController.h */,
-				430BAD6C18D1B82F000EA59B /* WeekViewController.m */,
-				430BAD6E18D1B839000EA59B /* DayViewController.h */,
-				430BAD6F18D1B839000EA59B /* DayViewController.m */,
+				430BAD7318D1D141000EA59B /* EDTViewController.h */,
+				430BAD7418D1D141000EA59B /* EDTViewController.m */,
+				430BAD7518D1D141000EA59B /* EDTViewController.xib */,
 			);
 			name = EDT;
 			sourceTree = "<group>";
@@ -305,6 +309,8 @@
 		92138DB4189260B1000488BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				430BAD7A18D1D36B000EA59B /* EventKitUI.framework */,
+				430BAD7818D1D2C8000EA59B /* EventKit.framework */,
 				4368CA9618B5FF8C008C7ACD /* MapKit.framework */,
 				92138DB5189260B1000488BC /* Foundation.framework */,
 				92138DB7189260B1000488BC /* CoreGraphics.framework */,
@@ -508,6 +514,7 @@
 			files = (
 				92A53D3418AD0BCD0047DA1E /* IUT NICE.JPG in Resources */,
 				929E0167189BA45900694030 /* 1383836131_Library.png in Resources */,
+				430BAD7718D1D141000EA59B /* EDTViewController.xib in Resources */,
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
@@ -590,7 +597,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430BAD6D18D1B82F000EA59B /* WeekViewController.m in Sources */,
 				43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
@@ -601,6 +607,7 @@
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
+				430BAD7618D1D141000EA59B /* EDTViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
 				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
@@ -608,7 +615,6 @@
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
-				430BAD7018D1B839000EA59B /* DayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,10 +736,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IUTUnice/IUTUnice-Prefix.pch";
 				INFOPLIST_FILE = "IUTUnice/IUTUnice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -744,10 +752,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IUTUnice/IUTUnice-Prefix.pch";
 				INFOPLIST_FILE = "IUTUnice/IUTUnice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
