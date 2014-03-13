@@ -53,9 +53,9 @@ public final class R {
         public static final int wifi=0x7f020017;
     }
     public static final class id {
-        public static final int action_icon=0x7f09002e;
-        public static final int action_list=0x7f09002f;
-        public static final int action_settings=0x7f09002d;
+        public static final int action_icon=0x7f09002d;
+        public static final int action_list=0x7f09002e;
+        public static final int action_settings=0x7f09002c;
         public static final int flContent=0x7f090000;
         public static final int horizontalScrollView1=0x7f09000b;
         public static final int imageView1=0x7f090004;
@@ -86,11 +86,10 @@ public final class R {
         public static final int lvMenu=0x7f09001f;
         public static final int progressBarWifi=0x7f090005;
         public static final int scrollView1=0x7f090015;
-        public static final int textView1=0x7f09002c;
+        public static final int textView1=0x7f090008;
         public static final int tvMenuItem=0x7f090021;
         public static final int tvSuapsActuality=0x7f090009;
         public static final int tvTweetsActuality=0x7f09000a;
-        public static final int txtCharge=0x7f090008;
         public static final int txtClef=0x7f090029;
         public static final int txtLoadingWifi=0x7f090006;
         public static final int txtLogin=0x7f09002a;

@@ -1,31 +1,36 @@
 package dam.ptut.iutunice;
 
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.view.Menu;
+import android.content.Context;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 public class TwitterActivity extends Activity {
-	
+
 	ProgressDialog chargement;
 	WebView twitter;
+	NetworkInfo networkInfo;
 
-	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_twitter);
-		
+
 		chargement = new ProgressDialog(TwitterActivity.this);
 		chargement.setMessage("Chargement de la page...");
-		chargement.setCancelable(false);
+		//chargement.setCancelable(false);
 		chargement.show();
-		
+
+		// Connexion Internet en cours ou non
+		ConnectivityManager connect = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		networkInfo = connect.getActiveNetworkInfo();
+
 		twitter = (WebView) findViewById(R.id.webViewTwitter);
 		String url = "https://twitter.com/Univ_Nice";
 		twitter.getSettings().setLoadsImagesAutomatically(true);
@@ -34,16 +39,17 @@ public class TwitterActivity extends Activity {
 		twitter.loadUrl(url);
 		twitter.setWebViewClient(new WebViewClient() {
 
-			   public void onPageFinished(WebView view, String url) {   
-				   if (view.isDirty())
-					   chargement.dismiss();
-			    }
-			});
-	}
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.twitter, menu);
-		return true;
+			public void onPageFinished(WebView view, String url) {
+				if (networkInfo != null && networkInfo.isConnected()) {
+					if (view.isDirty())
+						chargement.dismiss();
+				} else {
+					Toast.makeText(getApplicationContext(),
+							"Vous n'êtes pas connecté à Internet",
+							Toast.LENGTH_LONG).show();
+					finish();
+				}
+			}
+		});
 	}
 }
