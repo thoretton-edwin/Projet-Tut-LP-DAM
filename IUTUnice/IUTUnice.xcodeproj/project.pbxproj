@@ -11,6 +11,8 @@
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
+		435FCA3718D30787006156EC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3618D30787006156EC /* Note.m */; };
+		435FCA3A18D3087F006156EC /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3918D3087F006156EC /* Module.m */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
@@ -87,6 +89,10 @@
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
 		433F27E118C7234D00E87636 /* bus.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bus.xml; sourceTree = "<group>"; };
+		435FCA3518D30787006156EC /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		435FCA3618D30787006156EC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		435FCA3818D3087F006156EC /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		435FCA3918D3087F006156EC /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
@@ -236,6 +242,10 @@
 				43E6FD3718AE2F74004F709B /* NotesViewController.h */,
 				43E6FD3818AE2F74004F709B /* NotesViewController.m */,
 				43E6FD3918AE2F74004F709B /* NotesViewController.xib */,
+				435FCA3518D30787006156EC /* Note.h */,
+				435FCA3618D30787006156EC /* Note.m */,
+				435FCA3818D3087F006156EC /* Module.h */,
+				435FCA3918D3087F006156EC /* Module.m */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -594,6 +604,7 @@
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
+				435FCA3718D30787006156EC /* Note.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
@@ -605,6 +616,7 @@
 				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
+				435FCA3A18D3087F006156EC /* Module.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
