@@ -55,8 +55,9 @@
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    _isInList = NO;
 	
 	cadreViewArray =[[NSMutableArray alloc] init];
 	[cadreViewArray addObject:iconView1];
@@ -129,12 +130,14 @@
     [imageSettings drawInRect:rect];
     UIImage *picture1 = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     NSData *imageData = UIImagePNGRepresentation(picture1);
     UIImage *img=[UIImage imageWithData:imageData];
+    _settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:nil];
+    [self.navigationItem setLeftBarButtonItem:_settings animated:NO];
     
-    UIBarButtonItem* settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:nil];
-    [self.navigationItem setLeftBarButtonItem:settings animated:NO];
+
+    _listMenu = [[UIBarButtonItem alloc] initWithImage:[self createIconForNavigationBarWithImage:@"List_icon.png"] style: UIBarButtonItemStylePlain target:self action:@selector(changeDisplayMode:)];
+    [self.navigationItem setRightBarButtonItem:_listMenu animated:NO];
     
 }
 
@@ -142,6 +145,45 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)changeDisplayMode:(id)sender{
+    if(_isInList == NO){
+        _listViewContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 1, 1)];
+        [_listViewContainer setBackgroundColor: [UIColor redColor]];
+        
+        [UIView animateWithDuration:0.5
+                              delay:0.1
+                            options:UIViewAnimationCurveEaseIn
+                         animations:^{
+                             _listViewContainer.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height);
+                         }
+                         completion:^(BOOL finished){
+                         }];
+        [self.view addSubview: _listViewContainer];
+        
+        
+        [_listMenu setImage:[self createIconForNavigationBarWithImage:@"small_tiles.png"]];
+        _isInList = YES;
+    }
+    else{
+        [_listViewContainer removeFromSuperview];
+        [_listMenu setImage:[self createIconForNavigationBarWithImage:@"List_icon.png"]];
+        _isInList = NO;
+    }
+    
+}
+
+-(UIImage*) createIconForNavigationBarWithImage: (NSString*)imageURI{
+    UIImage* imageMenu = [UIImage imageNamed:imageURI];
+    CGRect rect = CGRectMake(0,0,32,32);
+    UIGraphicsBeginImageContext( rect.size );
+    [imageMenu drawInRect:rect];
+    UIImage *picture = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData *imageData = UIImagePNGRepresentation(picture);
+    UIImage *img=[UIImage imageWithData:imageData];
+    return img;
 }
 
 -(void)singleTapping:(id)sender

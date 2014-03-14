@@ -17,7 +17,7 @@
 #import "MapViewController.h"
 #import "EDTViewController.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
 {
     
     
@@ -36,6 +36,14 @@
 @property NSMutableArray* imagesViewArray;
 @property NSMutableArray* imagesRefArray;
 @property NSMutableArray* cadreViewArray;
+
+@property UIBarButtonItem *settings;
+@property UIBarButtonItem *listMenu;
+
+@property UIView* listViewContainer;
+@property UITableView* menuTableView;
+
+@property BOOL isInList;
 
 
 
