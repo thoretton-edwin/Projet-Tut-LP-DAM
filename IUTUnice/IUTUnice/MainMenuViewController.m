@@ -186,7 +186,7 @@
         {
 				// Set vertical effect
 			iconView4.backgroundColor = [UIColor grayColor];
-			
+		
             EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
 			
