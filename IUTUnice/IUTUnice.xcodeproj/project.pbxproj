@@ -18,6 +18,14 @@
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
+		438A8D4518D2F1770089DB6C /* MatiereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4418D2F1770089DB6C /* MatiereViewController.m */; };
+		438A8D4918D2F1920089DB6C /* DetailNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4718D2F1920089DB6C /* DetailNoteViewController.m */; };
+		438A8D4A18D2F1920089DB6C /* DetailNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438A8D4818D2F1920089DB6C /* DetailNoteViewController.xib */; };
+		438A8D4D18D2F5410089DB6C /* Bulletin.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4C18D2F5410089DB6C /* Bulletin.m */; };
+		438A8D5018D2F5640089DB6C /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4F18D2F5640089DB6C /* Note.m */; };
+		438A8D5318D2F59E0089DB6C /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D5218D2F59E0089DB6C /* UE.m */; };
+		438A8D5618D2F7E80089DB6C /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D5518D2F7E80089DB6C /* Module.m */; };
+		438A8D5918D300290089DB6C /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D5818D300290089DB6C /* Semestre.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
 		43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */; };
@@ -98,6 +106,21 @@
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
+		438A8D4318D2F1770089DB6C /* MatiereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatiereViewController.h; sourceTree = "<group>"; };
+		438A8D4418D2F1770089DB6C /* MatiereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatiereViewController.m; sourceTree = "<group>"; };
+		438A8D4618D2F1920089DB6C /* DetailNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailNoteViewController.h; sourceTree = "<group>"; };
+		438A8D4718D2F1920089DB6C /* DetailNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNoteViewController.m; sourceTree = "<group>"; };
+		438A8D4818D2F1920089DB6C /* DetailNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailNoteViewController.xib; sourceTree = "<group>"; };
+		438A8D4B18D2F5410089DB6C /* Bulletin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bulletin.h; sourceTree = "<group>"; };
+		438A8D4C18D2F5410089DB6C /* Bulletin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bulletin.m; sourceTree = "<group>"; };
+		438A8D4E18D2F5640089DB6C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		438A8D4F18D2F5640089DB6C /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		438A8D5118D2F59E0089DB6C /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
+		438A8D5218D2F59E0089DB6C /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
+		438A8D5418D2F7E80089DB6C /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		438A8D5518D2F7E80089DB6C /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		438A8D5718D300290089DB6C /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
+		438A8D5818D300290089DB6C /* Semestre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semestre.m; sourceTree = "<group>"; };
 		43B9C5F218B75217001A3D75 /* mapServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapServices.plist; sourceTree = "<group>"; };
 		43E6FD2D18AE2F52004F709B /* JobDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDatingViewController.h; sourceTree = "<group>"; };
 		43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDatingViewController.m; sourceTree = "<group>"; };
@@ -242,6 +265,21 @@
 				43E6FD3718AE2F74004F709B /* NotesViewController.h */,
 				43E6FD3818AE2F74004F709B /* NotesViewController.m */,
 				43E6FD3918AE2F74004F709B /* NotesViewController.xib */,
+				438A8D4318D2F1770089DB6C /* MatiereViewController.h */,
+				438A8D4418D2F1770089DB6C /* MatiereViewController.m */,
+				438A8D4618D2F1920089DB6C /* DetailNoteViewController.h */,
+				438A8D4718D2F1920089DB6C /* DetailNoteViewController.m */,
+				438A8D4818D2F1920089DB6C /* DetailNoteViewController.xib */,
+				438A8D4B18D2F5410089DB6C /* Bulletin.h */,
+				438A8D4C18D2F5410089DB6C /* Bulletin.m */,
+				438A8D4E18D2F5640089DB6C /* Note.h */,
+				438A8D4F18D2F5640089DB6C /* Note.m */,
+				438A8D5118D2F59E0089DB6C /* UE.h */,
+				438A8D5218D2F59E0089DB6C /* UE.m */,
+				438A8D5418D2F7E80089DB6C /* Module.h */,
+				438A8D5518D2F7E80089DB6C /* Module.m */,
+				438A8D5718D300290089DB6C /* Semestre.h */,
+				438A8D5818D300290089DB6C /* Semestre.m */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -529,6 +567,7 @@
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
 				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
+				438A8D4A18D2F1920089DB6C /* DetailNoteViewController.xib in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
 				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
@@ -598,13 +637,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */,
+				438A8D4D18D2F5410089DB6C /* Bulletin.m in Sources */,
+				438A8D5918D300290089DB6C /* Semestre.m in Sources */,
+				438A8D4518D2F1770089DB6C /* MatiereViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				430BAD7218D1C5BB000EA59B /* MainMenuViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
+				438A8D5618D2F7E80089DB6C /* Module.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
+				438A8D4918D2F1920089DB6C /* DetailNoteViewController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				430BAD7618D1D141000EA59B /* EDTViewController.m in Sources */,
@@ -613,8 +657,10 @@
 				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
+				438A8D5318D2F59E0089DB6C /* UE.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
+				438A8D5018D2F5640089DB6C /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

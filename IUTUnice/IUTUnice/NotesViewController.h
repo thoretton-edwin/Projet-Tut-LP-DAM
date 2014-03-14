@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Bulletin.h"
 @interface NotesViewController : UIViewController < OCBorghettiViewDelegate,UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray* tab;
