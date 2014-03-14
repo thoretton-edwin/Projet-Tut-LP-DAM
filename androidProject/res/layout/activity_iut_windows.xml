@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".IutWindowsActivity" >
+
+    <ViewFlipper
+        android:id="@+id/myflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_weight="0.4" >
+    </ViewFlipper>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTitleIUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Une organisation originale."
+                android:textColor="#308FED"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rattaché à l&apos;Université, l&apos;Institut Universitaire de Technologie (IUT) constitue une originalité qui fait son succès.
+
+Il allie les enseignements fondamentaux et les disciplines technologiques, il associe les Enseignants-Chercheurs, les Enseignants du second degré et les Intervenants de l&apos;Entreprise, ce qui offre aux étudiants un encadrement rapproché et la fréquentation de l&apos;Entreprise.
+
+Le Diplôme d&apos;Université de Technologie obtenu à l&apos;issue d&apos;un cycle d&apos;enseignement supérieur de 2 ans prépare à des fonctions immédiates, au dépassement de celles-ci par une adaptabilité aux évolutions des techniques, à la poursuite d&apos;études (Diplômes Universitaires Post-DUT, Licences Professionnelles, Ecoles d&apos;ingénieurs, Licences...).
+
+Par ailleurs, l&apos;IUT est engagé dans une coopération internationale diversifée."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTitleIUT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Une organisation structurée."
+                android:textColor="#308FED"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIUT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L&apos;IUT est dirigé par un Directeur, Enseignant de l&apos;Etablissement, élu pour 5 ans par un Conseil de l&apos;Institut composé de personnalités extérieures, de représentants d&apos;Enseignants, de Personnels non enseignants et d&apos;Usagers étudiants.
+
+Le Conseil de l&apos;Institut définit les grandes orientations de l&apos;Etablissement et vote le budget. Le Président du Conseil est issu de l&apos;Entreprise."
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtTitleIUT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Une organisation en réseau."
+                android:textColor="#308FED"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIUT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Les IUT ont été créés en France en 1966 pour répondre aux demandes des milieux professionnels en techniciens supérieurs et cadres intermédiaires ayant une culture générale et une formation technique et scientifique leur permettant d&apos;évoluer dans l&apos;entreprise et de s&apos;adapter aux mutations technologiques.
+
+Les IUT au nombre de 115 actuellement, forment 131.000 étudiants et sont constitués de départements d&apos;enseignement correspondant à 24 spécialités : 16 du secteur secondaire (industriel) et 8 du secteur tertiaire (services). Les programmes sont définis, pour chacune des spécialités, par des Commisions Pédagogiques Nationales (CPN) composées de représentants des entreprises, de salariés, d&apos;enseignants et du Ministère. Pour assurer une meilleure intégration dans le tissu économique régional, ces programmes peuvent être adaptés localement dans la limite de 20% du volume horaire total.
+
+A ce jour, on dénombre environ 600 départements dont les promotions sont comprises entre 50 et 150 étudiants. L&apos;admission en IUT se fait, soit sur dossier avec parfois un entretien, soit par validation des acquis de l&apos;expérience."
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtTitleIUT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Un historique."
+                android:textColor="#308FED"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIUT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L&apos;IUT de Nice a été ouvert le 5 octobre 1970.
+
+Ses directeurs successifs, Jean Moussiegt, Francis Dubus, Xavier Boisselier, Jean Saide, Jean-Louis Cavarero, Jean-Claude Juhel, Robert Chignoli et, depuis juillet 2008, Henri Alexis, contribuent à faire de l&apos;IUT de Nice (rebaptisé IUT Nice-Côte d&apos;Azur en 1996) une des composantes les plus importantes de l&apos;Université de Nice Sophia Antipolis, par son budget et ses effectifs.
+
+Ses dix départements d&apos;enseignement répartis sur cinq sites dans un rayon de 70 kilomètres (Cannes-la-Bocca, Cannes, Menton, Nice, Sophia-Antipolis) délivrent aujourd&apos;hui plus de 30 diplômes nationaux de niveau Bac + 2 : DUT, et Bac + 3 : Licences Professionnelles."
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/txtLorem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed purus id orci vehicula molestie. Phasellus ultrices convallis nisl et bibendum. Proin vestibulum vel purus quis pulvinar. Vivamus imperdiet neque mauris, in bibendum eros blandit vel. Sed libero lectus, vehicula nec ante vel, fringilla cursus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nisl orci, egestas eget ullamcorper a, vestibulum et nulla. Cras ac est ante. Nunc dignissim nibh risus, non vestibulum massa fringilla ut.
+
+Proin eu odio dapibus, venenatis nisi sit amet, varius mauris. Sed vehicula lorem vel dolor pellentesque, vitae placerat magna iaculis. Ut tincidunt turpis vitae dolor molestie dapibus. In velit metus, sollicitudin eu velit sed, vestibulum eleifend magna. Donec sodales sed risus sed rutrum. Nam tempor nisl eu tempus iaculis. Cras posuere mollis quam, vitae rutrum orci commodo volutpat. Vivamus dapibus volutpat enim, nec imperdiet justo semper quis. Etiam ultrices quam libero, sed cursus lacus lobortis eu. Praesent eu risus justo. Ut hendrerit dictum interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum rhoncus molestie.
+
+Aliquam id egestas tortor. Donec molestie tortor nec odio luctus ornare. Nullam ante tortor, elementum ut arcu sit amet, accumsan pellentesque ligula. Praesent gravida lobortis nibh, et pharetra enim commodo id. Quisque ac euismod sapien. Ut venenatis laoreet lorem, non dapibus mi elementum in. Sed id nisl a felis elementum dignissim sit amet quis risus. Donec non fermentum dui, id accumsan mi. Maecenas at lacus sollicitudin, cursus magna ut, molestie arcu. Maecenas vitae lectus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse elementum urna arcu, eget suscipit arcu adipiscing nec. Sed non adipiscing dui. Proin volutpat odio sed lacinia semper. Vivamus porttitor pretium erat nec vestibulum.
+
+Nam sit amet vehicula dolor. Maecenas eu nunc eget nunc pulvinar blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam varius lacus et luctus placerat. Mauris mauris neque, accumsan vel dui quis, ornare sollicitudin odio. Morbi sit amet ante magna. Sed a ante ante. Donec mollis enim ac pharetra tempus. Maecenas molestie, ligula vel iaculis porta, nunc sem dapibus dolor, quis suscipit nibh lectus ac diam. Nullam vitae varius nibh. Nulla vitae accumsan est, non venenatis risus. Curabitur rhoncus gravida convallis. Nam congue sit amet erat ut feugiat. Sed aliquam in ante eleifend aliquam.
+
+Ut et enim eu enim condimentum gravida vitae sit amet ligula. In fringilla elit vitae est sodales sodales. Donec venenatis accumsan nunc, a sodales felis posuere eget. Sed consectetur non enim ut rhoncus. Duis quis mi in orci ullamcorper scelerisque eget at nulla. Ut blandit semper mauris, nec ultrices odio consectetur id. Etiam malesuada vitae quam non adipiscing. Praesent posuere facilisis justo sollicitudin lacinia. Nam tristique fringilla velit sed tristique. Morbi mattis id dolor vel pharetra. "
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+</LinearLayout>

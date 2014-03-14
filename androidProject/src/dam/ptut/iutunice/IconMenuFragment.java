@@ -66,8 +66,9 @@ public class IconMenuFragment extends Fragment {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+				//ouverture page "Vitrine IUT"
+				Intent intent = new Intent(getActivity().getApplicationContext(), IutWindowsActivity.class);
+				startActivity(intent);				
 			}
 		});
 		

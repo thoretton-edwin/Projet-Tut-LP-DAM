@@ -12,5 +12,6 @@
     <string name="title_activity_icon_menu_list_framgment">IconMenuListFramgment</string>
     <string name="action_icon">Switch to icon</string>
     <string name="title_activity_twitter">TwitterActivity</string>
+    <string name="title_activity_iut_windows">IutWindowsActivity</string>
 
 </resources>

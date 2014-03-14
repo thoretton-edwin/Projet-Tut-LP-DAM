@@ -1,0 +1,95 @@
+package dam.ptut.iutunice;
+
+import android.os.Bundle;
+import android.app.ActionBar;
+import android.app.Activity;
+import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
+
+public class IutWindowsActivity extends Activity {
+
+	private ViewFlipper myViewFlipper;
+    int[] image = { R.drawable.iut_menton, R.drawable.iut_menton2,
+        R.drawable.iut_nice, R.drawable.iut_nice2, R.drawable.iut_sophia };
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_iut_windows);
+		
+		this.setTitle("Vitrine IUT");
+		//permet le retour sur la page principale
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+	    
+	    //diapo image
+	    myViewFlipper = (ViewFlipper) findViewById(R.id.myflipper);
+	    for(int i = 0 ; i < image.length ; i++){
+	    	ImageView imageView = new ImageView(IutWindowsActivity.this);
+	        imageView.setImageResource(image[i]);
+	        myViewFlipper.addView(imageView);
+	    }
+	    //animation
+	    myViewFlipper.setInAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.in_from_right));
+	    myViewFlipper.setOutAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.out_to_left));
+	   
+	    //diapo automatique
+	    myViewFlipper.setAutoStart(true);
+	    myViewFlipper.setFlipInterval(5000);
+	    myViewFlipper.startFlipping();
+	    
+	}
+
+	//swipe diapo image
+	/*@Override
+    public boolean onTouchEvent(MotionEvent event) {
+		switch (event.getAction()) {
+			case MotionEvent.ACTION_DOWN:
+				initialXPoint = event.getX();
+				break;
+			case MotionEvent.ACTION_UP:
+				float finalx = event.getX();
+				if (initialXPoint > finalx) {
+					if (myViewFlipper.getDisplayedChild() == image.length)
+						break;
+					myViewFlipper.showNext();
+				} else {
+					if (myViewFlipper.getDisplayedChild() == 0)
+						break;
+					myViewFlipper.showPrevious();
+				}
+				break;
+		}
+		return false;
+    }*/
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.iut_windows, menu);
+		return true;
+	}
+	
+	//désactive sur l'action bar le bouton paramètre
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu){
+		MenuItem item = menu.findItem(R.id.action_settings);
+		item.setVisible(false);
+		return true;
+	}
+	//active sur l'action bar le bouton retour
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	    // Respond to the action bar's Up/Home button
+	    case android.R.id.home:
+	        NavUtils.navigateUpFromSameTask(this);
+	        return true;
+	    }
+	    return super.onOptionsItemSelected(item);
+	}
+
+}

@@ -134,11 +134,14 @@ public class MainActivity extends FragmentActivity {
 		app.iconItemList = list;
 	}
 
+	//ouvre les autres pages depuis le menu en liste
 	void itemClick(int position) {
 		App app = (App) getApplication();
 		IconMenuListItem iconMenuListItem = app.iconItemList.get(position);
 		switch (iconMenuListItem.img) {
 		case R.drawable.logo_iut_window:
+			Intent intent = new Intent(this, IutWindowsActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_grades:
 			break;
