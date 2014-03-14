@@ -70,6 +70,8 @@
 		92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */; };
 		92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */; };
 		92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3718AD0C8F0047DA1E /* menton.jpg */; };
+		92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A5C27218D32F92004982C4 /* SettingsViewController.m */; };
+		92A5C27518D3322B004982C4 /* List_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27418D3322B004982C4 /* List_icon.png */; };
 		92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC9CB018B5FC65001D0E6E /* Formation.m */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +171,9 @@
 		92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT NICE2.JPG"; sourceTree = "<group>"; };
 		92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT SOPHIA.JPG"; sourceTree = "<group>"; };
 		92A53D3718AD0C8F0047DA1E /* menton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menton.jpg; sourceTree = "<group>"; };
+		92A5C27118D32F92004982C4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		92A5C27218D32F92004982C4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		92A5C27418D3322B004982C4 /* List_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = List_icon.png; sourceTree = "<group>"; };
 		92CC9CAF18B5FC65001D0E6E /* Formation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formation.h; sourceTree = "<group>"; };
 		92CC9CB018B5FC65001D0E6E /* Formation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -326,6 +331,7 @@
 		92138DBB189260B1000488BC /* IUTUnice */ = {
 			isa = PBXGroup;
 			children = (
+				92A5C27018D32F34004982C4 /* Settings */,
 				43E6FD5218AE3086004F709B /* EDT */,
 				43E6FD4C18AE305B004F709B /* Annuaire */,
 				43E6FD4618AE2FE7004F709B /* Twitter */,
@@ -390,6 +396,7 @@
 		929E014F189BA45900694030 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				92A5C27418D3322B004982C4 /* List_icon.png */,
 				9257A1A518AE309900CDECF4 /* appBackground.png */,
 				92A53D3718AD0C8F0047DA1E /* menton.jpg */,
 				92A53D2F18AD0BCD0047DA1E /* IUT MENTON195.JPG */,
@@ -434,6 +441,15 @@
 				92A53D2D18AD0B7B0047DA1E /* descriptionIUT.txt */,
 			);
 			name = textfiles;
+			sourceTree = "<group>";
+		};
+		92A5C27018D32F34004982C4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				92A5C27118D32F92004982C4 /* SettingsViewController.h */,
+				92A5C27218D32F92004982C4 /* SettingsViewController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,6 +558,7 @@
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
+				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
 				92138DC0189260B1000488BC /* InfoPlist.strings in Resources */,
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
@@ -605,6 +622,7 @@
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				435FCA3718D30787006156EC /* Note.m in Sources */,
+				92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
