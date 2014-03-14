@@ -8,24 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
-		430BAD7218D1C5BB000EA59B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */; };
-		430BAD7618D1D141000EA59B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430BAD7418D1D141000EA59B /* EDTViewController.m */; };
-		430BAD7718D1D141000EA59B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430BAD7518D1D141000EA59B /* EDTViewController.xib */; };
-		430BAD7918D1D2C9000EA59B /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430BAD7818D1D2C8000EA59B /* EventKit.framework */; };
-		430BAD7B18D1D36B000EA59B /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430BAD7A18D1D36B000EA59B /* EventKitUI.framework */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
-		438A8D4518D2F1770089DB6C /* MatiereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4418D2F1770089DB6C /* MatiereViewController.m */; };
-		438A8D4918D2F1920089DB6C /* DetailNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4718D2F1920089DB6C /* DetailNoteViewController.m */; };
-		438A8D4A18D2F1920089DB6C /* DetailNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438A8D4818D2F1920089DB6C /* DetailNoteViewController.xib */; };
-		438A8D4D18D2F5410089DB6C /* Bulletin.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4C18D2F5410089DB6C /* Bulletin.m */; };
-		438A8D5018D2F5640089DB6C /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D4F18D2F5640089DB6C /* Note.m */; };
-		438A8D5318D2F59E0089DB6C /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D5218D2F59E0089DB6C /* UE.m */; };
-		438A8D5618D2F7E80089DB6C /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D5518D2F7E80089DB6C /* Module.m */; };
-		438A8D5918D300290089DB6C /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A8D5818D300290089DB6C /* Semestre.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
 		43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */; };
@@ -41,6 +28,8 @@
 		43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */; };
 		43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */; };
 		43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */; };
+		43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD5418AE3094004F709B /* EDTViewController.m */; };
+		43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD5518AE3094004F709B /* EDTViewController.xib */; };
 		92138DB6189260B1000488BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB5189260B1000488BC /* Foundation.framework */; };
 		92138DB8189260B1000488BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB7189260B1000488BC /* CoreGraphics.framework */; };
 		92138DBA189260B1000488BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB9189260B1000488BC /* UIKit.framework */; };
@@ -60,6 +49,7 @@
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
 		9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */; };
 		9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */; };
+		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
 		929E0167189BA45900694030 /* 1383836131_Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0152189BA45900694030 /* 1383836131_Library.png */; };
@@ -93,12 +83,6 @@
 
 /* Begin PBXFileReference section */
 		1C52802A03B34C639CF2F6D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		430BAD7318D1D141000EA59B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
-		430BAD7418D1D141000EA59B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
-		430BAD7518D1D141000EA59B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
-		430BAD7818D1D2C8000EA59B /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		430BAD7A18D1D36B000EA59B /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
@@ -106,21 +90,6 @@
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
-		438A8D4318D2F1770089DB6C /* MatiereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatiereViewController.h; sourceTree = "<group>"; };
-		438A8D4418D2F1770089DB6C /* MatiereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatiereViewController.m; sourceTree = "<group>"; };
-		438A8D4618D2F1920089DB6C /* DetailNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailNoteViewController.h; sourceTree = "<group>"; };
-		438A8D4718D2F1920089DB6C /* DetailNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNoteViewController.m; sourceTree = "<group>"; };
-		438A8D4818D2F1920089DB6C /* DetailNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailNoteViewController.xib; sourceTree = "<group>"; };
-		438A8D4B18D2F5410089DB6C /* Bulletin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bulletin.h; sourceTree = "<group>"; };
-		438A8D4C18D2F5410089DB6C /* Bulletin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bulletin.m; sourceTree = "<group>"; };
-		438A8D4E18D2F5640089DB6C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
-		438A8D4F18D2F5640089DB6C /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
-		438A8D5118D2F59E0089DB6C /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
-		438A8D5218D2F59E0089DB6C /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
-		438A8D5418D2F7E80089DB6C /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
-		438A8D5518D2F7E80089DB6C /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
-		438A8D5718D300290089DB6C /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
-		438A8D5818D300290089DB6C /* Semestre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semestre.m; sourceTree = "<group>"; };
 		43B9C5F218B75217001A3D75 /* mapServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapServices.plist; sourceTree = "<group>"; };
 		43E6FD2D18AE2F52004F709B /* JobDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDatingViewController.h; sourceTree = "<group>"; };
 		43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDatingViewController.m; sourceTree = "<group>"; };
@@ -143,6 +112,9 @@
 		43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
 		43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
 		43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
+		43E6FD5318AE3094004F709B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
+		43E6FD5418AE3094004F709B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
+		43E6FD5518AE3094004F709B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
 		7F25446731F043D681901659 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92138DB2189260B1000488BC /* IUTUnice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUTUnice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92138DB5189260B1000488BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +142,7 @@
 		9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationListViewController.m; sourceTree = "<group>"; };
 		9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationListViewController.xib; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		929E0151189BA45900694030 /* 1383836124_college_3D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836124_college_3D.png; sourceTree = "<group>"; };
 		929E0152189BA45900694030 /* 1383836131_Library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836131_Library.png; sourceTree = "<group>"; };
@@ -199,8 +172,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430BAD7B18D1D36B000EA59B /* EventKitUI.framework in Frameworks */,
-				430BAD7918D1D2C9000EA59B /* EventKit.framework in Frameworks */,
 				4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */,
 				92138DB8189260B1000488BC /* CoreGraphics.framework in Frameworks */,
 				92138DBA189260B1000488BC /* UIKit.framework in Frameworks */,
@@ -265,21 +236,6 @@
 				43E6FD3718AE2F74004F709B /* NotesViewController.h */,
 				43E6FD3818AE2F74004F709B /* NotesViewController.m */,
 				43E6FD3918AE2F74004F709B /* NotesViewController.xib */,
-				438A8D4318D2F1770089DB6C /* MatiereViewController.h */,
-				438A8D4418D2F1770089DB6C /* MatiereViewController.m */,
-				438A8D4618D2F1920089DB6C /* DetailNoteViewController.h */,
-				438A8D4718D2F1920089DB6C /* DetailNoteViewController.m */,
-				438A8D4818D2F1920089DB6C /* DetailNoteViewController.xib */,
-				438A8D4B18D2F5410089DB6C /* Bulletin.h */,
-				438A8D4C18D2F5410089DB6C /* Bulletin.m */,
-				438A8D4E18D2F5640089DB6C /* Note.h */,
-				438A8D4F18D2F5640089DB6C /* Note.m */,
-				438A8D5118D2F59E0089DB6C /* UE.h */,
-				438A8D5218D2F59E0089DB6C /* UE.m */,
-				438A8D5418D2F7E80089DB6C /* Module.h */,
-				438A8D5518D2F7E80089DB6C /* Module.m */,
-				438A8D5718D300290089DB6C /* Semestre.h */,
-				438A8D5818D300290089DB6C /* Semestre.m */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -317,9 +273,9 @@
 		43E6FD5218AE3086004F709B /* EDT */ = {
 			isa = PBXGroup;
 			children = (
-				430BAD7318D1D141000EA59B /* EDTViewController.h */,
-				430BAD7418D1D141000EA59B /* EDTViewController.m */,
-				430BAD7518D1D141000EA59B /* EDTViewController.xib */,
+				43E6FD5318AE3094004F709B /* EDTViewController.h */,
+				43E6FD5418AE3094004F709B /* EDTViewController.m */,
+				43E6FD5518AE3094004F709B /* EDTViewController.xib */,
 			);
 			name = EDT;
 			sourceTree = "<group>";
@@ -347,8 +303,6 @@
 		92138DB4189260B1000488BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				430BAD7A18D1D36B000EA59B /* EventKitUI.framework */,
-				430BAD7818D1D2C8000EA59B /* EventKit.framework */,
 				4368CA9618B5FF8C008C7ACD /* MapKit.framework */,
 				92138DB5189260B1000488BC /* Foundation.framework */,
 				92138DB7189260B1000488BC /* CoreGraphics.framework */,
@@ -417,7 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				929E0146189B9BC900694030 /* MainMenuViewController.h */,
-				430BAD7118D1C5BB000EA59B /* MainMenuViewController.m */,
+				929E0147189B9BC900694030 /* MainMenuViewController.m */,
 				929E0148189B9BC900694030 /* MainMenuViewController.xib */,
 			);
 			name = MainPage;
@@ -552,7 +506,6 @@
 			files = (
 				92A53D3418AD0BCD0047DA1E /* IUT NICE.JPG in Resources */,
 				929E0167189BA45900694030 /* 1383836131_Library.png in Resources */,
-				430BAD7718D1D141000EA59B /* EDTViewController.xib in Resources */,
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
@@ -567,13 +520,13 @@
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
 				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
-				438A8D4A18D2F1920089DB6C /* DetailNoteViewController.xib in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
 				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
 				92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
 				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
+				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
 				929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
@@ -637,30 +590,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */,
-				438A8D4D18D2F5410089DB6C /* Bulletin.m in Sources */,
-				438A8D5918D300290089DB6C /* Semestre.m in Sources */,
-				438A8D4518D2F1770089DB6C /* MatiereViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
-				430BAD7218D1C5BB000EA59B /* MainMenuViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
-				438A8D5618D2F7E80089DB6C /* Module.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
-				438A8D4918D2F1920089DB6C /* DetailNoteViewController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
+				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
+				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
-				430BAD7618D1D141000EA59B /* EDTViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
 				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
-				438A8D5318D2F59E0089DB6C /* UE.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
-				438A8D5018D2F5640089DB6C /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,19 +729,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-=======
->>>>>>> FETCH_HEAD
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IUTUnice/IUTUnice-Prefix.pch";
 				INFOPLIST_FILE = "IUTUnice/IUTUnice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
-=======
-				TARGETED_DEVICE_FAMILY = "1,2";
->>>>>>> FETCH_HEAD
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -807,19 +746,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-=======
->>>>>>> FETCH_HEAD
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IUTUnice/IUTUnice-Prefix.pch";
 				INFOPLIST_FILE = "IUTUnice/IUTUnice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
-=======
-				TARGETED_DEVICE_FAMILY = "1,2";
->>>>>>> FETCH_HEAD
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

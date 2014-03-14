@@ -13,7 +13,6 @@
 @end
 
 @implementation NotesViewController
-
 @synthesize accordionN1;
 @synthesize accordionN2;
 @synthesize accordionN3;
@@ -36,12 +35,6 @@
     return self;
 }
 
--(Bulletin*)generator
-{
-	Bulletin *bulletin = [[Bulletin alloc]init];
-	return bulletin;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -60,9 +53,6 @@
     
     NSLog(@"test accordion");
     
-	Bulletin *monBulletin = [self generator];
-	
-	
     
     
     UIView *vue1 = [[UIView alloc]init];
@@ -140,7 +130,13 @@
     
     NSLog(@"%@",[tab objectAtIndex:indexPath.row]);
     cell.textLabel.text = [tab objectAtIndex:indexPath.row];
-
+    /*
+    cell.textLabel.font = [UIFont fontWithName:@"Avenir" size:16];
+    cell.textLabel.text = [NSString stringWithFormat:@"Table %d - Cell %d", tableView.tag, indexPath.row];
+    cell.textLabel.textColor = [UIColor colorWithRed:0.46f green:0.46f blue:0.46f alpha:1.0f];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    */
     return cell;
 }
 
