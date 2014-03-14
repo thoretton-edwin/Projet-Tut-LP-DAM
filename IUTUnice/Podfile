@@ -1,4 +1,4 @@
 platform :ios, '7.0' 
 pod 'hpple'
 pod 'OCBorghettiView'
-pod 'MACalendarUI'
+
