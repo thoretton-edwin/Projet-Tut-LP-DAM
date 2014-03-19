@@ -215,3 +215,4 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 androidProject/gen/dam/ptut/iutunice/R.java
+androidProject/gen/dam/ptut/iutunice/BuildConfig.java

@@ -58,8 +58,8 @@ public class MainActivity extends FragmentActivity {
 			openSettings();
 		case R.id.action_list:
 			switchListMenu();
-		case R.id.action_icon:
-			switchIconMenu();
+//		case R.id.action_icon:
+//			switchIconMenu();
 		default:
 			return super.onOptionsItemSelected(item);
 		}
