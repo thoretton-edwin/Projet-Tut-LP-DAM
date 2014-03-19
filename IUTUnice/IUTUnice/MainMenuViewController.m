@@ -209,17 +209,12 @@
     return img;
 }
 
-<<<<<<< HEAD
-=======
 -(void)goToSettings:(id)sender
 {
     SettingsViewController *viewController=[[SettingsViewController alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
--(void)singleTapping:(id)sender
-{
->>>>>>> FETCH_HEAD
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 9;
