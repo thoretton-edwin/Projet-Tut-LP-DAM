@@ -89,6 +89,19 @@
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836168_Soccer_Ball.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"Twitter_logo_blue.png"]];
     
+    _menuTitleArray = [[NSMutableArray alloc] init];
+	
+    [_menuTitleArray addObject: @"Vitrine"];
+    [_menuTitleArray addObject: @"Post-Bac"];
+    [_menuTitleArray addObject: @"Notes"];
+    [_menuTitleArray addObject: @"Agenda"];
+    [_menuTitleArray addObject: @"Annuaire"];
+    [_menuTitleArray addObject: @"Job Dating"];
+    [_menuTitleArray addObject: @"Map"];
+    [_menuTitleArray addObject: @"SUAPS"];
+    [_menuTitleArray addObject: @"Twitter"];
+
+    
     for (int i = 0; i < _imagesViewArray.count; i++) {
         [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
 		
@@ -132,7 +145,7 @@
     UIGraphicsEndImageContext();
     NSData *imageData = UIImagePNGRepresentation(picture1);
     UIImage *img=[UIImage imageWithData:imageData];
-    _settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:nil];
+    _settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:@selector(goToSettings:)];
     [self.navigationItem setLeftBarButtonItem:_settings animated:NO];
     
 
@@ -150,7 +163,6 @@
 -(void)changeDisplayMode:(id)sender{
     if(_isInList == NO){
         _listViewContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 1, 1)];
-        [_listViewContainer setBackgroundColor: [UIColor redColor]];
         
         [UIView animateWithDuration:0.5
                               delay:0.1
@@ -161,6 +173,17 @@
                          completion:^(BOOL finished){
                          }];
         [self.view addSubview: _listViewContainer];
+        
+        CGRect fr = CGRectMake(0,0,_listViewContainer.frame.size.width,_listViewContainer.frame.size.height);
+        
+        menuTableView = [[UITableView alloc] initWithFrame:fr style:UITableViewStylePlain];
+        menuTableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+        menuTableView.delegate = self;
+        menuTableView.dataSource = self;
+        [menuTableView reloadData];
+        menuTableView.scrollEnabled = NO;
+        [_listViewContainer addSubview: menuTableView];
+        
         
         
         [_listMenu setImage:[self createIconForNavigationBarWithImage:@"small_tiles.png"]];
@@ -186,17 +209,56 @@
     return img;
 }
 
+<<<<<<< HEAD
+=======
+-(void)goToSettings:(id)sender
+{
+    SettingsViewController *viewController=[[SettingsViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 -(void)singleTapping:(id)sender
 {
+>>>>>>> FETCH_HEAD
 
-    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
-    NSLog(@"image click N°:%ld",(long)gesture.view.tag);
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 9;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 46;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *cellIdentifier = [_menuTitleArray objectAtIndex: indexPath.row];
     
-    switch((long)gesture.view.tag)
+    UITableViewCell *cell = [self->menuTableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    
+    [cell.imageView setImage: [_imagesRefArray objectAtIndex: indexPath.row]];
+    cell.textLabel.text = [_menuTitleArray objectAtIndex: indexPath.row];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    NSLog(@"row:%d",[[menuTableView indexPathForSelectedRow] row]);
+    [self choixMenu:[[menuTableView indexPathForSelectedRow] row]];
+    
+}
+
+-(void) choixMenu:(int) tag
+{
+    switch(tag)
     {
         case 0: // Page Vitrine
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView1.backgroundColor = [UIColor grayColor];
 			
             VitrinePageViewController *viewController = [[VitrinePageViewController alloc] initWithNibName:@"VitrinePageViewController" bundle:nil];
@@ -206,7 +268,7 @@
             break;
         case 1: // Post Bac UIViewController accordion
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView2.backgroundColor = [UIColor grayColor];
 			
             PostBacViewController *viewController = [[PostBacViewController alloc] initWithNibName:@"PostBacViewController" bundle:nil];
@@ -216,7 +278,7 @@
             break;
         case 2: // Notes UIViewController accordion
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView3.backgroundColor = [UIColor grayColor];
 			
             NotesViewController *viewController = [[NotesViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
@@ -226,7 +288,7 @@
             break;
         case 3: // EDT lib calendarView
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView4.backgroundColor = [UIColor grayColor];
 			
             EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
@@ -236,7 +298,7 @@
             break;
         case 4: // Annuaire UItableView
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView5.backgroundColor = [UIColor grayColor];
 			
             AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
@@ -246,7 +308,7 @@
             break;
         case 5: // Job Dating UIViewController accordion
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView6.backgroundColor = [UIColor grayColor];
 			
             JobDatingViewController *viewController = [[JobDatingViewController alloc] initWithNibName:@"JobDatingViewController" bundle:nil];
@@ -256,7 +318,7 @@
             break;
         case 6: // Map UiVIewController
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView7.backgroundColor = [UIColor grayColor];
 			
             MapViewController *viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
@@ -267,7 +329,7 @@
             break;
         case 7: // SUAPS UIViewController accordion
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView8.backgroundColor = [UIColor grayColor];
 			
             SUAPSViewController *viewController = [[SUAPSViewController alloc] initWithNibName:@"SUAPSViewController" bundle:nil];
@@ -277,7 +339,7 @@
             break;
         case 8: // Twitter webview
         {
-				// Set vertical effect
+            // Set vertical effect
 			iconView9.backgroundColor = [UIColor grayColor];
 			
             TwitterWebViewController *viewController = [[TwitterWebViewController alloc] initWithNibName:@"TwitterWebViewController" bundle:nil];
@@ -286,11 +348,19 @@
         }
             break;
         default:
-				// lancer une exception ? ..
+            // lancer une exception ? ..
             break;
             
     }
-    
+
+}
+
+-(void)singleTapping:(id)sender
+{
+
+    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
+    NSLog(@"image click N°:%ld",(long)gesture.view.tag);
+    [self choixMenu:(long)gesture.view.tag];
     
 }
 

@@ -27,11 +27,13 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    tabSettings= [[NSMutableArray alloc] init];
+    [tabSettings addObject:@"Connexion"];
+    [tabSettings addObject:@"Infos WIfi"];
+    [tabSettings addObject:@"A propos"];
+    [tabSettings addObject:@"Sondage"];
+    [tabSettings addObject:@"Langue"];
+    [tabSettings addObject:@"Credits"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,10 +58,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSString *CellIdentifier = @"Cell1";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    if (cell == Nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+   NSLog(@"%@",[tabSettings objectAtIndex:indexPath.row]);
     
     return cell;
 }
