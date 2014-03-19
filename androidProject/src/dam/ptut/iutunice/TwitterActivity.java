@@ -3,9 +3,12 @@ package dam.ptut.iutunice;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.support.v4.app.NavUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -22,9 +25,14 @@ public class TwitterActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_twitter);
 
+		this.setTitle("Twitter");
+		// permet le retour sur la page principale
+		ActionBar actionBar = getActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
+
 		chargement = new ProgressDialog(TwitterActivity.this);
 		chargement.setMessage("Chargement de la page...");
-		//chargement.setCancelable(false);
+		// chargement.setCancelable(false);
 		chargement.show();
 
 		// Connexion Internet en cours ou non
@@ -51,5 +59,17 @@ public class TwitterActivity extends Activity {
 				}
 			}
 		});
+	}
+
+	// active sur l'action bar le bouton retour
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		// Respond to the action bar's Up/Home button
+		case android.R.id.home:
+			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 }

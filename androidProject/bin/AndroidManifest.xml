@@ -62,10 +62,17 @@
             android:name="dam.ptut.iutunice.IconMenuListFragment"
             android:label="@string/title_activity_icon_menu_list_framgment" >
         </activity>
+        <!-- A child of the main activity -->
         <activity
             android:name="dam.ptut.iutunice.TwitterActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/title_activity_twitter" >
+            android:label="@string/title_activity_twitter"
+            android:parentActivityName="dam.ptut.iutunice.MainActivity" >
+            
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.MainActivity" />
         </activity>
         
     </application>
