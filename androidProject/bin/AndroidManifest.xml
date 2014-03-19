@@ -65,8 +65,7 @@
         <activity
             android:name="dam.ptut.iutunice.TwitterActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/title_activity_twitter"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_twitter" >
         </activity>
         
     </application>

@@ -7,8 +7,10 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 public class IutWindowsActivity extends Activity {
@@ -42,6 +44,25 @@ public class IutWindowsActivity extends Activity {
 	    myViewFlipper.setFlipInterval(5000);
 	    myViewFlipper.startFlipping();
 	    
+	    //boutons
+	    TextView btSurvey = (TextView) findViewById(R.id.btSurveyIut);
+	    TextView btFormations = (TextView) findViewById(R.id.btFormation);
+	    btSurvey.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				//nouvelle activité
+				
+			}
+		});
+	    btFormations.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				//nouvelle activité
+				
+			}
+		});
 	}
 
 	//swipe diapo image
