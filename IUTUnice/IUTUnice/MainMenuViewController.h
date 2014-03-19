@@ -16,6 +16,7 @@
 #import "PostBacViewController.h"
 #import "MapViewController.h"
 #import "EDTViewController.h"
+#import "SettingsViewController.h"
 
 @interface MainMenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
 {

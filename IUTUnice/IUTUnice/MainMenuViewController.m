@@ -132,7 +132,7 @@
     UIGraphicsEndImageContext();
     NSData *imageData = UIImagePNGRepresentation(picture1);
     UIImage *img=[UIImage imageWithData:imageData];
-    _settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:nil];
+    _settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:@selector(goToSettings:)];
     [self.navigationItem setLeftBarButtonItem:_settings animated:NO];
     
 
@@ -184,6 +184,12 @@
     NSData *imageData = UIImagePNGRepresentation(picture);
     UIImage *img=[UIImage imageWithData:imageData];
     return img;
+}
+
+-(void)goToSettings:(id)sender
+{
+    SettingsViewController *viewController=[[SettingsViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 -(void)singleTapping:(id)sender
