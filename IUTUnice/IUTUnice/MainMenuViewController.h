@@ -12,7 +12,7 @@
 #import "SUAPSViewController.h"
 #import "JobDatingViewController.h"
 #import "AnnuaireViewController.h"
-#import "NotesViewController.h"
+#import "UEListViewController.h"
 #import "PostBacViewController.h"
 #import "MapViewController.h"
 #import "EDTViewController.h"
