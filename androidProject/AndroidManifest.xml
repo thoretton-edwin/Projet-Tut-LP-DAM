@@ -54,6 +54,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.MainActivity" />
         </activity>
+        <!-- A child of the IutWindowsActivity activity -->
+        <activity
+            android:name="dam.ptut.iutunice.SearchFormationActivity"
+            android:label="@string/title_activity_search_formation"
+            android:parentActivityName="dam.ptut.iutunice.IutWindowsActivity" >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.IutWindowsActivity" />
+        </activity>
         <activity
             android:name="menu.IconMenuCarouselFragment"
             android:label="@string/title_activity_icon_menu_liste_fragment" >
