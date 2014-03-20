@@ -20,10 +20,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+
         <Grid.Background>
             <ImageBrush ImageSource="/Icones/app_background.png"/>
         </Grid.Background>
-        
+
         <!--TitlePanel contient le nom de l'application et le titre de la page-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="IUT Nice" Style="{StaticResource PhoneTextNormalStyle}" Foreground="Black"/>
@@ -31,9 +32,30 @@
         </StackPanel>
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image Source="/Icones/iut_front" HorizontalAlignment="Left" Height="252" Margin="0,10,0,0" VerticalAlignment="Top" Width="456"/>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+            <Image Source="/Icones/iut_front.jpg" HorizontalAlignment="Left" Height="201" Margin="96,0,0,0" VerticalAlignment="Top" Width="302"/>
+            <ScrollViewer HorizontalAlignment="Center" Height="381" Margin="15,216,5,0" VerticalAlignment="Top" Width="460">
+                <TextBlock TextWrapping="Wrap" Text=" Une organisation originale
+                &#10;&#10;
+  Rattaché à l'Université, l'Institut Universitaire de Technologie (IUT) constitue une originalité qui fait son succès. Il allie les enseignements fondamentaux et les disciplines technologiques, il associe les Enseignants-Chercheurs, les Enseignants du second degré et les Intervenants de l'Entreprise, ce qui offre aux étudiants un encadrement rapproché et la fréquentation de l'Entreprise. Le Diplôme d'Université de Technologie obtenu à l'issue d'un cycle d'enseignement supérieur de 2 ans prépare à des fonctions immédiates, au dépassement de celles-ci par une adaptabilité aux évolutions des techniques, à la poursuite d'études (Diplômes Universitaires Post-DUT, Licences Professionnelles, Ecoles d'ingénieurs, Licences...). Par ailleurs, l'IUT est engagé dans une coopération internationale diversifée.
+                &#10;&#10;
+Une organisation structurée
+                &#10;&#10;
+  L'IUT est dirigé par un Directeur, Enseignant de l'Etablissement, élu pour 5 ans par un Conseil de l'Institut composé de personnalités extérieures, de représentants d'Enseignants, de Personnels non enseignants et d'Usagers étudiants. Le Conseil de l'Institut définit les grandes orientations de l'Etablissement et vote le budget. Le Président du Conseil est issu de l'Entreprise.
+                &#10;&#10;
+Une organisation en réseau
+                &#10;&#10;          
+  Les IUT ont été créés en France en 1966 pour répondre aux demandes des milieux professionnels en techniciens supérieurs et cadres intermédiaires ayant une culture générale et une formation technique et scientifique leur permettant d'évoluer dans l'entreprise et de s'adapter aux mutations technologiques. Les IUT au nombre de 115 actuellement, forment 131.000 étudiants et sont constitués de départements d'enseignement correspondant à 24 spécialités : 16 du secteur secondaire (industriel) et 8 du secteur tertiaire (services). Les programmes sont définis, pour chacune des spécialités, par des Commisions Pédagogiques Nationales (CPN) composées de représentants des entreprises, de salariés, d'enseignants et du Ministère. Pour assurer une meilleure intégration dans le tissu économique régional, ces programmes peuvent être adaptés localement dans la limite de 20% du volume horaire total. A ce jour, on dénombre environ 600 départements dont les promotions sont comprises entre 50 et 150 étudiants. L'admission en IUT se fait, soit sur dossier avec parfois un entretien, soit par validation des acquis de l'expérience.
+                &#10;&#10;
+Un historique
+                &#10;&#10;
+  L'IUT de Nice a été ouvert le 5 octobre 1970. Ses directeurs successifs, Jean Moussiegt, Francis Dubus, Xavier Boisselier, Jean Saide, Jean-Louis Cavarero, Jean-Claude Juhel, Robert Chignoli et, depuis juillet 2008, Henri Alexis, contribuent à faire de l'IUT de Nice (rebaptisé IUT Nice-Côte d'Azur en 1996) une des composantes les plus importantes de l'Université de Nice Sophia Antipolis, par son budget et ses effectifs. Ses dix départements d'enseignement répartis sur cinq sites dans un rayon de 70 kilomètres (Cannes-la-Bocca, Cannes, Menton, Nice, Sophia-Antipolis) délivrent aujourd'hui plus de 30 diplômes nationaux de niveau Bac + 2 : DUT, et Bac + 3 : Licences Professionnelles." Foreground="Black" Width="460" Height="2017"/>
+            </ScrollViewer>
         </Grid>
+
+
+
     </Grid>
 
 </phone:PhoneApplicationPage>
