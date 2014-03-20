@@ -16,11 +16,11 @@
 #import "PostBacViewController.h"
 #import "MapViewController.h"
 #import "EDTViewController.h"
+#import "SettingsViewController.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
 {
-    
-    
+    UITableView* menuTableView;
 }
 @property (weak, nonatomic) IBOutlet UIView *iconView1;
 @property (weak, nonatomic) IBOutlet UIView *iconView2;
@@ -35,7 +35,16 @@
 
 @property NSMutableArray* imagesViewArray;
 @property NSMutableArray* imagesRefArray;
+@property NSMutableArray* menuTitleArray;
 @property NSMutableArray* cadreViewArray;
+
+@property UIBarButtonItem *settings;
+@property UIBarButtonItem *listMenu;
+
+@property UIView* listViewContainer;
+
+
+@property BOOL isInList;
 
 
 
