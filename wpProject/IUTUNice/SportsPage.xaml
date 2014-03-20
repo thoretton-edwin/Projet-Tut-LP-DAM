@@ -32,6 +32,11 @@
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="Informations pratiques" HorizontalAlignment="Left" Margin="0,61,0,0" VerticalAlignment="Top" Width="446" BorderBrush="Gray" Foreground="Gray"/>
+            <Button Content="Carnet d'adresses" HorizontalAlignment="Left" Margin="0,133,0,0" VerticalAlignment="Top" Width="446" BorderBrush="Gray" Foreground="Gray"/>
+            <Button Content="Liste des sites" HorizontalAlignment="Left" Margin="0,205,0,0" VerticalAlignment="Top" Width="446" BorderBrush="Gray" Foreground="Gray"/>
+            <Button Content="Liste des UELs" HorizontalAlignment="Left" Margin="0,282,0,0" VerticalAlignment="Top" Width="446" BorderBrush="Gray" Foreground="Gray"/>
+            <Button Content="Liste des activités proposées" HorizontalAlignment="Left" Margin="0,354,0,0" VerticalAlignment="Top" Width="446" BorderBrush="Gray" Foreground="Gray"/>
 
         </Grid>
     </Grid>

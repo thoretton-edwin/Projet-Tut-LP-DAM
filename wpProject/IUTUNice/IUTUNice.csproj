@@ -90,18 +90,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="activite.cs" />
+    <Compile Include="adress.cs" />
     <Compile Include="AnnuairePage.xaml.cs">
       <DependentUpon>AnnuairePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="bus.cs" />
     <Compile Include="CalendarPage.xaml.cs">
       <DependentUpon>CalendarPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="DescriptionPage.xaml.cs">
       <DependentUpon>DescriptionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="jourActivite.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -113,11 +117,17 @@
       <DependentUpon>MarksPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="questionSondage.cs" />
+    <Compile Include="reponseSondage.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="seance.cs" />
+    <Compile Include="site.cs" />
+    <Compile Include="sondage.cs" />
+    <Compile Include="sport.cs" />
     <Compile Include="SportsPage.xaml.cs">
       <DependentUpon>SportsPage.xaml</DependentUpon>
     </Compile>
@@ -189,6 +199,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="busV2.xml" />
     <Content Include="Icones\address.png" />
     <Content Include="Icones\app_background.png" />
     <Content Include="Icones\calendar.png" />
@@ -200,6 +211,8 @@
     <Content Include="Icones\notes.png" />
     <Content Include="Icones\sports.png" />
     <Content Include="Icones\twitter.png" />
+    <Content Include="sondage_v3.xml" />
+    <Content Include="suaps.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
