@@ -11,6 +11,6 @@
 
 @interface PostBacViewController : UIViewController <OCBorghettiViewDelegate>
 
-
+@property OCBorghettiView *accordion;
 
 @end

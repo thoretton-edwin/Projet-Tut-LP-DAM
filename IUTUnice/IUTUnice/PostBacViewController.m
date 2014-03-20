@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = @"Post-Bac";
     }
     return self;
 }
@@ -37,87 +37,43 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
     // Initialization
-    OCBorghettiView *accordion = [[OCBorghettiView alloc] initWithFrame:CGRectMake(0, 65, self.view.frame.size.width, self.view.frame.size.height-65)];
-    
+    _accordion = [[OCBorghettiView alloc] initWithFrame:CGRectMake(0, 65, self.view.frame.size.width, self.view.frame.size.height-65)];
+
     // Settings and colors
-    accordion.accordionSectionHeight = 40;
-    accordion.accordionSectionFont = [UIFont fontWithName:@"Avenir" size:16];
-    accordion.accordionSectionBorderColor = [UIColor darkGrayColor];
-    accordion.accordionSectionColor = [UIColor grayColor];
-    
-    
-    [self.view addSubview:accordion];
+    _accordion.accordionSectionHeight = 40;
+    _accordion.accordionSectionFont = [UIFont fontWithName:@"Avenir" size:16];
+    _accordion.accordionSectionBorderColor = [UIColor darkGrayColor];
+    _accordion.accordionSectionColor = [UIColor grayColor];
+    [self.view addSubview:_accordion];
     
     // Section DUT
-    UIView *DUT = [[UIView alloc] init];
-    UIView *vuesDUT = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* dutdescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    
-    //
-    
-    dutdescr.text = @"Test";
-    dutdescr.backgroundColor= [UIColor clearColor];
-    [vuesDUT addSubview:dutdescr];
-    
-    [DUT addSubview:vuesDUT];
-    [accordion addSectionWithTitle:@"DUT"
-                           andView:DUT];
+    [self createAndFillAccordion:@"DUT" AndSection:@"dut"];
     
     // Section LP
-    UIView *lp = [[UIView alloc] init];
-    
-    UIView *vuesLP = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* lpDescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    
-    
-    lpDescr.text = @"Test";
-    lpDescr.backgroundColor= [UIColor clearColor];
-    
-    [vuesLP addSubview:lpDescr];
-    
-    [lp addSubview:vuesLP];
-    
-    
-    [accordion addSectionWithTitle:@"LP"
-                           andView:lp];
+    [self createAndFillAccordion:@"Licence Professionelle" AndSection:@"lp"];
     
     // Section Année spé
-    UIView *anneeSpe = [[UIView alloc] init];
-    
-    
-    UIView *vuesAS = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* ASDescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    
-    ASDescr.text = @"Test";
-    ASDescr.backgroundColor= [UIColor clearColor];
-    
-    [vuesAS addSubview:ASDescr];
-    
-    [anneeSpe addSubview:vuesAS];
-    
-    
-    
-    [accordion addSectionWithTitle:@"Année spécial"
-                           andView:anneeSpe];
+    [self createAndFillAccordion:@"Etudiant Etranger" AndSection:@"etudiantEtranger"];
     
     // Section Etudiant étrangers
-    UIView *etudiantEtr = [[UIView alloc] init];
+    [self createAndFillAccordion:@"Année Spéciale" AndSection:@"anneeSpeciale"];
     
-    UIView *vuesEE = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* EEDescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+}
+
+-(void) createAndFillAccordion:(NSString*)title AndSection:(NSString*)section{
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    UITextView* descr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, containerView.frame.size.width,250)];
     
-    
-    EEDescr.text = @"Test";
-    EEDescr.backgroundColor= [UIColor clearColor];
-    
-    [vuesEE addSubview:EEDescr];
-    
-    [etudiantEtr addSubview:vuesEE];
-    
-    
-    [accordion addSectionWithTitle:@"Etudiant étrangers"
-                           andView:etudiantEtr];
-    
+    NSString *path = [[NSBundle mainBundle]pathForResource:section ofType:@"txt"];
+    NSString *text = [[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    descr.text = text;
+    descr.backgroundColor= [UIColor clearColor];
+    descr.textColor = [UIColor blackColor];
+    descr.font = [UIFont systemFontOfSize:14];
+    descr.editable = NO;
+    descr.scrollEnabled = YES;
+    [containerView addSubview:descr];
+    [_accordion addSectionWithTitle:title andView:containerView];
 }
 
 - (void)didReceiveMemoryWarning
