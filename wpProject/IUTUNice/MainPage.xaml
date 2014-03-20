@@ -55,7 +55,7 @@
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0" RenderTransformOrigin="0.5,0.474">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="213" Width="456" Foreground="#FFF0F0F0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="213" Width="456" Foreground="#FFF0F0F0"/>
 
             <HyperlinkButton NavigateUri="/TwitterPage.xaml" HorizontalAlignment="Left" Margin="304,474,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="Black" Width="142" Height="133">
                 <HyperlinkButton.Background>
@@ -93,6 +93,12 @@
                 </HyperlinkButton.Background>
             </HyperlinkButton>
 
+            <HyperlinkButton NavigateUri="/settingsPage.xaml" HorizontalAlignment="Left" Margin="390,-159,-12,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="Black" Width="78" Height="55">
+                <HyperlinkButton.Background>
+                    <ImageBrush ImageSource="/Icones/settings.png" />
+                </HyperlinkButton.Background>
+            </HyperlinkButton>
+
             <HyperlinkButton NavigateUri="/MapPage.xaml" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="Black" Width="142" Height="110">
                 <HyperlinkButton.Background>
                     <ImageBrush ImageSource="/Icones/map.png" />
@@ -105,11 +111,12 @@
                 </HyperlinkButton.Background>
             </HyperlinkButton>
 
-            <HyperlinkButton NavigateUri="/TwitterPage.xaml" HorizontalAlignment="Left" Margin="304,361,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="Black" Width="142" Height="123">
+            <HyperlinkButton NavigateUri="/postBacPage.xaml" HorizontalAlignment="Left" Margin="304,361,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="Black" Width="142" Height="123">
                 <HyperlinkButton.Background>
                     <ImageBrush ImageSource="/Icones/iut.png" />
                 </HyperlinkButton.Background>
             </HyperlinkButton>
+            <phone:WebBrowser x:Name="webView1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="213" Width="456"/>
         </Grid>
 
         <!--Supprimez les commentaires pour voir une grille d'alignement qui vous aidera à vous assurer que vos contrôles sont

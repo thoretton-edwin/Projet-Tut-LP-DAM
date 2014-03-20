@@ -10,18 +10,11 @@ using Microsoft.Phone.Shell;
 
 namespace IUTUNice
 {
-    public partial class DescriptionPage : PhoneApplicationPage
+    public partial class postBacPage : PhoneApplicationPage
     {
-        public DescriptionPage()
+        public postBacPage()
         {
             InitializeComponent();
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        
     }
 }

@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Microsoft.Phone.Maps.Controls;
 
 namespace IUTUNice
 {
@@ -15,6 +16,8 @@ namespace IUTUNice
         public MapPage()
         {
             InitializeComponent();
+            Map MyMap = new Map();
+            ContentPanel.Children.Add(MyMap);
         }
     }
 }
