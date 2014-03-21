@@ -177,7 +177,7 @@
 				// Set vertical effect
 			iconView3.backgroundColor = [UIColor grayColor];
 			
-            UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
+            NotesViewController *viewController = [[NotesViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
 			
         }

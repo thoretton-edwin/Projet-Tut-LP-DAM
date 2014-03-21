@@ -10,21 +10,18 @@
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
-		433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4A918D30E6000B0C5F6 /* UE.m */; };
-		433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4AC18D311B600B0C5F6 /* Semestre.m */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
 		435FCA3718D30787006156EC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3618D30787006156EC /* Note.m */; };
 		435FCA3A18D3087F006156EC /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3918D3087F006156EC /* Module.m */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
-		43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
 		43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */; };
 		43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3318AE2F62004F709B /* MapViewController.m */; };
 		43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3418AE2F62004F709B /* MapViewController.xib */; };
-		43E6FD3A18AE2F74004F709B /* UEListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3818AE2F74004F709B /* UEListViewController.m */; };
-		43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3918AE2F74004F709B /* UEListViewController.xib */; };
+		43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3818AE2F74004F709B /* NotesViewController.m */; };
+		43E6FD3B18AE2F74004F709B /* NotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3918AE2F74004F709B /* NotesViewController.xib */; };
 		43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3D18AE2F88004F709B /* PostBacViewController.m */; };
 		43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3E18AE2F88004F709B /* PostBacViewController.xib */; };
 		43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4218AE2FD3004F709B /* SUAPSViewController.m */; };
@@ -91,10 +88,6 @@
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
-		433CC4A818D30E6000B0C5F6 /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
-		433CC4A918D30E6000B0C5F6 /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
-		433CC4AB18D311B600B0C5F6 /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
-		433CC4AC18D311B600B0C5F6 /* Semestre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semestre.m; sourceTree = "<group>"; };
 		433F27E118C7234D00E87636 /* bus.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bus.xml; sourceTree = "<group>"; };
 		435FCA3518D30787006156EC /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		435FCA3618D30787006156EC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
@@ -104,17 +97,15 @@
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
 		43B9C5F218B75217001A3D75 /* mapServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapServices.plist; sourceTree = "<group>"; };
-		43E0C28F18DAF7F900562B67 /* ModuleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTableViewController.h; sourceTree = "<group>"; };
-		43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTableViewController.m; sourceTree = "<group>"; };
 		43E6FD2D18AE2F52004F709B /* JobDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDatingViewController.h; sourceTree = "<group>"; };
 		43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDatingViewController.m; sourceTree = "<group>"; };
 		43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDatingViewController.xib; sourceTree = "<group>"; };
 		43E6FD3218AE2F62004F709B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		43E6FD3318AE2F62004F709B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		43E6FD3418AE2F62004F709B /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		43E6FD3718AE2F74004F709B /* UEListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UEListViewController.h; sourceTree = "<group>"; };
-		43E6FD3818AE2F74004F709B /* UEListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UEListViewController.m; sourceTree = "<group>"; };
-		43E6FD3918AE2F74004F709B /* UEListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UEListViewController.xib; sourceTree = "<group>"; };
+		43E6FD3718AE2F74004F709B /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		43E6FD3818AE2F74004F709B /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		43E6FD3918AE2F74004F709B /* NotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
 		43E6FD3C18AE2F88004F709B /* PostBacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostBacViewController.h; sourceTree = "<group>"; };
 		43E6FD3D18AE2F88004F709B /* PostBacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostBacViewController.m; sourceTree = "<group>"; };
 		43E6FD3E18AE2F88004F709B /* PostBacViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostBacViewController.xib; sourceTree = "<group>"; };
@@ -248,19 +239,13 @@
 		43E6FD2B18AE2F2C004F709B /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				43E6FD3718AE2F74004F709B /* UEListViewController.h */,
-				43E6FD3818AE2F74004F709B /* UEListViewController.m */,
-				43E6FD3918AE2F74004F709B /* UEListViewController.xib */,
+				43E6FD3718AE2F74004F709B /* NotesViewController.h */,
+				43E6FD3818AE2F74004F709B /* NotesViewController.m */,
+				43E6FD3918AE2F74004F709B /* NotesViewController.xib */,
 				435FCA3518D30787006156EC /* Note.h */,
 				435FCA3618D30787006156EC /* Note.m */,
 				435FCA3818D3087F006156EC /* Module.h */,
 				435FCA3918D3087F006156EC /* Module.m */,
-				433CC4A818D30E6000B0C5F6 /* UE.h */,
-				433CC4A918D30E6000B0C5F6 /* UE.m */,
-				433CC4AB18D311B600B0C5F6 /* Semestre.h */,
-				433CC4AC18D311B600B0C5F6 /* Semestre.m */,
-				43E0C28F18DAF7F900562B67 /* ModuleTableViewController.h */,
-				43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -561,7 +546,7 @@
 				92138DC0189260B1000488BC /* InfoPlist.strings in Resources */,
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
-				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
+				43E6FD3B18AE2F74004F709B /* NotesViewController.xib in Resources */,
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,7 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E6FD3A18AE2F74004F709B /* UEListViewController.m in Sources */,
+				43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
@@ -627,15 +612,12 @@
 				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
-				43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
 				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
-				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
-				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
