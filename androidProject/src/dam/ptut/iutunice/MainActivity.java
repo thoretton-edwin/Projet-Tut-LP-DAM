@@ -3,7 +3,7 @@ package dam.ptut.iutunice;
 import java.util.ArrayList;
 import java.util.List;
 
-import dam.ptut.iutunice.R.menu;
+import dam.ptut.iutunice.PostBac.PostBacActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,9 +28,9 @@ public class MainActivity extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-//		final MenuItem itemList = menu.findItem(R.id.action_list);
-//		final MenuItem itemIcon = menu.findItem(R.id.action_icon);
-		
+		// final MenuItem itemList = menu.findItem(R.id.action_list);
+		// final MenuItem itemIcon = menu.findItem(R.id.action_icon);
+
 		IconMenuFragment iconMenuFragment = new IconMenuFragment();
 		IconMenuCarouselFragment iconMenuCarouselFragment = new IconMenuCarouselFragment();
 
@@ -58,8 +58,8 @@ public class MainActivity extends FragmentActivity {
 			openSettings();
 		case R.id.action_list:
 			switchListMenu();
-//		case R.id.action_icon:
-//			switchIconMenu();
+			// case R.id.action_icon:
+			// switchIconMenu();
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -70,7 +70,7 @@ public class MainActivity extends FragmentActivity {
 		IconMenuFragment iconMenuFragment = new IconMenuFragment();
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.flContent, iconMenuFragment).commit();
-		
+
 	}
 
 	private void switchListMenu() {
@@ -134,13 +134,14 @@ public class MainActivity extends FragmentActivity {
 		app.iconItemList = list;
 	}
 
-	//ouvre les autres pages depuis le menu en liste
+	// ouvre les autres pages depuis le menu en liste
 	void itemClick(int position) {
 		App app = (App) getApplication();
 		IconMenuListItem iconMenuListItem = app.iconItemList.get(position);
+		Intent intent;
 		switch (iconMenuListItem.img) {
 		case R.drawable.logo_iut_window:
-			Intent intent = new Intent(this, IutWindowsActivity.class);
+			intent = new Intent(this, IutWindowsActivity.class);
 			startActivity(intent);
 			break;
 		case R.drawable.logo_grades:
@@ -152,14 +153,16 @@ public class MainActivity extends FragmentActivity {
 		case R.drawable.logo_suaps:
 			break;
 		case R.drawable.logo_post_bac:
+			intent = new Intent(this, PostBacActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_addressbook:
 			break;
 		case R.drawable.logo_compagny_partnership:
 			break;
 		case R.drawable.logo_twitter:
-			Intent i = new Intent(this, TwitterActivity.class);
-			startActivity(i);
+			intent = new Intent(this, TwitterActivity.class);
+			startActivity(intent);
 			break;
 		}
 	}
