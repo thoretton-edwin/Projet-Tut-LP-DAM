@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#505050"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Actualités"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#004d97"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvSuapsActuality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Actu Suaps"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="#004d97"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvTweetsActuality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Actu Tweets"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="339dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgIutWindow"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/logo_iut_window" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgGrades"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/logo_grades" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgCalendar"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/logo_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgMap"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:padding="6dp"
+                            android:src="@drawable/logo_maps" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgSuaps"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_suaps" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgPostBac"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="7dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_post_bac" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgDirectory"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_addressbook" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgCompanyPartership"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_compagny_partnership" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imgTwitter"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/logo_bg"
+                            android:src="@drawable/logo_twitter" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
