@@ -1,13 +1,12 @@
 package dam.ptut.iutunice;
 
+import dam.ptut.iutunice.PostBac.PostBacActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -23,21 +22,28 @@ public class IconMenuFragment extends Fragment {
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 
-		View iconMenu = inflater.inflate(R.layout.icon_menu_fragment, container, false);
+		View iconMenu = inflater.inflate(R.layout.icon_menu_fragment,
+				container, false);
 
 		TextView tvSuapsActuality = (TextView) iconMenu
 				.findViewById(R.id.tvSuapsActuality);
 		TextView tvTweetActuality = (TextView) iconMenu
 				.findViewById(R.id.tvTweetsActuality);
-		final ImageView imgIutWindow = (ImageView) iconMenu.findViewById(R.id.imgIutWindow);
+		final ImageView imgIutWindow = (ImageView) iconMenu
+				.findViewById(R.id.imgIutWindow);
 		ImageView imgGrades = (ImageView) iconMenu.findViewById(R.id.imgGrades);
-		ImageView imgCalendar = (ImageView) iconMenu.findViewById(R.id.imgCalendar);
+		ImageView imgCalendar = (ImageView) iconMenu
+				.findViewById(R.id.imgCalendar);
 		ImageView imgMap = (ImageView) iconMenu.findViewById(R.id.imgMap);
 		ImageView imgSuaps = (ImageView) iconMenu.findViewById(R.id.imgSuaps);
-		ImageView imgPostBac = (ImageView) iconMenu.findViewById(R.id.imgPostBac);
-		ImageView imgDirectory = (ImageView) iconMenu.findViewById(R.id.imgDirectory);
-		ImageView imgCompanyPartnership = (ImageView) iconMenu.findViewById(R.id.imgCompanyPartership);
-		ImageView imgTwitter = (ImageView) iconMenu.findViewById(R.id.imgTwitter);
+		ImageView imgPostBac = (ImageView) iconMenu
+				.findViewById(R.id.imgPostBac);
+		ImageView imgDirectory = (ImageView) iconMenu
+				.findViewById(R.id.imgDirectory);
+		ImageView imgCompanyPartnership = (ImageView) iconMenu
+				.findViewById(R.id.imgCompanyPartership);
+		ImageView imgTwitter = (ImageView) iconMenu
+				.findViewById(R.id.imgTwitter);
 
 		tvSuapsActuality.setText("Titre Suaps");
 		tvTweetActuality.setText("Dernier Tweet");
@@ -63,21 +69,23 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		imgIutWindow.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-				//ouverture page "Vitrine IUT"
-				Intent intent = new Intent(getActivity().getApplicationContext(), IutWindowsActivity.class);
-				startActivity(intent);				
+				// ouverture page "Vitrine IUT"
+				Intent intent = new Intent(getActivity()
+						.getApplicationContext(), IutWindowsActivity.class);
+				startActivity(intent);
 			}
 		});
-		
+
 		imgIutWindow.setOnLongClickListener(new OnLongClickListener() {
-			
+
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Vitrine IUT",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Vitrine IUT",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -98,7 +106,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Notes",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Notes",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -119,7 +128,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Emploi du temps",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Emploi du temps",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -140,7 +150,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Plan des sites",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Plan des sites",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -161,7 +172,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Suaps",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Suaps",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -173,6 +185,9 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				Intent intent = new Intent(getActivity()
+						.getApplicationContext(), PostBacActivity.class);
+				startActivity(intent);
 
 			}
 		});
@@ -182,7 +197,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context,"Informations Post-Bac", Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context,
+						"Informations Post-Bac", Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -203,7 +219,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Annuaire",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Annuaire",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
@@ -219,25 +236,26 @@ public class IconMenuFragment extends Fragment {
 			}
 		});
 		// Affichage msg quand long click
-		imgCompanyPartnership
-				.setOnLongClickListener(new OnLongClickListener() {
+		imgCompanyPartnership.setOnLongClickListener(new OnLongClickListener() {
 
-					@Override
-					public boolean onLongClick(View v) {
-						// TODO Auto-generated method stub
-						Toast mymessage = Toast.makeText(context, "Job Dating",Toast.LENGTH_SHORT);
-						mymessage.setGravity(Gravity.CENTER, 0, 0);
-						mymessage.show();
-						return false;
-					}
-				});
+			@Override
+			public boolean onLongClick(View v) {
+				// TODO Auto-generated method stub
+				Toast mymessage = Toast.makeText(context, "Job Dating",
+						Toast.LENGTH_SHORT);
+				mymessage.setGravity(Gravity.CENTER, 0, 0);
+				mymessage.show();
+				return false;
+			}
+		});
 
 		imgTwitter.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(getActivity().getApplicationContext(), TwitterActivity.class);
+				Intent i = new Intent(getActivity().getApplicationContext(),
+						TwitterActivity.class);
 				startActivity(i);
 			}
 		});
@@ -247,7 +265,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public boolean onLongClick(View v) {
 				// TODO Auto-generated method stub
-				Toast mymessage = Toast.makeText(context, "Twitter",Toast.LENGTH_SHORT);
+				Toast mymessage = Toast.makeText(context, "Twitter",
+						Toast.LENGTH_SHORT);
 				mymessage.setGravity(Gravity.CENTER, 0, 0);
 				mymessage.show();
 				return false;
