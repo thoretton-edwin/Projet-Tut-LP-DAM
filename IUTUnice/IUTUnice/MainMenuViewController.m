@@ -50,6 +50,8 @@
 {
     [super viewDidLoad];
     
+
+    
 	//background
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
@@ -184,6 +186,7 @@
         menuTableView.scrollEnabled = NO;
         [_listViewContainer addSubview: menuTableView];
         
+        menuTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         
         
         [_listMenu setImage:[self createIconForNavigationBarWithImage:@"small_tiles.png"]];

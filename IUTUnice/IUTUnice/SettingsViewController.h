@@ -7,6 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConnexionViewController.h"
+#import "infosWifiViewController.h"
+#import "AboutViewController.h"
+#import "SurveyViewController.h"
+#import "LangueViewController.h"
+#import "CreditsViewController.h"
+
 
 @interface SettingsViewController : UITableViewController
 {
