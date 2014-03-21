@@ -37,7 +37,7 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
     // Initialization
-    OCBorghettiView *accordion = [[OCBorghettiView alloc] initWithFrame:CGRectMake(0, 65, self.view.frame.size.width, self.view.frame.size.height-65)];
+    OCBorghettiView *accordion = [[OCBorghettiView alloc] initWithFrame:CGRectMake(0, 65, self.view.frame.size.width, self.view.frame.size.height-80)];
     
     // Settings and colors
     accordion.accordionSectionHeight = 40;
@@ -48,76 +48,25 @@
     
     [self.view addSubview:accordion];
     
-    // Section DUT
-    UIView *DUT = [[UIView alloc] init];
-    UIView *vuesDUT = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* dutdescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    // Section One
+    UIView *sectionOne = [[UIView alloc] init];
+    UITextView* text = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, sectionOne.frame.size.width, 30)];
+    text.text = @"Test";
     
-    //
+    [sectionOne addSubview:text];
+    [accordion addSectionWithTitle:@"Section One"
+                           andView:sectionOne];
     
-    dutdescr.text = @"Test";
-    dutdescr.backgroundColor= [UIColor clearColor];
-    [vuesDUT addSubview:dutdescr];
+    // Section Two
+    UIView *sectionTwo = [[UIView alloc] init];
+    [accordion addSectionWithTitle:@"Section Two"
+                           andView:sectionTwo];
     
-    [DUT addSubview:vuesDUT];
-    [accordion addSectionWithTitle:@"DUT"
-                           andView:DUT];
-    
-    // Section LP
-    UIView *lp = [[UIView alloc] init];
-    
-    UIView *vuesLP = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* lpDescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    
-    
-    lpDescr.text = @"Test";
-    lpDescr.backgroundColor= [UIColor clearColor];
-    
-    [vuesLP addSubview:lpDescr];
-    
-    [lp addSubview:vuesLP];
-    
-    
-    [accordion addSectionWithTitle:@"LP"
-                           andView:lp];
-    
-    // Section Année spé
-    UIView *anneeSpe = [[UIView alloc] init];
-    
-    
-    UIView *vuesAS = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* ASDescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    
-    ASDescr.text = @"Test";
-    ASDescr.backgroundColor= [UIColor clearColor];
-    
-    [vuesAS addSubview:ASDescr];
-    
-    [anneeSpe addSubview:vuesAS];
-    
-    
-    
-    [accordion addSectionWithTitle:@"Année spécial"
-                           andView:anneeSpe];
-    
-    // Section Etudiant étrangers
-    UIView *etudiantEtr = [[UIView alloc] init];
-    
-    UIView *vuesEE = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* EEDescr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    
-    
-    EEDescr.text = @"Test";
-    EEDescr.backgroundColor= [UIColor clearColor];
-    
-    [vuesEE addSubview:EEDescr];
-    
-    [etudiantEtr addSubview:vuesEE];
-    
-    
-    [accordion addSectionWithTitle:@"Etudiant étrangers"
-                           andView:etudiantEtr];
-    
+    // Section Three
+    UIView *sectionThree = [[UIView alloc] init];
+    [accordion addSectionWithTitle:@"Section Three"
+                           andView:sectionThree];
+
 }
 
 - (void)didReceiveMemoryWarning
