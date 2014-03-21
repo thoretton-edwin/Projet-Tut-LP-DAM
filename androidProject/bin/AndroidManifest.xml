@@ -48,7 +48,7 @@
             android:name="dam.ptut.iutunice.IutWindowsActivity"
             android:label="@string/title_activity_iut_windows"
             android:parentActivityName="dam.ptut.iutunice.MainActivity" >
-
+            
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -65,11 +65,11 @@
                 android:value="dam.ptut.iutunice.IutWindowsActivity" />
         </activity>
         <activity
-            android:name="menu.IconMenuCarouselFragment"
+            android:name="dam.ptut.iutunice.IconMenuCarouselFragment"
             android:label="@string/title_activity_icon_menu_liste_fragment" >
         </activity>
         <activity
-            android:name="dam.ptut.iutumenu.IconMenuListFragment"
+            android:name="dam.ptut.iutunice.IconMenuListFragment"
             android:label="@string/title_activity_icon_menu_list_framgment" >
         </activity>
         <!-- A child of the main activity -->
@@ -78,16 +78,13 @@
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/title_activity_twitter"
             android:parentActivityName="dam.ptut.iutunice.MainActivity" >
-
+            
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.MainActivity" />
         </activity>
-        <activity
-            android:name="dam.ptut.iutunice.PostBac.PostBacActivity"
-            android:label="@string/title_activity_post_bac" >
-        </activity>
+        
     </application>
 
 </manifest>

@@ -14,9 +14,12 @@
     <string name="title_activity_twitter">TwitterActivity</string>
     <string name="title_activity_iut_windows">IutWindowsActivity</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="title_activity_post_bac">PostBacActivity</string>
 =======
     <string name="title_activity_search_formation">SearchFormationActivity</string>
 >>>>>>> 259317f1509b8d14092f78044e2d06fef9ce8526
+=======
+>>>>>>> parent of a926513... PostBacActivity
 
 </resources>
