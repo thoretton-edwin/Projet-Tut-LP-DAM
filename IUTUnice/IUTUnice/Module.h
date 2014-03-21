@@ -11,4 +11,6 @@
 @interface Module : NSObject
 @property NSString*nom;
 @property NSArray* notes;
+@property int moduleTag;
+-(id)initWithName:(NSString*)myName AndNotes:(NSArray*)myNotes;
 @end
