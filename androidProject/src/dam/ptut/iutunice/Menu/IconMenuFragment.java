@@ -1,7 +1,11 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Menu;
 
+import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
+import dam.ptut.iutunice.R.id;
+import dam.ptut.iutunice.R.layout;
+import dam.ptut.iutunice.Twitter.TwitterActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;

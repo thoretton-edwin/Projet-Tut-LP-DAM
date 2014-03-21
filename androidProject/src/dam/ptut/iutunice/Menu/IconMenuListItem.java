@@ -1,4 +1,4 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Menu;
 
 public class IconMenuListItem {
 	final int img;

@@ -1,4 +1,4 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Parameter;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -9,6 +9,10 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.TextHttpResponseHandler;
+
+import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.R.id;
+import dam.ptut.iutunice.R.layout;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

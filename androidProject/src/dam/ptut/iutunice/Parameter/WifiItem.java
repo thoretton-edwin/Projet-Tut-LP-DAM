@@ -1,4 +1,4 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Parameter;
 
 import java.io.IOException;
 

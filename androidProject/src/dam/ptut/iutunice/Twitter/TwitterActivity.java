@@ -1,5 +1,8 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Twitter;
 
+import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.R.id;
+import dam.ptut.iutunice.R.layout;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;

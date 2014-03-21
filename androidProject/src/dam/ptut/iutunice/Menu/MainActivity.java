@@ -1,11 +1,18 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Menu;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import dam.ptut.iutunice.App;
+import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
+import dam.ptut.iutunice.Parameter.ParameterActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
+import dam.ptut.iutunice.R.drawable;
+import dam.ptut.iutunice.R.id;
+import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
+import dam.ptut.iutunice.Twitter.TwitterActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
