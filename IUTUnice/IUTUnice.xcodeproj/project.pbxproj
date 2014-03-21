@@ -10,35 +10,28 @@
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
-		433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4A918D30E6000B0C5F6 /* UE.m */; };
-		433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4AC18D311B600B0C5F6 /* Semestre.m */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
 		435FCA3718D30787006156EC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3618D30787006156EC /* Note.m */; };
 		435FCA3A18D3087F006156EC /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3918D3087F006156EC /* Module.m */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
-		43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */; };
-		43E0C29518DB13F400562B67 /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E0C29318DB13F400562B67 /* AnnuaireViewController.m */; };
-		43E0C29618DB13F400562B67 /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E0C29418DB13F400562B67 /* AnnuaireViewController.xib */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
 		43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */; };
 		43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3318AE2F62004F709B /* MapViewController.m */; };
 		43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3418AE2F62004F709B /* MapViewController.xib */; };
-		43E6FD3A18AE2F74004F709B /* UEListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3818AE2F74004F709B /* UEListViewController.m */; };
-		43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3918AE2F74004F709B /* UEListViewController.xib */; };
+		43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3818AE2F74004F709B /* NotesViewController.m */; };
+		43E6FD3B18AE2F74004F709B /* NotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3918AE2F74004F709B /* NotesViewController.xib */; };
 		43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD3D18AE2F88004F709B /* PostBacViewController.m */; };
 		43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD3E18AE2F88004F709B /* PostBacViewController.xib */; };
 		43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4218AE2FD3004F709B /* SUAPSViewController.m */; };
 		43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4318AE2FD3004F709B /* SUAPSViewController.xib */; };
 		43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4818AE2FF0004F709B /* TwitterWebViewController.m */; };
 		43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */; };
+		43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */; };
+		43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */; };
 		43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD5418AE3094004F709B /* EDTViewController.m */; };
 		43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD5518AE3094004F709B /* EDTViewController.xib */; };
-		920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */ = {isa = PBXBuildFile; fileRef = 920A572518DAF84E00755E48 /* anneeSpeciale.txt */; };
-		920A572A18DAF84E00755E48 /* dut.txt in Resources */ = {isa = PBXBuildFile; fileRef = 920A572618DAF84E00755E48 /* dut.txt */; };
-		920A572B18DAF84E00755E48 /* lp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 920A572718DAF84E00755E48 /* lp.txt */; };
-		920A572C18DAF84E00755E48 /* etudiantEtranger.txt in Resources */ = {isa = PBXBuildFile; fileRef = 920A572818DAF84E00755E48 /* etudiantEtranger.txt */; };
 		92138DB6189260B1000488BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB5189260B1000488BC /* Foundation.framework */; };
 		92138DB8189260B1000488BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB7189260B1000488BC /* CoreGraphics.framework */; };
 		92138DBA189260B1000488BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92138DB9189260B1000488BC /* UIKit.framework */; };
@@ -77,22 +70,6 @@
 		92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */; };
 		92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */; };
 		92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3718AD0C8F0047DA1E /* menton.jpg */; };
-		92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A5C27218D32F92004982C4 /* SettingsViewController.m */; };
-		92A5C27518D3322B004982C4 /* List_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27418D3322B004982C4 /* List_icon.png */; };
-		92A5C27718D33648004982C4 /* small_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27618D33648004982C4 /* small_tiles.png */; };
-		92C374DB18DB014000009580 /* ConnexionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C374D918DB014000009580 /* ConnexionViewController.m */; };
-		92C374DC18DB014000009580 /* ConnexionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C374DA18DB014000009580 /* ConnexionViewController.xib */; };
-		92C374E018DB0A3F00009580 /* infosWifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C374DE18DB0A3F00009580 /* infosWifiViewController.m */; };
-		92C374E118DB0A3F00009580 /* infosWifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C374DF18DB0A3F00009580 /* infosWifiViewController.xib */; };
-		92C374E518DB0AA000009580 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C374E318DB0AA000009580 /* AboutViewController.m */; };
-		92C374E618DB0AA000009580 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C374E418DB0AA000009580 /* AboutViewController.xib */; };
-		92C374EA18DB16ED00009580 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C374E818DB16ED00009580 /* SurveyViewController.m */; };
-		92C374EB18DB16ED00009580 /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C374E918DB16ED00009580 /* SurveyViewController.xib */; };
-		92C374EF18DB170000009580 /* LangueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C374ED18DB170000009580 /* LangueViewController.m */; };
-		92C374F018DB170000009580 /* LangueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C374EE18DB170000009580 /* LangueViewController.xib */; };
-		92C374F418DB173300009580 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C374F218DB173300009580 /* CreditsViewController.m */; };
-		92C374F518DB173300009580 /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C374F318DB173300009580 /* CreditsViewController.xib */; };
-		92C374F718DB26A200009580 /* infosWifi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 92C374F618DB26A200009580 /* infosWifi.xml */; };
 		92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC9CB018B5FC65001D0E6E /* Formation.m */; };
 /* End PBXBuildFile section */
 
@@ -111,10 +88,6 @@
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
-		433CC4A818D30E6000B0C5F6 /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
-		433CC4A918D30E6000B0C5F6 /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
-		433CC4AB18D311B600B0C5F6 /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
-		433CC4AC18D311B600B0C5F6 /* Semestre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semestre.m; sourceTree = "<group>"; };
 		433F27E118C7234D00E87636 /* bus.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bus.xml; sourceTree = "<group>"; };
 		435FCA3518D30787006156EC /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		435FCA3618D30787006156EC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
@@ -124,20 +97,15 @@
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
 		43B9C5F218B75217001A3D75 /* mapServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapServices.plist; sourceTree = "<group>"; };
-		43E0C28F18DAF7F900562B67 /* ModuleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTableViewController.h; sourceTree = "<group>"; };
-		43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTableViewController.m; sourceTree = "<group>"; };
-		43E0C29218DB13F400562B67 /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
-		43E0C29318DB13F400562B67 /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
-		43E0C29418DB13F400562B67 /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
 		43E6FD2D18AE2F52004F709B /* JobDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDatingViewController.h; sourceTree = "<group>"; };
 		43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDatingViewController.m; sourceTree = "<group>"; };
 		43E6FD2F18AE2F52004F709B /* JobDatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDatingViewController.xib; sourceTree = "<group>"; };
 		43E6FD3218AE2F62004F709B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		43E6FD3318AE2F62004F709B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		43E6FD3418AE2F62004F709B /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		43E6FD3718AE2F74004F709B /* UEListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UEListViewController.h; sourceTree = "<group>"; };
-		43E6FD3818AE2F74004F709B /* UEListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UEListViewController.m; sourceTree = "<group>"; };
-		43E6FD3918AE2F74004F709B /* UEListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UEListViewController.xib; sourceTree = "<group>"; };
+		43E6FD3718AE2F74004F709B /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		43E6FD3818AE2F74004F709B /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		43E6FD3918AE2F74004F709B /* NotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
 		43E6FD3C18AE2F88004F709B /* PostBacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostBacViewController.h; sourceTree = "<group>"; };
 		43E6FD3D18AE2F88004F709B /* PostBacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostBacViewController.m; sourceTree = "<group>"; };
 		43E6FD3E18AE2F88004F709B /* PostBacViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostBacViewController.xib; sourceTree = "<group>"; };
@@ -147,14 +115,13 @@
 		43E6FD4718AE2FF0004F709B /* TwitterWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterWebViewController.h; sourceTree = "<group>"; };
 		43E6FD4818AE2FF0004F709B /* TwitterWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterWebViewController.m; sourceTree = "<group>"; };
 		43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterWebViewController.xib; sourceTree = "<group>"; };
+		43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
+		43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
+		43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
 		43E6FD5318AE3094004F709B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
 		43E6FD5418AE3094004F709B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
 		43E6FD5518AE3094004F709B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
 		7F25446731F043D681901659 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		920A572518DAF84E00755E48 /* anneeSpeciale.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anneeSpeciale.txt; sourceTree = "<group>"; };
-		920A572618DAF84E00755E48 /* dut.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dut.txt; sourceTree = "<group>"; };
-		920A572718DAF84E00755E48 /* lp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lp.txt; sourceTree = "<group>"; };
-		920A572818DAF84E00755E48 /* etudiantEtranger.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = etudiantEtranger.txt; sourceTree = "<group>"; };
 		92138DB2189260B1000488BC /* IUTUnice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUTUnice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92138DB5189260B1000488BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92138DB7189260B1000488BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -202,29 +169,6 @@
 		92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT NICE2.JPG"; sourceTree = "<group>"; };
 		92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT SOPHIA.JPG"; sourceTree = "<group>"; };
 		92A53D3718AD0C8F0047DA1E /* menton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menton.jpg; sourceTree = "<group>"; };
-		92A5C27118D32F92004982C4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		92A5C27218D32F92004982C4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		92A5C27418D3322B004982C4 /* List_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = List_icon.png; sourceTree = "<group>"; };
-		92A5C27618D33648004982C4 /* small_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_tiles.png; sourceTree = "<group>"; };
-		92C374D818DB014000009580 /* ConnexionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnexionViewController.h; sourceTree = "<group>"; };
-		92C374D918DB014000009580 /* ConnexionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnexionViewController.m; sourceTree = "<group>"; };
-		92C374DA18DB014000009580 /* ConnexionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnexionViewController.xib; sourceTree = "<group>"; };
-		92C374DD18DB0A3F00009580 /* infosWifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infosWifiViewController.h; sourceTree = "<group>"; };
-		92C374DE18DB0A3F00009580 /* infosWifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infosWifiViewController.m; sourceTree = "<group>"; };
-		92C374DF18DB0A3F00009580 /* infosWifiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infosWifiViewController.xib; sourceTree = "<group>"; };
-		92C374E218DB0AA000009580 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		92C374E318DB0AA000009580 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		92C374E418DB0AA000009580 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
-		92C374E718DB16ED00009580 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
-		92C374E818DB16ED00009580 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
-		92C374E918DB16ED00009580 /* SurveyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
-		92C374EC18DB170000009580 /* LangueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangueViewController.h; sourceTree = "<group>"; };
-		92C374ED18DB170000009580 /* LangueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangueViewController.m; sourceTree = "<group>"; };
-		92C374EE18DB170000009580 /* LangueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LangueViewController.xib; sourceTree = "<group>"; };
-		92C374F118DB173300009580 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
-		92C374F218DB173300009580 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
-		92C374F318DB173300009580 /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
-		92C374F618DB26A200009580 /* infosWifi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = infosWifi.xml; path = ../../../Desktop/infosWifi.xml; sourceTree = "<group>"; };
 		92CC9CAF18B5FC65001D0E6E /* Formation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formation.h; sourceTree = "<group>"; };
 		92CC9CB018B5FC65001D0E6E /* Formation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -295,19 +239,13 @@
 		43E6FD2B18AE2F2C004F709B /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				43E6FD3718AE2F74004F709B /* UEListViewController.h */,
-				43E6FD3818AE2F74004F709B /* UEListViewController.m */,
-				43E6FD3918AE2F74004F709B /* UEListViewController.xib */,
+				43E6FD3718AE2F74004F709B /* NotesViewController.h */,
+				43E6FD3818AE2F74004F709B /* NotesViewController.m */,
+				43E6FD3918AE2F74004F709B /* NotesViewController.xib */,
 				435FCA3518D30787006156EC /* Note.h */,
 				435FCA3618D30787006156EC /* Note.m */,
 				435FCA3818D3087F006156EC /* Module.h */,
 				435FCA3918D3087F006156EC /* Module.m */,
-				433CC4A818D30E6000B0C5F6 /* UE.h */,
-				433CC4A918D30E6000B0C5F6 /* UE.m */,
-				433CC4AB18D311B600B0C5F6 /* Semestre.h */,
-				433CC4AC18D311B600B0C5F6 /* Semestre.m */,
-				43E0C28F18DAF7F900562B67 /* ModuleTableViewController.h */,
-				43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -335,9 +273,9 @@
 		43E6FD4C18AE305B004F709B /* Annuaire */ = {
 			isa = PBXGroup;
 			children = (
-				43E0C29218DB13F400562B67 /* AnnuaireViewController.h */,
-				43E0C29318DB13F400562B67 /* AnnuaireViewController.m */,
-				43E0C29418DB13F400562B67 /* AnnuaireViewController.xib */,
+				43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */,
+				43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */,
+				43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */,
 			);
 			name = Annuaire;
 			sourceTree = "<group>";
@@ -388,7 +326,6 @@
 		92138DBB189260B1000488BC /* IUTUnice */ = {
 			isa = PBXGroup;
 			children = (
-				92A5C27018D32F34004982C4 /* Settings */,
 				43E6FD5218AE3086004F709B /* EDT */,
 				43E6FD4C18AE305B004F709B /* Annuaire */,
 				43E6FD4618AE2FE7004F709B /* Twitter */,
@@ -453,8 +390,6 @@
 		929E014F189BA45900694030 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				92A5C27618D33648004982C4 /* small_tiles.png */,
-				92A5C27418D3322B004982C4 /* List_icon.png */,
 				9257A1A518AE309900CDECF4 /* appBackground.png */,
 				92A53D3718AD0C8F0047DA1E /* menton.jpg */,
 				92A53D2F18AD0BCD0047DA1E /* IUT MENTON195.JPG */,
@@ -496,41 +431,9 @@
 		92A53D2718ACFA580047DA1E /* textfiles */ = {
 			isa = PBXGroup;
 			children = (
-				920A572518DAF84E00755E48 /* anneeSpeciale.txt */,
-				920A572618DAF84E00755E48 /* dut.txt */,
-				920A572718DAF84E00755E48 /* lp.txt */,
-				920A572818DAF84E00755E48 /* etudiantEtranger.txt */,
 				92A53D2D18AD0B7B0047DA1E /* descriptionIUT.txt */,
 			);
 			name = textfiles;
-			sourceTree = "<group>";
-		};
-		92A5C27018D32F34004982C4 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				92C374F618DB26A200009580 /* infosWifi.xml */,
-				92A5C27118D32F92004982C4 /* SettingsViewController.h */,
-				92A5C27218D32F92004982C4 /* SettingsViewController.m */,
-				92C374D818DB014000009580 /* ConnexionViewController.h */,
-				92C374D918DB014000009580 /* ConnexionViewController.m */,
-				92C374DA18DB014000009580 /* ConnexionViewController.xib */,
-				92C374DD18DB0A3F00009580 /* infosWifiViewController.h */,
-				92C374DE18DB0A3F00009580 /* infosWifiViewController.m */,
-				92C374DF18DB0A3F00009580 /* infosWifiViewController.xib */,
-				92C374E218DB0AA000009580 /* AboutViewController.h */,
-				92C374E318DB0AA000009580 /* AboutViewController.m */,
-				92C374E418DB0AA000009580 /* AboutViewController.xib */,
-				92C374E718DB16ED00009580 /* SurveyViewController.h */,
-				92C374E818DB16ED00009580 /* SurveyViewController.m */,
-				92C374E918DB16ED00009580 /* SurveyViewController.xib */,
-				92C374EC18DB170000009580 /* LangueViewController.h */,
-				92C374ED18DB170000009580 /* LangueViewController.m */,
-				92C374EE18DB170000009580 /* LangueViewController.xib */,
-				92C374F118DB173300009580 /* CreditsViewController.h */,
-				92C374F218DB173300009580 /* CreditsViewController.m */,
-				92C374F318DB173300009580 /* CreditsViewController.xib */,
-			);
-			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -616,55 +519,35 @@
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
-				92C374F718DB26A200009580 /* infosWifi.xml in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
-				92C374E118DB0A3F00009580 /* infosWifiViewController.xib in Resources */,
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
-				920A572A18DAF84E00755E48 /* dut.txt in Resources */,
+				43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
 				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
-				92C374F018DB170000009580 /* LangueViewController.xib in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
 				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
-<<<<<<< HEAD
-				92C374E618DB0AA000009580 /* AboutViewController.xib in Resources */,
-=======
-				920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */,
->>>>>>> FETCH_HEAD
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
 				92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
 				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
-				920A572C18DAF84E00755E48 /* etudiantEtranger.txt in Resources */,
 				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
 				929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */,
-				920A572B18DAF84E00755E48 /* lp.txt in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
-				43E0C29618DB13F400562B67 /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
-				92C374F518DB173300009580 /* CreditsViewController.xib in Resources */,
-				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
 				92138DC0189260B1000488BC /* InfoPlist.strings in Resources */,
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
-<<<<<<< HEAD
-				92C374DC18DB014000009580 /* ConnexionViewController.xib in Resources */,
 				43E6FD3B18AE2F74004F709B /* NotesViewController.xib in Resources */,
-=======
-				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
->>>>>>> FETCH_HEAD
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
-				92C374EB18DB16ED00009580 /* SurveyViewController.xib in Resources */,
-				92A5C27718D33648004982C4 /* small_tiles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,33 +599,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E6FD3A18AE2F74004F709B /* UEListViewController.m in Sources */,
+				43E6FD3A18AE2F74004F709B /* NotesViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
-				92C374DB18DB014000009580 /* ConnexionViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
-				92C374EA18DB16ED00009580 /* SurveyViewController.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
-				92C374E018DB0A3F00009580 /* infosWifiViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				435FCA3718D30787006156EC /* Note.m in Sources */,
-				92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
 				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
-				92C374EF18DB170000009580 /* LangueViewController.m in Sources */,
 				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
-				43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
+				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
-				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
-				43E0C29518DB13F400562B67 /* AnnuaireViewController.m in Sources */,
-				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,9 +46,15 @@
 	// load page
     [webView loadRequest:request];
 	
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];    
-		
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    
+	
+	
 	[self.view addSubview:webView];
+	
+		
+	
+	
 	
 }
 
@@ -56,7 +62,7 @@
 {
 	NSLog(@"start web view");
 
-    activityIndicator.frame = CGRectMake(30,50, 250, 250);
+    activityIndicator.frame = CGRectMake(50, 200, 250, 250);
     activityIndicator.color = [UIColor blueColor];
     [self.view addSubview:activityIndicator];
     
