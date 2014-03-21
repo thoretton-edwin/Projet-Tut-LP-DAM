@@ -17,7 +17,7 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		this.setTitle("IUT Nice Côte d'Azur");
+		this.setTitle("IUT Nice Côte d'Azur2");
 
 		// Toast.makeText(getApplicationContext(),"version Android  3= "+VERSION.SDK_INT,
 		// Toast.LENGTH_SHORT).show();
