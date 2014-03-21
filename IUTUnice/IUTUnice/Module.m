@@ -11,17 +11,7 @@
 @implementation Module
 @synthesize nom;
 @synthesize notes;
-@synthesize moduleTag;
 
 
--(id)initWithName:(NSString*)myName AndNotes:(NSArray*)myNotes
-{
-	self=[super init];
-	if(self)
-	{
-		self->nom=myName;
-		self->notes = [[NSArray alloc]initWithArray:myNotes];
-	}
-	return self;
-}
+//-(id)initWithName:(NS)
 @end

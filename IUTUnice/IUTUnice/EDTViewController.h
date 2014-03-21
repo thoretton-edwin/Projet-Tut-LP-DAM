@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <EventKitUI/EventKitUI.h>
 
 @interface EDTViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinnerCircle;
 @end

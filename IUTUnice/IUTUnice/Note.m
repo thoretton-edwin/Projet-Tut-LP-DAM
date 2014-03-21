@@ -12,9 +12,9 @@
 @synthesize nom;
 @synthesize note;
 @synthesize date;
-@synthesize tag;
 
--(id)initWithNom:(NSString*)monNom AndNote:(NSNumber*)maNote AndDate:(NSString*)maDate
+
+-(id)initWithNom:(NSString*)monNom AndNote:(NSNumber*)maNote AndDate:(NSDate*)maDate
 {
 	self = [super init];
 	if(self)

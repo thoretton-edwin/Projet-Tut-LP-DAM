@@ -11,7 +11,5 @@
 @interface Note : NSObject
 @property NSString* nom;
 @property NSNumber* note;
-@property NSString* date;
-@property int  tag;
--(id)initWithNom:(NSString*)monNom AndNote:(NSNumber*)maNote AndDate:(NSString*)maDate;
+@property NSDate* date;
 @end
