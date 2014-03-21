@@ -1,4 +1,4 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.IutWindows;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -11,6 +11,8 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.TextHttpResponseHandler;
 
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.R.drawable;
+import dam.ptut.iutunice.R.id;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
 import android.os.Bundle;

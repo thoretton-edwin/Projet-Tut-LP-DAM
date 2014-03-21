@@ -1,5 +1,6 @@
 package dam.ptut.iutunice;
 
+import dam.ptut.iutunice.PostBac.PostBacActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -181,7 +182,9 @@ public class IconMenuCarouselFragment extends Fragment {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
+				Intent intent = new Intent(getActivity()
+						.getApplicationContext(), PostBacActivity.class);
+				startActivity(intent);
 
 			}
 		});

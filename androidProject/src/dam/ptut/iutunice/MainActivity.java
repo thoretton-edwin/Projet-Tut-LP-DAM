@@ -3,6 +3,8 @@ package dam.ptut.iutunice;
 import java.util.ArrayList;
 import java.util.List;
 
+import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
+import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.R.menu;
 
 import android.content.Intent;
@@ -18,10 +20,6 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		this.setTitle("IUT Nice Côte d'Azur");
-
-		// Toast.makeText(getApplicationContext(),"version Android  3= "+VERSION.SDK_INT,
-		// Toast.LENGTH_SHORT).show();
-		// Affichage de la version d'android du device
 	}
 
 	@Override
@@ -152,6 +150,8 @@ public class MainActivity extends FragmentActivity {
 		case R.drawable.logo_suaps:
 			break;
 		case R.drawable.logo_post_bac:
+			intent = new Intent(this, PostBacActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_addressbook:
 			break;

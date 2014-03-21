@@ -45,7 +45,7 @@
         </activity>
         <!-- A child of the main activity -->
         <activity
-            android:name="dam.ptut.iutunice.IutWindowsActivity"
+            android:name="dam.ptut.iutunice.IutWindows.IutWindowsActivity"
             android:label="@string/title_activity_iut_windows"
             android:parentActivityName="dam.ptut.iutunice.MainActivity" >
 
@@ -56,9 +56,10 @@
         </activity>
         <!-- A child of the IutWindowsActivity activity -->
         <activity
-            android:name="dam.ptut.iutunice.SearchFormationActivity"
+            android:name="dam.ptut.iutunice.IutWindows.SearchFormationActivity"
             android:label="@string/title_activity_search_formation"
-            android:parentActivityName="dam.ptut.iutunice.IutWindowsActivity" >
+            android:parentActivityName="dam.ptut.iutunice.IutWindows.IutWindowsActivity" >
+
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -84,7 +85,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.MainActivity" />
         </activity>
-        
+        <!-- A child of the main activity -->
+        <activity
+            android:name="dam.ptut.iutunice.PostBac.PostBacActivity"
+            android:label="@string/title_activity_post_bac"
+            android:parentActivityName="dam.ptut.iutunice.MainActivity" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

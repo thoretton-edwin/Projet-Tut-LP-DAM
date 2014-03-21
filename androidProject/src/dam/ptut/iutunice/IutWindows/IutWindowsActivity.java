@@ -1,4 +1,4 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.IutWindows;
 
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.R.anim;

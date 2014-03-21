@@ -1,5 +1,7 @@
 package dam.ptut.iutunice;
 
+import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
+import dam.ptut.iutunice.PostBac.PostBacActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -172,7 +174,9 @@ public class IconMenuFragment extends Fragment {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
+				Intent intent = new Intent(getActivity()
+						.getApplicationContext(), PostBacActivity.class);
+				startActivity(intent);
 
 			}
 		});
