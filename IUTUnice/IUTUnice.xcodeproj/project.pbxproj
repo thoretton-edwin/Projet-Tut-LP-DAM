@@ -13,8 +13,6 @@
 		433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4A918D30E6000B0C5F6 /* UE.m */; };
 		433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4AC18D311B600B0C5F6 /* Semestre.m */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
-		435E215C18DC49690097AD72 /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435E215A18DC49690097AD72 /* AnnuaireViewController.m */; };
-		435E215D18DC49690097AD72 /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435E215B18DC49690097AD72 /* AnnuaireViewController.xib */; };
 		435FCA3718D30787006156EC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3618D30787006156EC /* Note.m */; };
 		435FCA3A18D3087F006156EC /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3918D3087F006156EC /* Module.m */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
@@ -33,6 +31,8 @@
 		43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4318AE2FD3004F709B /* SUAPSViewController.xib */; };
 		43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4818AE2FF0004F709B /* TwitterWebViewController.m */; };
 		43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */; };
+		43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */; };
+		43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */; };
 		43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD5418AE3094004F709B /* EDTViewController.m */; };
 		43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD5518AE3094004F709B /* EDTViewController.xib */; };
 		920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */ = {isa = PBXBuildFile; fileRef = 920A572518DAF84E00755E48 /* anneeSpeciale.txt */; };
@@ -103,9 +103,6 @@
 		433CC4AB18D311B600B0C5F6 /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
 		433CC4AC18D311B600B0C5F6 /* Semestre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semestre.m; sourceTree = "<group>"; };
 		433F27E118C7234D00E87636 /* bus.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bus.xml; sourceTree = "<group>"; };
-		435E215918DC49690097AD72 /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
-		435E215A18DC49690097AD72 /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
-		435E215B18DC49690097AD72 /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
 		435FCA3518D30787006156EC /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		435FCA3618D30787006156EC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		435FCA3818D3087F006156EC /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
@@ -134,6 +131,9 @@
 		43E6FD4718AE2FF0004F709B /* TwitterWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterWebViewController.h; sourceTree = "<group>"; };
 		43E6FD4818AE2FF0004F709B /* TwitterWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterWebViewController.m; sourceTree = "<group>"; };
 		43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterWebViewController.xib; sourceTree = "<group>"; };
+		43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
+		43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
+		43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
 		43E6FD5318AE3094004F709B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
 		43E6FD5418AE3094004F709B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
 		43E6FD5518AE3094004F709B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
@@ -303,9 +303,9 @@
 		43E6FD4C18AE305B004F709B /* Annuaire */ = {
 			isa = PBXGroup;
 			children = (
-				435E215918DC49690097AD72 /* AnnuaireViewController.h */,
-				435E215A18DC49690097AD72 /* AnnuaireViewController.m */,
-				435E215B18DC49690097AD72 /* AnnuaireViewController.xib */,
+				43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */,
+				43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */,
+				43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */,
 			);
 			name = Annuaire;
 			sourceTree = "<group>";
@@ -573,6 +573,7 @@
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
 				920A572A18DAF84E00755E48 /* dut.txt in Resources */,
+				43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
 				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
@@ -589,7 +590,6 @@
 				920A572B18DAF84E00755E48 /* lp.txt in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
-				435E215D18DC49690097AD72 /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
@@ -667,12 +667,12 @@
 				92138DC2189260B1000488BC /* main.m in Sources */,
 				43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
+				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
-				435E215C18DC49690097AD72 /* AnnuaireViewController.m in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
