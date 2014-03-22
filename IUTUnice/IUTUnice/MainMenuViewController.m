@@ -134,6 +134,8 @@
 
 		
         [self.view addSubview: cadre];
+        
+        menuTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     }
     
     
@@ -184,7 +186,7 @@
         menuTableView.scrollEnabled = NO;
         [_listViewContainer addSubview: menuTableView];
         
-        
+        menuTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         
         [_listMenu setImage:[self createIconForNavigationBarWithImage:@"small_tiles.png"]];
         _isInList = YES;
