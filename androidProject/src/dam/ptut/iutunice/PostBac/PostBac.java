@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
+import android.util.Log;
+
 public class PostBac {
 	int id;
 	String name;
@@ -39,6 +41,9 @@ public class PostBac {
 		parser.next();
 
 		parser.require(XmlPullParser.END_TAG, null, "formations");
+
+		Log.v("test parser", "formations :  id : " + id + " - name : " + name
+				+ " - descr : " + descr);
 	}
 
 	public String toString() {
