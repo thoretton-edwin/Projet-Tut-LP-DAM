@@ -17,6 +17,8 @@
 		435FCA3A18D3087F006156EC /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3918D3087F006156EC /* Module.m */; };
 		4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4362221518E2CC53006B091D /* AnnuaireViewController.m */; };
 		4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4362221618E2CC53006B091D /* AnnuaireViewController.xib */; };
+		4362221A18E2FD48006B091D /* recherche.js in Sources */ = {isa = PBXBuildFile; fileRef = 4362221918E2FD48006B091D /* recherche.js */; };
+		4362221E18E2FE7A006B091D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4362221D18E2FE7A006B091D /* style.css */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
@@ -114,6 +116,8 @@
 		4362221418E2CC53006B091D /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
 		4362221518E2CC53006B091D /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
 		4362221618E2CC53006B091D /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
+		4362221918E2FD48006B091D /* recherche.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = recherche.js; sourceTree = "<group>"; };
+		4362221D18E2FE7A006B091D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
@@ -317,6 +321,8 @@
 				4362221418E2CC53006B091D /* AnnuaireViewController.h */,
 				4362221518E2CC53006B091D /* AnnuaireViewController.m */,
 				4362221618E2CC53006B091D /* AnnuaireViewController.xib */,
+				4362221918E2FD48006B091D /* recherche.js */,
+				4362221D18E2FE7A006B091D /* style.css */,
 			);
 			name = Annuaire;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
 				920A572A18DAF84E00755E48 /* dut.txt in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
+				4362221E18E2FE7A006B091D /* style.css in Resources */,
 				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
@@ -702,6 +709,7 @@
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
 				4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */,
+				4362221A18E2FD48006B091D /* recherche.js in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
 				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
