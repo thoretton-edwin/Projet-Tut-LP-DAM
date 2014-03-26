@@ -19,9 +19,12 @@ namespace IUTUNice
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/FormationPage.xaml", UriKind.Relative));
         }
 
-        
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/SondagePage.xaml", UriKind.Relative));
+        }
     }
 }

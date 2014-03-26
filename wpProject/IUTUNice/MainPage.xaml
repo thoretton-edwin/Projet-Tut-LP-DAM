@@ -75,7 +75,10 @@
                 </HyperlinkButton.Background>
             </HyperlinkButton>
 
-            <HyperlinkButton NavigateUri="/CalendarPage.xaml" HorizontalAlignment="Left" Margin="304,231,0,0" VerticalAlignment="Top" Foreground="#FF020202" BorderBrush="Black" Width="142" Height="120">
+            <HyperlinkButton NavigateUri="/CalendarPage.xaml" HorizontalAlignment="Left" Margin="304,231,0,0" VerticalAlignment="Top" Foreground="#FF020202" Width="142" Height="120" BorderThickness="1,0,0,0">
+                <HyperlinkButton.BorderBrush>
+                    <ImageBrush Stretch="Fill"/>
+                </HyperlinkButton.BorderBrush>
                 <HyperlinkButton.Background>
                     <ImageBrush ImageSource="/Icones/calendar.png" />
                 </HyperlinkButton.Background>
