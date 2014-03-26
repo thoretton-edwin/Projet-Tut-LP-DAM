@@ -51,7 +51,7 @@ public class SearchFormationActivity extends Activity {
 	ProgressDialog loading;
 	// succès récupération liste formation depuis internet
 	boolean success = false;
-	//adapter pour la liste
+	// adapter pour la liste
 	ListAdapter adapter;
 
 	@Override
@@ -75,8 +75,7 @@ public class SearchFormationActivity extends Activity {
 
 		// récupère les formations
 		recoveryApiFormation();
-		
-		
+
 	}
 
 	@Override
@@ -198,23 +197,17 @@ public class SearchFormationActivity extends Activity {
 	}
 
 	private void recoveryApiFormation() {
+		Log.v("recoveryApi", "1");
 		client.get(this, "http://www.iut.unice.fr/api/formations",
 				new JsonHttpResponseHandler() {
 					@Override
-					public void onFinish() {
-						if (success) {
-							//init adapter
-							adapter = new ListAdapter();
-							showFormation();
-						}
-					}
+					public void onFinish() {}
 
 					@Override
 					public void onSuccess(JSONArray response) {
 						try {
 							// parse JSON
 							parseJson(response);
-							loading.dismiss();
 							success = true;
 						} catch (JSONException e) {
 							e.printStackTrace();
@@ -227,6 +220,13 @@ public class SearchFormationActivity extends Activity {
 							loading.setMessage("Erreur de connexion lors de la lecture des données. Vous pouvez retourner sur la page précédente.");
 							loading.setCancelable(true);
 						}
+						
+						if (success) {
+							// init adapter
+							adapter = new ListAdapter();
+							showFormation();
+							loading.dismiss();
+						}
 
 					}
 
@@ -236,6 +236,7 @@ public class SearchFormationActivity extends Activity {
 						loading.setMessage("Erreur de connexion ! Vous pouvez retourner sur la page précédente.");
 						loading.setCancelable(true);
 					}
+
 				});
 	}
 
@@ -258,9 +259,9 @@ public class SearchFormationActivity extends Activity {
 		ListView listView = (ListView) findViewById(R.id.listViewFormation);
 		listView.setAdapter(adapter);
 	}
+
 	/*****
-	 * Classe ListAdapter
-	 * adapter pour gérer la liste
+	 * Classe ListAdapter adapter pour gérer la liste
 	 *****/
 	public class ListAdapter extends BaseAdapter {
 
@@ -268,11 +269,11 @@ public class SearchFormationActivity extends Activity {
 		private final int[] BACKGROUND_GREYS = { 0xffFAFAFA, 0xffF0F0F0 };
 
 		private LayoutInflater inflater;
-		
-		public ListAdapter(){
+
+		public ListAdapter() {
 			this.inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		}
-		
+
 		@Override
 		public int getCount() {
 			return listFormation.size();
@@ -286,21 +287,21 @@ public class SearchFormationActivity extends Activity {
 
 		@Override
 		public long getItemId(int position) {
-			return  Long.valueOf( getItem(position).id ); //type de id : int
+			return Long.valueOf(getItem(position).id); // type de id : int
 		}
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-//			if (convertView == null) {
-//				convertView = inflater.inflate(R.layout.item_station,
-//						parent, false);
-//			}
-//			convertView.setBackgroundColor(BACKGROUND_GREYS[position
-//					% BACKGROUND_GREYS.length]);
-//			Item_Station oneStation = getItem(position);
-//
-//			
-//			}
+			if (convertView == null) {
+				convertView = inflater.inflate(R.layout.item_list_formation,
+						parent, false);
+			}
+			convertView.setBackgroundColor(BACKGROUND_GREYS[position
+					% BACKGROUND_GREYS.length]);
+			Formation oneFormation = getItem(position);
+			TextView textView = ((TextView) convertView);
+			textView.setText(oneFormation.title);
+
 			return convertView;
 		}
 
