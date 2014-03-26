@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<sondage xml:lang="fr">
+	<questionnaire type="feedback">
+		<question>
+			<id>Q1</id>
+			<intitule>Sur quel système d'exploitation fonctionne votre mobile ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Android (Google).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>iOS (Apple).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Windows Phone (Microsoft).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Je ne sais pas.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q2</id>
+			<intitule>Quelle fonctionnalité utilisez-vous le plus souvent ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Vitrine IUT.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R2</id>
+				<intitule>Notes.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R3</id>
+				<intitule>Emploi du temps.</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Cartes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>SUAPS (Sport).</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R6</id>
+				<intitule>Informations Post-Bac.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R7</id>
+				<intitule>Annuaire Professeurs.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R8</id>
+				<intitule>Actualité Twitter.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R9</id>
+				<intitule>Interface "Job Dating".</intitule>
+			</reponse>
+			
+		</question>
+		
+		<question>
+			<id>Q3</id>
+			<intitule>Quelle fonctionnalité utilisez-vous le moins souvent ?</intitule>
+			
+			<reponse>
+				<id>R1</id>
+				<intitule>Vitrine IUT.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Notes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Emploi du temps.</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Cartes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>SUAPS (Sport).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>Informations Post-Bac.</intitule>
+			</reponse>
+			<reponse>
+				<id>R7</id>
+				<intitule>Annuaire Professeurs.</intitule>
+			</reponse>
+			<reponse>
+				<id>R8</id>
+				<intitule>Actualité Twitter.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R9</id>
+				<intitule>Interface "Job Dating".</intitule>
+			</reponse>
+			
+		</question>
+		
+		<question>
+			<id>Q4</id>
+			<intitule>Sur une échelle de 0 à 5, comment évaluez-vous votre satisfaction concernant l'application ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+			
+		</question>
+		<question>
+			<id>Q5</id>
+			<intitule>Comment jugez-vous l'ergonomie/l'interface de l'application ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q6</id>
+			<intitule>Est-ce que la fréquence des mises à jour des actualités vous satisfait ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Oui.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Non.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Je ne sais pas.</intitule>
+			</reponse>
+
+		</question>
+		<question>
+			<id>Q7</id>
+			<intitule>Est-ce que vous utilisez l'identification ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Oui, cela permet d'accéder à d'autres fonctionnalités.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Non, je ne vois pas l'intérêt et/ou cela ne m'apporte rien.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q8</id>
+			<intitule>Quel menu utilisez-vous le plus souvent ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Le menu avec icônes (téléphone en portrait).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Le menu en liste (téléphone en portrait).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Le menu en carrousel (téléphone en paysage).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q9</id>
+			<intitule>Utilisez-vous l'application dans une autre langue (en Anglais) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>
+				Oui, j'en suis satisfait.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Oui, mais je trouve que les traductions ne sont pas suffisantes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Non, je ne l'utilise pas.</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Non, car je ne suis pas satisfait.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q10</id>
+			<intitule>Trouvez-vous facile d'accès les paramètres ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Oui.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Non.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Je ne sais pas.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q11</id>
+			<intitule>Trouvez-vous satisfaisant la quantité et la qualité d'informations dans les différentes rubriques ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Oui.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Non.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Je ne sais pas./pas d'opinion</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q12</id>
+			<intitule>Enfin, Comment Donald peut-il avoir des neveux s'il n'a ni frère ni soeur ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Bonne question !</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Est-ce vraiment une question ?</intitule>
+			</reponse>
+		</question>
+	</questionnaire>
+
+	<questionnaire type="IUT">
+		<question>
+			<id>Q1</id>
+			<intitule>Sur quel site êtes-vous ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Cannes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>
+				Cannes-la-bocca.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>
+				Sophia Antipolis.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>
+				Nice.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>
+				Menton.
+				</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q2</id>
+			<intitule>Comment trouvez-vous le stationnement (parking) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Facile et rapide.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>
+				Difficile, pas assez de places.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>
+				Difficile, manque d'organisation.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>
+				Pas concerné.
+				</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q3</id>
+			<intitule>Comment trouvez-vous l'accès au site de l'IUT ? (transport en commun, indications et panneaux...)</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q4</id>
+			<intitule>Comment trouvez-vous le restaurant universitaire ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q5</id>
+			<intitule>Comment trouvez-vous l'organisation de l'IUT (communication entre services, secrétariat sur Nice, intendance...) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q6</id>
+			<intitule>Comment trouvez-vous l'hygiène et la propreté de l'IUT ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q7</id>
+			<intitule>Comment trouvez-vous les partenariats avec les entreprises (offres d'emplois, offres de stages...) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Nul).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Mauvais).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Moyen).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Très bien).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+	</questionnaire>
+</sondage>
+
+
+<sondage xml:lang="en">
+	<questionnaire type="feedback">
+		<question>
+			<id>Q1</id>
+			<intitule>What's the operating system of your smartphone ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Android (Google).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>iOS (Apple).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Windows Phone (Microsoft).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>I don't know.</intitule>
+			</reponse>
+		</question>
+		
+
+		<question>
+			<id>Q2</id>
+			<intitule>What functionality do you use the most ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>IUT Display.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R2</id>
+				<intitule>Grades.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R3</id>
+				<intitule>Schedule.</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Maps.</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>SUAPS (Sport).</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R6</id>
+				<intitule>Post-Bac Information.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R7</id>
+				<intitule>Teachers' Adressbook.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R8</id>
+				<intitule>Twitter Newsfeed.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R9</id>
+				<intitule>Job Dating" Interface.</intitule>
+			</reponse>
+			
+		</question>
+		
+		
+
+		<question>
+			<id>Q3</id>
+			<intitule>What functionality do you use the least ?</intitule>
+			
+			<reponse>
+				<id>R1</id>
+				<intitule>IUT Display.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R2</id>
+				<intitule>Grades.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R3</id>
+				<intitule>Schedule.</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Maps.</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>SUAPS (Sport).</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R6</id>
+				<intitule>Post-Bac Information.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R7</id>
+				<intitule>Teachers' Adressbook.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R8</id>
+				<intitule>Twitter Newsfeed.</intitule>
+			</reponse>
+			
+			<reponse>
+				<id>R9</id>
+				<intitule>Job Dating" Interface.</intitule>
+			</reponse>
+		</question>
+		
+
+		
+		<question>
+			<id>Q4</id>
+			<intitule>On a scale of 0-5, how would you rate your satisfaction with the application?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+			
+		</question>
+		<question>
+			<id>Q5</id>
+			<intitule>On a scale of 0-5, how would you rate ergonomics / interface of the application?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+			
+		</question>
+		<question>
+			<id>Q6</id>
+			<intitule>Are you satisfied by the frequency of news updates ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Yes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>No.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>I don't know</intitule>
+			</reponse>
+
+		</question>
+		<question>
+			<id>Q7</id>
+			<intitule>Do you log in when you use the application?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Oui, cela permet d'accéder à d'autres fonctionnalités.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Non, je ne vois pas l'intérêt et/ou cela ne m'apporte rien.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q8</id>
+			<intitule>What menu type you use the most ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Icons menu  (portrait mode).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>List menu (portrait mode).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>Horizontal scrolling menu (landscape mode).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q9</id>
+			<intitule>Do you use the application in an other language (French mode) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>
+				Yes and it's satisfying.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Yes, but I think that translations aren't good enough.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>No, I don't use it.</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>Non, because it's not good enough.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q10</id>
+			<intitule>Do you think that settings are easy to access?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Yes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>No.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>I don't know.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q11</id>
+			<intitule>Do you think that amount and quality of information in the different sections are satisfying ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Yes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>No.</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>I don't know.</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q12</id>
+			<intitule>At last, how can Donald Duck have nephews if he has no sister nor brother ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>That's a damn good question !</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>Are you serious ?</intitule>
+			</reponse>
+		</question>
+	</questionnaire>
+
+	<questionnaire type="IUT">
+		<question>
+			<id>Q1</id>
+			<intitule>On which site are you ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Cannes.</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>
+				Cannes-la-bocca.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>
+				Sophia Antipolis.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>
+				Nice.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>
+				Menton.
+				</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q2</id>
+			<intitule>Comment trouvez-vous le stationnement (parking) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>Fast and easy</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>
+				Hard, not enough spots.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>
+				Hard, lack of organisation.
+				</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>
+				Not concerned.
+				</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q3</id>
+			<intitule>How would you rate the ease to access the IUT ( public transportation, information and panels...)</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+			
+		</question>
+		<question>
+			<id>Q4</id>
+			<intitule>How would you rate the university restaurant ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q5</id>
+			<intitule>How would you rate the organisation of the IUT (communication between services, secretariat on Nice, stewardship...) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q6</id>
+			<intitule>How would you rate hygiène and cleanliness of the IUT ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+		<question>
+			<id>Q7</id>
+			<intitule>How would you rate partnerships with companies (job/internships offers..) ?</intitule>
+			<reponse>
+				<id>R1</id>
+				<intitule>(Very Bad).</intitule>
+			</reponse>
+			<reponse>
+				<id>R2</id>
+				<intitule>(Poor).</intitule>
+			</reponse>
+			<reponse>
+				<id>R3</id>
+				<intitule>(Average).</intitule>
+			</reponse>
+			<reponse>
+				<id>R4</id>
+				<intitule>(Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R5</id>
+				<intitule>(Very Good).</intitule>
+			</reponse>
+			<reponse>
+				<id>R6</id>
+				<intitule>(Excellent).</intitule>
+			</reponse>
+		</question>
+
+	</questionnaire>
+       
+	
+</sondage>
+</root>

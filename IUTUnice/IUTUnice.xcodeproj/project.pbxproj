@@ -53,6 +53,10 @@
 		92138DE4189260B2000488BC /* IUTUniceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92138DE3189260B2000488BC /* IUTUniceTests.m */; };
 		92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92139A8418B74D2700FF0157 /* FormationDetailViewController.m */; };
 		92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */; };
+		9213AB5E18E2E51100AF3DDF /* SondageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213AB5D18E2E51100AF3DDF /* SondageViewController.m */; };
+		9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */; };
+		9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213AB6218E2E6FE00AF3DDF /* Reponse.m */; };
+		9213AB6618E2E8FA00AF3DDF /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213AB6518E2E8FA00AF3DDF /* Question.m */; };
 		9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1518A513BD0087E126 /* settings-24-512.png */; };
 		9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */; };
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
@@ -161,6 +165,13 @@
 		92139A8318B74D2700FF0157 /* FormationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormationDetailViewController.h; sourceTree = "<group>"; };
 		92139A8418B74D2700FF0157 /* FormationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationDetailViewController.m; sourceTree = "<group>"; };
 		92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationDetailViewController.xib; sourceTree = "<group>"; };
+		9213AB5C18E2E51100AF3DDF /* SondageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SondageViewController.h; sourceTree = "<group>"; };
+		9213AB5D18E2E51100AF3DDF /* SondageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SondageViewController.m; sourceTree = "<group>"; };
+		9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sondage_v3.xml; sourceTree = "<group>"; };
+		9213AB6118E2E6FE00AF3DDF /* Reponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reponse.h; sourceTree = "<group>"; };
+		9213AB6218E2E6FE00AF3DDF /* Reponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reponse.m; sourceTree = "<group>"; };
+		9213AB6418E2E8FA00AF3DDF /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		9213AB6518E2E8FA00AF3DDF /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		9246DA1518A513BD0087E126 /* settings-24-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-24-512.png"; sourceTree = "<group>"; };
 		9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_logo_blue.png; sourceTree = "<group>"; };
 		9257A1A518AE309900CDECF4 /* appBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackground.png; sourceTree = "<group>"; };
@@ -408,6 +419,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9213AB5718E2DF6000AF3DDF /* Sondage */ = {
+			isa = PBXGroup;
+			children = (
+				9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */,
+				9213AB5C18E2E51100AF3DDF /* SondageViewController.h */,
+				9213AB5D18E2E51100AF3DDF /* SondageViewController.m */,
+				9213AB6118E2E6FE00AF3DDF /* Reponse.h */,
+				9213AB6218E2E6FE00AF3DDF /* Reponse.m */,
+				9213AB6418E2E8FA00AF3DDF /* Question.h */,
+				9213AB6518E2E8FA00AF3DDF /* Question.m */,
+			);
+			name = Sondage;
+			sourceTree = "<group>";
+		};
 		929E014B189B9E0800694030 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +501,7 @@
 		92A5C27018D32F34004982C4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				9213AB5718E2DF6000AF3DDF /* Sondage */,
 				92A5C27118D32F92004982C4 /* SettingsViewController.h */,
 				92A5C27218D32F92004982C4 /* SettingsViewController.m */,
 			);
@@ -597,6 +623,7 @@
 				92138DC0189260B1000488BC /* InfoPlist.strings in Resources */,
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
+				9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */,
 				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
 				92A5C27718D33648004982C4 /* small_tiles.png in Resources */,
@@ -657,6 +684,7 @@
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				435FCA3718D30787006156EC /* Note.m in Sources */,
+				9213AB6618E2E8FA00AF3DDF /* Question.m in Sources */,
 				92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
@@ -666,6 +694,7 @@
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
 				43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */,
+				9213AB5E18E2E51100AF3DDF /* SondageViewController.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
@@ -674,6 +703,7 @@
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
 				4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
+				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

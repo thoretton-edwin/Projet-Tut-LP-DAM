@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FormationListViewController.h"
+#import "SondageViewController.h"
 
 @interface VitrinePageViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *presentationImage;
@@ -16,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *formationButton;
 
 - (IBAction)goToFormationListPage:(id)sender;
+- (IBAction)goToSondageIUTPage:(id)sender;
 
 @end
