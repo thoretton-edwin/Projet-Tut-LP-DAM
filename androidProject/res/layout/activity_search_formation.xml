@@ -14,7 +14,7 @@
     </SearchView>
 
     <ListView
-        android1:id="@+id/listView1"
+        android1:id="@+id/listViewFormation"
         android1:layout_width="match_parent"
         android1:layout_height="269dp"
         android1:layout_weight="0.7" >
