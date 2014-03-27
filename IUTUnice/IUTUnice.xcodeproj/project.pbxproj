@@ -64,6 +64,20 @@
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
 		9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */; };
 		9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */; };
+		927A3B7018E42E6F000A61F0 /* ConnexionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B6E18E42E6F000A61F0 /* ConnexionViewController.m */; };
+		927A3B7118E42E6F000A61F0 /* ConnexionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B6F18E42E6F000A61F0 /* ConnexionViewController.xib */; };
+		927A3B7518E42F54000A61F0 /* infosWifiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B7318E42F54000A61F0 /* infosWifiTableViewController.m */; };
+		927A3B7618E42F54000A61F0 /* infosWifiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B7418E42F54000A61F0 /* infosWifiTableViewController.xib */; };
+		927A3B7A18E42FC3000A61F0 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B7818E42FC3000A61F0 /* AboutViewController.m */; };
+		927A3B7B18E42FC3000A61F0 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B7918E42FC3000A61F0 /* AboutViewController.xib */; };
+		927A3B7F18E42FFB000A61F0 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B7D18E42FFB000A61F0 /* SurveyViewController.m */; };
+		927A3B8018E42FFB000A61F0 /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B7E18E42FFB000A61F0 /* SurveyViewController.xib */; };
+		927A3B8418E43093000A61F0 /* LangueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B8218E43093000A61F0 /* LangueViewController.m */; };
+		927A3B8518E43093000A61F0 /* LangueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B8318E43093000A61F0 /* LangueViewController.xib */; };
+		927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B8C18E431B6000A61F0 /* CreditsViewController.m */; };
+		927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */; };
+		927A3B9218E433E3000A61F0 /* infosWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B9118E433E3000A61F0 /* infosWifi.m */; };
+		927A3B9418E4349C000A61F0 /* infosWifi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B9318E4349C000A61F0 /* infosWifi.xml */; };
 		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
@@ -182,6 +196,27 @@
 		9257A1AC18AE3E5500CDECF4 /* FormationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormationListViewController.h; sourceTree = "<group>"; };
 		9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationListViewController.m; sourceTree = "<group>"; };
 		9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationListViewController.xib; sourceTree = "<group>"; };
+		927A3B6D18E42E6F000A61F0 /* ConnexionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnexionViewController.h; sourceTree = "<group>"; };
+		927A3B6E18E42E6F000A61F0 /* ConnexionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnexionViewController.m; sourceTree = "<group>"; };
+		927A3B6F18E42E6F000A61F0 /* ConnexionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnexionViewController.xib; sourceTree = "<group>"; };
+		927A3B7218E42F54000A61F0 /* infosWifiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infosWifiTableViewController.h; sourceTree = "<group>"; };
+		927A3B7318E42F54000A61F0 /* infosWifiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infosWifiTableViewController.m; sourceTree = "<group>"; };
+		927A3B7418E42F54000A61F0 /* infosWifiTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infosWifiTableViewController.xib; sourceTree = "<group>"; };
+		927A3B7718E42FC3000A61F0 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		927A3B7818E42FC3000A61F0 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		927A3B7918E42FC3000A61F0 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		927A3B7C18E42FFB000A61F0 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
+		927A3B7D18E42FFB000A61F0 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		927A3B7E18E42FFB000A61F0 /* SurveyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
+		927A3B8118E43093000A61F0 /* LangueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangueViewController.h; sourceTree = "<group>"; };
+		927A3B8218E43093000A61F0 /* LangueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangueViewController.m; sourceTree = "<group>"; };
+		927A3B8318E43093000A61F0 /* LangueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LangueViewController.xib; sourceTree = "<group>"; };
+		927A3B8B18E431B6000A61F0 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		927A3B8C18E431B6000A61F0 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
+		927A3B9018E433E3000A61F0 /* infosWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infosWifi.h; sourceTree = "<group>"; };
+		927A3B9118E433E3000A61F0 /* infosWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infosWifi.m; sourceTree = "<group>"; };
+		927A3B9318E4349C000A61F0 /* infosWifi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = infosWifi.xml; path = ../../../Desktop/infosWifi.xml; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -510,6 +545,27 @@
 				9213AB5718E2DF6000AF3DDF /* Sondage */,
 				92A5C27118D32F92004982C4 /* SettingsViewController.h */,
 				92A5C27218D32F92004982C4 /* SettingsViewController.m */,
+				927A3B6D18E42E6F000A61F0 /* ConnexionViewController.h */,
+				927A3B6E18E42E6F000A61F0 /* ConnexionViewController.m */,
+				927A3B6F18E42E6F000A61F0 /* ConnexionViewController.xib */,
+				927A3B7218E42F54000A61F0 /* infosWifiTableViewController.h */,
+				927A3B9318E4349C000A61F0 /* infosWifi.xml */,
+				927A3B7318E42F54000A61F0 /* infosWifiTableViewController.m */,
+				927A3B7418E42F54000A61F0 /* infosWifiTableViewController.xib */,
+				927A3B7718E42FC3000A61F0 /* AboutViewController.h */,
+				927A3B7818E42FC3000A61F0 /* AboutViewController.m */,
+				927A3B7918E42FC3000A61F0 /* AboutViewController.xib */,
+				927A3B7C18E42FFB000A61F0 /* SurveyViewController.h */,
+				927A3B7D18E42FFB000A61F0 /* SurveyViewController.m */,
+				927A3B7E18E42FFB000A61F0 /* SurveyViewController.xib */,
+				927A3B8118E43093000A61F0 /* LangueViewController.h */,
+				927A3B8218E43093000A61F0 /* LangueViewController.m */,
+				927A3B8318E43093000A61F0 /* LangueViewController.xib */,
+				927A3B8B18E431B6000A61F0 /* CreditsViewController.h */,
+				927A3B8C18E431B6000A61F0 /* CreditsViewController.m */,
+				927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */,
+				927A3B9018E433E3000A61F0 /* infosWifi.h */,
+				927A3B9118E433E3000A61F0 /* infosWifi.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -598,7 +654,9 @@
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
+				927A3B9418E4349C000A61F0 /* infosWifi.xml in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
+				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
@@ -615,15 +673,20 @@
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
 				92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
+				927A3B8518E43093000A61F0 /* LangueViewController.xib in Resources */,
 				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
+				927A3B7618E42F54000A61F0 /* infosWifiTableViewController.xib in Resources */,
 				920A572C18DAF84E00755E48 /* etudiantEtranger.txt in Resources */,
 				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
 				929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */,
 				920A572B18DAF84E00755E48 /* lp.txt in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
+				927A3B7118E42E6F000A61F0 /* ConnexionViewController.xib in Resources */,
 				4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
+				927A3B8018E42FFB000A61F0 /* SurveyViewController.xib in Resources */,
+				927A3B7B18E42FC3000A61F0 /* AboutViewController.xib in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
@@ -687,7 +750,9 @@
 			files = (
 				43E6FD3A18AE2F74004F709B /* UEListViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
+				927A3B7018E42E6F000A61F0 /* ConnexionViewController.m in Sources */,
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
+				927A3B7518E42F54000A61F0 /* infosWifiTableViewController.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				435FCA3718D30787006156EC /* Note.m in Sources */,
@@ -706,12 +771,17 @@
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
+				927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
 				4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */,
+				927A3B8418E43093000A61F0 /* LangueViewController.m in Sources */,
+				927A3B7A18E42FC3000A61F0 /* AboutViewController.m in Sources */,
+				927A3B9218E433E3000A61F0 /* infosWifi.m in Sources */,
 				4362221A18E2FD48006B091D /* recherche.js in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
 				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
+				927A3B7F18E42FFB000A61F0 /* SurveyViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

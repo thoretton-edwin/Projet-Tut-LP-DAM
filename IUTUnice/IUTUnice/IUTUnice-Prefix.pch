@@ -16,4 +16,6 @@
     #import "OCBorghettiView.h"
     #import "TFHpple.h"
     #import "TFHppleElement.h"
+    #import <TBXML+HTTP.h>
+    #import <TBXML.h>
 #endif
