@@ -2,7 +2,7 @@
 //  AnnuaireViewController.m
 //  IUTUnice
 //
-//  Created by Wazany on 14/02/2014.
+//  Created by Edwin Thoretton on 26/03/2014.
 //  Copyright (c) 2014 UNS. All rights reserved.
 //
 
@@ -10,13 +10,21 @@
 
 @interface AnnuaireViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *searchLabelField;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property NSURL *url;
+
 @end
 
 @implementation AnnuaireViewController
+@synthesize searchLabelField;
+@synthesize webView;
+@synthesize url;
 
-- (id)initWithStyle:(UITableViewStyle)style
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
@@ -26,12 +34,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	
+    NSString *cssPath = [[NSBundle mainBundle] pathForResource:@"style"
+														ofType:@"css"];
+	NSString *js = @"document.getElementsByTagName('link')[0].setAttribute('href','";
+    NSString *js2 = [js stringByAppendingString:cssPath];
+    NSString *finalJS = [js2 stringByAppendingString:@"');"];
+    [self.webView stringByEvaluatingJavaScriptFromString:finalJS];
+	
+	[self.webView loadHTMLString:@"<h1>test</h1>" baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,90 +52,62 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (IBAction)searchAction:(id)sender
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+
+	NSMutableString *strUrl = [[NSMutableString alloc]init];
+	[strUrl appendString:@"http://annuaire.unice.fr/index.php?base=ou%3Dpeople%2Cdc%3Dunice%2Cdc%3Dfr&action=list_persons&pname="];
+	[strUrl appendString:@"thoretton"];
+	[strUrl appendString:@"&mode=sidebar&look=portail%22/%3E"];
+	url = [[NSURL alloc]initWithString:strUrl];
+
+
+	NSData * data = [[NSData alloc]initWithContentsOfURL:url];
+	NSString *strdata=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+	strdata=[strdata stringByReplacingOccurrencesOfString:@" \" "  withString:@"'"];
+
+	//NSLog(strdata);
+	data = [strdata dataUsingEncoding:NSUTF8StringEncoding];
+	TFHpple *parser = [TFHpple hppleWithHTMLData:data];
+
+
+	//p[@class='titre']
+	NSString *xpathQueryString = @"//table/tr/td/table/tr/td";
+	NSArray *result = [parser searchWithXPathQuery:xpathQueryString];
+	
+	for (TFHppleElement *element in result)
+	{
+			NSLog(@"tag elem: %@",element.tagName);
+			NSLog(@"elem: %@",element.text);
+			NSLog(@"elem content: %@",element.content);
+	
+			for(TFHppleElement *elem in element.children)
+				{
+						NSLog(@"tag child: %@",elem.tagName);
+						NSLog(@"child text: %@",elem.text);
+						NSLog(@"child content: %@",elem.content);
+					
+					for(TFHppleElement *elem2 in elem.children)
+					{
+						NSLog(@"tag child2: %@",elem2.tagName);
+						NSLog(@"child2 text: %@",elem2.text);
+						NSLog(@"child2 content: %@",elem2.content);
+					}
+				}
+	}
+	
+	
+	NSMutableString *html = [[NSMutableString alloc]init];
+	[html appendString:strdata];
+	
+  	
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"recherche" ofType:@"js"];
+	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+	NSString *jsString = [[NSString alloc] initWithData:fileData encoding:NSUTF8StringEncoding];
+	[self.webView loadHTMLString:html baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+	//[self.webView stringByEvaluatingJavaScriptFromString:jsString];
+	
+	
 }
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    // Configure the cell...
-    
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-}
- 
- */
 
 @end

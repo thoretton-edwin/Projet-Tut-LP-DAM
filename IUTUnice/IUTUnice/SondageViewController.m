@@ -1,18 +1,18 @@
 //
-//  ConnexionViewController.m
+//  SondageViewController.m
 //  IUTUnice
 //
-//  Created by Wazany on 21/03/2014.
+//  Created by VM Mac on 26/03/2014.
 //  Copyright (c) 2014 UNS. All rights reserved.
 //
 
-#import "ConnexionViewController.h"
+#import "SondageViewController.h"
 
-@interface ConnexionViewController ()
+@interface SondageViewController ()
 
 @end
 
-@implementation ConnexionViewController
+@implementation SondageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,8 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title=@"Connexion";
-    // Do any additional setup after loading the view from its nib.
+	self.title = [@"Sondage " stringByAppendingString: _typeSondage];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning

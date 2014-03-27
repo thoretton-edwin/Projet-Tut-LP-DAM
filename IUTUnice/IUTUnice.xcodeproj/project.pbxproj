@@ -15,6 +15,10 @@
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
 		435FCA3718D30787006156EC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3618D30787006156EC /* Note.m */; };
 		435FCA3A18D3087F006156EC /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FCA3918D3087F006156EC /* Module.m */; };
+		4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4362221518E2CC53006B091D /* AnnuaireViewController.m */; };
+		4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4362221618E2CC53006B091D /* AnnuaireViewController.xib */; };
+		4362221A18E2FD48006B091D /* recherche.js in Sources */ = {isa = PBXBuildFile; fileRef = 4362221918E2FD48006B091D /* recherche.js */; };
+		4362221E18E2FE7A006B091D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4362221D18E2FE7A006B091D /* style.css */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
@@ -31,8 +35,6 @@
 		43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4318AE2FD3004F709B /* SUAPSViewController.xib */; };
 		43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4818AE2FF0004F709B /* TwitterWebViewController.m */; };
 		43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */; };
-		43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */; };
-		43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */; };
 		43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD5418AE3094004F709B /* EDTViewController.m */; };
 		43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6FD5518AE3094004F709B /* EDTViewController.xib */; };
 		920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */ = {isa = PBXBuildFile; fileRef = 920A572518DAF84E00755E48 /* anneeSpeciale.txt */; };
@@ -53,6 +55,10 @@
 		92138DE4189260B2000488BC /* IUTUniceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92138DE3189260B2000488BC /* IUTUniceTests.m */; };
 		92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92139A8418B74D2700FF0157 /* FormationDetailViewController.m */; };
 		92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */; };
+		9213AB5E18E2E51100AF3DDF /* SondageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213AB5D18E2E51100AF3DDF /* SondageViewController.m */; };
+		9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */; };
+		9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213AB6218E2E6FE00AF3DDF /* Reponse.m */; };
+		9213AB6618E2E8FA00AF3DDF /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213AB6518E2E8FA00AF3DDF /* Question.m */; };
 		9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1518A513BD0087E126 /* settings-24-512.png */; };
 		9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */; };
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
@@ -81,18 +87,6 @@
 		92A5C27518D3322B004982C4 /* List_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27418D3322B004982C4 /* List_icon.png */; };
 		92A5C27718D33648004982C4 /* small_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27618D33648004982C4 /* small_tiles.png */; };
 		92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC9CB018B5FC65001D0E6E /* Formation.m */; };
-		92D185AB18DC487100448B8A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D185A918DC487100448B8A /* AboutViewController.m */; };
-		92D185AC18DC487100448B8A /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D185AA18DC487100448B8A /* AboutViewController.xib */; };
-		92D185B018DC489600448B8A /* ConnexionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D185AE18DC489600448B8A /* ConnexionViewController.m */; };
-		92D185B118DC489600448B8A /* ConnexionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D185AF18DC489600448B8A /* ConnexionViewController.xib */; };
-		92D185B518DC48C500448B8A /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D185B318DC48C500448B8A /* CreditsViewController.m */; };
-		92D185B618DC48C500448B8A /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D185B418DC48C500448B8A /* CreditsViewController.xib */; };
-		92D185BA18DC48E500448B8A /* LangueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D185B818DC48E500448B8A /* LangueViewController.m */; };
-		92D185BB18DC48E500448B8A /* LangueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D185B918DC48E500448B8A /* LangueViewController.xib */; };
-		92D185BF18DC491F00448B8A /* infosWifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D185BD18DC491F00448B8A /* infosWifiViewController.m */; };
-		92D185C018DC491F00448B8A /* infosWifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D185BE18DC491F00448B8A /* infosWifiViewController.xib */; };
-		92D185C418DC493800448B8A /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D185C218DC493800448B8A /* SurveyViewController.m */; };
-		92D185C518DC493800448B8A /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D185C318DC493800448B8A /* SurveyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +113,11 @@
 		435FCA3618D30787006156EC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		435FCA3818D3087F006156EC /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
 		435FCA3918D3087F006156EC /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		4362221418E2CC53006B091D /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
+		4362221518E2CC53006B091D /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
+		4362221618E2CC53006B091D /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
+		4362221918E2FD48006B091D /* recherche.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = recherche.js; sourceTree = "<group>"; };
+		4362221D18E2FE7A006B091D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
@@ -143,9 +142,6 @@
 		43E6FD4718AE2FF0004F709B /* TwitterWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterWebViewController.h; sourceTree = "<group>"; };
 		43E6FD4818AE2FF0004F709B /* TwitterWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterWebViewController.m; sourceTree = "<group>"; };
 		43E6FD4918AE2FF0004F709B /* TwitterWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterWebViewController.xib; sourceTree = "<group>"; };
-		43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnuaireViewController.h; sourceTree = "<group>"; };
-		43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnuaireViewController.m; sourceTree = "<group>"; };
-		43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnuaireViewController.xib; sourceTree = "<group>"; };
 		43E6FD5318AE3094004F709B /* EDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTViewController.h; sourceTree = "<group>"; };
 		43E6FD5418AE3094004F709B /* EDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTViewController.m; sourceTree = "<group>"; };
 		43E6FD5518AE3094004F709B /* EDTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTViewController.xib; sourceTree = "<group>"; };
@@ -173,6 +169,13 @@
 		92139A8318B74D2700FF0157 /* FormationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormationDetailViewController.h; sourceTree = "<group>"; };
 		92139A8418B74D2700FF0157 /* FormationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationDetailViewController.m; sourceTree = "<group>"; };
 		92139A8518B74D2700FF0157 /* FormationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationDetailViewController.xib; sourceTree = "<group>"; };
+		9213AB5C18E2E51100AF3DDF /* SondageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SondageViewController.h; sourceTree = "<group>"; };
+		9213AB5D18E2E51100AF3DDF /* SondageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SondageViewController.m; sourceTree = "<group>"; };
+		9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sondage_v3.xml; sourceTree = "<group>"; };
+		9213AB6118E2E6FE00AF3DDF /* Reponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reponse.h; sourceTree = "<group>"; };
+		9213AB6218E2E6FE00AF3DDF /* Reponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reponse.m; sourceTree = "<group>"; };
+		9213AB6418E2E8FA00AF3DDF /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		9213AB6518E2E8FA00AF3DDF /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		9246DA1518A513BD0087E126 /* settings-24-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-24-512.png"; sourceTree = "<group>"; };
 		9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_logo_blue.png; sourceTree = "<group>"; };
 		9257A1A518AE309900CDECF4 /* appBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackground.png; sourceTree = "<group>"; };
@@ -207,24 +210,6 @@
 		92A5C27618D33648004982C4 /* small_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_tiles.png; sourceTree = "<group>"; };
 		92CC9CAF18B5FC65001D0E6E /* Formation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formation.h; sourceTree = "<group>"; };
 		92CC9CB018B5FC65001D0E6E /* Formation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formation.m; sourceTree = "<group>"; };
-		92D185A818DC487100448B8A /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		92D185A918DC487100448B8A /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		92D185AA18DC487100448B8A /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
-		92D185AD18DC489600448B8A /* ConnexionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnexionViewController.h; sourceTree = "<group>"; };
-		92D185AE18DC489600448B8A /* ConnexionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnexionViewController.m; sourceTree = "<group>"; };
-		92D185AF18DC489600448B8A /* ConnexionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnexionViewController.xib; sourceTree = "<group>"; };
-		92D185B218DC48C500448B8A /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
-		92D185B318DC48C500448B8A /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
-		92D185B418DC48C500448B8A /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
-		92D185B718DC48E500448B8A /* LangueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangueViewController.h; sourceTree = "<group>"; };
-		92D185B818DC48E500448B8A /* LangueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangueViewController.m; sourceTree = "<group>"; };
-		92D185B918DC48E500448B8A /* LangueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LangueViewController.xib; sourceTree = "<group>"; };
-		92D185BC18DC491F00448B8A /* infosWifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infosWifiViewController.h; sourceTree = "<group>"; };
-		92D185BD18DC491F00448B8A /* infosWifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infosWifiViewController.m; sourceTree = "<group>"; };
-		92D185BE18DC491F00448B8A /* infosWifiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infosWifiViewController.xib; sourceTree = "<group>"; };
-		92D185C118DC493800448B8A /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
-		92D185C218DC493800448B8A /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
-		92D185C318DC493800448B8A /* SurveyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,9 +318,11 @@
 		43E6FD4C18AE305B004F709B /* Annuaire */ = {
 			isa = PBXGroup;
 			children = (
-				43E6FD4D18AE3076004F709B /* AnnuaireViewController.h */,
-				43E6FD4E18AE3076004F709B /* AnnuaireViewController.m */,
-				43E6FD4F18AE3076004F709B /* AnnuaireViewController.xib */,
+				4362221418E2CC53006B091D /* AnnuaireViewController.h */,
+				4362221518E2CC53006B091D /* AnnuaireViewController.m */,
+				4362221618E2CC53006B091D /* AnnuaireViewController.xib */,
+				4362221918E2FD48006B091D /* recherche.js */,
+				4362221D18E2FE7A006B091D /* style.css */,
 			);
 			name = Annuaire;
 			sourceTree = "<group>";
@@ -438,6 +425,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9213AB5718E2DF6000AF3DDF /* Sondage */ = {
+			isa = PBXGroup;
+			children = (
+				9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */,
+				9213AB5C18E2E51100AF3DDF /* SondageViewController.h */,
+				9213AB5D18E2E51100AF3DDF /* SondageViewController.m */,
+				9213AB6118E2E6FE00AF3DDF /* Reponse.h */,
+				9213AB6218E2E6FE00AF3DDF /* Reponse.m */,
+				9213AB6418E2E8FA00AF3DDF /* Question.h */,
+				9213AB6518E2E8FA00AF3DDF /* Question.m */,
+			);
+			name = Sondage;
+			sourceTree = "<group>";
+		};
 		929E014B189B9E0800694030 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,26 +507,9 @@
 		92A5C27018D32F34004982C4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				9213AB5718E2DF6000AF3DDF /* Sondage */,
 				92A5C27118D32F92004982C4 /* SettingsViewController.h */,
 				92A5C27218D32F92004982C4 /* SettingsViewController.m */,
-				92D185A818DC487100448B8A /* AboutViewController.h */,
-				92D185A918DC487100448B8A /* AboutViewController.m */,
-				92D185AA18DC487100448B8A /* AboutViewController.xib */,
-				92D185AD18DC489600448B8A /* ConnexionViewController.h */,
-				92D185AE18DC489600448B8A /* ConnexionViewController.m */,
-				92D185AF18DC489600448B8A /* ConnexionViewController.xib */,
-				92D185B218DC48C500448B8A /* CreditsViewController.h */,
-				92D185B318DC48C500448B8A /* CreditsViewController.m */,
-				92D185B418DC48C500448B8A /* CreditsViewController.xib */,
-				92D185B718DC48E500448B8A /* LangueViewController.h */,
-				92D185B818DC48E500448B8A /* LangueViewController.m */,
-				92D185B918DC48E500448B8A /* LangueViewController.xib */,
-				92D185BC18DC491F00448B8A /* infosWifiViewController.h */,
-				92D185BD18DC491F00448B8A /* infosWifiViewController.m */,
-				92D185BE18DC491F00448B8A /* infosWifiViewController.xib */,
-				92D185C118DC493800448B8A /* SurveyViewController.h */,
-				92D185C218DC493800448B8A /* SurveyViewController.m */,
-				92D185C318DC493800448B8A /* SurveyViewController.xib */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -610,7 +594,6 @@
 			files = (
 				92A53D3418AD0BCD0047DA1E /* IUT NICE.JPG in Resources */,
 				929E0167189BA45900694030 /* 1383836131_Library.png in Resources */,
-				92D185AC18DC487100448B8A /* AboutViewController.xib in Resources */,
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
@@ -621,10 +604,9 @@
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
-				92D185B618DC48C500448B8A /* CreditsViewController.xib in Resources */,
 				920A572A18DAF84E00755E48 /* dut.txt in Resources */,
-				43E6FD5118AE3076004F709B /* AnnuaireViewController.xib in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
+				4362221E18E2FE7A006B091D /* style.css in Resources */,
 				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
@@ -640,17 +622,15 @@
 				920A572B18DAF84E00755E48 /* lp.txt in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
-				92D185BB18DC48E500448B8A /* LangueViewController.xib in Resources */,
+				4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
-				92D185C518DC493800448B8A /* SurveyViewController.xib in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
 				92138DC0189260B1000488BC /* InfoPlist.strings in Resources */,
-				92D185B118DC489600448B8A /* ConnexionViewController.xib in Resources */,
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
-				92D185C018DC491F00448B8A /* infosWifiViewController.xib in Resources */,
+				9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */,
 				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
 				92A5C27718D33648004982C4 /* small_tiles.png in Resources */,
@@ -711,29 +691,27 @@
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				435FCA3718D30787006156EC /* Note.m in Sources */,
+				9213AB6618E2E8FA00AF3DDF /* Question.m in Sources */,
 				92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
 				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
-				92D185AB18DC487100448B8A /* AboutViewController.m in Sources */,
 				43E6FD5618AE3094004F709B /* EDTViewController.m in Sources */,
 				92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */,
 				92138DC2189260B1000488BC /* main.m in Sources */,
 				43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */,
-				92D185BA18DC48E500448B8A /* LangueViewController.m in Sources */,
+				9213AB5E18E2E51100AF3DDF /* SondageViewController.m in Sources */,
 				43E6FD4A18AE2FF0004F709B /* TwitterWebViewController.m in Sources */,
-				43E6FD5018AE3076004F709B /* AnnuaireViewController.m in Sources */,
-				92D185B018DC489600448B8A /* ConnexionViewController.m in Sources */,
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
-				92D185B518DC48C500448B8A /* CreditsViewController.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
-				92D185C418DC493800448B8A /* SurveyViewController.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
-				92D185BF18DC491F00448B8A /* infosWifiViewController.m in Sources */,
+				4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */,
+				4362221A18E2FD48006B091D /* recherche.js in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
+				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
