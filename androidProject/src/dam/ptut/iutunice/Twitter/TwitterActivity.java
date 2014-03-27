@@ -43,7 +43,7 @@ public class TwitterActivity extends Activity {
 		networkInfo = connect.getActiveNetworkInfo();
 
 		twitter = (WebView) findViewById(R.id.webViewTwitter);
-		String url = "https://twitter.com/Univ_Nice";
+		String url = "https://mobile.twitter.com/Univ_Nice";
 		twitter.getSettings().setLoadsImagesAutomatically(true);
 		twitter.getSettings().setJavaScriptEnabled(true);
 		twitter.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);

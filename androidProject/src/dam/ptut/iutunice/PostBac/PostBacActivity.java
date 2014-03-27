@@ -52,6 +52,7 @@ public class PostBacActivity extends Activity implements
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		progressDialog.dismiss();
 	}
 
 	private void parseResponse(int eventType) throws XmlPullParserException,
