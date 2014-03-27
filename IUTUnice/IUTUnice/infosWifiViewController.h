@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "infosWifi.h"
 
-@interface infosWifiViewController : UIViewController
+@interface infosWifiViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,NSXMLParserDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *infosWifiTableView;
+@property NSMutableArray* tabInfosWifi;
+
 
 @end

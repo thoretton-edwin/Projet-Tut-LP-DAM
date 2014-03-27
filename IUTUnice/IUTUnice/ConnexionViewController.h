@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ConnexionViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *login;
+@property (weak, nonatomic) IBOutlet UITextField *motsdepasse;
+- (IBAction)GoToLogin:(id)sender;
 
 @end
