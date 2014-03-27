@@ -10,6 +10,7 @@
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
+		43174CFF18E432ED00CBC54A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43174CFE18E432ED00CBC54A /* MessageUI.framework */; };
 		433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4A918D30E6000B0C5F6 /* UE.m */; };
 		433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4AC18D311B600B0C5F6 /* Semestre.m */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
@@ -118,6 +119,7 @@
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
+		43174CFE18E432ED00CBC54A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		433CC4A818D30E6000B0C5F6 /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
 		433CC4A918D30E6000B0C5F6 /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
 		433CC4AB18D311B600B0C5F6 /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43174CFF18E432ED00CBC54A /* MessageUI.framework in Frameworks */,
 				4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */,
 				92138DB8189260B1000488BC /* CoreGraphics.framework in Frameworks */,
 				92138DBA189260B1000488BC /* UIKit.framework in Frameworks */,
@@ -395,6 +398,7 @@
 		92138DB4189260B1000488BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43174CFE18E432ED00CBC54A /* MessageUI.framework */,
 				4368CA9618B5FF8C008C7ACD /* MapKit.framework */,
 				92138DB5189260B1000488BC /* Foundation.framework */,
 				92138DB7189260B1000488BC /* CoreGraphics.framework */,

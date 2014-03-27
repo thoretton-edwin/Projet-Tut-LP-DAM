@@ -11,16 +11,44 @@
 @interface AnnuaireViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *searchLabelField;
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property NSURL *url;
-
+@property (weak, nonatomic) IBOutlet UITextView *textField;
+@property NSMutableString *email;
+@property NSMutableString *content;
+@property NSString *nom;
+@property NSString *searchContent;
+@property BOOL isFounded;
+@property MFMailComposeViewController* mailView;
 @end
 
 @implementation AnnuaireViewController
 @synthesize searchLabelField;
-@synthesize webView;
+@synthesize searchContent;
+@synthesize email;
+@synthesize nom;
+@synthesize  textField;
+@synthesize isFounded;
+@synthesize mailView;
+
 @synthesize url;
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	[textField resignFirstResponder];
+	return YES;
+}
+
+- (IBAction)sendEmail:(id)sender
+{
+	mailView = [[MFMailComposeViewController alloc]init];
+	self.mailView.mailComposeDelegate = self;
+
+	[mailView setSubject:@"Demande de contact"];
+	[mailView setTitle:@"[Contact]"];
+	[mailView setToRecipients:[[NSArray alloc]initWithObjects:self.email, nil ]];
+	
+	[self presentViewController:mailView animated:YES completion:nil];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,15 +62,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    NSString *cssPath = [[NSBundle mainBundle] pathForResource:@"style"
-														ofType:@"css"];
-	NSString *js = @"document.getElementsByTagName('link')[0].setAttribute('href','";
-    NSString *js2 = [js stringByAppendingString:cssPath];
-    NSString *finalJS = [js2 stringByAppendingString:@"');"];
-    [self.webView stringByEvaluatingJavaScriptFromString:finalJS];
-	
-	[self.webView loadHTMLString:@"<h1>test</h1>" baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+	email = [[NSMutableString alloc]init];
+	self.searchLabelField.delegate=self;
+	self.textField.scrollEnabled = NO;
+	[self.textField setText:@"Entrez le nom et prenom.."];
+	[self.textField sizeToFit];
+	self.textField.editable = NO;
 	
 }
 
@@ -52,12 +77,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void )mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+	
+}
+
 - (IBAction)searchAction:(id)sender
 {
 
 	NSMutableString *strUrl = [[NSMutableString alloc]init];
 	[strUrl appendString:@"http://annuaire.unice.fr/index.php?base=ou%3Dpeople%2Cdc%3Dunice%2Cdc%3Dfr&action=list_persons&pname="];
-	[strUrl appendString:@"thoretton"];
+	
+	searchContent = self.searchLabelField.text;
+	searchContent = [self.searchContent lowercaseString];
+	searchContent = [searchContent stringByTrimmingCharactersInSet:
+							   [NSCharacterSet whitespaceCharacterSet]];
+	
+	searchContent = [searchContent stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+	
+	NSLog(@"recherche %@",searchContent);
+	[strUrl appendString:searchContent];
 	[strUrl appendString:@"&mode=sidebar&look=portail%22/%3E"];
 	url = [[NSURL alloc]initWithString:strUrl];
 
@@ -66,7 +106,6 @@
 	NSString *strdata=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
 	strdata=[strdata stringByReplacingOccurrencesOfString:@" \" "  withString:@"'"];
 
-	//NSLog(strdata);
 	data = [strdata dataUsingEncoding:NSUTF8StringEncoding];
 	TFHpple *parser = [TFHpple hppleWithHTMLData:data];
 
@@ -74,38 +113,76 @@
 	//p[@class='titre']
 	NSString *xpathQueryString = @"//table/tr/td/table/tr/td";
 	NSArray *result = [parser searchWithXPathQuery:xpathQueryString];
+	self.content = [[NSMutableString alloc]init];
+	
+	NSString *mail;
+	NSMutableString *info = [[NSMutableString alloc]initWithString:@""];
 	
 	for (TFHppleElement *element in result)
 	{
-			NSLog(@"tag elem: %@",element.tagName);
-			NSLog(@"elem: %@",element.text);
-			NSLog(@"elem content: %@",element.content);
 	
 			for(TFHppleElement *elem in element.children)
 				{
-						NSLog(@"tag child: %@",elem.tagName);
-						NSLog(@"child text: %@",elem.text);
-						NSLog(@"child content: %@",elem.content);
-					
+					if([elem.tagName isEqualToString:@"text"]&&elem.content!=nil)
+					{
+						//NSLog(@"text element: %@",elem.content);
+						[info appendString:elem.content];
+						[info appendString:@"\n"];
+					}
+
 					for(TFHppleElement *elem2 in elem.children)
 					{
-						NSLog(@"tag child2: %@",elem2.tagName);
-						NSLog(@"child2 text: %@",elem2.text);
-						NSLog(@"child2 content: %@",elem2.content);
+					
+						if([elem2.tagName isEqualToString:@"a"]&&elem2.text!=nil)
+						{
+							//NSLog(@"mail: %@",elem2.text);
+							mail = elem2.text;
+							self.email = [[NSMutableString alloc]initWithString:elem2.text];
+						}
+						
+						else if([elem2.tagName isEqualToString:@"u"]&&elem2.text!=nil)
+						{
+							//NSLog(@"nom: %@",elem2.text);
+							nom = elem2.text;
+						}
+						
+						else if([elem2.tagName isEqualToString:@"text"]&&elem2.content!=nil)
+						{
+							//NSLog(@"text: %@",elem2.content);
+						}
+
+						
 					}
 				}
 	}
 	
 	
-	NSMutableString *html = [[NSMutableString alloc]init];
-	[html appendString:strdata];
+	if(nom !=nil&&mail!=nil)
+	{
+		[self.content appendString:nom];
+		[self.content appendString:@"\n\n"];
+		[self.content appendString:@"mail : "];
+		[self.content appendString:mail];
+		[self.content appendString:@"\n"];
+		[self.content appendString:info];
+		
+		NSLog(@"content: %@",self.content);
+		
+		
+		[self.textField setText:self.content];
+		[self.textField sizeToFit];
+	}
+	else
+	{
+		
+		[self.textField setText:@"Recherche non trouvée"];
+		[self.textField sizeToFit];
+		
+	}
 	
-  	
-	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"recherche" ofType:@"js"];
-	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
-	NSString *jsString = [[NSString alloc] initWithData:fileData encoding:NSUTF8StringEncoding];
-	[self.webView loadHTMLString:html baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
-	//[self.webView stringByEvaluatingJavaScriptFromString:jsString];
+	
+	
+	
 	
 	
 }
