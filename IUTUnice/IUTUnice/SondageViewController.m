@@ -28,6 +28,13 @@
     [super viewDidLoad];
 	self.title = [@"Sondage " stringByAppendingString: _typeSondage];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 }
 
 - (void)didReceiveMemoryWarning
