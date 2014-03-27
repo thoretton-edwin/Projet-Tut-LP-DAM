@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<site lieu="Sophia-Antipolis">
+		<reseau id="R1">
+			<nom>Unice HotSpot</nom>
+			<ssid>Unice-HotSpot</ssid>
+			<clef>Aucune.</clef>
+			<login>Identifiant numérique. Exemple : sf350125</login>
+			<mdp>Mot de passe sésame. Exemple : motDEpasseQUEjaiCHOISI</mdp>
+		</reseau>
+		<reseau id="R2">
+			<nom>I Etudiants</nom>
+			<ssid>I-Etudiants</ssid>
+			<clef>Aucune.</clef>
+			<login>Identifiant numérique. Exemple : sf350125</login>
+			<mdp>Mot de passe session Windows. Exemple : sf150593</mdp>
+		</reseau>
+		<reseau id="R3">
+			<nom>EduRoam</nom>
+			<ssid>eduroam</ssid>
+			<clef>Un étudiant ou personnel d'une université membre du projet EDUROAM en visite sur un campus de l'université de Nice pourra se connecter en Wi-Fi avec avec son identifiant et mot de passe habituels, comme s'il se trouvait dans son établissement d'origine.</clef>
+			<login>...</login>
+			<mdp>...</mdp>
+		</reseau>
+	</site>	
+</root>

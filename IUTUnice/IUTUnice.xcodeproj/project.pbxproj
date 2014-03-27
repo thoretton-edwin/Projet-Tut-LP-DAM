@@ -78,7 +78,6 @@
 		927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B8C18E431B6000A61F0 /* CreditsViewController.m */; };
 		927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */; };
 		927A3B9218E433E3000A61F0 /* infosWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B9118E433E3000A61F0 /* infosWifi.m */; };
-		927A3B9418E4349C000A61F0 /* infosWifi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B9318E4349C000A61F0 /* infosWifi.xml */; };
 		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
@@ -218,7 +217,6 @@
 		927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
 		927A3B9018E433E3000A61F0 /* infosWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infosWifi.h; sourceTree = "<group>"; };
 		927A3B9118E433E3000A61F0 /* infosWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infosWifi.m; sourceTree = "<group>"; };
-		927A3B9318E4349C000A61F0 /* infosWifi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = infosWifi.xml; path = ../../../Desktop/infosWifi.xml; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -553,7 +551,6 @@
 				927A3B6E18E42E6F000A61F0 /* ConnexionViewController.m */,
 				927A3B6F18E42E6F000A61F0 /* ConnexionViewController.xib */,
 				927A3B7218E42F54000A61F0 /* infosWifiTableViewController.h */,
-				927A3B9318E4349C000A61F0 /* infosWifi.xml */,
 				927A3B7318E42F54000A61F0 /* infosWifiTableViewController.m */,
 				927A3B7418E42F54000A61F0 /* infosWifiTableViewController.xib */,
 				927A3B7718E42FC3000A61F0 /* AboutViewController.h */,
@@ -658,7 +655,6 @@
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
-				927A3B9418E4349C000A61F0 /* infosWifi.xml in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,

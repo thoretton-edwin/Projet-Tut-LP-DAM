@@ -105,8 +105,18 @@
             break;
         case 1: // Infos Wifi
         {
+            
+            TBXML *xml = [TBXML tbxmlWithXMLFile:@"infosWifi" fileExtension:@"xml" error:nil];
+            
+            TBXMLElement *root = [TBXML childElementNamed:@"root" parentElement:xml.rootXMLElement];
+            
+            TBXMLElement *infosWifi = [TBXML childElementNamed:@"site" parentElement:root];
+            
+            [self traverseElement: infosWifi];
+            
+            
             infosWifiTableViewController *viewController = [[infosWifiTableViewController alloc] initWithNibName:@"infosWifiTableViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+             [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
             
         }
             break;
@@ -146,6 +156,33 @@
             break;
             
     }
+    
+}
+
+
+- (void) traverseElement:(TBXMLElement *)element {
+    
+    NSLog(@"Coucou traverse element");
+    
+    /* do {
+     if (element->firstChild)
+     [self traverseElement:element->firstChild];
+     
+     if ([[TBXML elementName:element] isEqualToString:@"reseau"]) {
+     infosWifi * wifiInfos = [[infosWifi alloc] init];
+     TBXMLElement *nomWi = [TBXML childElementNamed:@"nom" parentElement:element];
+     wifiInfos.nom_Wifi =[TBXML textForElement:nomWi];
+     
+     NSLog(@"nom : %@", wifiInfos.nom_Wifi);
+     
+     //[tabInfosWifi addObject:wifiInfos.nom_Wifi];
+     }
+     } while ((element = element->nextSibling));*/
+    
+    
+    
+    
+    
     
 }
 
