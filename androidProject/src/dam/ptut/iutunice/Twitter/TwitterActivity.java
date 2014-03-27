@@ -52,7 +52,8 @@ public class TwitterActivity extends Activity {
 
 			public void onPageFinished(WebView view, String url) {
 				if (networkInfo != null && networkInfo.isConnected()) {
-					if (view.isDirty())
+					int progress = view.getProgress();
+					if (progress > 99)
 						chargement.dismiss();
 				} else {
 					Toast.makeText(getApplicationContext(),
