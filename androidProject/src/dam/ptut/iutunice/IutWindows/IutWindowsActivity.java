@@ -51,7 +51,7 @@ public class IutWindowsActivity extends Activity {
 
 		// diapo automatique
 		myViewFlipper.setAutoStart(true);
-		myViewFlipper.setFlipInterval(5000);
+		myViewFlipper.setFlipInterval(3500);
 		myViewFlipper.startFlipping();
 
 		// boutons

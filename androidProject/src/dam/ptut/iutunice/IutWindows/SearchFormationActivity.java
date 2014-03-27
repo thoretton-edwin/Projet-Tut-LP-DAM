@@ -47,6 +47,7 @@ public class SearchFormationActivity extends Activity {
 	private AsyncHttpClient client = new AsyncHttpClient();
 	// List sur la classe FormationItem
 	private ArrayList<Formation> listFormation;
+	private ArrayList<Formation> listFormationView;
 	// barre de chargement
 	ProgressDialog loading;
 	// succès récupération liste formation depuis internet
@@ -132,6 +133,14 @@ public class SearchFormationActivity extends Activity {
 					break;
 				}
 				stateBt = 1;
+				listFormationView.clear(); //supprime les éléments de la liste
+				for(int i = 0 ; i<listFormation.size() ; i++){
+					Formation oneFormation = listFormation.get(i);
+					if("DUT".equals(oneFormation.typeCode)){
+						listFormationView.add(oneFormation);
+					}
+				}
+				adapter.notifyDataSetChanged();
 			}
 		});
 
@@ -161,6 +170,14 @@ public class SearchFormationActivity extends Activity {
 					break;
 				}
 				stateBt = 2;
+				listFormationView.clear(); //supprime les éléments de la liste
+				for(int i = 0 ; i<listFormation.size() ; i++){
+					Formation oneFormation = listFormation.get(i);
+					if("LP".equals(oneFormation.typeCode)){
+						listFormationView.add(oneFormation);
+					}
+				}
+				adapter.notifyDataSetChanged();
 			}
 		});
 
@@ -190,6 +207,14 @@ public class SearchFormationActivity extends Activity {
 					break;
 				}
 				stateBt = 3;
+				listFormationView.clear(); //supprime les éléments de la liste
+				for(int i = 0 ; i<listFormation.size() ; i++){
+					Formation oneFormation = listFormation.get(i);
+					if("DU".equals(oneFormation.typeCode)){
+						listFormationView.add(oneFormation);
+					}
+				}
+				adapter.notifyDataSetChanged();
 			}
 
 		});
@@ -224,6 +249,8 @@ public class SearchFormationActivity extends Activity {
 						if (success) {
 							// init adapter
 							adapter = new ListAdapter();
+							listFormationView = new ArrayList<Formation>();
+							listFormationView.addAll(listFormation);
 							showFormation();
 							loading.dismiss();
 						}
@@ -276,12 +303,12 @@ public class SearchFormationActivity extends Activity {
 
 		@Override
 		public int getCount() {
-			return listFormation.size();
+			return listFormationView.size();
 		}
 
 		@Override
 		public Formation getItem(int position) {
-			return listFormation.get(position);
+			return listFormationView.get(position);
 
 		}
 

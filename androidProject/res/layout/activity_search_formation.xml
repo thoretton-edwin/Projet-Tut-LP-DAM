@@ -17,6 +17,7 @@
         android1:id="@+id/listViewFormation"
         android1:layout_width="match_parent"
         android1:layout_height="269dp"
+        android1:layout_margin="5dp"
         android1:layout_weight="0.7" >
     </ListView>
 
@@ -66,7 +67,6 @@
             android:text="DU"
             android:textColor="@android:color/white"
             android1:textStyle="bold" />
-
     </LinearLayout>
 
 </LinearLayout>
