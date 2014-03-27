@@ -25,7 +25,9 @@ import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.util.JsonReader;
 import android.util.Log;
@@ -36,6 +38,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.SearchView.OnQueryTextListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +52,7 @@ public class SearchFormationActivity extends Activity {
 	// List sur la classe FormationItem
 	private ArrayList<Formation> listFormation;
 	private ArrayList<Formation> listFormationView;
+	private ArrayList<Formation> listFormationTemp = new ArrayList<Formation>();
 	// barre de chargement
 	ProgressDialog loading;
 	// succès récupération liste formation depuis internet
@@ -76,6 +81,124 @@ public class SearchFormationActivity extends Activity {
 
 		// récupère les formations
 		recoveryApiFormation();
+
+		// barre de recherche
+		SearchView searchView = (SearchView) findViewById(R.id.searchView);
+		searchView.setOnQueryTextListener(new OnQueryTextListener() {
+
+			@Override
+			public boolean onQueryTextSubmit(String query) {
+				// récupère la chaine de caractère envoyé lors de la requête
+				// Log.v("requete entière : ", query);
+				switch (stateBt) {
+				case 0:
+					listFormationView.clear(); // supprime les éléments de la liste
+					for (int i = 0; i < listFormation.size(); i++) {
+						Formation oneFormation = listFormation.get(i);
+						if( oneFormation.title.toLowerCase().contains(query.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				case 1:
+					listFormationTemp.clear();
+					listFormationTemp.addAll(listFormationView);
+					listFormationView.clear();
+					for (int i = 0; i < listFormationTemp.size(); i++) {
+						Formation oneFormation = listFormationTemp.get(i);
+						if( oneFormation.title.toLowerCase().contains(query.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				case 2:
+					listFormationTemp.clear();
+					listFormationTemp.addAll(listFormationView);
+					listFormationView.clear();
+					for (int i = 0; i < listFormationTemp.size(); i++) {
+						Formation oneFormation = listFormationTemp.get(i);
+						if( oneFormation.title.toLowerCase().contains(query.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				case 3:
+					listFormationTemp.clear();
+					listFormationTemp.addAll(listFormationView);
+					listFormationView.clear();
+					for (int i = 0; i < listFormationTemp.size(); i++) {
+						Formation oneFormation = listFormationTemp.get(i);
+						if( oneFormation.title.toLowerCase().contains(query.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				default:
+					return false;
+				}
+			
+			}
+
+			@Override
+			public boolean onQueryTextChange(String newText) {
+				// récupère la chaine de caractère en cours
+				//Log.v("requete par morceaux : ", newText);
+				switch (stateBt) {
+				case 0:
+					listFormationView.clear(); // supprime les éléments de la liste
+					for (int i = 0; i < listFormation.size(); i++) {
+						Formation oneFormation = listFormation.get(i);
+						if( oneFormation.title.toLowerCase().contains(newText.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				case 1:
+					listFormationTemp.clear();
+					listFormationTemp.addAll(listFormationView);
+					listFormationView.clear();
+					for (int i = 0; i < listFormationTemp.size(); i++) {
+						Formation oneFormation = listFormationTemp.get(i);
+						if( oneFormation.title.toLowerCase().contains(newText.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				case 2:
+					listFormationTemp.clear();
+					listFormationTemp.addAll(listFormationView);
+					listFormationView.clear();
+					for (int i = 0; i < listFormationTemp.size(); i++) {
+						Formation oneFormation = listFormationTemp.get(i);
+						if( oneFormation.title.toLowerCase().contains(newText.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				case 3:
+					listFormationTemp.clear();
+					listFormationTemp.addAll(listFormationView);
+					listFormationView.clear();
+					for (int i = 0; i < listFormationTemp.size(); i++) {
+						Formation oneFormation = listFormationTemp.get(i);
+						if( oneFormation.title.toLowerCase().contains(newText.toLowerCase()) ){
+							listFormationView.add(oneFormation);
+						}
+					}
+					adapter.notifyDataSetChanged();
+					return true;
+				default:
+					return false;
+				}
+			}
+		});
 
 	}
 
@@ -133,10 +256,10 @@ public class SearchFormationActivity extends Activity {
 					break;
 				}
 				stateBt = 1;
-				listFormationView.clear(); //supprime les éléments de la liste
-				for(int i = 0 ; i<listFormation.size() ; i++){
+				listFormationView.clear(); // supprime les éléments de la liste
+				for (int i = 0; i < listFormation.size(); i++) {
 					Formation oneFormation = listFormation.get(i);
-					if("DUT".equals(oneFormation.typeCode)){
+					if ("DUT".equals(oneFormation.typeCode)) {
 						listFormationView.add(oneFormation);
 					}
 				}
@@ -170,10 +293,10 @@ public class SearchFormationActivity extends Activity {
 					break;
 				}
 				stateBt = 2;
-				listFormationView.clear(); //supprime les éléments de la liste
-				for(int i = 0 ; i<listFormation.size() ; i++){
+				listFormationView.clear(); // supprime les éléments de la liste
+				for (int i = 0; i < listFormation.size(); i++) {
 					Formation oneFormation = listFormation.get(i);
-					if("LP".equals(oneFormation.typeCode)){
+					if ("LP".equals(oneFormation.typeCode)) {
 						listFormationView.add(oneFormation);
 					}
 				}
@@ -207,10 +330,10 @@ public class SearchFormationActivity extends Activity {
 					break;
 				}
 				stateBt = 3;
-				listFormationView.clear(); //supprime les éléments de la liste
-				for(int i = 0 ; i<listFormation.size() ; i++){
+				listFormationView.clear(); // supprime les éléments de la liste
+				for (int i = 0; i < listFormation.size(); i++) {
 					Formation oneFormation = listFormation.get(i);
-					if("DU".equals(oneFormation.typeCode)){
+					if ("DU".equals(oneFormation.typeCode)) {
 						listFormationView.add(oneFormation);
 					}
 				}
@@ -226,7 +349,8 @@ public class SearchFormationActivity extends Activity {
 		client.get(this, "http://www.iut.unice.fr/api/formations",
 				new JsonHttpResponseHandler() {
 					@Override
-					public void onFinish() {}
+					public void onFinish() {
+					}
 
 					@Override
 					public void onSuccess(JSONArray response) {
@@ -245,7 +369,7 @@ public class SearchFormationActivity extends Activity {
 							loading.setMessage("Erreur de connexion lors de la lecture des données. Vous pouvez retourner sur la page précédente.");
 							loading.setCancelable(true);
 						}
-						
+
 						if (success) {
 							// init adapter
 							adapter = new ListAdapter();
@@ -293,7 +417,7 @@ public class SearchFormationActivity extends Activity {
 	public class ListAdapter extends BaseAdapter {
 
 		// Couleurs de fond des lignes de la liste
-		private final int[] BACKGROUND_GREYS = { 0xffFAFAFA, 0xffF0F0F0 };
+		//private final int[] BACKGROUND_GREYS = { 0xffFAFAFA, 0xffF0F0F0 };
 
 		private LayoutInflater inflater;
 
@@ -323,8 +447,7 @@ public class SearchFormationActivity extends Activity {
 				convertView = inflater.inflate(R.layout.item_list_formation,
 						parent, false);
 			}
-			convertView.setBackgroundColor(BACKGROUND_GREYS[position
-					% BACKGROUND_GREYS.length]);
+			//convertView.setBackgroundColor(BACKGROUND_GREYS[position % BACKGROUND_GREYS.length]);
 			Formation oneFormation = getItem(position);
 			TextView textView = ((TextView) convertView);
 			textView.setText(oneFormation.title);

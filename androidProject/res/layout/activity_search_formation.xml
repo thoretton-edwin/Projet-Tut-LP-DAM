@@ -3,70 +3,97 @@
     xmlns:android1="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/app_background"
     android:orientation="vertical"
     tools:context=".SearchFormationActivity" >
 
-    <SearchView
-        android:id="@+id/searchView1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android1:layout_weight="0.2" >
-    </SearchView>
+        android:layout_weight="0.05"
+        android:orientation="horizontal" >
 
-    <ListView
-        android1:id="@+id/listViewFormation"
-        android1:layout_width="match_parent"
-        android1:layout_height="269dp"
-        android1:layout_margin="5dp"
-        android1:layout_weight="0.7" >
-    </ListView>
+        <TextView
+            android:id="@+id/txtFormationSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Recherche : "
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </SearchView>
+    </LinearLayout>
 
     <LinearLayout
-        android1:layout_width="match_parent"
-        android1:layout_height="wrap_content"
-        android1:layout_weight="0.1" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.9"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listViewFormation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:paddingBottom="5dp" >
 
         <TextView
             android:id="@+id/sortDut"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android1:layout_margin="5dp"
-            android1:layout_weight="0.33"
+            android:layout_margin="5dp"
+            android:layout_weight="0.33"
             android:background="@drawable/bt_iut_windows"
             android:gravity="center"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="DUT"
             android:textColor="@android:color/white"
-            android1:textStyle="bold" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/sortLp"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android1:layout_margin="5dp"
-            android1:layout_weight="0.33"
+            android:layout_margin="5dp"
+            android:layout_weight="0.33"
             android:background="@drawable/bt_iut_windows"
             android:gravity="center"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="LP"
             android:textColor="@android:color/white"
-            android1:textStyle="bold" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/sortDu"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android1:layout_margin="5dp"
-            android1:layout_weight="0.33"
+            android:layout_margin="5dp"
+            android:layout_weight="0.33"
             android:background="@drawable/bt_iut_windows"
             android:gravity="center"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="DU"
             android:textColor="@android:color/white"
-            android1:textStyle="bold" />
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 </LinearLayout>
