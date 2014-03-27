@@ -62,6 +62,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 	email = [[NSMutableString alloc]init];
 	self.searchLabelField.delegate=self;
 	self.textField.scrollEnabled = NO;
