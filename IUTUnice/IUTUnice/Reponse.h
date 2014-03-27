@@ -10,8 +10,8 @@
 
 @interface Reponse : NSObject
 
-@property NSString* identifiant;
-@property NSString* intitule;
+@property (nonatomic) NSString* identifiant;
+@property (nonatomic) NSString* intitule;
 
 -(id) init;
 -(id) initWithId:(NSString*)ident andIntitule:(NSString*)intitu;

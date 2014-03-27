@@ -14,8 +14,9 @@
     return self = [super init];
 }
 
--(id) initWithIntitule:(NSString *)inti andArray:(NSMutableArray *)repArray{
+-(id) initWithIntitule:(NSString *)inti andArray:(NSMutableArray *)repArray andIdentifiant:(NSString *)identifiant{
     self = [self init];
+    self->_identifiant = identifiant;
     self->_intitule = inti;
     _reponseArray = [self->_reponseArray initWithArray: repArray];
     return self;

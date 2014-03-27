@@ -7,14 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TBXML+HTTP.h"
 #import "FormationListViewController.h"
 #import "SondageViewController.h"
 
+#import "Question.h"
+#import "Reponse.h"
+
 @interface VitrinePageViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIImageView *presentationImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *descriptionScrollView;
 @property (weak, nonatomic) IBOutlet UIButton *sondageButton;
 @property (weak, nonatomic) IBOutlet UIButton *formationButton;
+
+@property (nonatomic) NSMutableArray *sondageArray;
 
 - (IBAction)goToFormationListPage:(id)sender;
 - (IBAction)goToSondageIUTPage:(id)sender;

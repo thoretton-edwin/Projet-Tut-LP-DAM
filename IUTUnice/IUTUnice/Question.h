@@ -10,10 +10,11 @@
 
 @interface Question : NSObject
 
-@property  NSString* intitule;
-@property NSMutableArray* reponseArray;
+@property (nonatomic) NSString* identifiant;
+@property (nonatomic) NSString* intitule;
+@property (nonatomic) NSMutableArray* reponseArray;
 
 -(id) init;
--(id) initWithIntitule:(NSString*)inti andArray:(NSMutableArray*)repArray;
+-(id) initWithIntitule:(NSString*)inti andArray:(NSMutableArray*)repArray andIdentifiant:(NSString*)identifiant;
 
 @end
