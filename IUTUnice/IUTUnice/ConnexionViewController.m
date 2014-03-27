@@ -36,6 +36,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)GoToLogin:(id)sender {
-}
 @end
