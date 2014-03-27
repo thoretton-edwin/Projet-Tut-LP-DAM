@@ -82,6 +82,7 @@
     
     SondageViewController *viewController = [[SondageViewController alloc] init];
     viewController.typeSondage = @"IUT";
+    viewController.sondage = _sondageArray;
     [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
 }
 

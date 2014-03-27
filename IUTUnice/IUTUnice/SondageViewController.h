@@ -11,5 +11,6 @@
 @interface SondageViewController : UIViewController
 
 @property NSString* typeSondage;
+@property NSMutableArray *sondage;
 
 @end
