@@ -1,11 +1,7 @@
 package dam.ptut.iutunice.IutWindows;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -13,23 +9,18 @@ import org.json.JSONObject;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
-import com.loopj.android.http.TextHttpResponseHandler;
 
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.Parameter.WifiItem;
-import dam.ptut.iutunice.R.drawable;
-import dam.ptut.iutunice.R.id;
-import dam.ptut.iutunice.R.layout;
-import dam.ptut.iutunice.R.menu;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
+import android.content.DialogInterface;
 import android.support.v4.app.NavUtils;
-import android.util.JsonReader;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -37,11 +28,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 import android.widget.SearchView.OnQueryTextListener;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SearchFormationActivity extends Activity {
 
@@ -78,6 +70,24 @@ public class SearchFormationActivity extends Activity {
 		loading.setMessage("Récupération des formations depuis internet...");
 		loading.setCancelable(false);
 		loading.show();
+		
+		// test de la connexion internet
+		ConnectivityManager connect = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo networkInfo = connect.getActiveNetworkInfo();
+		if (networkInfo == null || !networkInfo.isConnected()) {
+			loading.dismiss();
+			AlertDialog.Builder alertDialog = new AlertDialog.Builder(SearchFormationActivity.this);
+			alertDialog.setTitle("Connexion internet impossible...");
+			alertDialog.setMessage("Vous n'êtes probablement pas connecté à internet...");
+			alertDialog.setPositiveButton("Retour", new DialogInterface.OnClickListener(){
+				@Override
+				public void onClick(DialogInterface dialog, int id){
+					finish();
+				}
+			});
+			AlertDialog dialog = alertDialog.create();
+			dialog.show();
+		}
 
 		// récupère les formations
 		recoveryApiFormation();
@@ -345,7 +355,6 @@ public class SearchFormationActivity extends Activity {
 	}
 
 	private void recoveryApiFormation() {
-		Log.v("recoveryApi", "1");
 		client.get(this, "http://www.iut.unice.fr/api/formations",
 				new JsonHttpResponseHandler() {
 					@Override
@@ -417,7 +426,7 @@ public class SearchFormationActivity extends Activity {
 	public class ListAdapter extends BaseAdapter {
 
 		// Couleurs de fond des lignes de la liste
-		//private final int[] BACKGROUND_GREYS = { 0xffFAFAFA, 0xffF0F0F0 };
+		// private final int[] BACKGROUND_GREYS = { 0xffFAFAFA, 0xffF0F0F0 };
 
 		private LayoutInflater inflater;
 
@@ -447,7 +456,8 @@ public class SearchFormationActivity extends Activity {
 				convertView = inflater.inflate(R.layout.item_list_formation,
 						parent, false);
 			}
-			//convertView.setBackgroundColor(BACKGROUND_GREYS[position % BACKGROUND_GREYS.length]);
+			// convertView.setBackgroundColor(BACKGROUND_GREYS[position %
+			// BACKGROUND_GREYS.length]);
 			Formation oneFormation = getItem(position);
 			TextView textView = ((TextView) convertView);
 			textView.setText(oneFormation.title);
