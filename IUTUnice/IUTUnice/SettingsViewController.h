@@ -16,7 +16,8 @@
 
 @interface SettingsViewController : UITableViewController
 {
-    NSMutableArray *tabSettings;
+    NSMutableArray *tabSettings, *tabInfosWifi;
+    infosWifiTableViewController *infosViewController;
 }
 
 @end
