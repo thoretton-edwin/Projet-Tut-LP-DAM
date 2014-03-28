@@ -20,6 +20,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,6 +28,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -418,6 +421,20 @@ public class SearchFormationActivity extends Activity {
 		// affichage de la liste
 		ListView listView = (ListView) findViewById(R.id.listViewFormation);
 		listView.setAdapter(adapter);
+		
+		//gestion du détail
+		listView.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position,
+					long id) {
+				Formation oneFormation = (Formation) parent.getItemAtPosition(position);
+				Intent intent = new Intent(getApplicationContext(), DetailsFormationActivity.class);
+				intent.putExtra("body", oneFormation.body);
+				intent.putExtra("title", oneFormation.title);
+				startActivity(intent);
+				
+			}
+		});
 	}
 
 	/*****
@@ -455,6 +472,7 @@ public class SearchFormationActivity extends Activity {
 			if (convertView == null) {
 				convertView = inflater.inflate(R.layout.item_list_formation,
 						parent, false);
+				
 			}
 			// convertView.setBackgroundColor(BACKGROUND_GREYS[position %
 			// BACKGROUND_GREYS.length]);

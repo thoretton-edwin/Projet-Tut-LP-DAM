@@ -15,5 +15,6 @@
     <string name="title_activity_iut_windows">IutWindowsActivity</string>
     <string name="title_activity_search_formation">SearchFormationActivity</string>
     <string name="title_activity_post_bac">PostBacActivity</string>
+    <string name="title_activity_details_formation">DetailsFormationActivity</string>
 
 </resources>

@@ -45,9 +45,9 @@ public class IutWindowsActivity extends Activity {
 		}
 		// animation
 		myViewFlipper.setInAnimation(AnimationUtils.loadAnimation(
-				getApplicationContext(), R.anim.in_from_right));
+				getApplicationContext(), R.anim.in_from_top));
 		myViewFlipper.setOutAnimation(AnimationUtils.loadAnimation(
-				getApplicationContext(), R.anim.out_to_left));
+				getApplicationContext(), R.anim.out_to_bottom));
 
 		// diapo automatique
 		myViewFlipper.setAutoStart(true);
