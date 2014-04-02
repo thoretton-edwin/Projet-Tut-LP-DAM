@@ -19,7 +19,6 @@
     self = [super initWithStyle:style];
     if (self) {
         self.title =@"Paramêtres";
-        tabInfosWifi = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -27,8 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
 
     tabSettings= [[NSMutableArray alloc] init];
     [tabSettings addObject:@"Connexion"];
@@ -39,23 +36,6 @@
     [tabSettings addObject:@"Credits"];
     
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
-    self.title=@"Settings";
-    
-    NSError *error;
-    TBXML * tbxml = [TBXML tbxmlWithXMLFile:@"infosWifi" fileExtension:@"xml" error:&error];
-    
-    if (error) {
-        NSLog(@"erreur : %@ %@", [error localizedDescription], [error userInfo]);
-    } else {
-        NSLog(@"success : %@", [TBXML elementName:tbxml.rootXMLElement]);
-        
-        //
-        if (tbxml.rootXMLElement)
-            [self traverseElement:tbxml.rootXMLElement];
-    }
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -125,13 +105,18 @@
             break;
         case 1: // Infos Wifi
         {
-            infosViewController = [[infosWifiTableViewController alloc] initWithNibName:@"infosWifiTableViewController" bundle:nil];
             
-            NSLog(@"count tab : %d" , tabInfosWifi.count);
+            TBXML *xml = [TBXML tbxmlWithXMLFile:@"infosWifi" fileExtension:@"xml" error:nil];
             
-            infosViewController.tabWifiInfos = tabInfosWifi;
+            TBXMLElement *root = [TBXML childElementNamed:@"root" parentElement:xml.rootXMLElement];
             
-            [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:infosViewController waitUntilDone:NO];
+            TBXMLElement *infosWifi = [TBXML childElementNamed:@"site" parentElement:root];
+            
+            [self traverseElement: infosWifi];
+            
+            
+            infosWifiTableViewController *viewController = [[infosWifiTableViewController alloc] initWithNibName:@"infosWifiTableViewController" bundle:nil];
+             [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
             
         }
             break;
@@ -177,49 +162,27 @@
 
 - (void) traverseElement:(TBXMLElement *)element {
     
+<<<<<<< HEAD
     // Boucle du traverse element
+=======
+    NSLog(@"Coucou traverse element");
     
-    do {
-        if (element->firstChild)
-            [self traverseElement:element->firstChild];
-        
-        if ([[TBXML elementName:element] isEqualToString:@"reseau"]) {
-            infosWifi * wifiInfos = [[infosWifi alloc] init];
-            
-            
-            TBXMLElement *nomWi = [TBXML childElementNamed:@"nom" parentElement:element];
-            wifiInfos.nom_Wifi =[TBXML textForElement:nomWi];
-            TBXMLElement *ssidWi = [TBXML childElementNamed:@"ssid" parentElement:element];
-            wifiInfos.ssid_wifi =[TBXML textForElement:ssidWi];
-            TBXMLElement *clefWi = [TBXML childElementNamed:@"clef" parentElement:element];
-            wifiInfos.clef_wifi =[TBXML textForElement:clefWi];
-            TBXMLElement *loginWi = [TBXML childElementNamed:@"login" parentElement:element];
-            wifiInfos.clef_wifi =[TBXML textForElement:loginWi];
-            TBXMLElement *mdpWi = [TBXML childElementNamed:@"mdp" parentElement:element];
-            wifiInfos.clef_wifi =[TBXML textForElement:mdpWi];
-            
-            NSLog(@"nom : %@", wifiInfos.nom_Wifi);
-            NSLog(@"ssid : %@", wifiInfos.ssid_wifi);
-            NSLog(@"clef : %@", wifiInfos.clef_wifi);
-            NSLog(@"login : %@", wifiInfos.login_Wifi);
-            NSLog(@"mdp : %@", wifiInfos.mdp_wifi);
-            [tabInfosWifi addObject:wifiInfos.nom_Wifi];
-            [tabInfosWifi addObject:wifiInfos.ssid_wifi];
-            [tabInfosWifi addObject:wifiInfos.clef_wifi];
-            [tabInfosWifi addObject:wifiInfos.login_Wifi];
-            [tabInfosWifi addObject:wifiInfos.mdp_wifi];
-        
-            NSLog(@"tab infos wifi : %@" , tabInfosWifi);
-            NSLog(@"count tab : %d" , tabInfosWifi.count);
-        }
-        
-        
-        
-        
-        
-        
-    } while ((element = element->nextSibling));
-
+    /* do {
+     if (element->firstChild)
+     [self traverseElement:element->firstChild];
+     
+     if ([[TBXML elementName:element] isEqualToString:@"reseau"]) {
+     infosWifi * wifiInfos = [[infosWifi alloc] init];
+     TBXMLElement *nomWi = [TBXML childElementNamed:@"nom" parentElement:element];
+     wifiInfos.nom_Wifi =[TBXML textForElement:nomWi];
+     
+     NSLog(@"nom : %@", wifiInfos.nom_Wifi);
+     
+     //[tabInfosWifi addObject:wifiInfos.nom_Wifi];
+     }
+     } while ((element = element->nextSibling));*/
+    
+>>>>>>> FETCH_HEAD
     
     
     

@@ -88,7 +88,6 @@
 		929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E015B189BA45900694030 /* 1383836248_addressbook.png */; };
 		929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E015F189BA45900694030 /* 1383836301_Manager.png */; };
 		929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */; };
-		92A4D1C418E580650065F32D /* infosWifi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 92A4D1C318E580650065F32D /* infosWifi.xml */; };
 		92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0518ACC24D0047DA1E /* RootNavigationController.m */; };
 		92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */; };
 		92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */; };
@@ -229,7 +228,6 @@
 		929E015B189BA45900694030 /* 1383836248_addressbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836248_addressbook.png; sourceTree = "<group>"; };
 		929E015F189BA45900694030 /* 1383836301_Manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836301_Manager.png; sourceTree = "<group>"; };
 		929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1383836370_Test-paper-128.png"; sourceTree = "<group>"; };
-		92A4D1C318E580650065F32D /* infosWifi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = infosWifi.xml; sourceTree = "<group>"; };
 		92A53D0418ACC24D0047DA1E /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		92A53D0518ACC24D0047DA1E /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		92A53D0818ACD3CC0047DA1E /* VitrinePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitrinePageViewController.h; sourceTree = "<group>"; };
@@ -546,7 +544,6 @@
 		92A5C27018D32F34004982C4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				92A4D1C318E580650065F32D /* infosWifi.xml */,
 				9213AB5718E2DF6000AF3DDF /* Sondage */,
 				92A5C27118D32F92004982C4 /* SettingsViewController.h */,
 				92A5C27218D32F92004982C4 /* SettingsViewController.m */,
@@ -658,7 +655,6 @@
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
-				92A4D1C418E580650065F32D /* infosWifi.xml in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,

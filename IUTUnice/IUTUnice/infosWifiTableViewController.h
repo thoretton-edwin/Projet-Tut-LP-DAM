@@ -10,10 +10,7 @@
 #import "infosWifi.h"
 
 @interface infosWifiTableViewController : UITableViewController{
-    
+    NSMutableArray *tabInfosWifi;
 }
-
-@property NSMutableArray *tabWifiInfos;
-
 
 @end

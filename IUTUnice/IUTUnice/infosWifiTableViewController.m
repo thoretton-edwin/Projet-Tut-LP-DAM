@@ -18,11 +18,9 @@
 {
     [super viewDidLoad];
     
-    self.title=@"Infos Wifi";
+    tabInfosWifi = [[NSMutableArray alloc] init];
     
-    _tabWifiInfos = [[NSMutableArray alloc] init];
     
-    NSLog(@"count tab : %d" , _tabWifiInfos.count);
     
 
 }
