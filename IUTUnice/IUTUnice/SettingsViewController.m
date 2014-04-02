@@ -107,6 +107,7 @@
         {
             
             TBXML *xml = [TBXML tbxmlWithXMLFile:@"infosWifi" fileExtension:@"xml" error:nil];
+<<<<<<< HEAD
             
             TBXMLElement *root = [TBXML childElementNamed:@"root" parentElement:xml.rootXMLElement];
             
@@ -115,6 +116,16 @@
             [self traverseElement: infosWifi];
             
             
+=======
+            
+            TBXMLElement *root = [TBXML childElementNamed:@"root" parentElement:xml.rootXMLElement];
+            
+            TBXMLElement *infosWifi = [TBXML childElementNamed:@"site" parentElement:root];
+            
+            [self traverseElement: infosWifi];
+            
+            
+>>>>>>> FETCH_HEAD
             infosWifiTableViewController *viewController = [[infosWifiTableViewController alloc] initWithNibName:@"infosWifiTableViewController" bundle:nil];
              [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
             
@@ -163,8 +174,11 @@
 - (void) traverseElement:(TBXMLElement *)element {
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Boucle du traverse element
 =======
+=======
+>>>>>>> FETCH_HEAD
     NSLog(@"Coucou traverse element");
     
     /* do {
@@ -182,6 +196,9 @@
      }
      } while ((element = element->nextSibling));*/
     
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
     
     
