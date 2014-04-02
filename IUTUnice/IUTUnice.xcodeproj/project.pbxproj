@@ -11,7 +11,6 @@
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		43174CFF18E432ED00CBC54A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43174CFE18E432ED00CBC54A /* MessageUI.framework */; };
-		431FD6E518EBF70400F16E8C /* infosWifi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 431FD6E418EBF70400F16E8C /* infosWifi.xml */; };
 		433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4A918D30E6000B0C5F6 /* UE.m */; };
 		433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4AC18D311B600B0C5F6 /* Semestre.m */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
@@ -120,7 +119,6 @@
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
 		43174CFE18E432ED00CBC54A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		431FD6E418EBF70400F16E8C /* infosWifi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = infosWifi.xml; path = ../../../../../../../Volumes/THORETTON/infosWifi.xml; sourceTree = "<group>"; };
 		433CC4A818D30E6000B0C5F6 /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
 		433CC4A918D30E6000B0C5F6 /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
 		433CC4AB18D311B600B0C5F6 /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
@@ -467,7 +465,6 @@
 		9213AB5718E2DF6000AF3DDF /* Sondage */ = {
 			isa = PBXGroup;
 			children = (
-				431FD6E418EBF70400F16E8C /* infosWifi.xml */,
 				9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */,
 				9213AB5C18E2E51100AF3DDF /* SondageViewController.h */,
 				9213AB5D18E2E51100AF3DDF /* SondageViewController.m */,
@@ -658,7 +655,6 @@
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
-				431FD6E518EBF70400F16E8C /* infosWifi.xml in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,

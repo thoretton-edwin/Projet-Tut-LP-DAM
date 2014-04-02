@@ -20,6 +20,8 @@
     
     tabInfosWifi = [[NSMutableArray alloc] init];
     
+    
+    
 
 }
 
