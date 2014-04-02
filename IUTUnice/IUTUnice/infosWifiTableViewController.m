@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    tabInfosWifi = [[NSMutableArray alloc] init];
+    _tabInfosWifi = [[NSMutableArray alloc] init];
     
     
     
