@@ -177,7 +177,7 @@
 
 - (void) traverseElement:(TBXMLElement *)element {
     
-    
+    // Boucle du traverse element
     
     do {
         if (element->firstChild)
