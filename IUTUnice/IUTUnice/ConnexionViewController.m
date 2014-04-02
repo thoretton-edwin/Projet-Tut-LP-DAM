@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title=@"Connexion";
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,4 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)GoToLogin:(id)sender {
+}
 @end
