@@ -19,7 +19,7 @@
     self = [super initWithStyle:style];
     if (self) {
         self.title =@"Paramêtres";
-        tabInfosWifi = [[NSMutableArray alloc] init];
+        
     }
     return self;
 }
@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    
+    tabInfosWifi = [[NSMutableArray alloc] init];
     
     tabSettings= [[NSMutableArray alloc] init];
     [tabSettings addObject:@"Connexion"];
@@ -203,11 +203,23 @@
             NSLog(@"clef : %@", wifiInfos.clef_wifi);
             NSLog(@"login : %@", wifiInfos.login_Wifi);
             NSLog(@"mdp : %@", wifiInfos.mdp_wifi);
-            [tabInfosWifi addObject:wifiInfos.nom_Wifi];
-            [tabInfosWifi addObject:wifiInfos.ssid_wifi];
-            [tabInfosWifi addObject:wifiInfos.clef_wifi];
-            [tabInfosWifi addObject:wifiInfos.login_Wifi];
-            [tabInfosWifi addObject:wifiInfos.mdp_wifi];
+            
+            if (![wifiInfos.nom_Wifi isEqualToString:@""]) {
+                [tabInfosWifi addObject:wifiInfos.nom_Wifi];
+            }else
+            if (![wifiInfos.ssid_wifi isEqualToString:@""]) {
+                [tabInfosWifi addObject:wifiInfos.ssid_wifi];
+            }else
+            if (![wifiInfos.clef_wifi isEqualToString:@""]) {
+                [tabInfosWifi addObject:wifiInfos.clef_wifi];
+            }else
+            if (![wifiInfos.login_Wifi isEqualToString:@""]) {
+                [tabInfosWifi addObject:wifiInfos.login_Wifi];
+            }else
+            if (![wifiInfos.mdp_wifi isEqualToString:@""]) {
+                [tabInfosWifi addObject:wifiInfos.mdp_wifi];
+            }
+            
             
             NSLog(@"tab infos wifi : %@" , tabInfosWifi);
             NSLog(@"count tab : %d" , tabInfosWifi.count);
