@@ -56,6 +56,17 @@
         </activity>
         <!-- A child of the IutWindowsActivity activity -->
         <activity
+            android:name="dam.ptut.iutunice.IutWindows.SurveyIutPage"
+            android:label="@string/title_activity_survey_iut_page"
+            android:parentActivityName="dam.ptut.iutunice.IutWindows.IutWindowsActivity" >
+           
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.IutWindows.IutWindowsActivity" />
+        </activity>
+        <!-- A child of the IutWindowsActivity activity -->
+        <activity
             android:name="dam.ptut.iutunice.IutWindows.SearchFormationActivity"
             android:label="@string/title_activity_search_formation"
             android:parentActivityName="dam.ptut.iutunice.IutWindows.IutWindowsActivity" >
@@ -70,6 +81,7 @@
             android:name="dam.ptut.iutunice.IutWindows.DetailsFormationActivity"
             android:label="@string/title_activity_details_formation"
             android:parentActivityName="dam.ptut.iutunice.IutWindows.SearchFormationActivity" >
+
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

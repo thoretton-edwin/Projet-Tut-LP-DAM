@@ -20,12 +20,12 @@ public class DetailsFormationActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_details_formation);
-		
+
 		this.setTitle("Détails de la formation");
 		// permet le retour sur la page père
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
-		
+
 		Intent intent = getIntent();
 		String body = intent.getStringExtra("body");
 		String title = intent.getStringExtra("title");
@@ -35,7 +35,7 @@ public class DetailsFormationActivity extends Activity {
 		webView.getSettings().setJavaScriptEnabled(true);
 		webView.loadDataWithBaseURL(null, body, typeMime, encoding, null);
 		webView.setBackgroundColor(Color.TRANSPARENT);
-		
+
 		TextView txtTitle = (TextView) findViewById(R.id.txtDetailFormationTitle);
 		txtTitle.setText(title);
 	}
@@ -62,9 +62,18 @@ public class DetailsFormationActivity extends Activity {
 		// Respond to the action bar's Up/Home button
 		case android.R.id.home:
 			NavUtils.navigateUpFromSameTask(this);
+			overridePendingTransition(R.anim.in_details, R.anim.out_list);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		// animation de "retour"
+		overridePendingTransition(R.anim.in_details, R.anim.out_list);
+
 	}
 
 }

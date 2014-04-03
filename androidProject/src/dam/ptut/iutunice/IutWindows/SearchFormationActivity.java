@@ -71,7 +71,7 @@ public class SearchFormationActivity extends Activity {
 		loading = new ProgressDialog(SearchFormationActivity.this);
 		loading.setTitle("Chargement en cours...");
 		loading.setMessage("Récupération des formations depuis internet...");
-		loading.setCancelable(false);
+		loading.setCancelable(true);
 		loading.show();
 		
 		// test de la connexion internet
@@ -229,6 +229,8 @@ public class SearchFormationActivity extends Activity {
 		// Respond to the action bar's Up/Home button
 		case android.R.id.home:
 			NavUtils.navigateUpFromSameTask(this);
+			//animation
+			overridePendingTransition(R.anim.in_details, R.anim.out_list);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -240,6 +242,13 @@ public class SearchFormationActivity extends Activity {
 		MenuItem item = menu.findItem(R.id.action_settings);
 		item.setVisible(false);
 		return true;
+	}
+	@Override
+	public void onBackPressed(){
+		super.onBackPressed();
+		//animation de "retour"
+		overridePendingTransition(R.anim.in_details, R.anim.out_list);
+		
 	}
 
 	private void btPressed() {

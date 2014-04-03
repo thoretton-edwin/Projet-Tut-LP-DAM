@@ -62,6 +62,9 @@ public class IutWindowsActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// nouvelle activité
+				Intent intent = new Intent(IutWindowsActivity.this,
+						SurveyIutPage.class);
+				startActivity(intent);
 
 			}
 		});
@@ -88,6 +91,13 @@ public class IutWindowsActivity extends Activity {
 	 * == 0) break; myViewFlipper.showPrevious(); } break; } return false; }
 	 */
 	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		// animation de "retour"
+		overridePendingTransition(R.anim.in_details, R.anim.out_list);
+	}
+
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.iut_windows, menu);
@@ -101,6 +111,7 @@ public class IutWindowsActivity extends Activity {
 		// Respond to the action bar's Up/Home button
 		case android.R.id.home:
 			NavUtils.navigateUpFromSameTask(this);
+			overridePendingTransition(R.anim.in_details, R.anim.out_list);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
