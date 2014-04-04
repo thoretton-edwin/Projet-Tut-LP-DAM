@@ -71,8 +71,6 @@
 		927A3B7618E42F54000A61F0 /* infosWifiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B7418E42F54000A61F0 /* infosWifiTableViewController.xib */; };
 		927A3B7A18E42FC3000A61F0 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B7818E42FC3000A61F0 /* AboutViewController.m */; };
 		927A3B7B18E42FC3000A61F0 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B7918E42FC3000A61F0 /* AboutViewController.xib */; };
-		927A3B7F18E42FFB000A61F0 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B7D18E42FFB000A61F0 /* SurveyViewController.m */; };
-		927A3B8018E42FFB000A61F0 /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B7E18E42FFB000A61F0 /* SurveyViewController.xib */; };
 		927A3B8418E43093000A61F0 /* LangueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B8218E43093000A61F0 /* LangueViewController.m */; };
 		927A3B8518E43093000A61F0 /* LangueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B8318E43093000A61F0 /* LangueViewController.xib */; };
 		927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B8C18E431B6000A61F0 /* CreditsViewController.m */; };
@@ -207,9 +205,6 @@
 		927A3B7718E42FC3000A61F0 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		927A3B7818E42FC3000A61F0 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		927A3B7918E42FC3000A61F0 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
-		927A3B7C18E42FFB000A61F0 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
-		927A3B7D18E42FFB000A61F0 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
-		927A3B7E18E42FFB000A61F0 /* SurveyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
 		927A3B8118E43093000A61F0 /* LangueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangueViewController.h; sourceTree = "<group>"; };
 		927A3B8218E43093000A61F0 /* LangueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangueViewController.m; sourceTree = "<group>"; };
 		927A3B8318E43093000A61F0 /* LangueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LangueViewController.xib; sourceTree = "<group>"; };
@@ -559,9 +554,6 @@
 				927A3B7718E42FC3000A61F0 /* AboutViewController.h */,
 				927A3B7818E42FC3000A61F0 /* AboutViewController.m */,
 				927A3B7918E42FC3000A61F0 /* AboutViewController.xib */,
-				927A3B7C18E42FFB000A61F0 /* SurveyViewController.h */,
-				927A3B7D18E42FFB000A61F0 /* SurveyViewController.m */,
-				927A3B7E18E42FFB000A61F0 /* SurveyViewController.xib */,
 				927A3B8118E43093000A61F0 /* LangueViewController.h */,
 				927A3B8218E43093000A61F0 /* LangueViewController.m */,
 				927A3B8318E43093000A61F0 /* LangueViewController.xib */,
@@ -689,7 +681,6 @@
 				927A3B7118E42E6F000A61F0 /* ConnexionViewController.xib in Resources */,
 				4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
-				927A3B8018E42FFB000A61F0 /* SurveyViewController.xib in Resources */,
 				927A3B7B18E42FC3000A61F0 /* AboutViewController.xib in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
@@ -785,7 +776,6 @@
 				4362221A18E2FD48006B091D /* recherche.js in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
 				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
-				927A3B7F18E42FFB000A61F0 /* SurveyViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

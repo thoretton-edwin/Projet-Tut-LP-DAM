@@ -26,7 +26,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //Start parsing
+    TBXML *xml = [TBXML tbxmlWithXMLFile:@"sondage_v3" fileExtension:@"xml" error:nil];
+    TBXMLElement *root = [TBXML childElementNamed:@"sondage" parentElement:xml.rootXMLElement];
+    TBXMLElement *questionnaire = [TBXML childElementNamed:@"questionnaire" parentElement:root];
+    
+    _sondage = [[NSMutableArray alloc] init];
+    
+    [self traverseElement: questionnaire];
+    
+    
 	self.title = [@"Sondage " stringByAppendingString: _typeSondage];
+    NSLog(@"%@",self.title);
     _globalIndex = 0;
     
     _answerPickerView.delegate = self;
@@ -48,6 +60,113 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) traverseElement:(TBXMLElement *)element {
+    
+    if([_typeSondage isEqual: @"IUT"]){
+        element = element->nextSibling;
+    }
+    
+    char* attributeValue = element->firstAttribute->value;
+    NSString* value = [NSString stringWithUTF8String:attributeValue];
+    
+    NSString* strQID = @""; NSString* strQIntitule = @"";
+    NSString* strRIntitule = @""; NSString* strRID = @"";
+    
+    //Check if xml is IUT or feedback
+    if([value isEqual: _typeSondage]){
+        //Enter Questionnaire
+        element = element->firstChild;
+        
+        do{
+            //Question
+            NSLog(@"%s",element->name);
+            
+            //Id Question
+            element = element->firstChild;
+            NSLog(@"%s",element->name);
+            NSLog(@"%s",element->text);
+            strQID = [NSString stringWithUTF8String:element->text];
+            
+            //Intitule Question
+            element = element->nextSibling;
+            NSLog(@"%s",element->name);
+            NSLog(@"%s",element->text);
+            strQIntitule = [NSString stringWithUTF8String:element->text];
+            
+            //init array of answers
+            NSMutableArray *repArray = [[NSMutableArray alloc] init];
+            
+            //Reponse
+            element = element->nextSibling;
+            do {
+                
+                //loop Reponse
+                NSLog(@"\t%s",element->name);
+                
+                //Id Reponse
+                element = element->firstChild;
+                NSLog(@"\t\t%s",element->name);
+                NSLog(@"\t\t%s",element->text);
+                strRID = [NSString stringWithUTF8String:element->text];
+                
+                //Intitule Reponse
+                element = element->nextSibling;
+                NSLog(@"\t\t%s",element->name);
+                NSLog(@"\t\t%s",element->text);
+                strRIntitule = [NSString stringWithUTF8String: element->text];
+                
+                //Get back to question
+                element = element->parentElement;
+                
+                element = element->nextSibling;
+                
+                //Create reponse object
+                Reponse *rep = [[Reponse alloc] initWithId:strRID andIntitule:strRIntitule];
+                //store into repArray
+                [repArray addObject: rep];
+                
+            } while (element->nextSibling);
+            
+            //last Reponse
+            NSLog(@"\t%s",element->name);
+            
+            //Id Reponse
+            element = element->firstChild;
+            NSLog(@"\t\t%s",element->name);
+            NSLog(@"\t\t%s",element->text);
+            strRID = [NSString stringWithUTF8String:element->text];
+            
+            //Intitule Reponse
+            element = element->nextSibling;
+            NSLog(@"\t\t%s",element->name);
+            NSLog(@"\t\t%s",element->text);
+            strRIntitule = [NSString stringWithUTF8String: element->text];
+            
+            //Create last reponse object
+            Reponse *lastRep = [[Reponse alloc] initWithId:strRID andIntitule:strRIntitule];
+            //store into repArray
+            [repArray addObject: lastRep];
+            
+            
+            //Get back to question
+            element = element->parentElement;
+            
+            //Get back to questionnaire
+            element = element->parentElement;
+            
+            NSLog(@"REPONSE COUNT: %d", [repArray count]);
+            
+            //Create new Question with an ID, an desc and an Array of answers
+            Question *newQuestion = [[Question alloc] initWithIntitule:strQIntitule andArray:repArray andIdentifiant:strQID];
+            
+            //store the question into the array of Questions
+            [_sondage addObject: newQuestion];
+            
+        } while ((element = element->nextSibling));
+    }
+    
 }
 
 - (void) displayQuestionAtIndex:(NSInteger)index{
@@ -89,6 +208,10 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     return [[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:row] intitule];
+}
+
+- (NSAttributedString*)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    NS
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component

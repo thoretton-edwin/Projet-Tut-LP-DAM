@@ -144,8 +144,9 @@
             break;
         case 3: // Sondage
         {
-            SurveyViewController *viewController = [[SurveyViewController alloc] initWithNibName:@"SurveyViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
+            viewController.typeSondage = @"feedback";
+            [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
             
         }
             break;
