@@ -10,7 +10,7 @@
 #import "Question.h"
 #import "Reponse.h"
 
-@interface SondageViewController : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource>
+@interface SondageViewController : UIViewController <UITableViewDelegate,UITableViewDelegate>
 
 @property NSString* typeSondage;
 @property NSMutableArray *sondage;
@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionIntituleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *nextQuestionButton;
-@property (weak, nonatomic) IBOutlet UIPickerView *answerPickerView;
+@property (weak, nonatomic) IBOutlet UITableView *answerTableView;
 
 - (IBAction)nextQuestion:(id)sender;
 

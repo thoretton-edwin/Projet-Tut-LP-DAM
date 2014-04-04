@@ -41,8 +41,8 @@
     NSLog(@"%@",self.title);
     _globalIndex = 0;
     
-    _answerPickerView.delegate = self;
-    _answerPickerView.dataSource = self;
+    _answerTableView.delegate = self;
+    _answerTableView.dataSource = self;
     
     NSLog(@"Count: %d",[[[_sondage objectAtIndex: _globalIndex] reponseArray] count]);
     
@@ -191,34 +191,42 @@
     if(_globalIndex+1 < [_sondage count]){
         _globalIndex ++;
         [self displayQuestionAtIndex:_globalIndex];
-        [_answerPickerView reloadAllComponents];
+        [_answerTableView reloadData];
     }
 }
 
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [[[_sondage objectAtIndex: _globalIndex] reponseArray] count];
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:row] intitule];
+    NSString *CellIdentifier = [[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] identifiant];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    
+    cell.textLabel.text =[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] intitule];
+    
+    return cell;
 }
 
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-{
-    NSLog(@"ANSWER: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:row] intitule]);
-    NSLog(@"ID: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:row] identifiant]);
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"ANSWER: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] intitule]);
+    NSLog(@"ID: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] identifiant]);
     if(_globalIndex+1 < [_sondage count]){
-        
         _globalIndex ++;
         [self displayQuestionAtIndex:_globalIndex];
-        [_answerPickerView reloadAllComponents];
+        [_answerTableView reloadData];
     }
+    
 }
+
 @end
