@@ -105,6 +105,18 @@
     <Compile Include="DescriptionPage.xaml.cs">
       <DependentUpon>DescriptionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormationASPage.xaml.cs">
+      <DependentUpon>FormationASPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormationDUPage.xaml.cs">
+      <DependentUpon>FormationDUPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormationDUTPage.xaml.cs">
+      <DependentUpon>FormationDUTPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormationLPPage.xaml.cs">
+      <DependentUpon>FormationLPPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormationPage.xaml.cs">
       <DependentUpon>FormationPage.xaml</DependentUpon>
     </Compile>
@@ -161,6 +173,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DescriptionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormationASPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormationDUPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormationDUTPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormationLPPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -229,6 +257,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="busV2.xml" />
+    <Content Include="icon152.png" />
+    <Content Include="icon40.png" />
+    <Content Include="icon521.png" />
+    <Content Include="icon58.png" />
+    <Content Include="icon76.png" />
     <Content Include="Icones\address.png" />
     <Content Include="Icones\app_background.png" />
     <Content Include="Icones\calendar.png" />
@@ -258,6 +291,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>

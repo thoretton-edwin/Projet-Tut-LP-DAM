@@ -1,11 +1,16 @@
-﻿<xapCache source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\IUTUNice_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="21/03/2014 13:03:53">
-  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\obj\Debug\IUTUNice.dll" archivePath="IUTUNice.dll" lastWriteTime="21/03/2014 13:03:52" />
+﻿<xapCache source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\IUTUNice_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="27/03/2014 12:43:34">
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\obj\Debug\IUTUNice.dll" archivePath="IUTUNice.dll" lastWriteTime="27/03/2014 12:43:33" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="21/02/2014 11:22:31" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/02/2014 11:22:31" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="21/02/2014 11:22:31" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/02/2014 11:22:31" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="21/02/2014 11:22:31" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="21/02/2014 11:22:31" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="21/02/2014 11:22:31" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\busV2.xml" archivePath="busV2.xml" lastWriteTime="20/03/2014 12:49:21" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\icon152.png" archivePath="icon152.png" lastWriteTime="27/03/2014 12:37:09" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\icon521.png" archivePath="icon521.png" lastWriteTime="27/03/2014 12:37:10" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\icon58.png" archivePath="icon58.png" lastWriteTime="27/03/2014 12:37:05" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Icones\address.png" archivePath="Icones\address.png" lastWriteTime="06/03/2014 11:03:48" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Icones\app_background.png" archivePath="Icones\app_background.png" lastWriteTime="06/03/2014 11:03:39" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Icones\calendar.png" archivePath="Icones\calendar.png" lastWriteTime="06/03/2014 11:03:56" />
@@ -18,10 +23,18 @@
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Icones\settings.png" archivePath="Icones\settings.png" lastWriteTime="21/03/2014 12:04:51" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Icones\sports.png" archivePath="Icones\sports.png" lastWriteTime="06/03/2014 11:04:01" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Icones\twitter.png" archivePath="Icones\twitter.png" lastWriteTime="06/03/2014 11:54:25" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="26/03/2014 10:40:43" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\sondage_v3.xml" archivePath="sondage_v3.xml" lastWriteTime="20/03/2014 12:49:21" />
   <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\suaps.xml" archivePath="suaps.xml" lastWriteTime="20/03/2014 12:49:21" />
-  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="20/03/2014 11:33:50" />
-  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/02/2014 11:22:31" />
-  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/02/2014 11:22:31" />
-  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="21/03/2014 12:05:28" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="26/03/2014 10:40:43" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="26/03/2014 10:40:43" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="26/03/2014 10:40:43" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="26/03/2014 10:40:43" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="26/03/2014 10:40:43" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="27/03/2014 10:27:38" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="05/06/2013 05:07:26" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="26/03/2014 10:40:43" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\icon40.png" archivePath="icon40.png" lastWriteTime="27/03/2014 12:37:03" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\icon76.png" archivePath="icon76.png" lastWriteTime="27/03/2014 12:37:06" />
+  <file source="C:\Users\vp300097\Documents\GitHub\Projet-Tut-LP-DAM\wpProject\IUTUNice\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="27/03/2014 12:43:34" />
 </xapCache>
