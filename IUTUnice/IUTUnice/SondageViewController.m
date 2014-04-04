@@ -210,10 +210,6 @@
     return [[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:row] intitule];
 }
 
-- (NSAttributedString*)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    NS
-}
-
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     NSLog(@"ANSWER: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:row] intitule]);
