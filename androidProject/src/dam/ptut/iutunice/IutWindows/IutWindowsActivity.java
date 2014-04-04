@@ -63,7 +63,7 @@ public class IutWindowsActivity extends Activity {
 			public void onClick(View v) {
 				// nouvelle activité
 				Intent intent = new Intent(IutWindowsActivity.this,
-						SurveyIutPage.class);
+						SurveyIutActivity.class);
 				startActivity(intent);
 
 			}

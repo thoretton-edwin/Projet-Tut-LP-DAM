@@ -56,10 +56,10 @@
         </activity>
         <!-- A child of the IutWindowsActivity activity -->
         <activity
-            android:name="dam.ptut.iutunice.IutWindows.SurveyIutPage"
-            android:label="@string/title_activity_survey_iut_page"
+            android:name="dam.ptut.iutunice.IutWindows.SurveyIutActivity"
+            android:label="@string/title_activity_survey_iut"
             android:parentActivityName="dam.ptut.iutunice.IutWindows.IutWindowsActivity" >
-           
+
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -118,7 +118,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
-        
     </application>
 
 </manifest>

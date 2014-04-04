@@ -17,5 +17,6 @@
     <string name="title_activity_post_bac">PostBacActivity</string>
     <string name="title_activity_details_formation">DetailsFormationActivity</string>
     <string name="title_activity_survey_iut_page">SurveyIutPage</string>
+    <string name="title_activity_survey_iut">SurveyIutActivity</string>
 
 </resources>
