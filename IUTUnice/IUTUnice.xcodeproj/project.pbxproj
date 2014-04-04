@@ -101,6 +101,7 @@
 		92A5C27518D3322B004982C4 /* List_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27418D3322B004982C4 /* List_icon.png */; };
 		92A5C27718D33648004982C4 /* small_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27618D33648004982C4 /* small_tiles.png */; };
 		92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC9CB018B5FC65001D0E6E /* Formation.m */; };
+		92F0E44F18ED69F0008F75D7 /* SondageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92F0E44E18ED69F0008F75D7 /* SondageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 		92A5C27618D33648004982C4 /* small_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_tiles.png; sourceTree = "<group>"; };
 		92CC9CAF18B5FC65001D0E6E /* Formation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formation.h; sourceTree = "<group>"; };
 		92CC9CB018B5FC65001D0E6E /* Formation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formation.m; sourceTree = "<group>"; };
+		92F0E44E18ED69F0008F75D7 /* SondageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SondageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +470,7 @@
 				9213AB5F18E2E6C300AF3DDF /* sondage_v3.xml */,
 				9213AB5C18E2E51100AF3DDF /* SondageViewController.h */,
 				9213AB5D18E2E51100AF3DDF /* SondageViewController.m */,
+				92F0E44E18ED69F0008F75D7 /* SondageViewController.xib */,
 				9213AB6118E2E6FE00AF3DDF /* Reponse.h */,
 				9213AB6218E2E6FE00AF3DDF /* Reponse.m */,
 				9213AB6418E2E8FA00AF3DDF /* Question.h */,
@@ -655,6 +658,7 @@
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
+				92F0E44F18ED69F0008F75D7 /* SondageViewController.xib in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,

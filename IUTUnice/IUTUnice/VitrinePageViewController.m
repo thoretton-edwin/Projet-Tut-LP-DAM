@@ -53,6 +53,13 @@
     NSString *presentationText = [[NSString alloc]initWithContentsOfFile:myPath encoding:NSUTF8StringEncoding error:nil];
     
     UITextView *myUITextView = [[UITextView alloc] initWithFrame:CGRectMake(0,0,_descriptionScrollView.frame.size.width,_descriptionScrollView.frame.size.height)];
+    
+    _descriptionScrollView.clipsToBounds=YES;
+    _descriptionScrollView.layer.cornerRadius=6.0;
+    _descriptionScrollView.layer.borderColor=[UIColor grayColor].CGColor;
+    _descriptionScrollView.layer.borderWidth=1.0;
+    _descriptionScrollView.contentMode = UIViewContentModeCenter;
+    
     myUITextView.text = presentationText;
     myUITextView.textColor = [UIColor blackColor];
     myUITextView.font = [UIFont systemFontOfSize:14];
@@ -80,7 +87,7 @@
     TBXMLElement *questionnaire = [TBXML childElementNamed:@"questionnaire" parentElement:root];
     [self traverseElement: questionnaire];
     
-    SondageViewController *viewController = [[SondageViewController alloc] init];
+    SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
     viewController.typeSondage = @"IUT";
     viewController.sondage = _sondageArray;
     [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
@@ -108,13 +115,13 @@
                 element = element->firstChild;
                 NSLog(@"%s",element->name);
                 NSLog(@"%s",element->text);
-                strQID = [NSString stringWithUTF8String:element->name];
+                strQID = [NSString stringWithUTF8String:element->text];
             
                 //Intitule Question
                 element = element->nextSibling;
                 NSLog(@"%s",element->name);
                 NSLog(@"%s",element->text);
-                strQIntitule = [NSString stringWithUTF8String:element->name];
+                strQIntitule = [NSString stringWithUTF8String:element->text];
             
                 //init array of answers
                 NSMutableArray *repArray = [[NSMutableArray alloc] init];
@@ -136,7 +143,7 @@
                         element = element->nextSibling;
                         NSLog(@"\t\t%s",element->name);
                         NSLog(@"\t\t%s",element->text);
-                        strRIntitule = [NSString stringWithUTF8String: element->name];
+                        strRIntitule = [NSString stringWithUTF8String: element->text];
                     
                         //Get back to question
                         element = element->parentElement;
@@ -163,7 +170,7 @@
                     element = element->nextSibling;
                     NSLog(@"\t\t%s",element->name);
                     NSLog(@"\t\t%s",element->text);
-                    strRIntitule = [NSString stringWithUTF8String: element->name];
+                    strRIntitule = [NSString stringWithUTF8String: element->text];
             
                     //Create last reponse object
                     Reponse *lastRep = [[Reponse alloc] initWithId:strRID andIntitule:strRIntitule];
@@ -176,6 +183,8 @@
             
             //Get back to questionnaire
             element = element->parentElement;
+            
+            NSLog(@"REPONSE COUNT: %d", [repArray count]);
             
             //Create new Question with an ID, an desc and an Array of answers
             Question *newQuestion = [[Question alloc] initWithIntitule:strQIntitule andArray:repArray andIdentifiant:strQID];
