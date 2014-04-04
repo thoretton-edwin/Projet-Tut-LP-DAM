@@ -132,9 +132,9 @@ public class SurveyIutActivity extends FragmentActivity {
 						loading.dismiss();
 						AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 								SurveyIutActivity.this);
-						alertDialog.setTitle("Erreur !");
+						alertDialog.setTitle("Erreur de connexion !");
 						alertDialog
-								.setMessage("Erreur de connexion ! Vous pouvez retourner sur la page précédente.");
+								.setMessage("Vous n'êtes probablement pas connecté à internet...");
 						alertDialog.setPositiveButton("Retour",
 								new DialogInterface.OnClickListener() {
 									@Override
