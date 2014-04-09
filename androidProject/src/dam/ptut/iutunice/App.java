@@ -10,4 +10,5 @@ import android.app.Application;
 public class App extends Application {
 	public List<ParameterItem> parameterListe;
 	public List<IconMenuListItem> iconItemList;
+	public List<SurveyItem> surveyList;
 }
