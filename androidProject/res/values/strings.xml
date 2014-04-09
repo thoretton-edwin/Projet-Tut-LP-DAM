@@ -18,5 +18,6 @@
     <string name="title_activity_details_formation">DetailsFormationActivity</string>
     <string name="title_activity_survey_iut_page">SurveyIutPage</string>
     <string name="title_activity_survey_iut">SurveyIutActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
