@@ -10,6 +10,7 @@
 #import "RenseignementTableViewController.h"
 #import "ActivitesTableViewController.h"
 #import "UELTableViewController.h"
+#import "LieuxTableViewController.h"
 
 @interface SUAPSViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -102,6 +103,12 @@
 	{
 		NSLog(@"UEL");
 		UELTableViewController* view = [[UELTableViewController alloc]initWithStyle:UITableViewStylePlain];
+		[self.navigationController pushViewController:view animated:YES];
+	}
+	else if([[titres objectAtIndex:indexPath.row] isEqualToString:@"Lieux"])
+	{
+		NSLog(@"Lieux");
+		LieuxTableViewController* view = [[LieuxTableViewController alloc]initWithStyle:UITableViewStylePlain];
 		[self.navigationController pushViewController:view animated:YES];
 	}
 }
