@@ -18,7 +18,7 @@
     self = [self init];
     self->_identifiant = identifiant;
     self->_intitule = inti;
-    _reponseArray = [self->_reponseArray initWithArray: repArray];
+    _reponseArray = [[NSMutableArray alloc] initWithArray: repArray];
     return self;
 }
 

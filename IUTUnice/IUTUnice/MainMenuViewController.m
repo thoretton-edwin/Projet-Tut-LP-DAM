@@ -240,9 +240,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-    NSLog(@"row:%d",[[menuTableView indexPathForSelectedRow] row]);
     [self choixMenu:[[menuTableView indexPathForSelectedRow] row]];
     
 }
@@ -306,8 +303,15 @@
             // Set vertical effect
 			iconView6.backgroundColor = [UIColor grayColor];
 			
-            JobDatingViewController *viewController = [[JobDatingViewController alloc] initWithNibName:@"JobDatingViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            /*JobDatingViewController *viewController = [[JobDatingViewController alloc] initWithNibName:@"JobDatingViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];*/
+            UIAlertView *alert = [[UIAlertView alloc]
+                                  initWithTitle:@"Désolé..."
+                                  message:@"Ce module est indisponible pour le moment. Son contenu est actuellement en construction."
+                                  delegate:self
+                                  cancelButtonTitle:@"Ok"
+                                  otherButtonTitles:nil, nil];
+            [alert show];
 			
         }
             break;
