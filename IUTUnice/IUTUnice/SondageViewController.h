@@ -18,9 +18,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *questionNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionIntituleLabel;
-@property (weak, nonatomic) IBOutlet UIButton *nextQuestionButton;
 @property (weak, nonatomic) IBOutlet UITableView *answerTableView;
-
-- (IBAction)nextQuestion:(id)sender;
 
 @end

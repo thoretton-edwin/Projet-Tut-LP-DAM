@@ -188,14 +188,6 @@
 
 }
 
-- (IBAction)nextQuestion:(id)sender {
-    if(_globalIndex+1 < [_sondage count]){
-        _globalIndex ++;
-        [self displayQuestionAtIndex:_globalIndex];
-        [_answerTableView reloadData];
-    }
-}
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
