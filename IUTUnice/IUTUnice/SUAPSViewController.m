@@ -9,6 +9,7 @@
 #import "SUAPSViewController.h"
 #import "RenseignementTableViewController.h"
 #import "ActivitesTableViewController.h"
+#import "UELTableViewController.h"
 
 @interface SUAPSViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -94,6 +95,13 @@
 	{
 		NSLog(@"Activite cell selected");
 		ActivitesTableViewController* view = [[ActivitesTableViewController alloc]initWithStyle:UITableViewStylePlain];
+		[self.navigationController pushViewController:view animated:YES];
+	}
+	
+	else if([[titres objectAtIndex:indexPath.row] isEqualToString:@"UEL"])
+	{
+		NSLog(@"UEL");
+		UELTableViewController* view = [[UELTableViewController alloc]initWithStyle:UITableViewStylePlain];
 		[self.navigationController pushViewController:view animated:YES];
 	}
 }

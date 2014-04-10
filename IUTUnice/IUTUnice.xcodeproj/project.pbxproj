@@ -15,6 +15,8 @@
 		430A3FEF18EEA394002C0B5F /* renseignement.xml in Resources */ = {isa = PBXBuildFile; fileRef = 430A3FEE18EEA394002C0B5F /* renseignement.xml */; };
 		430A3FF218EEAC58002C0B5F /* RenseignementTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430A3FF118EEAC58002C0B5F /* RenseignementTableViewController.m */; };
 		430A3FF518EEAE61002C0B5F /* Renseignement.m in Sources */ = {isa = PBXBuildFile; fileRef = 430A3FF418EEAE61002C0B5F /* Renseignement.m */; };
+		430CC5A218F69C9E00534EB1 /* UELTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430CC5A118F69C9E00534EB1 /* UELTableViewController.m */; };
+		430CC5A518F69D6D00534EB1 /* Sport.m in Sources */ = {isa = PBXBuildFile; fileRef = 430CC5A418F69D6D00534EB1 /* Sport.m */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		43174CFF18E432ED00CBC54A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43174CFE18E432ED00CBC54A /* MessageUI.framework */; };
@@ -142,6 +144,10 @@
 		430A3FF118EEAC58002C0B5F /* RenseignementTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenseignementTableViewController.m; sourceTree = "<group>"; };
 		430A3FF318EEAE61002C0B5F /* Renseignement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renseignement.h; sourceTree = "<group>"; };
 		430A3FF418EEAE61002C0B5F /* Renseignement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renseignement.m; sourceTree = "<group>"; };
+		430CC5A018F69C9E00534EB1 /* UELTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UELTableViewController.h; sourceTree = "<group>"; };
+		430CC5A118F69C9E00534EB1 /* UELTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UELTableViewController.m; sourceTree = "<group>"; };
+		430CC5A318F69D6D00534EB1 /* Sport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sport.h; sourceTree = "<group>"; };
+		430CC5A418F69D6D00534EB1 /* Sport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sport.m; sourceTree = "<group>"; };
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
@@ -338,6 +344,10 @@
 				432B401F18F559A60045CCDA /* Jour.m */,
 				432B402118F55AA60045CCDA /* Seance.h */,
 				432B402218F55AA60045CCDA /* Seance.m */,
+				430CC5A018F69C9E00534EB1 /* UELTableViewController.h */,
+				430CC5A118F69C9E00534EB1 /* UELTableViewController.m */,
+				430CC5A318F69D6D00534EB1 /* Sport.h */,
+				430CC5A418F69D6D00534EB1 /* Sport.m */,
 			);
 			name = Suaps;
 			sourceTree = "<group>";
@@ -825,6 +835,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430CC5A518F69D6D00534EB1 /* Sport.m in Sources */,
 				43E6FD3A18AE2F74004F709B /* UEListViewController.m in Sources */,
 				4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */,
 				927A3B7018E42E6F000A61F0 /* ConnexionViewController.m in Sources */,
@@ -850,6 +861,7 @@
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
+				430CC5A218F69C9E00534EB1 /* UELTableViewController.m in Sources */,
 				432B402018F559A60045CCDA /* Jour.m in Sources */,
 				927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,

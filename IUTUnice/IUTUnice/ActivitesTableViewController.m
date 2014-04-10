@@ -194,7 +194,50 @@
 }
 
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	NSLog(@"selected cell at section %d - row :%d",indexPath.section,indexPath.row );
+	Jour* item =
+	[[[self.activites objectAtIndex:indexPath.section]jour]objectAtIndex:indexPath.row];
+	
+	NSMutableString *message = [[NSMutableString alloc]init];
+	
+	for(Seance* seance in item.seance)
+	{
+		[message appendString:@"heure : "];
+		if(seance.heure)
+		{
+			[message appendString:seance.heure];
+		}
+		[message appendString:@"\n"];
+		
+		[message appendString:@"lieu : "];
+		if(seance.lieu)
+		{
+			[message appendString:seance.lieu];
+		}
+		[message appendString:@"\n"];
+		
+		[message appendString:@"autre : "];
+		if(seance.autre)
+		{
+			[message appendString:seance.autre];
+		}
+		[message appendString:@"\n"];
+		
+		[message appendString:@"responsable : "];
+		if(seance.responsable)
+		{
+			[message appendString:seance.responsable];
+		}
+		[message appendString:@"\n"];
+	}
+	
+	UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Infos" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+	
+	[alert show];
+	
+}
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
