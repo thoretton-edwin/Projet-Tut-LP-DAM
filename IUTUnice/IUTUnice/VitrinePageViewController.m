@@ -37,11 +37,11 @@
     _sondageArray = [[NSMutableArray alloc] init];
     
     _presentationImage.animationImages = [NSArray arrayWithObjects:
-                                          [UIImage imageNamed:@"IUT NICE.JPG"],
-                                          [UIImage imageNamed:@"IUT SOPHIA.JPG"],
-                                          [UIImage imageNamed:@"IUT MENTON195.JPG"],
-                                          [UIImage imageNamed:@"IUT NICE2.JPG"],
-                                          [UIImage imageNamed:@"menton.jpg"],nil];
+                                          [UIImage imageNamed:@"nice.jpg"],
+                                          [UIImage imageNamed:@"nice2.jpg"],
+                                          [UIImage imageNamed:@"menton.jpg"],
+                                          [UIImage imageNamed:@"menton2.jpg"],
+                                          [UIImage imageNamed:@"sophia.jpg"],nil];
     
     _presentationImage.animationDuration = 20.00;
     _presentationImage.animationRepeatCount = 0; //infinite
@@ -53,6 +53,13 @@
     NSString *presentationText = [[NSString alloc]initWithContentsOfFile:myPath encoding:NSUTF8StringEncoding error:nil];
     
     UITextView *myUITextView = [[UITextView alloc] initWithFrame:CGRectMake(0,0,_descriptionScrollView.frame.size.width,_descriptionScrollView.frame.size.height)];
+    
+    _descriptionScrollView.clipsToBounds=YES;
+    _descriptionScrollView.layer.cornerRadius=6.0;
+    _descriptionScrollView.layer.borderColor=[UIColor grayColor].CGColor;
+    _descriptionScrollView.layer.borderWidth=1.0;
+    _descriptionScrollView.contentMode = UIViewContentModeCenter;
+    
     myUITextView.text = presentationText;
     myUITextView.textColor = [UIColor blackColor];
     myUITextView.font = [UIFont systemFontOfSize:14];
@@ -74,118 +81,9 @@
 }
 
 - (IBAction)goToSondageIUTPage:(id)sender {
-    
-    TBXML *xml = [TBXML tbxmlWithXMLFile:@"sondage_v3" fileExtension:@"xml" error:nil];
-    TBXMLElement *root = [TBXML childElementNamed:@"sondage" parentElement:xml.rootXMLElement];
-    TBXMLElement *questionnaire = [TBXML childElementNamed:@"questionnaire" parentElement:root];
-    [self traverseElement: questionnaire];
-    
-    SondageViewController *viewController = [[SondageViewController alloc] init];
+    SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
     viewController.typeSondage = @"IUT";
-    viewController.sondage = _sondageArray;
     [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
-}
-
-- (void) traverseElement:(TBXMLElement *)element {
-    
-    element = element->nextSibling;
-    char* attributeValue = element->firstAttribute->value;
-    NSString* value = [NSString stringWithUTF8String:attributeValue];
-    
-    NSString* strQID = @""; NSString* strQIntitule = @"";
-    NSString* strRIntitule = @""; NSString* strRID = @"";
-    
-    //Check if form is for IUT
-    if([value isEqual: @"IUT"]){
-        //Enter Questionnaire
-        element = element->firstChild;
-        
-        do{
-            //Question
-            NSLog(@"%s",element->name);
-            
-                //Id Question
-                element = element->firstChild;
-                NSLog(@"%s",element->name);
-                NSLog(@"%s",element->text);
-                strQID = [NSString stringWithUTF8String:element->name];
-            
-                //Intitule Question
-                element = element->nextSibling;
-                NSLog(@"%s",element->name);
-                NSLog(@"%s",element->text);
-                strQIntitule = [NSString stringWithUTF8String:element->name];
-            
-                //init array of answers
-                NSMutableArray *repArray = [[NSMutableArray alloc] init];
-            
-                //Reponse
-                element = element->nextSibling;
-                do {
-                    
-                    //loop Reponse
-                    NSLog(@"\t%s",element->name);
-                    
-                        //Id Reponse
-                        element = element->firstChild;
-                        NSLog(@"\t\t%s",element->name);
-                        NSLog(@"\t\t%s",element->text);
-                        strRID = [NSString stringWithUTF8String:element->text];
-                        
-                        //Intitule Reponse
-                        element = element->nextSibling;
-                        NSLog(@"\t\t%s",element->name);
-                        NSLog(@"\t\t%s",element->text);
-                        strRIntitule = [NSString stringWithUTF8String: element->name];
-                    
-                        //Get back to question
-                        element = element->parentElement;
-                    
-                    element = element->nextSibling;
-                    
-                    //Create reponse object
-                    Reponse *rep = [[Reponse alloc] initWithId:strRID andIntitule:strRIntitule];
-                    //store into repArray
-                    [repArray addObject: rep];
-                    
-                } while (element->nextSibling);
-            
-                    //last Reponse
-                    NSLog(@"\t%s",element->name);
-                    
-                    //Id Reponse
-                    element = element->firstChild;
-                    NSLog(@"\t\t%s",element->name);
-                    NSLog(@"\t\t%s",element->text);
-                    strRID = [NSString stringWithUTF8String:element->text];
-                    
-                    //Intitule Reponse
-                    element = element->nextSibling;
-                    NSLog(@"\t\t%s",element->name);
-                    NSLog(@"\t\t%s",element->text);
-                    strRIntitule = [NSString stringWithUTF8String: element->name];
-            
-                    //Create last reponse object
-                    Reponse *lastRep = [[Reponse alloc] initWithId:strRID andIntitule:strRIntitule];
-                    //store into repArray
-                    [repArray addObject: lastRep];
-            
-            
-                    //Get back to question
-                    element = element->parentElement;
-            
-            //Get back to questionnaire
-            element = element->parentElement;
-            
-            //Create new Question with an ID, an desc and an Array of answers
-            Question *newQuestion = [[Question alloc] initWithIntitule:strQIntitule andArray:repArray andIdentifiant:strQID];
-            
-            //store the question into the array of Questions
-            [_sondageArray addObject: newQuestion];
-            
-        } while ((element = element->nextSibling));
-    }
-    
 }
 
 @end
