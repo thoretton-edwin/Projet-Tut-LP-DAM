@@ -19,7 +19,7 @@
     self = [super initWithStyle:style];
     if (self) {
         self.title =@"Paramêtres";
-        tabInfosWifi = [[NSMutableArray alloc] init];
+        
     }
     return self;
 }
@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    
+    tabInfosWifi = [[NSMutableArray alloc] init];
     
     tabSettings= [[NSMutableArray alloc] init];
     [tabSettings addObject:@"Connexion"];

@@ -8,9 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		359181FFB5034052A0EA53F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F25446731F043D681901659 /* libPods.a */; };
+		430A29B518ED72DA0015E95E /* suaps.xml in Resources */ = {isa = PBXBuildFile; fileRef = 430A29B418ED72DA0015E95E /* suaps.xml */; };
+		430A3FE918EEA388002C0B5F /* lieux.xml in Resources */ = {isa = PBXBuildFile; fileRef = 430A3FE818EEA388002C0B5F /* lieux.xml */; };
+		430A3FEB18EEA38D002C0B5F /* UEL.xml in Resources */ = {isa = PBXBuildFile; fileRef = 430A3FEA18EEA38D002C0B5F /* UEL.xml */; };
+		430A3FED18EEA390002C0B5F /* activites.xml in Resources */ = {isa = PBXBuildFile; fileRef = 430A3FEC18EEA390002C0B5F /* activites.xml */; };
+		430A3FEF18EEA394002C0B5F /* renseignement.xml in Resources */ = {isa = PBXBuildFile; fileRef = 430A3FEE18EEA394002C0B5F /* renseignement.xml */; };
+		430A3FF218EEAC58002C0B5F /* RenseignementTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430A3FF118EEAC58002C0B5F /* RenseignementTableViewController.m */; };
+		430A3FF518EEAE61002C0B5F /* Renseignement.m in Sources */ = {isa = PBXBuildFile; fileRef = 430A3FF418EEAE61002C0B5F /* Renseignement.m */; };
 		4310FBDB18C727DD00A9DDAA /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310FBD918C727DD00A9DDAA /* BusViewController.m */; };
 		4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4310FBDA18C727DD00A9DDAA /* BusViewController.xib */; };
 		43174CFF18E432ED00CBC54A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43174CFE18E432ED00CBC54A /* MessageUI.framework */; };
+		432B401A18F549570045CCDA /* ActivitesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432B401918F549570045CCDA /* ActivitesTableViewController.m */; };
+		432B401D18F559620045CCDA /* Activite.m in Sources */ = {isa = PBXBuildFile; fileRef = 432B401C18F559620045CCDA /* Activite.m */; };
+		432B402018F559A60045CCDA /* Jour.m in Sources */ = {isa = PBXBuildFile; fileRef = 432B401F18F559A60045CCDA /* Jour.m */; };
+		432B402318F55AA60045CCDA /* Seance.m in Sources */ = {isa = PBXBuildFile; fileRef = 432B402218F55AA60045CCDA /* Seance.m */; };
 		433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4A918D30E6000B0C5F6 /* UE.m */; };
 		433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */ = {isa = PBXBuildFile; fileRef = 433CC4AC18D311B600B0C5F6 /* Semestre.m */; };
 		433F27E218C7234D00E87636 /* bus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 433F27E118C7234D00E87636 /* bus.xml */; };
@@ -115,10 +126,27 @@
 
 /* Begin PBXFileReference section */
 		1C52802A03B34C639CF2F6D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		430A29B418ED72DA0015E95E /* suaps.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = suaps.xml; sourceTree = "<group>"; };
+		430A3FE818EEA388002C0B5F /* lieux.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lieux.xml; sourceTree = "<group>"; };
+		430A3FEA18EEA38D002C0B5F /* UEL.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UEL.xml; sourceTree = "<group>"; };
+		430A3FEC18EEA390002C0B5F /* activites.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = activites.xml; sourceTree = "<group>"; };
+		430A3FEE18EEA394002C0B5F /* renseignement.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = renseignement.xml; sourceTree = "<group>"; };
+		430A3FF018EEAC58002C0B5F /* RenseignementTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenseignementTableViewController.h; sourceTree = "<group>"; };
+		430A3FF118EEAC58002C0B5F /* RenseignementTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenseignementTableViewController.m; sourceTree = "<group>"; };
+		430A3FF318EEAE61002C0B5F /* Renseignement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renseignement.h; sourceTree = "<group>"; };
+		430A3FF418EEAE61002C0B5F /* Renseignement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renseignement.m; sourceTree = "<group>"; };
 		4310FBD818C727DD00A9DDAA /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
 		4310FBD918C727DD00A9DDAA /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
 		4310FBDA18C727DD00A9DDAA /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
 		43174CFE18E432ED00CBC54A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		432B401818F549570045CCDA /* ActivitesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitesTableViewController.h; sourceTree = "<group>"; };
+		432B401918F549570045CCDA /* ActivitesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitesTableViewController.m; sourceTree = "<group>"; };
+		432B401B18F559620045CCDA /* Activite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activite.h; sourceTree = "<group>"; };
+		432B401C18F559620045CCDA /* Activite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activite.m; sourceTree = "<group>"; };
+		432B401E18F559A60045CCDA /* Jour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jour.h; sourceTree = "<group>"; };
+		432B401F18F559A60045CCDA /* Jour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jour.m; sourceTree = "<group>"; };
+		432B402118F55AA60045CCDA /* Seance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seance.h; sourceTree = "<group>"; };
+		432B402218F55AA60045CCDA /* Seance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seance.m; sourceTree = "<group>"; };
 		433CC4A818D30E6000B0C5F6 /* UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UE.h; sourceTree = "<group>"; };
 		433CC4A918D30E6000B0C5F6 /* UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UE.m; sourceTree = "<group>"; };
 		433CC4AB18D311B600B0C5F6 /* Semestre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semestre.h; sourceTree = "<group>"; };
@@ -277,9 +305,26 @@
 		43E6FD2818AE2ED1004F709B /* Suaps */ = {
 			isa = PBXGroup;
 			children = (
+				430A3FEE18EEA394002C0B5F /* renseignement.xml */,
+				430A3FEC18EEA390002C0B5F /* activites.xml */,
+				430A3FEA18EEA38D002C0B5F /* UEL.xml */,
+				430A3FE818EEA388002C0B5F /* lieux.xml */,
+				430A29B418ED72DA0015E95E /* suaps.xml */,
 				43E6FD4118AE2FD3004F709B /* SUAPSViewController.h */,
 				43E6FD4218AE2FD3004F709B /* SUAPSViewController.m */,
 				43E6FD4318AE2FD3004F709B /* SUAPSViewController.xib */,
+				430A3FF018EEAC58002C0B5F /* RenseignementTableViewController.h */,
+				430A3FF118EEAC58002C0B5F /* RenseignementTableViewController.m */,
+				430A3FF318EEAE61002C0B5F /* Renseignement.h */,
+				430A3FF418EEAE61002C0B5F /* Renseignement.m */,
+				432B401818F549570045CCDA /* ActivitesTableViewController.h */,
+				432B401918F549570045CCDA /* ActivitesTableViewController.m */,
+				432B401B18F559620045CCDA /* Activite.h */,
+				432B401C18F559620045CCDA /* Activite.m */,
+				432B401E18F559A60045CCDA /* Jour.h */,
+				432B401F18F559A60045CCDA /* Jour.m */,
+				432B402118F55AA60045CCDA /* Seance.h */,
+				432B402218F55AA60045CCDA /* Seance.m */,
 			);
 			name = Suaps;
 			sourceTree = "<group>";
@@ -661,6 +706,7 @@
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
+				430A3FED18EEA390002C0B5F /* activites.xml in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
 				920A572A18DAF84E00755E48 /* dut.txt in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
@@ -675,6 +721,7 @@
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
 				927A3B8518E43093000A61F0 /* LangueViewController.xib in Resources */,
 				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
+				430A29B518ED72DA0015E95E /* suaps.xml in Resources */,
 				927A3B7618E42F54000A61F0 /* infosWifiTableViewController.xib in Resources */,
 				920A572C18DAF84E00755E48 /* etudiantEtranger.txt in Resources */,
 				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
@@ -685,6 +732,7 @@
 				927A3B7118E42E6F000A61F0 /* ConnexionViewController.xib in Resources */,
 				4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
+				430A3FEF18EEA394002C0B5F /* renseignement.xml in Resources */,
 				927A3B8018E42FFB000A61F0 /* SurveyViewController.xib in Resources */,
 				927A3B7B18E42FC3000A61F0 /* AboutViewController.xib in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
@@ -695,6 +743,8 @@
 				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
 				9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */,
 				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
+				430A3FE918EEA388002C0B5F /* lieux.xml in Resources */,
+				430A3FEB18EEA38D002C0B5F /* UEL.xml in Resources */,
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
 				92A5C27718D33648004982C4 /* small_tiles.png in Resources */,
 			);
@@ -754,11 +804,13 @@
 				92138DC6189260B1000488BC /* AppDelegate.m in Sources */,
 				927A3B7518E42F54000A61F0 /* infosWifiTableViewController.m in Sources */,
 				43E6FD3F18AE2F88004F709B /* PostBacViewController.m in Sources */,
+				432B401A18F549570045CCDA /* ActivitesTableViewController.m in Sources */,
 				43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */,
 				435FCA3718D30787006156EC /* Note.m in Sources */,
 				9213AB6618E2E8FA00AF3DDF /* Question.m in Sources */,
 				92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */,
 				9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */,
+				432B401D18F559620045CCDA /* Activite.m in Sources */,
 				92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */,
 				92CC9CB118B5FC65001D0E6E /* Formation.m in Sources */,
 				929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */,
@@ -771,15 +823,19 @@
 				43E6FD3518AE2F62004F709B /* MapViewController.m in Sources */,
 				4368CA9D18B60985008C7ACD /* Campus.m in Sources */,
 				435FCA3A18D3087F006156EC /* Module.m in Sources */,
+				432B402018F559A60045CCDA /* Jour.m in Sources */,
 				927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */,
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
 				4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */,
 				927A3B8418E43093000A61F0 /* LangueViewController.m in Sources */,
+				430A3FF518EEAE61002C0B5F /* Renseignement.m in Sources */,
+				430A3FF218EEAC58002C0B5F /* RenseignementTableViewController.m in Sources */,
 				927A3B7A18E42FC3000A61F0 /* AboutViewController.m in Sources */,
 				927A3B9218E433E3000A61F0 /* infosWifi.m in Sources */,
 				4362221A18E2FD48006B091D /* recherche.js in Sources */,
 				433CC4AA18D30E6000B0C5F6 /* UE.m in Sources */,
+				432B402318F55AA60045CCDA /* Seance.m in Sources */,
 				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
 				927A3B7F18E42FFB000A61F0 /* SurveyViewController.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,

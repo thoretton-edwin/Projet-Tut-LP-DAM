@@ -1,0 +1,2130 @@
+
+<root>
+		<activite>
+			<nom>Basket-Ball</nom>
+			<renseignement></renseignement>
+			<jour>
+				<nom>Lundi</nom>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Droit - Gymnase Trotabas</lieu>
+					<autre>Tous Niveaux</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Lettres - Gymnase Carlone</lieu>
+					<autre>Tous Niveaux</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Sophia - L'Eganaude (Biot)</lieu>
+					<autre>Priorité Compétition</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Mardi</nom>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Droit - Gymnase Trotabas</lieu>
+					<autre>Tous Niveaux</autre>
+					<responsable> D.CHOUVY</responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Mercredi</nom>
+				<seance>
+					<heure>17H30-19H30</heure>
+					<lieu>Sciences - Gymnase C Valrose</lieu>
+					<autre>Tous Niveaux</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H30-24H</heure>
+					<lieu>Sciences - Gymnase C Valrose</lieu>
+					<autre>Compétitions</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Jeudi</nom>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Lettres - Gymnase Carlone</lieu>
+					<autre>Entrainement + U.E.L.</autre>
+					<responsable> D.CHOUVY</responsable>
+				</seance>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Sciences - Gymnase C Valrose</lieu>
+					<autre>Tous Niveaux</autre>
+					<responsable> D.CHOUVY</responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Vendredi</nom>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Sciences - Gymnase C Valrose</lieu>
+					<autre>U.E.L.</autre>
+					<responsable> D.CHOUVY</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Beach-Volley</nom>
+			<renseignement>
+				Terrain de compétition à Valrose (Sciences)
+				Accessible aux personnes inscrites au SUAPS de 9H30 à 19H en semaine (sauf les mercredi après-midi en mai et juin) et en période universitaire.
+				Au second semestre, championnat académique FFSportU en 2 contre 2 (qualificatif au Championnat de France).
+			</renseignement>
+			<jour>
+				<nom></nom>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Football</nom>
+			<renseignement></renseignement>
+			<jour>
+				<nom>Lundi</nom>
+				<seance>
+					<heure>13H30-15H30</heure>
+					<lieu>Stade C.Erhmann – Terrain 8 </lieu>
+					<autre>U.E.L. (Semestre 2) </autre>
+					<responsable>G. DENIS</responsable>
+				</seance>
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Sophia – Terrain de Super Antibes </lieu>
+					<autre>Priorité E.P.U. Compétition</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Mardi</nom>
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Sophia – CIV Valbonne – Terrain des Semboules </lieu>
+					<autre>Priorité IUT Sophia Compétition</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H30-22H</heure>
+					<lieu>Sophia – Terrain des Bouillides </lieu>
+					<autre>Loisir Masculin et Féminin</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Jeudi</nom>
+				<seance>
+					<heure>A partir de 13H30</heure>
+					<lieu>Stade C.Erhmann – RDV Terrain 9 et Terrain de la Valmasque (Sophia) </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Vendredi</nom>
+				<seance>
+					<heure>10H30-12H30</heure>
+					<lieu>Stade C. Erhmann – Terrain 8  </lieu>
+					<autre>U.E.L. (Semestre 1)</autre>
+					<responsable>G.DENIS</responsable>
+				</seance>
+				<seance>
+					<heure>13H30-15H30</heure>
+					<lieu>Stade C. Erhmann – Terrain 8 </lieu>
+					<autre>U.E.L. (Semestre 1)</autre>
+					<responsable>G.DENIS</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Futsal</nom>
+			<renseignement></renseignement>
+			<jour>
+				<nom>Lundi</nom>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Sciences - Gymnase C Valrose </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Lettres - Gymnase Carlone </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Mardi</nom>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Lettres - Gymnase Carlone </lieu>
+					<autre>U.E.L. (Semestres 1 et 2)</autre>
+					<responsable>G.DENIS</responsable>
+				</seance>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Lettres - Gymnase Carlone </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Mercredi</nom>
+				<seance>
+					<heure>17H30-19H</heure>
+					<lieu>Droit - Gymnase Trotabas </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Ultimate Frisbee</nom>
+			<renseignement></renseignement>
+			<jour>
+				<nom>Jeudi</nom>
+				<seance>
+					<heure>20H30-22H</heure>
+					<lieu>Sophia – Terrain des Bouillides</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Handball</nom>
+			<renseignement></renseignement>
+			<jour>
+			<nom>Mardi</nom>
+				<seance>
+					<heure>18H30-20H30</heure>
+					<lieu>Sciences - Gymnase C Valrose </lieu>
+					<autre>U.E.L. + Libre</autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+				<seance>
+					<heure>20H30-22H30</heure>
+					<lieu>Sciences - Gymnase C Valrose </lieu>
+					<autre>Competitions + Libre</autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Mercredi</nom>
+				<seance>
+					<heure>18H30-20H15</heure>
+					<lieu>Sophia - Gymnase du College Nikky de St Phalle </lieu>
+					<autre></autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Jeudi</nom>
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Droit - Gymnase Carlone </lieu>
+					<autre>U.E.L. + Bonus</autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+			</jour>
+			<jour>
+				<nom>Vendredi</nom>
+				<seance>
+					<heure>16H-17H30</heure>
+					<lieu>Sciences - Gymnase C Valrose </lieu>
+					<autre>U.E.L.</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+<!--
+		<activite>
+			<nom>Multisports (Volley-Ball, Basket-Ball, Handball)</nom>
+			<renseignement></renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L. + Libre</autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>20H15-22H</heure>
+					<lieu>Sophia – Collège Nikky de St Phalle </lieu>
+					<autre> (+Futsal) – Priorité au féminine</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L. + Libre</autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Rugby</nom>
+			<renseignement>
+				NIVEAU NATIONAL :
+				Composition d’une équipe féminine et d’une équipe masculine pour le championnat de France Universitaire et un tournoi international. Contacter J.DELREY
+			</renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>18H-21H</heure>
+					<lieu>Stade des Arboras (Nice) – Route de Grenoble</lieu>
+					<autre>U.E.L. Niveau Confirmé + Libre + Bonus </autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Sophia – Terrain des Bouillides  </lieu>
+					<autre>Féminin et Masculin</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>19H-22H</heure>
+					<lieu>Stade C. Erhmann (Nice)</lieu>
+					<autre>U.E.L. + Libre + Bonus </autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>14H-17H</heure>
+					<lieu>Stade des Arboras (Nice) – Route de Grenoble</lieu>
+					<autre>Féminin et Masculin – Compétition + Entrainement </autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>14H-17H</heure>
+					<lieu>Stadium - Route de Grenoble</lieu>
+					<autre>U.E.L. + Libre + Bonus </autre>
+					<responsable>J.DELREY</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Volley-Ball</nom>
+			<renseignement>
+				CHAMPIONNAT NATIONAL :
+				Composition d’une équipe masculine et d’une équipe féminine qui feront le championnat de France Universitaire (Niveau Requis = National Fédéral).
+			</renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>Entrainement Dirigé</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Lettres – Gymnase Carlone</lieu>
+					<autre>U.E.L</autre>
+					<responsable>E.MARTINEZ</responsable>
+				</seance>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+				<seance>
+					<heure>16H30-18H30</heure>
+					<lieu>Sciences – Gymnase C Valrose</lieu>
+					<autre>U.E.L. + Libre</autre>
+					<responsable>E.MARTINEZ</responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Lettres – Gymnase Carlone </lieu>
+					<autre>U.E.L.</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Sophia – Gymnase des Bouillides </lieu>
+					<autre>Priorité Compétition Niveau Exigé</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Sciences – Gymnase C Valrose</lieu>
+					<autre>Pratique Encadrée</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Lettres – Gymnase Carlone </lieu>
+					<autre>Pratique Encadrée</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>14H-16H30</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L. + renforcement Musculation</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>Pratique Encadrée</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Fitness</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>12H30-13H30</heure>
+					<lieu>St Jean D’Angely – Salle 411</lieu>
+					<autre>Gym/Remise En Forme</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H-18H</heure>
+					<lieu>Sciences – Salle de Danse Valrose </lieu>
+					<autre>Abdo/Fessiers</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H30-19H</heure>
+					<lieu>Sciences – Gymnase A Valrose </lieu>
+					<autre>Body-Sculpt</autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Lettres – Salle de Danse Carlone</lieu>
+					<autre>Gym Tonic/ Stretching</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Lettres – Salle de Danse et Salle de Musculation Carlone </lieu>
+					<autre>U.E.L. Condition Physique </autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>12H-13H30</heure>
+					<lieu>Lettres – Salle de Danse Carlone </lieu>
+					<autre>Cuisses Abdos Fessiers </autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>12H-13H30</heure>
+					<lieu>Droit – Salle de Combat Trotabas </lieu>
+					<autre>Gym d’entretien</autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>12H15-13H45</heure>
+					<lieu>Sophia – Dojo de Biot </lieu>
+					<autre>Tonic Gym Stretch – Priorité Personnel</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>12H30-13H30</heure>
+					<lieu>Sciences – Salle de Danse</lieu>
+					<autre>Gym d’entretien – Réservé Personnel</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>12H-13H30</heure>
+					<lieu>Lettres – Salle de Danse Carlone </lieu>
+					<autre>Gym Tonic / Stretching</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>12H30-13H30</heure>
+					<lieu>Sciences – Salle de Danse</lieu>
+					<autre>Gym d’entretien – Réservé Personnel</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Droit – Salle de Danse et Salle de Musculation Trotabas </lieu>
+					<autre>U.E.L. Condition Physique </autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>17H-18H30</heure>
+					<lieu>Sciences – Gymnase A Valrose </lieu>
+					<autre>Body-Sculpt</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre>Gym d’entretien</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>12H30-14H</heure>
+					<lieu>Lettres – Salle de Danse Carlone </lieu>
+					<autre>Gym Douce/Abdo/Fessiers </autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+				<seance>
+					<heure>12H30-13H30</heure>
+					<lieu>Sciences – Salle de Danse</lieu>
+					<autre>Gym d’entretien – Réservé Personnel</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H-18H</heure>
+					<lieu>St Jean D’Angely – Salle 411</lieu>
+					<autre>Body-Sculpt</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>12H-13H</heure>
+					<lieu>St Jean D’Angely – Salle 411</lieu>
+					<autre>Body-Sculpt</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>12H30-13H30</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre>Body Gym/Stretching</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H30-19H</heure>
+					<lieu>Lettres – Gymnase Carlone</lieu>
+					<autre>Step/LIA</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>MUSCULATION (COURS ENCADRES)</nom>
+			<renseignement>
+				MUSCULATION HORAIRES LIBRES :
+				Salles de musculation accessibles après l’achat d’une carte annuelle (Sept à fin Juin) en vente dans les 3 bureaux des sports.
+				SALLE TROTABAS :
+				Du lundi au vendredi de 17h30 à 21h (sauf durant les cours encadrés). Tarifs : 30€ pour les étudiants, 50€ pour le personnel et 100€ pour les personnes extérieures.
+				SALLE VALROSE ET SALLE CARLONE :
+				Du lundi au vendredi de 8h à 20h (sauf durant les cours encadrés) à Valrose et du lundi au vendredi de 10h à 20h (sauf durant les cours encadrés) a Carlone. Tarifs : 50€ pour les étudiants, 60€ pour le personnel et 130€ pour les personnes extérieures.
+			</renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>15H30-17H30</heure>
+					<lieu>Sciences – Salle de Valrose</lieu>
+					<autre></autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>15H30-17H30</heure>
+					<lieu>Sciences – Salle de Valrose</lieu>
+					<autre></autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Sciences – Salle de Valrose</lieu>
+					<autre></autre>
+					<responsable>T.PEYRAN</responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>16H-18H</heure>
+					<lieu>Droit – Salle de Trotabas </lieu>
+					<autre></autre>
+					<responsable>M.SERRA</responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Sciences – Salle de Valrose</lieu>
+					<autre></autre>
+					<responsable>T.PEYRAN</responsable>
+				</seance>
+			</jour>
+		</activite>
+		
+		<activite>
+			<nom>YOGA</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>12H-13H30</heure>
+					<lieu>Lettres – Salle de Danse Carlone</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H30-19H</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>12H-13H</heure>
+					<lieu>St Jean D’Angely – Salle 411</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H-18H</heure>
+					<lieu>Lettres – Salle de Danse Carlone</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H15-18H45</heure>
+					<lieu>Sophia-Antipolis – Salle du SKEMA </lieu>
+					<autre>(Pré-inscription à laurence.andreoletti@unice.fr)</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>12H-13H</heure>
+					<lieu>Lettres – Salle de Danse Carlone</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H30-19H</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>12H15-13H30</heure>
+					<lieu>Sciences - Salle Combat Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>12H30-14H</heure>
+					<lieu>Lettres – Salle de Danse Carlone</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Apnée / Nage avec Palmes / Sauvetage Aquatique / Préparation Physique B.N.S.S.A.</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>17H30-19H15</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>U.E.L + Libre</autre>
+					<responsable>E.MARTINEZ</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>GYM AQUATIQUE</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>19H-20H</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>17H30-18H30</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>17H30-18H30 </heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>KAYAK DE MER EN RANDONNEE</nom>
+			<renseignement>
+				IMPERATIF : Savoir nager. Matériel Fourni.
+				4 Vendredis en Mai et Juin 2014.
+				Les informations seront données 10 jours avant la sortie.
+				RDV à 13H30 au Club de la Mer, Bd Franck Pilatte à NICE (vers « La Reserve »).
+				Traversée jusqu’à la rade de Villefranche s/Mer.
+				Retour sur Nice à 17H.
+				Cout : 5€ par sortie. Effectif : 16 étudiants.
+				Inscription auprès des Bureaux des Sports.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>KITESURF</nom>
+			<renseignement>
+				Initiation Kitesurf à partir de Mars 2014 comprenant deux séances de pilotage au sol + une séance sur l’eau.
+				Cout de la formation : 65€
+				Perfectionnement sur l’eau par ½ journée envisageable a l’issue de la formation.
+				Contact : Eric.Montagnon@unice.fr
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>NATATION</nom>
+			<renseignement>
+				*= 2 Maitres-Nageurs Sauveteurs sont en permanence présents lors des créneaux Libres. Ils peuvent vous conseiller et vous proposer des programmes d’entrainements.
+			</renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>12H15-13H45</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>15H30-17H30</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>U.E.L</autre>
+					<responsable>E.MARTINEZ</responsable>
+				</seance>
+				<seance>
+					<heure>19H30-21H30 </heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>12H15-13H45</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>17H-19H</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>8H30-10H</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>(Semestre 1) U.E.L. + Libre (Pour nageur(se)s souhaitant apprendre à nager et nageur(se)s confirmé(e)s et Triathlètes autonomes souhaitant s’entrainer)</autre>
+					<responsable>E.MARTINEZ</responsable>
+				</seance>
+				<seance>
+					<heure>12H15-13H45</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>18H30-21H30</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H30-21H15</heure>
+					<lieu>Sophia-Antipolis – Centre Nautipolis</lieu>
+					<autre>25 places – Entrainements par programmes différenciés – Pré-inscription obligatoire à Erick.MARTINEZ@unice.fr</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>12H15-13H45</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Sophia-Antipolis – Stade Nautique Antibes (Bassin Ext.)</lieu>
+					<autre>Pratique Encadrée</autre>
+					<responsable>E.MARTINEZ</responsable>
+				</seance>
+				<seance>
+					<heure>18H30-20H</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>12H15-13H45</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Libre*</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>PLONGEE</nom>
+			<renseignement>
+				*Sorties en mer
+				Le S.U.A.P.S. a des relations privilégiées avec les clubs qui organisent des sorties d’explorations et des formations avec des conditions préférentielles pour les étudiants.
+				Secteur de Nice : aiglenautique@free.fr – Sylvain HUDRY – 06.75.79.13.12/04.93.89.23.33
+				Secteur de Menton : palmbeach@free.fr– 06.17.67.80.79/04.93.35.95.83
+				Secteur de Cannes : francois.silvestri@gmail.com – 06.61.24.03.81 – www.naturessentielle.com
+				*Préparation au Niveau 1
+				Lettres – Piscine Fielding 
+				10 séances de 2H en Piscine 1, 1 plongée de validation en Mer (½ journée en Juin 2014).
+				Délivrance d’un Diplôme Fédéral de Niveau 1 reconnu au Niveau National.
+				Inscription auprès des Bureaux des Sports.
+				Cout : 40€ (à l’Agent Comptable de l’U.N.S.) pour les étudiant(e)s et 70€ pour les Personnels de l’U.N.S.
+				2 Choix possibles :
+				Lundi : 19H-21H – E.MARTINEZ
+				Mercredi : 19H-21H – P.VIGOT
+				*Préparation au Niveau 2
+				Le S.U.A.P.S. à des relations privilégiées avec l’Aigle Nautique qui organise des formations de Niveau 2 avec des conditions préférentielles pour les étudiants :
+				Aigle Nautique : aiglenautique@free.fr – Sylvain HUDRY – 06.75.79.13.12 / 04.93.89.23.33
+				*Stage de plongée a Port-Cros (Hyères) « Découverte Faune et Flore »
+				Cout : 120€ pour les étudiants et 160€ pour les personnels et membres extérieurs dans la limite des places disponibles (à l’ordre de l’Agent Comptable de l’U.N.S.) Niveau 1 de plongée minimum.
+				3 séjours proposés : 16 et 17 sept. 2013 (Stage1) et en Juin 2014 (Stages 2 et 3).
+				Informations : par affichage et par e-mail à erick.martinez@unice.fr
+				Inscriptions : Aux bureaux des Sports de Lettres, de Droit et des Sciences.
+				*Stage multisport (Plongée, Canyoning, Escalade) nature en Corse Juin 2014
+				16 places maximum avec priorité aux étudiants déjà impliqué(e)s sur les pratiques du SUAPS et partageant l’esprit de convivialité et d’investissement personnel, nécessaire au bon déroulement de ce type de stage.
+				Cout : 250€ (à l’ordre de l’Agent Comptable de l’U.N.S.) – Niveau 1 de plongée minimum
+				Inscriptions : Faire acte de candidature a : erick.martinez@unice.fr
+				*UEL
+				La pratique en U.E.L. est gratuite pour la formation piscine. Possibilité de validation en mer et délivrance du diplôme = 30€ (Cheque à l’ordre de l’Agent Comptable de l’U.N.S.)
+			</renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>17H-19H</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>P.VIGOT</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>VOILE/AVIRON</nom>
+			<renseignement>
+				En partenariat avec le Club Nautique de Nice – 50 Bd Franck PILLATE – Bassin de la Tour Rouge – 04.93.89.39.78. Licence et Assurance obligatoire.
+				Voile sur Laser Hobbie Cat 15 et 16 :
+				Ecole de Voile et Initiation à la croisière côtière.
+				Aviron sur Solo, Double ou Quatre :
+				Initiation et Perfectionnement.
+				Tarifs étudiants :
+				-	Licence Voile + 18ans = 48€ / Licence Aviron Inscrits au SUAPS = 15€ - Non-inscrits = 36€
+				-	Forfait 10 séances = 119€ / Pratique tous les jeudis (9H-12H) = 158 € / Pratique sans limitation = 200€ (du mardi au dimanche de 9H à 12H)
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>PLANCHE A VOILE</nom>
+			<renseignement>
+				Apprendre à naviguer, se perfectionner, comprendre les différentes allures, maitriser empannages et virement de bord.
+				Jours et horaires affichés à partir d’Avril 2014.
+				Formation comprenant plusieurs séances d’Avril à Juin – Voir affichage début Avril 2014.
+				Cout : 30€ la formation
+				Inscription sur SUAPSweb et RDV sur place.
+				Responsable : Eric MONTAGNON (eric.montagnon@unice.fr)
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>WATER-POLO</nom>
+			<renseignement></renseignement>
+			<jour> Mardi
+				<seance>
+					<heure>20H30-22H</heure>
+					<lieu>Lettres – Piscine Fielding </lieu>
+					<autre>Partenariat NICAEA</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>19H30-21H30</heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Partenariat NICAEA + Adhésion</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Samedi
+				<seance>
+					<heure>14H-18H </heure>
+					<lieu>Lettres – Piscine Fielding</lieu>
+					<autre>Partenariat NICAEA + Adhésion</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>FORMATIONS</nom>
+			<renseignement>
+				*B.N.S.S.A. (Brevet National de Sécurité et Sauvetage Nautique)
+				En partenariat avec l’Ecole Régionale de Formation des Activités de Natation (ERFAN)
+				Test de sélection le Samedi 12 octobre 2013 a la Piscine Fielding,
+				Deux formations :
+				*formation courte pour étudiants déjà nageurs (formation sur 6 week-end, PSE1 inclus)
+				*formation longue ouverte à tous (formation tous les samedis matins d’Octobre à Avril + 3 week-end)
+				Cout : 470€ (inclus la préparation au secourisme PSE1)
+				Renseignements et inscription : 06.80.48.59.16
+				Examen sur Nice ou Marseille.
+				*S.B. (Brevet de Surveillant de Baignade)
+				En partenariat avec l’Ecole Régionale de Formation des Activités de Natation (ERFAN).
+				Test de sélection le Samedi 12 octobre 2013 a la Piscine Fielding,
+				Une formation tous les samedis matins d’Octobre à Avril.
+				Cout : 180€
+				Renseignements et inscription : 06.80.48.59.16
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>CAPOEIRA</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Droit – Salle de Danse Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>DANSE AFRICAINE</nom>
+			<renseignement></renseignement>
+			<jour> Mardi
+				<seance>
+					<heure>19H30-21H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Afro Traditionnel</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Lettres - Salle de Danse Carlone</lieu>
+					<autre>Coupé Décalé</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Droit – Gymnase Droit </lieu>
+					<autre>U.E.L.</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+				<seance>
+					<heure>20H-21H30</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Afro Brésilienne</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>DANSE CONTEMPORAINE</nom>
+			<renseignement></renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>DANSES EN COUPLES</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>20H30-22H</heure>
+					<lieu>Droit - Salle de Danse Trotabas</lieu>
+					<autre>Rock'n Roll</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Sciences – Gymnase A Valrose </lieu>
+					<autre>Salsa</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Salsa</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Sophia – Salle de l’Ile Verte</lieu>
+					<autre>– Rock (1ere heure) et West Coast Swing (2eme heure) – Tous Niveaux.</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>19H-20H30 </heure>
+					<lieu>Lettres - Salle de Danse Carlone </lieu>
+					<autre>Tango Argentin</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>19H30-21H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>Tango Argentin</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>FLAMENCO</nom>
+			<renseignement></renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>19H30-21H</heure>
+					<lieu>Droit - Salle de Danse Trotabas </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>DANSE JAZZ</nom>
+			<renseignement></renseignement>
+			<jour> Mardi
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Modern Jazz Création - U.E.L.</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+				<seance>
+					<heure>18H30-20H</heure>
+					<lieu>Lettres - Salle de Danse Carlone</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>20H30-22H</heure>
+					<lieu>Droit - Salle de Danse Trotabas </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>DANSE ORIENTALE</nom>
+			<renseignement></renseignement>
+			<jour> Jeudi
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Droit - Salle de Danse Trotabas </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>12H30-13H30</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Priorité Personnel</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>DANSE VOLTIGE</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Gymnase C Valrose</lieu>
+					<autre>Nov. /Déc. et Mars/Avril – Vol a 9m</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+				<seance>
+					<heure>15H-17H </heure>
+					<lieu>Sciences – Gymnase A Valrose </lieu>
+					<autre>U.E.L.</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>17H30-19H</heure>
+					<lieu>Sciences – Gymnase A Valrose </lieu>
+					<autre>Niveau Débutant</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi 
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Gymnase C Valrose</lieu>
+					<autre>Nov. /Déc. et Mars/Avril – Vol a 9m</autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>Niveau Avancé </autre>
+					<responsable>M.LEBARD</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>ZUMBA</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>18H-19H</heure>
+					<lieu>Droit – Salle de Danse Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H30-21H30</heure>
+					<lieu>Sciences – Gymnase A Valrose </lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>19H15-20H</heure>
+					<lieu>Sophia – L’Eganaude (Biot)</lieu>
+					<autre>Choisir un des deux créneaux</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20H-20H45</heure>
+					<lieu>Sophia – L’Eganaude (Biot)</lieu>
+					<autre>Choisir un des deux créneaux</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>12H-13H</heure>
+					<lieu>St Jean d’Angely – Salle 411 (à confirmer)</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>18H-19H</heure>
+					<lieu>Droit – Salle de Danse Trotabas</lieu>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>19H-20H30</heure>
+					<lieu>Lettres – Gymnase Carlone</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>Hip-Hop / Street Jazz Ragga / Dancehall / Break</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Sciences - Salle de Danse Valrose </lieu>
+					<autre>Hip-Hop New Style</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+				<seance>
+					<heure>19H30-21H</heure>
+					<lieu>Sciences - Salle de Danse Valrose </lieu>
+					<autre>Street Jazz</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Droit - Salle de Danse Trotabas</lieu>
+					<autre>U.E.L. Hip-Hop</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Droit - Salle de Danse Trotabas</lieu>
+					<autre>Hip-Hop New Style</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+				<seance>
+					<heure>19H30-21H</heure>
+					<lieu>Droit - Salle de Danse Trotabas</lieu>
+					<autre>Street Jazz</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>18H30-20H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Ragga Dance hall</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>U.E.L. Hip-Hop</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+				<seance>
+					<heure>16H-19H</heure>
+					<lieu>Sciences - Salle de Danse Valrose</lieu>
+					<autre>Atelier Création Spec</autre>
+					<responsable>O.HASSAN</responsable>
+				</seance>
+				<seance>
+					<heure>18H-19H30</heure>
+					<lieu>Droit – Salle de Danse Trotabas</lieu>
+					<autre>Break Dance</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H30-21H</heure>
+					<lieu>Droit – Salle de Danse Trotabas</lieu>
+					<autre>Hip-Hop</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>BADMINTON</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>Jeu Libre</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>16H-18H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>D.CHOUVY</responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>16H-18H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>D.CHOUVY</responsable>
+				</seance>
+				<seance>
+					<heure>18H30-21H</heure>
+					<lieu>Sophia – Gymnase du College N.de St Phalle</lieu>
+					<autre></autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Droit – Gymnase Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>8H-10H</heure>
+					<lieu>Lettres – Gymnase Carlone</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Lettres – Gymnase Carlone</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>Jeu Libre</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>18H-20H</heure>
+					<lieu>Lettres – Gymnase Carlone</lieu>
+					<autre></autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>Jeu Libre</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Gymnase C Valrose</lieu>
+					<autre>U.E.L. Sem.1</autre>
+					<responsable>D.CHOUVY</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>BEACH-TENNIS</nom>
+			<renseignement></renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>16H-20H</heure>
+					<lieu>Sciences – Terrain de Beach Valrose</lieu>
+					<autre>Durant le mois de Mai 2013</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>PADEL</nom>
+			<renseignement>Possibilité de pratique en jeu libre en semaine de 21h à 23h. Tickets de 3€ en vente au Bureau des Sports de Sophia.</renseignement>
+			<jour> Jeudi
+				<seance>
+					<heure>14H-15H30</heure>
+					<lieu>Sophia – Sophia Country Club</lieu>
+					<autre>Pré-inscription Obligatoire par mail à laurence.andreoletti@unice.fr – Début le 26 Septembre 2013</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>SQUASH</nom>
+			<renseignement>Pour pratiquer, retirer une carte aux bureaux des Sports et réserver les cours sur : www.unice.fr/tennis-new. Le centre Sport et Loisir se trouve au : 114 Route de Grenoble 06200 Nice (Bus 9 et 10 « Bois de Boulogne »). Location des balles et raquettes possible sur place.
+				Carte Pass Squash Vauban :
+				Le tennis Squash Club Vauban se trouve au : 18 rue du Maréchal Vauban 06300 Nice. (Tram T1 « Stade Vauban »). Jeudi 14H-16H + en heures creuses les autres jours après achat du Pass Squash a 16€ pour les étudiants inscrits au SUAPS.
+			</renseignement>
+			<jour> Jeudi
+				<seance>
+					<heure>9H-11H</heure>
+					<lieu>St Jean D’Angely – Stade Vauban</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>St Augustin – Centre Sport et Loisir</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>St Augustin – Centre Sport et Loisir</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+
+		<activite>
+			<nom>TENNIS</nom>
+			<renseignement>*A partir du 23 septembre 2013 durant 10 semaines 1 seule heure par semaines. Inscription sur le site du SUAPS : unice.fr/SUAPSweb. Un second cycle de 10 semaines aura lieu au 2nd semestre.
+				Pratique en jeu libre :
+				Vente de carte annuelle pour les Tennis Valrose et Fielding (carte valable pour les deux sites)
+				Attention : Les terrains de tennis seront fermés au mois d’Aout.
+				Avec la carte « Jeu libre », 2 réservations par semaine. Réservation d’un terrain sur internet au www.unice.fr/tennis-new.
+				Tarifs :
+				Etudiants inscrits au SUAPS :
+				Année universitaire (sept à mai) :25€
+				Année Complete (sept à juillet) :40€
+				Personnels et Extérieurs inscrits au SUAPS :
+				Année Complete (sept à juillet) :55€
+				Extérieurs au SUAPS :
+				Année Complete : 130€
+				Location d’un terrain : 10€ 
+				Invitation d’un membre : 5€
+			</renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>18H-19H*</heure>
+					<lieu>Sciences – Terrains Valrose</lieu>
+					<autre>Perfectionnement</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H-20H*</heure>
+					<lieu>Sciences – Terrains Valrose</lieu>
+					<autre>Entrainement Tous Niveaux</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>8H-10H</heure>
+					<lieu>Lettres – Terrains Fielding</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+				<seance>
+					<heure>10H-12H</heure>
+					<lieu>Lettres – Terrains Fielding</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>18H-19H*</heure>
+					<lieu>Sciences – Terrains Valrose</lieu>
+					<autre>Debutant</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19H-20H*</heure>
+					<lieu>Sciences – Terrains Valrose</lieu>
+					<autre>Perfectionnement</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>12H-13H</heure>
+					<lieu>Lettres – Terrains Fielding</lieu>
+					<autre>Debutant</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>13H-14H</heure>
+					<lieu>Lettres – Terrains Fielding</lieu>
+					<autre>Confirme</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>14H-16H</heure>
+					<lieu>Sophia – A proximité du C.I.V.</lieu>
+					<autre>Jeu libre sur réservation</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>16H-17H</heure>
+					<lieu>Sophia – A proximité du C.I.V.</lieu>
+					<autre>Pratique Encadrée</autre>
+					<responsable>L.ANDREOLETTI</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>TENNIS DE TABLE (PING-PONG)</nom>
+			<renseignement></renseignement>
+			<jour> Mardi
+				<seance>
+					<heure>11H-13H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+				<seance>
+					<heure>19H30-22H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>Tournois Tous Niveaux</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>16H-18H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>U.E.L. Sem.1 </autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+				<seance>
+					<heure>20H-22H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>11H-13H</heure>
+					<lieu>Sciences – Gymnase A Valrose</lieu>
+					<autre>U.E.L.</autre>
+					<responsable>E.MONTAGNON</responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>TOURNOI 3 RAQUETTES</nom>
+			<renseignement>Premier ou second weekend d’Avril 2014. Tournoi de double mixte de Tennis, Badminton et Tennis de Table. 16 équipes maximum. Possibilité d’un tournoi simple F et M. Inscription et renseignements auprès de laurence.andreoletti@unice.fr ou toucas@unice.fr.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>RANDONNEE PEDESTRE</nom>
+			<renseignement>2 sorties par mois en Sept, Oct., et Décembre 2013. Le programme sera indiqué sur le site : www.unice.fr/suapsweb et sur le profil Facebook à chaque début de mois.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>UNIVERSIRAID</nom>
+			<renseignement>Weekend du 19/20 oct. 2013 : Challenge sportif en équipe de 4 mixte.
+				Samedi 19 et Dimanche 20 Octobre 2013 
+				Venez partager 2 jours d’aventure et d’émotion dans un cadre naturel exceptionnel quoi de mieux en ce début, quoi de mieux en ce début d’année universitaire pour faire connaissance.
+				En équipe de 4 avec parité étudiants-étudiantes.
+				Challenge sportif réservé aux étudiants de l’U.N.S.
+				Au programme :
+				-1 journée de parcours d’orientation en moyenne montagne avec cartes et boussoles.
+				-1/2 journée d’animation VTT et Concours de Tir à l’Arc.
+				-1/2 journée de parcours dans les arbres
+				Cout : 25€/concurrent. Effectif Max : 20 équipes de 4 étudiants.
+				Hébergement en pension complète (caserne de Beuil).
+				Renseignements et Inscriptions avant le 12 Oct. à 12H auprès des bureaux des Sports des Lettres et Valrose.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>RANDONNEES EN RAQUETTES</nom>
+			<renseignement>2 sorties par mois en Février et Mars 2014. Le programme sera indiqué sur le site www.unice.fr/suapsweb et sur le profil Facebook à chaque début de mois.
+				Attention ! : Les lieux peuvent changer en fonction des conditions météorologiques et des enseignements. Affichage, Informations sur le net et Inscription 10 jours avant chaque sortie auprès des Bureaux des Sports. Nombre de places limité.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>STAGE DE SKI ALPIN ET SNOWBOARD</nom>
+			<renseignement>Responsable : D.CHOUVY
+				5 jours en Janvier 2014. Transports + Pension + Forfait = 300 €
+				Contact : didier.chouvy@unice.fr
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>STAGE DE SKI DE FOND</nom>
+			<renseignement>Randonnée Transjura durant 5 jours des Chapelle des Bois à Prémanon. Hébergement en gîte.
+				Programmée début du 2nd semestre du vendredi 17 au mardi 21 janvier 2014.
+				20 à 25 km de Ski/Jour.
+				Départ de Nice envisagé vendredi matin. Retour à Nice le mardi au soir.
+				Inscription à partir de mi-octobre sur www.unice.fr/suapsweb.
+				Cout : 95€/Etudiants	130€/Personnels
+				(Transports et location de matériel inclus)
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>STAGE DE SKI DE FOND</nom>
+			<renseignement>Achat obligatoire de Carte Glisse a 5€ pour les étudiants et personnels comprenant :
+				-des forfaits a prix exceptionnels sur Auron (19,6€*/23,2€**), Valberg (Etudiants=11,5€*/18,5€**), Isola 2000 (19€*/22,5€**), La Colmiane (13,5€***) et Limone (16€*/28€**)
+				-l’assurance ski MAIF/SUAPS gratuite
+				-la location de matériel a prix réduit au magasin Pazzi Sport et Sport 2000 a Valberg et a Limone.
+				-des sorties promotionnelles SUAPS (Transports et Cours d’Initiation pour les débutants) :
+				-les vendredis 7, 14 et 21 février 2014, 21 et 28 mars 2014, les samedis 1, 8,15 février et le 15 mars 2014 (40 places disponibles / Tarif : 20€)
+				Inscription et renseignements : Bureaux des Sports
+				*= du lundi au vendredi hors des vacances scolaires (+ samedi pour Limone)
+				**= le weekend, les jours fériés et vacances scolaires
+				***=du lundi au dimanche vacances scolaires comprises
+				Vendredi :
+				7H-17H U.E.L. + Libre – G.DENIS et L.ANDREOLETTI – 2nd semestre (6 séances)
+				Les 7, 14,21 Février 2014 et 14, 21,28 Mars 2014.
+				Attention : Places limitées et conditions particulières voir la fiche sur le portail Unice/activités sportives/ UEL Sports.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>SKI</nom>
+			<renseignement>Pour acquérir la carte glisse, s’inscrire obligatoirement sur le site du SUAPS www.unice.fr/SUAPSweb dans l’activité CARTE GLISSE.
+				Sur présentation de la carte Glisse 2013/2014 :
+				Forfait journée : dans les 4 stations des Alpes-Maritimes (Valberg, Auron, Isola 2000 et la Colmiane) et en Italie (Limone) :
+				Valberg : uniquement pour l’étudiant Hors vacances scolaires de février et week-end (zone de Nice) : 11.50€ en semaine / 18.50€ le week-end.
+				Auron/Isola 2000 : étudiant et personnel Tarifs valables en semaine et en week-end hors vacances scolaire Académie de Nice (zone B) : 19.60€ en semaine / 23.20€ le week-end. Carte « Système Mains Libres » rechargeable et réutilisable sur plusieurs saisons (+1.5€ - achat obligatoire).
+				La Colmiane : étudiant et personnel  tarifs valables en semaine, week-end et vacances scolaires : 13.50€.
+				Limone : étudiant et personnel  16€ du lundi au samedi / 28€ le dimanche, jours fériés et vacances de Noël.
+				*Possibilité de location de matériel à prix réduit (Valberg et Limone)
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>AIKIDO</nom>
+			<renseignement></renseignement>
+			<jour> Mardi
+				<seance>
+					<heure>19h-20h30</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre>Partenariat École Niçoise d’Aïkido</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>18h30-20h30</heure>
+					<lieu>Sciences – Salle de Combat Valrose</lieu>
+					<autre>Niveau confirmé – Partenariat NUC</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>BOXE ANGLAISE</nom>
+			<renseignement></renseignement>
+			<jour> Jeudi
+				<seance>
+					<heure>19h-20h30</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>JUDO</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>19h-20h30</heure>
+					<lieu>Sciences – Salle de Combat Valrose</lieu>
+					<autre>Confirmés (ceinture verte à noire) - Partenariat Azur Judo</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>19h-20h30</heure>
+					<lieu>Sciences – Salle de Combat Valrose</lieu>
+					<autre>Débutants – Partenariat Azur Judo</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>KENDO</nom>
+			<renseignement></renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>20h-22h</heure>
+					<lieu>Sciences – Gymnase à Valrose</lieu>
+					<autre>Partenariat Nice Kendo Club</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>KOBUDO D'OKINAWA : ART MARTIAL AVEC ARMES (NUNCHAKU, TONFA)</nom>
+			<renseignement></renseignement>
+			<jour> Jeudi
+				<seance>
+					<heure>20h30-22h</heure>
+					<lieu>Sciences – Salle de Combat Valrose</lieu>
+					<autre>Partenariat Oshukan Arts Martiaux</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>SHOMEN NIHON TAI JITSU</nom>
+			<renseignement>Art martial japonais associant des techniques de frappe, de projections et de contrôle par des clés, étranglements. Applications en Self-défense contre un et plusieurs adversaires. Accessible à tous.
+			</renseignement>
+			<jour> Vendredi
+				<seance>
+					<heure>18h30-20h30</heure>
+					<lieu>Droit – Salle de Combat</lieu>
+					<autre>Partenariat Shomen Nihon Taï Jitsu</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>NINJUTSU</nom>
+			<renseignement>Self-défense, Technique à mains nues</renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>20h30-22h</heure>
+					<lieu>Sciences – Salle de Combat Valrose</lieu>
+					<autre>Partenariat Nindokan Budo France</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>TAEKWONDO</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>19h-20h30</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>20h30-22h</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>20h30-22h</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>18h30-20h</heure>
+					<lieu>Droit – Salle de Combat Trotabas</lieu>
+					<autre>Partenariat NUC 30€ / Semestre et 75€ si les 3 créneaux</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>ATHLETISME</nom>
+			<renseignement></renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>18h-20h</heure>
+					<lieu>St Jean d’A. – Stade Vauban</lieu>
+					<autre>Partenariat CAVIGAL Athlétisme
+						04 93 85 45 25 (J-C PIJAROWSKI)
+						Voir au Stade Claude FATTORINI</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>18h-20h</heure>
+					<lieu>St Jean d’A. – Stade Vauban</lieu>
+					<autre>Partenariat CAVIGAL Athlétisme
+						04 93 85 45 25 (J-C PIJAROWSKI)
+						Voir au Stade Claude FATTORINI</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>18h-20h</heure>
+					<lieu>St Jean d’A. – Stade Vauban</lieu>
+					<autre>Partenariat CAVIGAL Athlétisme
+						04 93 85 45 25 (J-C PIJAROWSKI)
+						Voir au Stade Claude FATTORINI</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>18h-20h</heure>
+					<lieu>St Jean d’A. – Stade Vauban</lieu>
+					<autre>Partenariat CAVIGAL Athlétisme
+						04 93 85 45 25 (J-C PIJAROWSKI)
+						Voir au Stade Claude FATTORINI</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>18h-20h</heure>
+					<lieu>St Jean d’A. – Stade Vauban</lieu>
+					<autre>Partenariat CAVIGAL Athlétisme
+						04 93 85 45 25 (J-C PIJAROWSKI)
+						Voir au Stade Claude FATTORINI</autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>12H-14H</heure>
+					<lieu>Sciences – Parc Valrose</lieu>
+					<autre>U.E.L. Endurance + Bonus</autre>
+					<responsable>J. DELREY</responsable>
+				</seance>
+				<seance>
+					<heure>12h30-14h</heure>
+					<lieu>St Jean d’A. – Stade Vauban</lieu>
+					<autre>U.E.L. Athlétisme / Endurance</autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>ÉQUITATION</nom>
+			<renseignement>*Centre Hippique de Mougins
+				909 Chemin de Font de Currault : 04 93 45 75 81
+				*Promenade tous les jours sauf le jeudi
+				*Cours les mercredis, samedis et dimanches matins
+				*Conditions : Être inscrit au SUAPS, acheter un ticket (12€) dans un Bureau des Sports, et prendre rendez-vous avec le Centre Hippique.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>TIR A L'ARC</nom>
+			<renseignement></renseignement>
+			<jour> Mercredi
+				<seance>
+					<heure>19h-20h30</heure>
+					<lieu>Droit – Gymnase</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>VERTICAL</nom>
+			<renseignement>Pour Vertical (Canyoning, Escalade et Via Ferrata)
+				Afin d’être tenu€ informé(e) par mail des dates de chaque sorties contacter erick.martinez@unice.fr pour être intégré dans la mailing liste.
+
+				Canyoning
+				Sorties organisées les Samedi en Septembre 2013, Mai et Juin 2014 sur les principaux canyons de département.
+
+				Disposer d’une combinaison isothermique (type plongée).
+
+				Coût : 5€ la sortie, comprenant le matériel (sauf la combinaison), l’encadrement et les frais de déplacement. Et 5€ de location.
+
+				Inscriptions aux Bureaux des Sports des Lettres, de Droit et des Sciences. 1ère sortie le sam. 21 Sept 2013.
+
+
+				Via Ferrata
+				Sorties organisées le samedi selon le calendrier sur les principaux itinéraires du département.
+
+				Coût : 5€ la sortie, comprenant le matériel, l’encadrement et frais de déplacement.
+
+				Inscriptions aux Bureaux des Sports des Lettres, de Droit et des Sciences.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>ESCALADE</nom>
+			<renseignement>Sorties en milieu naturel
+				Toute l’année, les vendredis après-midi et samedis selon calendrier.
+				2 niveaux : Débutant et Perfectionnement.
+				Coût : 5€ la sortie, comprenant le matériel, l’encadrement et frais de déplacement.
+				Inscriptions aux Bureaux des Sports des Lettres, Droit et des Sciences.
+			</renseignement>
+			<jour>
+				<seance>
+					<heure></heure>
+					<lieu></lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+
+		<activite>
+			<nom>SALLE DE PAN D'ESCALADE</nom>
+			<renseignement>Réservée aux étudiants inscrits au SUAPS et ayant fait la demande de la carte Escalade (gratuite, amener une photo)
+				Inscriptions aux Bureaux des Sports des Lettres, Droit et des Sciences.
+				Achat de tickets au Bureau des Sports de Sophia.
+				Coût : 4€ le ticket pour les 5 premiers puis 7€ le ticket.
+
+				Stage multisport (Plongée, Canyoning, Escalade) nature en Corse Juin 2014
+				Voir modalités p. 41.
+			</renseignement>
+			<jour> Lundi
+				<seance>
+					<heure>9h-19h30</heure>
+					<lieu>Sciences – Salle de Pan Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19h-22h</heure>
+					<lieu>Sophia – Garbejaire – Salle de Pan du COV</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mardi
+				<seance>
+					<heure>9h-19h30</heure>
+					<lieu>Sciences – Salle de Pan Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19h-22h</heure>
+					<lieu>Sophia – Garbejaire – Salle de Pan du COV</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Mercredi
+				<seance>
+					<heure>9h-19h30</heure>
+					<lieu>Sciences – Salle de Pan Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19h-22h</heure>
+					<lieu>Sophia – Garbejaire – Salle de Pan du COV</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Jeudi
+				<seance>
+					<heure>9h-19h30</heure>
+					<lieu>Sciences – Salle de Pan Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19h-22h</heure>
+					<lieu>Sophia – Garbejaire – Salle de Pan du COV</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+			<jour> Vendredi
+				<seance>
+					<heure>9h-19h30</heure>
+					<lieu>Sciences – Salle de Pan Valrose</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+				<seance>
+					<heure>19h-22h</heure>
+					<lieu>Sophia – Garbejaire – Salle de Pan du COV</lieu>
+					<autre></autre>
+					<responsable></responsable>
+				</seance>
+			</jour>
+		</activite>
+		-->
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<root>
+<lieux>
+		<site>
+			<postal>
+				CAMPUS CARLONE
+				Bureau Des Sports, Centre Sportif Carlone – 98, bd Herriot – NICE
+			</postal>
+			<responsable>
+				<adresse>
+					<nom>Pierre VIGOT</nom>
+					<email>pierre.vigot@unice.fr</email>
+				</adresse>
+			</responsable>
+			<responsable>
+				<adresse>
+					<nom>Gerard DENIS</nom>
+					<email>gerard.denis@unice.fr</email>
+				</adresse>
+			</responsable>
+			<installations>
+				Gymnase, Salle de Musculation, Salle de Danse, Piscine couverte et 5 courts de tennis.
+			</installations>
+			<permanences></permanences>
+			<tel>04.93.37.55.77.</tel>
+			<fax>04.93.37.55.76.</fax>
+		</site>
+
+		<site>
+			<postal>
+				CAMPUS I.U.T.
+				Site Nice – Bureau des Sports n°229, 41, bd Napoléon III – NICE
+			</postal>
+			<responsable>
+				<adresse>
+					<nom>Evelyne BERNARDI</nom>
+					<email>evelyne.bernardi@unice.fr</email>
+				</adresse>
+			</responsable>
+			<installations>
+				Salle de musculation (uniquement étudiants et personnels de l’I.U.T.)
+			</installations>
+			<permanences>
+				Lundi, Mardi et Jeudi de 10H à 17H30
+			</permanences>
+			<tel>04.97.25.83.08.</tel>
+			<fax>04.97.25.83.30.</fax>
+		</site>
+
+		<site>
+			<postal>
+				CAMPUS SOPHIA-ANTIPOLIS
+				Bureau des sports, RDC Bât QLIO – 930 Route des Colles – SOPHIA-ANTIPOLIS
+			</postal>
+			<responsable>
+				<adresse>
+					<nom>Erick MARTINEZ</nom>
+					<email>erick.martinez@unice.fr</email>
+				</adresse>
+			</responsable>
+			<responsable>
+				<adresse>
+					<nom>Laurence ANDREOLETTI</nom>
+					<email>laurence.andreoletti@unice.fr</email>
+				</adresse>
+			</responsable>
+			<tel>04.97.15.52.27.</tel>
+		</site>
+
+		<site>
+			<postal>
+				CAMPUS ST JEAN D’ANGELY
+				Bureau des Sports, Bur. 008 (Espace Etudiant) – 24, Avenue des Diables Bleus – NICE
+			</postal>
+			<responsable>
+				<adresse>
+					<nom>Didier CHOUVY</nom>
+					<email>didier.chouvy@unice.fr</email>
+				</adresse>
+			</responsable>
+			<tel>04.92.00.13.95.</tel>
+		</site>
+
+		<site>
+			<postal>
+				CAMPUS TROTABAS
+				Bureau des Sports, Bur 203 – 7, Avenue Robert Schuman – NICE
+			</postal>
+			<responsable>
+				<adresse>
+					<nom>Marc SERRA</nom>
+					<email>marc.serra@unice.fr</email>
+				</adresse>
+			</responsable>
+			<responsable>
+				<adresse>
+					<nom>Eric MONTAGNON</nom>
+					<email>eric.montagnon@unice.fr</email>
+				</adresse>
+			</responsable>
+			<installations>
+				Gymnase, Salle de Musculation, Salle de Danse, Salle de Combat, Court de Tennis.
+			</installations>
+			<tel>04.92.15.70.61.</tel>
+			<fax>04.92.15.70.61.</fax>
+		</site>
+
+		<site>
+			<postal>
+				CAMPUS VALROSE
+				Bureau des Sports, CSU Valrose, 65 Avenue Valrose – NICE
+			</postal>
+			<responsable>
+				<adresse>
+					<nom>Olivia HASSAN</nom>
+					<email>olivia.hassan@unice.fr</email>
+				</adresse>
+			</responsable>
+			<responsable>
+				<adresse>
+					<nom>Michèle LEBARD</nom>
+					<email>michele.lebard@unice.fr</email>
+				</adresse>
+			</responsable>
+			<installations>
+				2 Gymnases, Salle de Musculation, Salle de Danse, Salle de Combat, 5 Courts de Tennis, Terrain de Beach-Volley, Salle de Pan.
+			</installations>
+			<tel>04.92.07.60.69.</tel>
+			<fax>04.92.07.60.63.</fax>
+		</site>
+	</lieux>
+</root>
+</xml>

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SUAPSViewController : UIViewController
+@interface SUAPSViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
+@property NSArray* titres;
 @end
