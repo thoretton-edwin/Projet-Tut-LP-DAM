@@ -18,7 +18,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Bienvenue à l'IUT";
     }
     return self;
 }
@@ -27,6 +26,7 @@
 {
     [super viewDidLoad];
     
+    self.title = @"Bienvenue à l'IUT";
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();

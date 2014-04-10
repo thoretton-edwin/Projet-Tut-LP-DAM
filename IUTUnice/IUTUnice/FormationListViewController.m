@@ -18,7 +18,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Formations";
     }
     return self;
 }
@@ -26,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Formations";
     
     //select design
 	_mDegreeSelector.clipsToBounds=YES;
