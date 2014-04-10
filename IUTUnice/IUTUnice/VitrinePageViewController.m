@@ -78,6 +78,7 @@
 - (IBAction)goToFormationListPage:(id)sender {
     FormationListViewController *viewController = [[FormationListViewController alloc] initWithNibName:@"FormationListViewController" bundle:nil];
     [self.navigationController pushViewController:viewController animated:YES];
+
 }
 
 - (IBAction)goToSondageIUTPage:(id)sender {
