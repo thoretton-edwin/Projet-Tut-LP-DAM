@@ -3,12 +3,17 @@ package dam.ptut.iutunice;
 import dam.ptut.iutunice.IutWindows.SurveyIutActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class SurveyFragment extends Fragment {
 	public final static String LANGUAGE = "language";
@@ -25,12 +30,52 @@ public class SurveyFragment extends Fragment {
 		
 		Log.v("language :", language);
 		Log.v("type :", type);
-//		for(int i=0 ; i<app.surveyList.size() ; i++){
-//			surveyItem = app.surveyList.get(i);
-//			if(surveyItem.language.equals(language) && surveyItem.type.equals(type)){
-//				oneSurvey = surveyItem;
-//			}
-//		}
+		for(int i=0 ; i<app.surveyList.size() ; i++){
+			surveyItem = app.surveyList.get(i);
+			if(surveyItem.language.equals(language) && surveyItem.type.equals(type)){
+				oneSurvey = surveyItem;
+			}
+		}
+		
+		View content = inflater.inflate(R.layout.fragment_survey, container,
+				false);
+		
+		ListView listView = (ListView) content.findViewById(R.id.listViewSurvey);
+		listView.setAdapter(new BaseAdapter() {
+			
+			@Override
+			public View getView(int position, View convertView, ViewGroup parent) {
+				View itemView = inflater.inflate(R.layout.item_list_survey, parent,
+						false);
+
+				SurveyQuestion surveyQuestion = (SurveyQuestion) getItem(position);
+				TextView txtIdQuestion = (TextView) itemView.findViewById(R.id.txtIdQuestion);
+				txtIdQuestion.setText(surveyQuestion.id);
+				TextView txtQuestion = (TextView) itemView.findViewById(R.id.txtQuestion);
+				txtQuestion.setText(surveyQuestion.entitled);
+				
+				return itemView;
+			}
+			
+			@Override
+			public long getItemId(int position) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+			@Override
+			public Object getItem(int position) {
+				// TODO Auto-generated method stub
+				return oneSurvey.questionArray.get(position);
+			}
+			
+			@Override
+			public int getCount() {
+				// TODO Auto-generated method stub
+				return oneSurvey.questionArray.size();
+			}
+		});
+		
 //		if(oneSurvey.equals(null)){
 //			AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 //			alertDialog.setTitle("Affichage sondage impossible...");
@@ -48,8 +93,7 @@ public class SurveyFragment extends Fragment {
 //		}
 		
 		
-		View content = inflater.inflate(R.layout.fragment_survey, container,
-				false);
+		
 		return content;
 		
 	}

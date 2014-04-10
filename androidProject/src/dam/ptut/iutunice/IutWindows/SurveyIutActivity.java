@@ -26,6 +26,7 @@ import android.view.MenuItem;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.TextHttpResponseHandler;
 
+import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.SurveyFragment;
 import dam.ptut.iutunice.SurveyItem;
@@ -114,18 +115,18 @@ public class SurveyIutActivity extends FragmentActivity {
 									public void onClick(DialogInterface dialog,
 											int id) {
 										// français
-//										SurveyFragment surveyFragment = new SurveyFragment();
-//										Bundle args = new Bundle(1);
-//										args.putString(SurveyFragment.LANGUAGE,
-//												"fr");
-//										args.putString(SurveyFragment.TYPE,
-//												"IUT");
-//										surveyFragment.setArguments(args);
-//										getSupportFragmentManager()
-//												.beginTransaction()
-//												.replace(R.id.surveyContent,
-//														surveyFragment)
-//												.commit();
+										SurveyFragment surveyFragment = new SurveyFragment();
+										Bundle args = new Bundle(1);
+										args.putString(SurveyFragment.LANGUAGE,
+												"fr");
+										args.putString(SurveyFragment.TYPE,
+												"IUT");
+										surveyFragment.setArguments(args);
+										getSupportFragmentManager()
+												.beginTransaction()
+												.replace(R.id.surveyContent,
+														surveyFragment)
+												.commit();
 									}
 								});
 						alertDialog.setNegativeButton("English",
@@ -134,18 +135,18 @@ public class SurveyIutActivity extends FragmentActivity {
 									public void onClick(DialogInterface dialog,
 											int which) {
 										// anglais
-//										SurveyFragment surveyFragment = new SurveyFragment();
-//										Bundle args = new Bundle(1);
-//										args.putString(SurveyFragment.LANGUAGE,
-//												"en");
-//										args.putString(SurveyFragment.TYPE,
-//												"IUT");
-//										surveyFragment.setArguments(args);
-//										getSupportFragmentManager()
-//												.beginTransaction()
-//												.replace(R.id.surveyContent,
-//														surveyFragment)
-//												.commit();
+										SurveyFragment surveyFragment = new SurveyFragment();
+										Bundle args = new Bundle(1);
+										args.putString(SurveyFragment.LANGUAGE,
+												"en");
+										args.putString(SurveyFragment.TYPE,
+												"IUT");
+										surveyFragment.setArguments(args);
+										getSupportFragmentManager()
+												.beginTransaction()
+												.replace(R.id.surveyContent,
+														surveyFragment)
+												.commit();
 									}
 								});
 						AlertDialog dialog = alertDialog.create();
@@ -216,6 +217,13 @@ public class SurveyIutActivity extends FragmentActivity {
 				listSurvey.add(survey);
 			}
 		}
+		
+		parser.require(XmlPullParser.END_TAG, null, "root");
+		parser.next();
+		parser.require(XmlPullParser.END_DOCUMENT, null, null);
+		
+		App app = (App) getApplication();
+		app.surveyList = listSurvey;
 	}
 
 	// active sur l'action bar le bouton retour

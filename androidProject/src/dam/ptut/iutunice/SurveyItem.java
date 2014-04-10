@@ -16,6 +16,7 @@ public class SurveyItem {
 	public SurveyItem(XmlPullParser parser, String lang, String type) throws XmlPullParserException, IOException{
 		this.language = lang;
 		this.type = type;
+		questionArray = new ArrayList<SurveyQuestion>(); // nouvelle liste
 		
 		Log.v("sur balise question (début)", ""+parser.getName() );
 		while(parser.nextTag() == XmlPullParser.START_TAG || "question".equals(parser.getName()) ){
