@@ -38,29 +38,26 @@
     
     _mFormationArray = [[NSMutableArray alloc] init];
     
-    dispatch_queue_t queue = dispatch_queue_create("com.yourdomain.yourappname", NULL);
-    dispatch_async(queue, ^{
-        //code to be executed in the background
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.iut.unice.fr/api/formations"]];
-        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-        NSError *jsonParsingError = nil;
-        NSArray *publicTimeline = [NSJSONSerialization JSONObjectWithData:response
-                                                                  options:0 error:&jsonParsingError];
-        for(int i=0; i<[publicTimeline count];i++)
-        {
-            self.formation = [publicTimeline objectAtIndex:i];
-            Formation *lFormation = [[Formation alloc] initWithId:[self.formation objectForKey:@"id"] withType:[self.formation objectForKey:@"type_code"] withTitle:[self.formation objectForKey:@"title"]];
-            [lFormation setBody:[self.formation objectForKey:@"body"]];
-            
-            [_mFormationArray addObject: lFormation];
-            
-        }
-        _mDisplayedArray = [[NSMutableArray alloc] initWithArray:_mFormationArray];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //code to be executed on the main thread when background task is finished
-            [tableView reloadData];
-        });
-    });
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.iut.unice.fr/api/formations"]];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSError *jsonParsingError = nil;
+    NSArray *publicTimeline = [NSJSONSerialization JSONObjectWithData:response
+                                                              options:0 error:&jsonParsingError];
+    for(int i=0; i<[publicTimeline count];i++)
+    {
+        self.formation = [publicTimeline objectAtIndex:i];
+        Formation *lFormation = [[Formation alloc] initWithId:[self.formation objectForKey:@"id"] withType:[self.formation objectForKey:@"type_code"] withTitle:[self.formation objectForKey:@"title"]];
+        [lFormation setBody:[self.formation objectForKey:@"body"]];
+        
+        [_mFormationArray addObject: lFormation];
+        
+        /*NSLog(@"Title: %@", [formation objectForKey:@"title"]);
+        NSLog(@"Type: %@", [formation objectForKey:@"type_code"]);
+        NSLog(@"Id: %@", [formation objectForKey:@"id"]);*/
+    }
+    
+    _mDisplayedArray = [[NSMutableArray alloc] initWithArray:_mFormationArray];
     
     CGRect fr = CGRectMake(0,108,self.view.frame.size.width,344);
     

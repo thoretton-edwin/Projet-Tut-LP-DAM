@@ -7,20 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Question.h"
-#import "Reponse.h"
 
-@interface SondageViewController : UIViewController <UITableViewDelegate,UITableViewDelegate>
+@interface SondageViewController : UIViewController
 
 @property NSString* typeSondage;
 @property NSMutableArray *sondage;
-@property int globalIndex;
-
-@property (weak, nonatomic) IBOutlet UILabel *questionNumberLabel;
-@property (weak, nonatomic) IBOutlet UILabel *questionIntituleLabel;
-@property (weak, nonatomic) IBOutlet UIButton *nextQuestionButton;
-@property (weak, nonatomic) IBOutlet UITableView *answerTableView;
-
-- (IBAction)nextQuestion:(id)sender;
 
 @end

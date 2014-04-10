@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "infosWifi.h"
 
-@interface infosWifiTableViewController : UITableViewController
+@interface infosWifiTableViewController : UITableViewController{
+   
+}
 
-@property  NSMutableArray *infosTabWifi;
+@property  NSMutableArray *tabInfosWifi;
 
-//-(id) initWithStyle:(UITableViewStyle)style andInfos:(NSMutableArray *)infos;
--(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andInfos:(NSMutableArray*)infos;
 @end

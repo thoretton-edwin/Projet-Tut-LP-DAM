@@ -1,18 +1,18 @@
 //
-//  SondageViewController.m
+//  SurveyViewController.m
 //  IUTUnice
 //
-//  Created by VM Mac on 26/03/2014.
+//  Created by Wazany on 27/03/2014.
 //  Copyright (c) 2014 UNS. All rights reserved.
 //
 
-#import "SondageViewController.h"
+#import "SurveyViewController.h"
 
-@interface SondageViewController ()
+@interface SurveyViewController ()
 
 @end
 
-@implementation SondageViewController
+@implementation SurveyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,8 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.title = [@"Sondage " stringByAppendingString: _typeSondage];
-    self.view.backgroundColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,16 +10,14 @@
 #import "ConnexionViewController.h"
 #import "infosWifiTableViewController.h"
 #import "AboutViewController.h"
-#import "SondageViewController.h"
+#import "SurveyViewController.h"
 #import "LangueViewController.h"
 #import "CreditsViewController.h"
 
 @interface SettingsViewController : UITableViewController
 {
     NSMutableArray *tabSettings, *tabInfosWifi;
-    
+    infosWifiTableViewController *infosViewController;
 }
-
-
 
 @end
