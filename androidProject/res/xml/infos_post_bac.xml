@@ -2,20 +2,46 @@
 <root>
 	<formations>
 		<id>1</id>
-		<nom>DUT</nom>
+		<nom>Le Diplôme Universitaire de Technologie (DUT)</nom>
 		<descr>
-		    le DUT est très apprécié par les entreprises car il est immédiatement reconnu sur le marché de l’emploi. Il permet à ses titulaires d’exercer des responsabilités techniques et d’encadrement importants tout en étant capables de s’adapter à l’évolution technologique et économique.
+		    Diplôme national à vocation professionnelle, le DUT est très apprécié par les entreprises car il est immédiatement reconnu sur le marché de l’emploi. Il permet à ses titulaires d’exercer des responsabilités techniques et d’encadrement importants tout en étant capables de s’adapter à l’évolution technologique et économique
+			
+			 L’IUT Nice - Côte d’Azur propose actuellement plusieures spécialités (voir onglet Formations)
 		</descr>
-		<duree></duree>
+		<duree>2 ans (4 semestres)</duree>
+		<evaluation>
+			Le niveau des connaissances est contrôlé de façon régulière et continue au cours des quatre semestres. Le DUT est obtenu après validation de tous les semestres, ce qui donne lieu à l’attribution de 120 crédits européens (ECTS), à raison de 30 crédits européens par semestre.
+			
+			Les jurys sont composés d’enseignants et de représentants de la profession concernés par le diplôme. 
+		</evaluation>
+		<admission></admission>
+		<apres></apres>
 	</formations>
 	
 	<formations>
 		<id>2</id>
-		<nom>LP</nom>
+		<nom>La Licence Professionnelle (LP)</nom>
 		<descr>
-		    La Licence Professionnelle est un diplôme qui correspond au premier niveau de cadre (Bac+3). Cette formation est organisée sur une année (ou deux semestres). Comme le DUT, la spécificité de ce diplôme réside dans son mode d'élaboration fondé sur la mise en place de partenariats étroits entre Universités, établissements de formation, entreprises et branches professionnelles.
+		    Créée en 1999 dans le cadre de l'harmonisation européenne de l'enseignement supérieur, la Licence Professionnelle est un diplôme qui correspond au premier niveau de cadre (Bac+3). Cette formation est organisée sur une année (ou deux semestres).
+
+			Comme le DUT, la spécificité de ce diplôme réside dans son mode d'élaboration fondé sur la mise en place de partenariats étroits entre Universités, établissements de formation, entreprises et branches professionnelles.
+			 
+			La Licence Professionnelle est conçue dans l'objectif d'insertion professionnelle. Elle répond aux engagements européens qui prévoient un cursus licence adapté aux exigences du marché du travail ainsi qu'à la demande de nouvelles qualifications, entre le niveau technicien supérieur et le niveau ingénieur-cadre supérieur.
+
+			Cette formation conduit à l'obtention de connaissances et de compétences nouvelles dans les secteurs concernés et permet l'accès aux emplois de responsabilité dans les PME-PMI ou dans les services de grandes entreprises.
+
+			Ce diplôme doit permettre aux étudiants qui le souhaitent d'acquérir rapidement une qualification professionnelle répondant à des besoins et à des métiers clairement identifiés.
+
+			La Licence Professionnelle propose des enseignements théoriques, des enseignements pratiques, l'apprentissage de méthodes et d'outils. Elle comprend des périodes de formation en milieu professionnel, notamment lors du stage (environ 16 semaines en entreprise) et du projet tutoré.
+
+			La Licence Professionnelle réalise une mise en contact réelle de l'étudiant avec le monde du travail de manière à lui permettre d'approfondir ses connaissances et son projet professionnel et à faciliter son insertion dans la vie active.
 		</descr>
 		<duree></duree>
+		<evaluation>
+			 
+		</evaluation>
+		<admission></admission>
+		<apres></apres>
 	</formations>
 	
 	<formations>
@@ -25,6 +51,11 @@
 			Cette formation permet de préparer un DUT en une seule année, grâce à un enseignement adapté et intensif.
 		</descr>
 		<duree></duree>
+		<evaluation>
+			 
+		</evaluation>
+		<admission></admission>
+		<apres></apres>
 	</formations>
 	
 	<formations>
@@ -34,5 +65,10 @@
 			
 		</descr>
 		<duree></duree>
+		<evaluation>
+			 
+		</evaluation>
+		<admission></admission>
+		<apres></apres>
 	</formations>
 </root>
