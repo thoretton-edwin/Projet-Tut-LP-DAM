@@ -37,11 +37,11 @@
     _sondageArray = [[NSMutableArray alloc] init];
     
     _presentationImage.animationImages = [NSArray arrayWithObjects:
-                                          [UIImage imageNamed:@"IUT NICE.JPG"],
-                                          [UIImage imageNamed:@"IUT SOPHIA.JPG"],
-                                          [UIImage imageNamed:@"IUT MENTON195.JPG"],
-                                          [UIImage imageNamed:@"IUT NICE2.JPG"],
-                                          [UIImage imageNamed:@"menton.jpg"],nil];
+                                          [UIImage imageNamed:@"nice.jpg"],
+                                          [UIImage imageNamed:@"nice2.jpg"],
+                                          [UIImage imageNamed:@"menton.jpg"],
+                                          [UIImage imageNamed:@"menton2.jpg"],
+                                          [UIImage imageNamed:@"sophia.jpg"],nil];
     
     _presentationImage.animationDuration = 20.00;
     _presentationImage.animationRepeatCount = 0; //infinite

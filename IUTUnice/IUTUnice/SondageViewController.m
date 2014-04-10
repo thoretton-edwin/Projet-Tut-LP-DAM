@@ -43,6 +43,7 @@
     
     _answerTableView.delegate = self;
     _answerTableView.dataSource = self;
+    _answerTableView.backgroundColor = [UIColor clearColor];
     
     NSLog(@"Count: %d",[[[_sondage objectAtIndex: _globalIndex] reponseArray] count]);
     
@@ -213,6 +214,7 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     cell.textLabel.text =[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] intitule];
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }

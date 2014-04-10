@@ -65,6 +65,11 @@
 		9257A1A618AE309900CDECF4 /* appBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1A518AE309900CDECF4 /* appBackground.png */; };
 		9257A1AF18AE3E5500CDECF4 /* FormationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */; };
 		9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */; };
+		925F21E418F55F9B0037B3D9 /* menton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 925F21DF18F55F9B0037B3D9 /* menton.jpg */; };
+		925F21E518F55F9B0037B3D9 /* menton2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 925F21E018F55F9B0037B3D9 /* menton2.jpg */; };
+		925F21E618F55F9B0037B3D9 /* nice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 925F21E118F55F9B0037B3D9 /* nice.jpg */; };
+		925F21E718F55F9B0037B3D9 /* nice2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 925F21E218F55F9B0037B3D9 /* nice2.jpg */; };
+		925F21E818F55F9B0037B3D9 /* sophia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 925F21E318F55F9B0037B3D9 /* sophia.jpg */; };
 		927A3B7018E42E6F000A61F0 /* ConnexionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B6E18E42E6F000A61F0 /* ConnexionViewController.m */; };
 		927A3B7118E42E6F000A61F0 /* ConnexionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B6F18E42E6F000A61F0 /* ConnexionViewController.xib */; };
 		927A3B7518E42F54000A61F0 /* infosWifiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B7318E42F54000A61F0 /* infosWifiTableViewController.m */; };
@@ -90,11 +95,6 @@
 		92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */; };
 		92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */; };
 		92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D2D18AD0B7B0047DA1E /* descriptionIUT.txt */; };
-		92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D2F18AD0BCD0047DA1E /* IUT MENTON195.JPG */; };
-		92A53D3418AD0BCD0047DA1E /* IUT NICE.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3018AD0BCD0047DA1E /* IUT NICE.JPG */; };
-		92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */; };
-		92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */; };
-		92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D3718AD0C8F0047DA1E /* menton.jpg */; };
 		92A5C27318D32F92004982C4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A5C27218D32F92004982C4 /* SettingsViewController.m */; };
 		92A5C27518D3322B004982C4 /* List_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27418D3322B004982C4 /* List_icon.png */; };
 		92A5C27718D33648004982C4 /* small_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A5C27618D33648004982C4 /* small_tiles.png */; };
@@ -196,6 +196,11 @@
 		9257A1AC18AE3E5500CDECF4 /* FormationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormationListViewController.h; sourceTree = "<group>"; };
 		9257A1AD18AE3E5500CDECF4 /* FormationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormationListViewController.m; sourceTree = "<group>"; };
 		9257A1AE18AE3E5500CDECF4 /* FormationListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormationListViewController.xib; sourceTree = "<group>"; };
+		925F21DF18F55F9B0037B3D9 /* menton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menton.jpg; sourceTree = "<group>"; };
+		925F21E018F55F9B0037B3D9 /* menton2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menton2.jpg; sourceTree = "<group>"; };
+		925F21E118F55F9B0037B3D9 /* nice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nice.jpg; sourceTree = "<group>"; };
+		925F21E218F55F9B0037B3D9 /* nice2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nice2.jpg; sourceTree = "<group>"; };
+		925F21E318F55F9B0037B3D9 /* sophia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sophia.jpg; sourceTree = "<group>"; };
 		927A3B6D18E42E6F000A61F0 /* ConnexionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnexionViewController.h; sourceTree = "<group>"; };
 		927A3B6E18E42E6F000A61F0 /* ConnexionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnexionViewController.m; sourceTree = "<group>"; };
 		927A3B6F18E42E6F000A61F0 /* ConnexionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnexionViewController.xib; sourceTree = "<group>"; };
@@ -230,11 +235,6 @@
 		92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VitrinePageViewController.m; sourceTree = "<group>"; };
 		92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VitrinePageViewController.xib; sourceTree = "<group>"; };
 		92A53D2D18AD0B7B0047DA1E /* descriptionIUT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = descriptionIUT.txt; sourceTree = "<group>"; };
-		92A53D2F18AD0BCD0047DA1E /* IUT MENTON195.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT MENTON195.JPG"; sourceTree = "<group>"; };
-		92A53D3018AD0BCD0047DA1E /* IUT NICE.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT NICE.JPG"; sourceTree = "<group>"; };
-		92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT NICE2.JPG"; sourceTree = "<group>"; };
-		92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IUT SOPHIA.JPG"; sourceTree = "<group>"; };
-		92A53D3718AD0C8F0047DA1E /* menton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menton.jpg; sourceTree = "<group>"; };
 		92A5C27118D32F92004982C4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		92A5C27218D32F92004982C4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		92A5C27418D3322B004982C4 /* List_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = List_icon.png; sourceTree = "<group>"; };
@@ -488,14 +488,14 @@
 		929E014F189BA45900694030 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				925F21DF18F55F9B0037B3D9 /* menton.jpg */,
+				925F21E018F55F9B0037B3D9 /* menton2.jpg */,
+				925F21E118F55F9B0037B3D9 /* nice.jpg */,
+				925F21E218F55F9B0037B3D9 /* nice2.jpg */,
+				925F21E318F55F9B0037B3D9 /* sophia.jpg */,
 				92A5C27618D33648004982C4 /* small_tiles.png */,
 				92A5C27418D3322B004982C4 /* List_icon.png */,
 				9257A1A518AE309900CDECF4 /* appBackground.png */,
-				92A53D3718AD0C8F0047DA1E /* menton.jpg */,
-				92A53D2F18AD0BCD0047DA1E /* IUT MENTON195.JPG */,
-				92A53D3018AD0BCD0047DA1E /* IUT NICE.JPG */,
-				92A53D3118AD0BCD0047DA1E /* IUT NICE2.JPG */,
-				92A53D3218AD0BCD0047DA1E /* IUT SOPHIA.JPG */,
 				9246DA1718A516BB0087E126 /* Twitter_logo_blue.png */,
 				9246DA1518A513BD0087E126 /* settings-24-512.png */,
 				929E0151189BA45900694030 /* 1383836124_college_3D.png */,
@@ -652,7 +652,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A53D3418AD0BCD0047DA1E /* IUT NICE.JPG in Resources */,
+				925F21E718F55F9B0037B3D9 /* nice2.jpg in Resources */,
 				929E0167189BA45900694030 /* 1383836131_Library.png in Resources */,
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
@@ -661,24 +661,25 @@
 				92F0E44F18ED69F0008F75D7 /* SondageViewController.xib in Resources */,
 				929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */,
 				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
+				925F21E618F55F9B0037B3D9 /* nice.jpg in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
+				925F21E818F55F9B0037B3D9 /* sophia.jpg in Resources */,
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
 				920A572A18DAF84E00755E48 /* dut.txt in Resources */,
+				925F21E418F55F9B0037B3D9 /* menton.jpg in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
 				4362221E18E2FE7A006B091D /* style.css in Resources */,
-				92A53D3318AD0BCD0047DA1E /* IUT MENTON195.JPG in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
+				925F21E518F55F9B0037B3D9 /* menton2.jpg in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
 				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
 				920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */,
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
-				92A53D3818AD0C8F0047DA1E /* menton.jpg in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
 				927A3B8518E43093000A61F0 /* LangueViewController.xib in Resources */,
-				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
 				927A3B7618E42F54000A61F0 /* infosWifiTableViewController.xib in Resources */,
 				920A572C18DAF84E00755E48 /* etudiantEtranger.txt in Resources */,
 				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
@@ -695,7 +696,6 @@
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
 				92138DC0189260B1000488BC /* InfoPlist.strings in Resources */,
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
-				92A53D3618AD0BCD0047DA1E /* IUT SOPHIA.JPG in Resources */,
 				9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */,
 				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
