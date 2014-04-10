@@ -407,6 +407,7 @@
 		92138DBB189260B1000488BC /* IUTUnice */ = {
 			isa = PBXGroup;
 			children = (
+				92A662B218F68A27005DF267 /* addon */,
 				92A5C27018D32F34004982C4 /* Settings */,
 				43E6FD5218AE3086004F709B /* EDT */,
 				43E6FD4C18AE305B004F709B /* Annuaire */,
@@ -564,6 +565,13 @@
 				927A3B9118E433E3000A61F0 /* infosWifi.m */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		92A662B218F68A27005DF267 /* addon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = addon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
