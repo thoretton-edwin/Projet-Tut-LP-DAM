@@ -92,6 +92,14 @@
 		927A3B8E18E431B6000A61F0 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B8C18E431B6000A61F0 /* CreditsViewController.m */; };
 		927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */; };
 		927A3B9218E433E3000A61F0 /* infosWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 927A3B9118E433E3000A61F0 /* infosWifi.m */; };
+		929C43CE18F69789004DADEB /* icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43C618F69789004DADEB /* icon29.png */; };
+		929C43CF18F69789004DADEB /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43C718F69789004DADEB /* icon40.png */; };
+		929C43D018F69789004DADEB /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43C818F69789004DADEB /* icon58.png */; };
+		929C43D118F69789004DADEB /* icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43C918F69789004DADEB /* icon76.png */; };
+		929C43D218F69789004DADEB /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43CA18F69789004DADEB /* icon80.png */; };
+		929C43D318F69789004DADEB /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43CB18F69789004DADEB /* icon120.png */; };
+		929C43D418F69789004DADEB /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43CC18F69789004DADEB /* icon152.png */; };
+		929C43D518F69789004DADEB /* icon521.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C43CD18F69789004DADEB /* icon521.png */; };
 		929E0149189B9BC900694030 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929E0147189B9BC900694030 /* MainMenuViewController.m */; };
 		929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929E0148189B9BC900694030 /* MainMenuViewController.xib */; };
 		929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0151189BA45900694030 /* 1383836124_college_3D.png */; };
@@ -246,6 +254,14 @@
 		927A3B8D18E431B6000A61F0 /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
 		927A3B9018E433E3000A61F0 /* infosWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infosWifi.h; sourceTree = "<group>"; };
 		927A3B9118E433E3000A61F0 /* infosWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infosWifi.m; sourceTree = "<group>"; };
+		929C43C618F69789004DADEB /* icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29.png; sourceTree = "<group>"; };
+		929C43C718F69789004DADEB /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
+		929C43C818F69789004DADEB /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		929C43C918F69789004DADEB /* icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76.png; sourceTree = "<group>"; };
+		929C43CA18F69789004DADEB /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		929C43CB18F69789004DADEB /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		929C43CC18F69789004DADEB /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
+		929C43CD18F69789004DADEB /* icon521.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon521.png; sourceTree = "<group>"; };
 		929E0146189B9BC900694030 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		929E0147189B9BC900694030 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		929E0148189B9BC900694030 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -533,6 +549,14 @@
 		929E014F189BA45900694030 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				929C43C618F69789004DADEB /* icon29.png */,
+				929C43C718F69789004DADEB /* icon40.png */,
+				929C43C818F69789004DADEB /* icon58.png */,
+				929C43C918F69789004DADEB /* icon76.png */,
+				929C43CA18F69789004DADEB /* icon80.png */,
+				929C43CB18F69789004DADEB /* icon120.png */,
+				929C43CC18F69789004DADEB /* icon152.png */,
+				929C43CD18F69789004DADEB /* icon521.png */,
 				925F21DF18F55F9B0037B3D9 /* menton.jpg */,
 				925F21E018F55F9B0037B3D9 /* menton2.jpg */,
 				925F21E118F55F9B0037B3D9 /* nice.jpg */,
@@ -701,6 +725,7 @@
 				929E0167189BA45900694030 /* 1383836131_Library.png in Resources */,
 				43E6FD4518AE2FD3004F709B /* SUAPSViewController.xib in Resources */,
 				43E6FD3118AE2F52004F709B /* JobDatingViewController.xib in Resources */,
+				929C43D118F69789004DADEB /* icon76.png in Resources */,
 				92138DD1189260B2000488BC /* Images.xcassets in Resources */,
 				9257A1A618AE309900CDECF4 /* appBackground.png in Resources */,
 				92F0E44F18ED69F0008F75D7 /* SondageViewController.xib in Resources */,
@@ -711,6 +736,7 @@
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
 				925F21E818F55F9B0037B3D9 /* sophia.jpg in Resources */,
+				929C43CF18F69789004DADEB /* icon40.png in Resources */,
 				92A53D2E18AD0B7B0047DA1E /* descriptionIUT.txt in Resources */,
 				430A3FED18EEA390002C0B5F /* activites.xml in Resources */,
 				43E6FD4B18AE2FF0004F709B /* TwitterWebViewController.xib in Resources */,
@@ -718,20 +744,23 @@
 				925F21E418F55F9B0037B3D9 /* menton.jpg in Resources */,
 				4310FBDC18C727DD00A9DDAA /* BusViewController.xib in Resources */,
 				4362221E18E2FE7A006B091D /* style.css in Resources */,
+				929C43D418F69789004DADEB /* icon152.png in Resources */,
 				43E6FD3618AE2F62004F709B /* MapViewController.xib in Resources */,
+				929C43D218F69789004DADEB /* icon80.png in Resources */,
 				925F21E518F55F9B0037B3D9 /* menton2.jpg in Resources */,
 				433F27E218C7234D00E87636 /* bus.xml in Resources */,
 				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
 				920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */,
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
+				929C43D318F69789004DADEB /* icon120.png in Resources */,
 				927A3B8518E43093000A61F0 /* LangueViewController.xib in Resources */,
-				92A53D3518AD0BCD0047DA1E /* IUT NICE2.JPG in Resources */,
 				430A29B518ED72DA0015E95E /* suaps.xml in Resources */,
 				927A3B7618E42F54000A61F0 /* infosWifiTableViewController.xib in Resources */,
 				920A572C18DAF84E00755E48 /* etudiantEtranger.txt in Resources */,
 				43E6FD5718AE3094004F709B /* EDTViewController.xib in Resources */,
 				929E0166189BA45900694030 /* 1383836124_college_3D.png in Resources */,
+				929C43D018F69789004DADEB /* icon58.png in Resources */,
 				920A572B18DAF84E00755E48 /* lp.txt in Resources */,
 				929E0168189BA45900694030 /* 1383836150_calendar.png in Resources */,
 				9257A1B018AE3E5500CDECF4 /* FormationListViewController.xib in Resources */,
@@ -739,7 +768,6 @@
 				4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
 				430A3FEF18EEA394002C0B5F /* renseignement.xml in Resources */,
-				927A3B8018E42FFB000A61F0 /* SurveyViewController.xib in Resources */,
 				927A3B7B18E42FC3000A61F0 /* AboutViewController.xib in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
@@ -748,10 +776,12 @@
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */,
 				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
+				929C43D518F69789004DADEB /* icon521.png in Resources */,
 				430A3FE918EEA388002C0B5F /* lieux.xml in Resources */,
 				430A3FEB18EEA38D002C0B5F /* UEL.xml in Resources */,
 				43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */,
 				92A5C27718D33648004982C4 /* small_tiles.png in Resources */,
+				929C43CE18F69789004DADEB /* icon29.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,7 +992,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C52802A03B34C639CF2F6D8 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -979,7 +1008,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C52802A03B34C639CF2F6D8 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
