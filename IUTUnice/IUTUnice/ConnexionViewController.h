@@ -10,4 +10,8 @@
 
 @interface ConnexionViewController : UIViewController
 
+- (IBAction)goToLogin:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *mPassword;
+@property (strong, nonatomic) IBOutlet UITextField *mUsername;
+
 @end

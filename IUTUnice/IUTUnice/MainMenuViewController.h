@@ -44,6 +44,9 @@
 @property UIView* listViewContainer;
 
 
+@property BOOL connexionSuccess;
+
+
 @property BOOL isInList;
 
 

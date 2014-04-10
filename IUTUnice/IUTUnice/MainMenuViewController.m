@@ -15,6 +15,7 @@
 @implementation MainMenuViewController
 
 @synthesize cadreViewArray;
+@synthesize connexionSuccess;
 @synthesize iconView1;
 @synthesize iconView2;
 @synthesize iconView3;
@@ -49,6 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     
 	//background
     UIGraphicsBeginImageContext(self.view.frame.size);
@@ -272,9 +274,31 @@
         {
             // Set vertical effect
 			iconView3.backgroundColor = [UIColor grayColor];
+            
+            [self connexionLogin];
+            
+            NSLog(@"connexion sux : %hhd", connexionSuccess);
+
+                if(connexionSuccess)
+                {
+                    UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
+                    [self.navigationController pushViewController:viewController animated:YES];
+                }else
+                {
+                    UIAlertView *errorConnexion = [[UIAlertView alloc]
+                                                   initWithTitle:@"Erreur"
+                                                   message:@"erreur mdp/pwd"
+                                                   delegate:self
+                                                   cancelButtonTitle:@"ok"
+                                                   otherButtonTitles:@"reconnexion", nil];
+                    [errorConnexion show];
+                }
+                
+            
+            
+            
 			
-            UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            
 			
         }
             break;
@@ -361,6 +385,62 @@
     NSLog(@"image click N°:%ld",(long)gesture.view.tag);
     [self choixMenu:(long)gesture.view.tag];
     
+}
+
+
+
+// module de connexion
+
+-(void)connexionLogin
+{
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:@"Title"
+                              message:@"Message"
+                              delegate:self
+                              cancelButtonTitle:@"Cancel"
+                              otherButtonTitles:@"Login", nil];
+    [alertView setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
+    
+    [alertView show];
+    
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if([title isEqualToString:@"Login"])
+    {
+        UITextField *username = [alertView textFieldAtIndex:0];
+        UITextField *password = [alertView textFieldAtIndex:1];
+        
+        NSString *user = username.text;
+        NSString *passwd = password.text;
+        
+        
+        if ([user isEqual:@""] && [passwd isEqual:@""]) {
+            connexionSuccess = true;
+        }
+        
+        connexionSuccess = false;
+        
+        //connexionSuccess = [self ConnexionSuccessWith:user andPassword:passwd];
+        
+        NSLog(@"connexion success : %hhd", [self ConnexionSuccessWith:user andPassword:passwd] );
+        
+    }
+}
+
+-(BOOL) ConnexionSuccessWith:(NSString *)usrnm andPassword:(NSString *)pwd
+{
+    NSLog(@"Username: %@\nPassword: %@", usrnm, pwd);
+    
+    if ([usrnm isEqual:@""] && [pwd isEqual:@""]) {
+        return true;
+    }
+    
+    return false;
 }
 
 @end
