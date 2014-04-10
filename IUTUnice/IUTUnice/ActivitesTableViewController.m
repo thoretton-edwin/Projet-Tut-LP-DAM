@@ -94,11 +94,11 @@
 				if([[TBXML elementName:activiteElement]isEqualToString:@"jour"])
 				{
 					
-					
+					Jour *jour = [[Jour alloc]init];
 					TBXMLElement *jourElement = activiteElement->firstChild;
 					do
 					{
-						Jour *jour = [[Jour alloc]init];
+						
 						
 						if([[TBXML elementName:jourElement]isEqualToString:@"nom"])
 						{
@@ -110,10 +110,10 @@
 						{
 							NSLog(@"seance");
 							jour.seance = [[NSMutableArray alloc]init];
-							
+							Seance *seance = [[Seance alloc]init];
 							TBXMLElement *seanceElement = jourElement->firstChild;
 							do{
-								Seance *seance = [[Seance alloc]init];
+								
 								if([[TBXML elementName:seanceElement]isEqualToString:@"heure"])
 								{
 									seance.heure = [TBXML textForElement:seanceElement];
@@ -134,17 +134,18 @@
 									seance.responsable =[TBXML textForElement:seanceElement];
 									NSLog(@"responsable :%@",[TBXML textForElement:seanceElement]);
 								}
-								[jour.seance addObject:seance];
+								
 								
 							}while((seanceElement=seanceElement->nextSibling));
+							[jour.seance addObject:seance];
 							
 							
 						}
 						
-						[act.jour addObject:jour];
+						
 						
 					}while((jourElement=jourElement->nextSibling));
-					
+					[act.jour addObject:jour];
 				}
 				
 				
@@ -182,7 +183,7 @@
 	
 	cell.textLabel.text = item.nom ;
 	//cell.detailTextLabel.text = [NSString]jour.seance.count;
-	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	cell.accessoryType = UITableViewCellAccessoryDetailButton;
     
     return cell;
 }
@@ -191,6 +192,9 @@
 {
 	return [[activites objectAtIndex:section]nom];
 }
+
+
+
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
