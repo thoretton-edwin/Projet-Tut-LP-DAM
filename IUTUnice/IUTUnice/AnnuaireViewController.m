@@ -45,6 +45,7 @@
 
 	[mailView setSubject:@"Demande de contact"];
 	[mailView setTitle:@"[Contact]"];
+	self.title = @"Annuaire";
 	[mailView setToRecipients:[[NSArray alloc]initWithObjects:self.email, nil ]];
 	
 	[self presentViewController:mailView animated:YES completion:nil];
