@@ -83,6 +83,7 @@
 	}
 	else
 	{
+		[self.navigationController popViewControllerAnimated:YES];
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"calshow://"]];
 	}
 }
