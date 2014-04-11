@@ -15,6 +15,7 @@
 @property NSMutableArray *resp;
 @property NSString *installation;
 @property NSString *permanence;
-@property NSMutableArray *tel;
+@property NSString *tel;
+@property NSString *fax;
 
 @end
