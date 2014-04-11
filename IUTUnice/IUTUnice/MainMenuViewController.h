@@ -44,7 +44,7 @@
 @property UIView* listViewContainer;
 
 
-@property BOOL connexionSuccess;
+@property (nonatomic) IBOutlet NSString* userId;
 
 
 @property BOOL isInList;

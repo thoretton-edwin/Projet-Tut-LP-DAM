@@ -20,6 +20,6 @@
     
 }
 
-
+@property (nonatomic) IBOutlet NSString* userId;
 
 @end

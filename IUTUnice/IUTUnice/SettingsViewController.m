@@ -10,9 +10,13 @@
 
 @interface SettingsViewController ()
 
+
 @end
 
 @implementation SettingsViewController
+
+
+@synthesize userId;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,10 +32,24 @@
 {
     [super viewDidLoad];
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *idUser = [prefs stringForKey:@"idUser"];
+    
     tabInfosWifi = [[NSMutableArray alloc] init];
     
     tabSettings= [[NSMutableArray alloc] init];
-    [tabSettings addObject:@"Connexion"];
+    
+    
+    if ([idUser isEqualToString:@"noUser"]) {
+       [tabSettings addObject:@"Connexion"];
+        
+    }
+    else
+    {
+        [tabSettings addObject:@"Déconnexion"];
+    }
+    
+    
     [tabSettings addObject:@"Infos WIfi"];
     [tabSettings addObject:@"A propos"];
     [tabSettings addObject:@"Sondage"];
@@ -54,7 +72,7 @@
         if (tbxml.rootXMLElement)
             [self traverseElement:tbxml.rootXMLElement];
     }
-    
+    NSLog(@"user id viewdidload : %@", idUser);
     
 }
 
@@ -117,8 +135,25 @@
     {
         case 0: // Connexion
         {
-            ConnexionViewController *viewController = [[ConnexionViewController alloc] initWithNibName:@"ConnexionViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            
+            
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            NSString *idUser = [prefs stringForKey:@"idUser"];
+            
+            NSLog(@"id user before remove : %@",idUser);
+            if ([idUser isEqualToString:@"noUser"]) {
+                [self connexionLogin];
+                
+            }
+            else
+            {
+                [prefs setValue:@"noUser"  forKey:@"idUser"];
+                [prefs synchronize ];
+                NSLog(@"id user remove : %@",idUser);
+                
+                [tabSettings replaceObjectAtIndex:0 withObject:@"Connexion"];
+                [self.tableView  reloadData];
+            }
             
             
         }
@@ -127,7 +162,7 @@
         {
             infosWifiTableViewController *infosViewController = [[infosWifiTableViewController alloc] initWithNibName:@"infosWifiTableViewController" bundle:nil andInfos:tabInfosWifi];
             
-            NSLog(@"count tab : %d" , tabInfosWifi.count);
+            
             
             
             
@@ -211,7 +246,7 @@
                 if ([[NSString stringWithUTF8String:elementChild->name] isEqual:@"mdp"]) {
                     wifiInfos.mdp_wifi =str;
                 }
-                NSLog(@"nom : %@", str);
+                
                 elementChild = elementChild -> nextSibling;
                 
             }
@@ -219,11 +254,6 @@
     
             
                 [tabInfosWifi addObject:wifiInfos];
-            
-            
-            
-            NSLog(@"tab infos wifi : %@" , tabInfosWifi);
-            NSLog(@"count tab : %d" , tabInfosWifi.count);
         }
         
         
@@ -232,12 +262,62 @@
         
         
     } while ((element = element->nextSibling));
+
+}
+
+
+// module de connexion
+
+-(void)connexionLogin
+{
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:@"Title"
+                              message:@"Message"
+                              delegate:self
+                              cancelButtonTitle:@"Cancel"
+                              otherButtonTitles:@"Login", nil];
+    [alertView setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
+    
+    [alertView show];
     
     
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
     
-    
-    
-    
+    if([title isEqualToString:@"Login"])
+    {
+        UITextField *username = [alertView textFieldAtIndex:0];
+        UITextField *password = [alertView textFieldAtIndex:1];
+        
+        NSString *user = username.text;
+        NSString *passwd = password.text;
+        
+        
+        if ([user isEqual:@"aa"] && [passwd isEqual:@""]) {
+            userId = user;
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            [prefs setValue:userId  forKey:@"idUser"];
+            [prefs synchronize];
+            [self.tableView reloadData];
+            NSLog(@"user Id : %@ ", [prefs stringForKey:@"idUser"]);
+        }else{
+            UIAlertView *errorConnexion = [[UIAlertView alloc]
+                                           initWithTitle:@"Erreur"
+                                           message:@"erreur mdp/pwd"
+                                           delegate:self
+                                           cancelButtonTitle:@"ok"
+                                           otherButtonTitles:@"reconnexion", nil];
+            [errorConnexion show];
+        }
+        
+        
+        
+        
+    }
+    [self viewDidLoad ];
 }
 
 @end

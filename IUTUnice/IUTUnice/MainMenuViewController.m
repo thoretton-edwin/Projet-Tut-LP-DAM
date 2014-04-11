@@ -15,7 +15,7 @@
 @implementation MainMenuViewController
 
 @synthesize cadreViewArray;
-@synthesize connexionSuccess;
+@synthesize userId;
 @synthesize iconView1;
 @synthesize iconView2;
 @synthesize iconView3;
@@ -50,6 +50,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    userId = @"noUser";
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setValue:userId  forKey:@"idUser"];
+    [prefs synchronize];
+    
+
+    NSString *idUser = [prefs stringForKey:@"idUser"];
+    
+    NSLog(@"iduser mainmenu : %@", idUser);
     
     
 	//background
@@ -275,23 +285,21 @@
             // Set vertical effect
 			iconView3.backgroundColor = [UIColor grayColor];
             
-            [self connexionLogin];
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            NSString *idUser = [prefs stringForKey:@"idUser"];
             
-            NSLog(@"connexion sux : %hhd", connexionSuccess);
+            
+            
+            NSLog(@"connexion sux : %@", idUser);
 
-                if(connexionSuccess)
+                if(![idUser isEqualToString:@"noUser"])
                 {
+                    
                     UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
                     [self.navigationController pushViewController:viewController animated:YES];
                 }else
                 {
-                    UIAlertView *errorConnexion = [[UIAlertView alloc]
-                                                   initWithTitle:@"Erreur"
-                                                   message:@"erreur mdp/pwd"
-                                                   delegate:self
-                                                   cancelButtonTitle:@"ok"
-                                                   otherButtonTitles:@"reconnexion", nil];
-                    [errorConnexion show];
+                    [self connexionLogin];
                 }
                 
             
@@ -307,8 +315,25 @@
             // Set vertical effect
 			iconView4.backgroundColor = [UIColor grayColor];
 			
-            EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            
+            
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            NSString *idUser = [prefs stringForKey:@"idUser"];
+            
+            
+            
+            NSLog(@"connexion sux : %@", idUser);
+            
+            if(![idUser isEqualToString:@"noUser"])
+            {
+                
+                EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+                
+            }else
+            {
+                [self connexionLogin];
+            }
 			
         }
             break;
@@ -319,6 +344,24 @@
 			
             AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
+            
+            
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            NSString *idUser = [prefs stringForKey:@"idUser"];
+            
+            NSLog(@"connexion sux : %@", idUser);
+            
+            if(![idUser isEqualToString:@"noUser"])
+            {
+                
+                EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+                
+            }else
+            {
+                [self connexionLogin];
+            }
+            
 			
         }
             break;
@@ -419,28 +462,27 @@
         NSString *passwd = password.text;
         
         
-        if ([user isEqual:@""] && [passwd isEqual:@""]) {
-            connexionSuccess = true;
+        if ([user isEqual:@"aa"] && [passwd isEqual:@""]) {
+            userId = user;
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            [prefs setValue:userId  forKey:@"idUser"];
+            [prefs synchronize];
+            
+            NSLog(@"user Id : %@ ", [prefs stringForKey:@"idUser"]);
+        }else{
+            UIAlertView *errorConnexion = [[UIAlertView alloc]
+                                           initWithTitle:@"Erreur"
+                                           message:@"erreur mdp/pwd"
+                                           delegate:self
+                                           cancelButtonTitle:@"ok"
+                                           otherButtonTitles:@"reconnexion", nil];
+            [errorConnexion show];
         }
         
-        connexionSuccess = false;
         
-        //connexionSuccess = [self ConnexionSuccessWith:user andPassword:passwd];
         
-        NSLog(@"connexion success : %hhd", [self ConnexionSuccessWith:user andPassword:passwd] );
         
     }
-}
-
--(BOOL) ConnexionSuccessWith:(NSString *)usrnm andPassword:(NSString *)pwd
-{
-    NSLog(@"Username: %@\nPassword: %@", usrnm, pwd);
-    
-    if ([usrnm isEqual:@""] && [pwd isEqual:@""]) {
-        return true;
-    }
-    
-    return false;
 }
 
 @end
