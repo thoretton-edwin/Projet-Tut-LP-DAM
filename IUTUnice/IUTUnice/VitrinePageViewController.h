@@ -21,7 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *sondageButton;
 @property (weak, nonatomic) IBOutlet UIButton *formationButton;
 
+@property (nonatomic) int imageCount;
 @property (nonatomic) NSMutableArray *sondageArray;
+@property (nonatomic) NSTimer *slideshowTimer;
 
 - (IBAction)goToFormationListPage:(id)sender;
 - (IBAction)goToSondageIUTPage:(id)sender;

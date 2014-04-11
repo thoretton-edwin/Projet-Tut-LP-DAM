@@ -43,10 +43,7 @@
                                           [UIImage imageNamed:@"menton2.jpg"],
                                           [UIImage imageNamed:@"sophia.jpg"],nil];
     
-    _presentationImage.animationDuration = 20.00;
-    _presentationImage.animationRepeatCount = 0; //infinite
     _presentationImage.contentMode = UIViewContentModeScaleAspectFit;
-    [_presentationImage startAnimating];
     
     NSString *myPath = [[NSBundle mainBundle]pathForResource:@"descriptionIUT" ofType:@"txt"];
     
@@ -69,14 +66,34 @@
     [_descriptionScrollView addSubview:myUITextView];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    _imageCount = 0;
+    [self updatePhoto];
+    _slideshowTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(photoCounter) userInfo:nil repeats:YES];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (void)photoCounter {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.90];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:_presentationImage cache:NO];
+    [self updatePhoto];
+    [UIView commitAnimations];
+}
+
+- (void)updatePhoto {
+    _presentationImage.image = [_presentationImage.animationImages objectAtIndex:_imageCount];
+    (_imageCount == [_presentationImage.animationImages count]-1) ? _imageCount = 0 : _imageCount++;
+}
+
 - (IBAction)goToFormationListPage:(id)sender {
     FormationListViewController *viewController = [[FormationListViewController alloc] initWithNibName:@"FormationListViewController" bundle:nil];
+    [_slideshowTimer invalidate];
     [self.navigationController pushViewController:viewController animated:YES];
 
 }
@@ -84,6 +101,7 @@
 - (IBAction)goToSondageIUTPage:(id)sender {
     SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
     viewController.typeSondage = @"IUT";
+    [_slideshowTimer invalidate];
     [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
 }
 
