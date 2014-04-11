@@ -122,7 +122,7 @@
                     android:layout_weight="0.30"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/logo_map" />
+                    android:src="@drawable/logo_maps" />
 
                 <ImageButton
                     android:id="@+id/imgBtSuaps"

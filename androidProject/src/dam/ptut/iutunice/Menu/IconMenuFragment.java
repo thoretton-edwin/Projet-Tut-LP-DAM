@@ -2,6 +2,7 @@ package dam.ptut.iutunice.Menu;
 
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
+import dam.ptut.iutunice.Maps.MapsActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.R.id;
 import dam.ptut.iutunice.R.layout;
@@ -137,7 +138,8 @@ public class IconMenuFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				Intent intent = new Intent(getActivity().getApplicationContext(), MapsActivity.class);
+				startActivity(intent);		
 			}
 		});
 		// Affichage msg quand long click
