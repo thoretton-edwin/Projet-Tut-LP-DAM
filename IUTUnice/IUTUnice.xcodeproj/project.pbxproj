@@ -114,6 +114,7 @@
 		929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E015B189BA45900694030 /* 1383836248_addressbook.png */; };
 		929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E015F189BA45900694030 /* 1383836301_Manager.png */; };
 		929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */; };
+		92A4E9C018FE7A6A007DDFFC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A4E9BF18FE7A6A007DDFFC /* Reachability.m */; };
 		92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0518ACC24D0047DA1E /* RootNavigationController.m */; };
 		92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */; };
 		92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A53D0A18ACD3CC0047DA1E /* VitrinePageViewController.xib */; };
@@ -285,6 +286,8 @@
 		929E015B189BA45900694030 /* 1383836248_addressbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836248_addressbook.png; sourceTree = "<group>"; };
 		929E015F189BA45900694030 /* 1383836301_Manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836301_Manager.png; sourceTree = "<group>"; };
 		929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1383836370_Test-paper-128.png"; sourceTree = "<group>"; };
+		92A4E9BE18FE7A6A007DDFFC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		92A4E9BF18FE7A6A007DDFFC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		92A53D0418ACC24D0047DA1E /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		92A53D0518ACC24D0047DA1E /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		92A53D0818ACD3CC0047DA1E /* VitrinePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitrinePageViewController.h; sourceTree = "<group>"; };
@@ -488,6 +491,7 @@
 		92138DBB189260B1000488BC /* IUTUnice */ = {
 			isa = PBXGroup;
 			children = (
+				92A4E9BD18FE7A5D007DDFFC /* Test */,
 				92A5C27018D32F34004982C4 /* Settings */,
 				43E6FD5218AE3086004F709B /* EDT */,
 				43E6FD4C18AE305B004F709B /* Annuaire */,
@@ -597,6 +601,15 @@
 			);
 			path = images;
 			sourceTree = SOURCE_ROOT;
+		};
+		92A4E9BD18FE7A5D007DDFFC /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				92A4E9BE18FE7A6A007DDFFC /* Reachability.h */,
+				92A4E9BF18FE7A6A007DDFFC /* Reachability.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
 		};
 		92A53D0718ACD2FC0047DA1E /* Vitrine */ = {
 			isa = PBXGroup;
@@ -879,6 +892,7 @@
 				43E6FD4418AE2FD3004F709B /* SUAPSViewController.m in Sources */,
 				433CC4AD18D311B600B0C5F6 /* Semestre.m in Sources */,
 				4362221718E2CC53006B091D /* AnnuaireViewController.m in Sources */,
+				92A4E9C018FE7A6A007DDFFC /* Reachability.m in Sources */,
 				927A3B8418E43093000A61F0 /* LangueViewController.m in Sources */,
 				430A3FF518EEAE61002C0B5F /* Renseignement.m in Sources */,
 				430A3FF218EEAC58002C0B5F /* RenseignementTableViewController.m in Sources */,
