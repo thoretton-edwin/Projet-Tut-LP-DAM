@@ -335,7 +335,7 @@
                 if(![idUser isEqualToString:@"noUser"])
                 {
                     
-                    UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
+                    UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"UEListViewController" bundle:nil];
                     [self.navigationController pushViewController:viewController animated:YES];
                 }else
                 {
@@ -591,7 +591,7 @@
             
             
             if (tagInfo == 2) {
-                UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
+                UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"UEListViewController" bundle:nil];
                 [self.navigationController pushViewController:viewController animated:YES];
             }
             
