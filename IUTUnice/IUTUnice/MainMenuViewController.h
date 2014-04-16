@@ -17,6 +17,7 @@
 #import "MapViewController.h"
 #import "EDTViewController.h"
 #import "SettingsViewController.h"
+#import "Reachability.h"
 
 @interface MainMenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
 {
@@ -42,6 +43,8 @@
 @property UIBarButtonItem *listMenu;
 
 @property UIView* listViewContainer;
+
+@property int tagInfo;
 
 
 @property (nonatomic) IBOutlet NSString* userId;

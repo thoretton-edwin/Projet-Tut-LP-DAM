@@ -13,6 +13,7 @@
 #import "SondageViewController.h"
 #import "LangueViewController.h"
 #import "CreditsViewController.h"
+#import "Reachability.h"
 
 @interface SettingsViewController : UITableViewController
 {

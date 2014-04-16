@@ -131,29 +131,52 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    [reachability startNotifier];
+    
+    NetworkStatus status = [reachability currentReachabilityStatus];
+    
+    
     switch(tag)
     {
         case 0: // Connexion
         {
             
-            
-            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-            NSString *idUser = [prefs stringForKey:@"idUser"];
-            
-            NSLog(@"id user before remove : %@",idUser);
-            if ([idUser isEqualToString:@"noUser"]) {
-                [self connexionLogin];
-                
-            }
-            else
+            if(status == NotReachable)
             {
-                [prefs setValue:@"noUser"  forKey:@"idUser"];
-                [prefs synchronize ];
-                NSLog(@"id user remove : %@",idUser);
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
                 
-                [tabSettings replaceObjectAtIndex:0 withObject:@"Connexion"];
-                [self.tableView  reloadData];
+                [alertView show];
             }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+                NSString *idUser = [prefs stringForKey:@"idUser"];
+                
+                NSLog(@"id user before remove : %@",idUser);
+                if ([idUser isEqualToString:@"noUser"]) {
+                    [self connexionLogin];
+                    
+                }
+                else
+                {
+                    [prefs setValue:@"noUser"  forKey:@"idUser"];
+                    [prefs synchronize ];
+                    NSLog(@"id user remove : %@",idUser);
+                    
+                    [tabSettings replaceObjectAtIndex:0 withObject:@"Connexion"];
+                    [self.tableView  reloadData];
+                }
+            }
+            
+            
+            
             
             
         }
@@ -179,9 +202,26 @@
             break;
         case 3: // Sondage
         {
-            SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
-            viewController.typeSondage = @"feedback";
-            [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
+            
+            if(status == NotReachable)
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
+                
+                [alertView show];
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
+                viewController.typeSondage = @"feedback";
+                [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
+            }
+            
+            
             
         }
             break;

@@ -16,6 +16,7 @@
 
 @synthesize cadreViewArray;
 @synthesize userId;
+@synthesize tagInfo;
 @synthesize iconView1;
 @synthesize iconView2;
 @synthesize iconView3;
@@ -258,6 +259,11 @@
 
 -(void) choixMenu:(int) tag
 {
+    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    [reachability startNotifier];
+    
+    NetworkStatus status = [reachability currentReachabilityStatus];
+    
     switch(tag)
     {
         case 0: // Page Vitrine
@@ -265,8 +271,27 @@
             // Set vertical effect
 			iconView1.backgroundColor = [UIColor grayColor];
 			
-            VitrinePageViewController *viewController = [[VitrinePageViewController alloc] initWithNibName:@"VitrinePageViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            
+            
+            if(status == NotReachable)
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
+                
+                [alertView show];
+                
+                
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                VitrinePageViewController *viewController = [[VitrinePageViewController alloc] initWithNibName:@"VitrinePageViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+            }
+            
 			
         }
             break;
@@ -285,13 +310,28 @@
             // Set vertical effect
 			iconView3.backgroundColor = [UIColor grayColor];
             
-            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-            NSString *idUser = [prefs stringForKey:@"idUser"];
             
             
-            
-            NSLog(@"connexion sux : %@", idUser);
-
+            if(status == NotReachable)
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
+                
+                [alertView show];
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+                NSString *idUser = [prefs stringForKey:@"idUser"];
+                
+                tagInfo = tag;
+                
+                NSLog(@"connexion sux : %@", idUser);
+                
                 if(![idUser isEqualToString:@"noUser"])
                 {
                     
@@ -301,6 +341,11 @@
                 {
                     [self connexionLogin];
                 }
+            }
+            
+            
+            
+           
                 
             
             
@@ -317,23 +362,44 @@
 			
             
             
-            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-            NSString *idUser = [prefs stringForKey:@"idUser"];
             
-            
-            
-            NSLog(@"connexion sux : %@", idUser);
-            
-            if(![idUser isEqualToString:@"noUser"])
+            if(status == NotReachable)
             {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
                 
-                EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
-                [self.navigationController pushViewController:viewController animated:YES];
-                
-            }else
-            {
-                [self connexionLogin];
+                [alertView show];
             }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+                NSString *idUser = [prefs stringForKey:@"idUser"];
+                
+                
+                
+                NSLog(@"connexion sux : %@", idUser);
+                
+                if(![idUser isEqualToString:@"noUser"])
+                {
+                    
+                    EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                    [self.navigationController pushViewController:viewController animated:YES];
+                    
+                }else
+                {
+                    [self connexionLogin];
+                }
+            }
+            
+            
+            
+            
+            
+
 			
         }
             break;
@@ -341,26 +407,46 @@
         {
             // Set vertical effect
 			iconView5.backgroundColor = [UIColor grayColor];
-			
-            AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
             
             
-            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-            NSString *idUser = [prefs stringForKey:@"idUser"];
             
-            NSLog(@"connexion sux : %@", idUser);
-            
-            if(![idUser isEqualToString:@"noUser"])
+            if(status == NotReachable)
             {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
                 
-                EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                [alertView show];
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
                 [self.navigationController pushViewController:viewController animated:YES];
                 
-            }else
-            {
-                [self connexionLogin];
+                
+                NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+                NSString *idUser = [prefs stringForKey:@"idUser"];
+                
+                NSLog(@"connexion sux : %@", idUser);
+                
+                if(![idUser isEqualToString:@"noUser"])
+                {
+                    
+                    EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                    [self.navigationController pushViewController:viewController animated:YES];
+                    
+                }else
+                {
+                    [self connexionLogin];
+                }
             }
+            
+            
+			
+            
             
 			
         }
@@ -386,9 +472,27 @@
         {
             // Set vertical effect
 			iconView7.backgroundColor = [UIColor grayColor];
+            
+            
+            if(status == NotReachable)
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
+                
+                [alertView show];
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                MapViewController *viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+            }
+            
 			
-            MapViewController *viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            
 			
             
         }
@@ -407,9 +511,25 @@
         {
             // Set vertical effect
 			iconView9.backgroundColor = [UIColor grayColor];
+            
+            if(status == NotReachable)
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
+                
+                [alertView show];
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                TwitterWebViewController *viewController = [[TwitterWebViewController alloc] initWithNibName:@"TwitterWebViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+            }
 			
-            TwitterWebViewController *viewController = [[TwitterWebViewController alloc] initWithNibName:@"TwitterWebViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+            
 			
         }
             break;
@@ -468,6 +588,16 @@
             [prefs setValue:userId  forKey:@"idUser"];
             [prefs synchronize];
             
+            
+            
+            if (tagInfo == 2) {
+                UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"NotesViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+            }
+            
+            
+            
+            
             NSLog(@"user Id : %@ ", [prefs stringForKey:@"idUser"]);
         }else{
             UIAlertView *errorConnexion = [[UIAlertView alloc]
@@ -482,7 +612,19 @@
         
         
         
-    }
+    }else
+        if([title isEqualToString:@"Ok"])
+        {
+            iconView1.backgroundColor = [UIColor clearColor];
+            iconView2.backgroundColor = [UIColor clearColor];
+            iconView3.backgroundColor = [UIColor clearColor];
+            iconView4.backgroundColor = [UIColor clearColor];
+            iconView5.backgroundColor = [UIColor clearColor];
+            iconView6.backgroundColor = [UIColor clearColor];
+            iconView7.backgroundColor = [UIColor clearColor];
+            iconView8.backgroundColor = [UIColor clearColor];
+            
+        }
 }
 
 @end
