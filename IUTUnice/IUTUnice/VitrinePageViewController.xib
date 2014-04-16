@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VitrinePageViewController">
@@ -18,22 +18,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52l-rG-sai">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52l-rG-sai">
                     <rect key="frame" x="20" y="78" width="280" height="141"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="141" id="bK3-9m-r6v"/>
+                    </constraints>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yj-5i-uQ4">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yj-5i-uQ4">
                     <rect key="frame" x="20" y="243" width="280" height="188"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-Mw-TDN">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-Mw-TDN">
                     <rect key="frame" x="57" y="527" width="62" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Sondage">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-Tf-bS3">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-Tf-bS3">
                     <rect key="frame" x="197" y="527" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Formations">
@@ -43,7 +46,7 @@
                         <action selector="goToFormationListPage:" destination="-1" eventType="touchDown" id="Fc3-f9-1bi"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-XH-h6u">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-XH-h6u">
                     <rect key="frame" x="57" y="439" width="62" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Sondage">
@@ -53,7 +56,7 @@
                         <action selector="goToSondageIUTPage:" destination="-1" eventType="touchDown" id="qIV-nf-nag"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYn-XT-X6L">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYn-XT-X6L">
                     <rect key="frame" x="197" y="439" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Formations">
@@ -65,8 +68,25 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rmw-Mw-TDN" firstAttribute="baseline" secondItem="fLf-Tf-bS3" secondAttribute="baseline" id="3JY-q3-Cu9"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="4yj-5i-uQ4" secondAttribute="leading" id="7Xh-yM-D8i"/>
+                <constraint firstItem="rmw-Mw-TDN" firstAttribute="top" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="58" id="Bm5-K6-0AD"/>
+                <constraint firstItem="4yj-5i-uQ4" firstAttribute="top" secondItem="52l-rG-sai" secondAttribute="bottom" constant="24" id="FQJ-Lo-fvH"/>
+                <constraint firstItem="4yj-5i-uQ4" firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" id="Mwq-KT-6yd"/>
+                <constraint firstItem="1eh-XH-h6u" firstAttribute="top" secondItem="4yj-5i-uQ4" secondAttribute="bottom" constant="8" symbolic="YES" id="Rhg-rc-9yo"/>
+                <constraint firstItem="1eh-XH-h6u" firstAttribute="leading" secondItem="rmw-Mw-TDN" secondAttribute="leading" id="RrS-JO-XfW"/>
+                <constraint firstItem="MYn-XT-X6L" firstAttribute="leading" secondItem="1eh-XH-h6u" secondAttribute="trailing" constant="78" id="agY-gf-u6x"/>
+                <constraint firstItem="fLf-Tf-bS3" firstAttribute="leading" secondItem="MYn-XT-X6L" secondAttribute="leading" id="cH1-qP-WfE"/>
+                <constraint firstItem="MYn-XT-X6L" firstAttribute="baseline" secondItem="1eh-XH-h6u" secondAttribute="baseline" id="d28-k4-TZT"/>
+                <constraint firstAttribute="bottom" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="11" id="dHd-ZI-Mge"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="top" secondItem="1" secondAttribute="top" constant="78" id="gzk-Xy-vRE"/>
+                <constraint firstItem="1eh-XH-h6u" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="57" id="nIA-n1-nka"/>
+                <constraint firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" constant="20" symbolic="YES" id="ncB-k1-DNo"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="yYW-0J-0ED"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>
