@@ -37,6 +37,7 @@
 		4362221E18E2FE7A006B091D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4362221D18E2FE7A006B091D /* style.css */; };
 		4368CA9718B5FF8C008C7ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368CA9618B5FF8C008C7ACD /* MapKit.framework */; };
 		4368CA9D18B60985008C7ACD /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368CA9C18B60985008C7ACD /* Campus.m */; };
+		4383A43818FEBC2E003A109C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4383A43718FEBC2E003A109C /* MenuViewController.m */; };
 		43B9C5F318B75217001A3D75 /* mapServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C5F218B75217001A3D75 /* mapServices.plist */; };
 		43E0C29118DAF7F900562B67 /* ModuleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */; };
 		43E6FD3018AE2F52004F709B /* JobDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E6FD2E18AE2F52004F709B /* JobDatingViewController.m */; };
@@ -184,6 +185,8 @@
 		4368CA9618B5FF8C008C7ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4368CA9B18B60985008C7ACD /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		4368CA9C18B60985008C7ACD /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
+		4383A43618FEBC2E003A109C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		4383A43718FEBC2E003A109C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		43B9C5F218B75217001A3D75 /* mapServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapServices.plist; sourceTree = "<group>"; };
 		43E0C28F18DAF7F900562B67 /* ModuleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTableViewController.h; sourceTree = "<group>"; };
 		43E0C29018DAF7F900562B67 /* ModuleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTableViewController.m; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 				929E0146189B9BC900694030 /* MainMenuViewController.h */,
 				929E0147189B9BC900694030 /* MainMenuViewController.m */,
 				929E0148189B9BC900694030 /* MainMenuViewController.xib */,
+				4383A43618FEBC2E003A109C /* MenuViewController.h */,
+				4383A43718FEBC2E003A109C /* MenuViewController.m */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
@@ -903,6 +908,7 @@
 				432B402318F55AA60045CCDA /* Seance.m in Sources */,
 				9213AB6318E2E6FE00AF3DDF /* Reponse.m in Sources */,
 				92139A8618B74D2700FF0157 /* FormationDetailViewController.m in Sources */,
+				4383A43818FEBC2E003A109C /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

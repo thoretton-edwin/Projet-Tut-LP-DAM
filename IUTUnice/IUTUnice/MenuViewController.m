@@ -1,18 +1,18 @@
-//
-//  MainMenuViewController.m
-//  IUTUnice
-//
-//  Created by macos on 31/01/2014.
-//  Copyright (c) 2014 UNS. All rights reserved.
-//
+	//
+	//  MainMenuViewController.m
+	//  IUTUnice
+	//
+	//  Created by macos on 31/01/2014.
+	//  Copyright (c) 2014 UNS. All rights reserved.
+	//
 
-#import "MainMenuViewController.h"
+#import "MenuViewController.h"
 
-@interface MainMenuViewController ()
+@interface MenuViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation MenuViewController
 
 @synthesize cadreViewArray;
 @synthesize userId;
@@ -36,10 +36,17 @@
     return self;
 }
 
+
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
 	NSLog(@"test");
 	[self viewDidLoad];
+}
+
+
+-(void)awakeFromNib
+{
+	[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft  animated:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -49,7 +56,7 @@
 	{
 		UIView *cadre  = [cadreViewArray objectAtIndex:i];
 		cadre.backgroundColor=nil;
-
+		
 	}
     
 }
@@ -68,13 +75,13 @@
     [prefs setValue:userId  forKey:@"idUser"];
     [prefs synchronize];
     
-
+	
     NSString *idUser = [prefs stringForKey:@"idUser"];
     
     NSLog(@"iduser mainmenu : %@", idUser);
     
     
-	//background
+		//background
     UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
 	[[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
@@ -83,29 +90,42 @@
     
     _isInList = NO;
 	
-
+	
 	float screenWidth;
 	float screenHeight;
 	
-	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+	screenWidth = [UIScreen mainScreen].bounds.size.width;
+	screenHeight = [UIScreen mainScreen].bounds.size.height;
+	/*
+	UIInterfaceOrientation orientation = self.interfaceOrientation;
 	if(UIInterfaceOrientationIsLandscape(orientation))
 	{
-	
+		
 		NSLog(@"landscape");
+		
+		screenWidth = [UIScreen mainScreen].bounds.size.width;
+		screenHeight = [UIScreen mainScreen].bounds.size.height;
 		
 		screenWidth=[UIScreen mainScreen].bounds.size.height;
 		screenHeight = [UIScreen mainScreen].bounds.size.width;
+		
 	}
 	else
 	{
 		NSLog(@"portrait");
+		screenWidth=[UIScreen mainScreen].bounds.size.height;
+		screenHeight = [UIScreen mainScreen].bounds.size.width;
+		
 		screenWidth = [UIScreen mainScreen].bounds.size.width;
 		screenHeight = [UIScreen mainScreen].bounds.size.height;
+		
 	}
-	
+	*/
+
+
 	float globalWidth=screenWidth;
 	
-
+	
 	
 	float moduleWidth = globalWidth/4;
 	float margin = globalWidth/16;
@@ -121,9 +141,9 @@
 	iconView1 = [[UIImageView alloc]initWithFrame:frame1];
 	
 	
-	//originY=margin;
+		//originY=margin;
 	originX+=margin+moduleWidth;
-
+	
 	
 	CGRect frame2 = CGRectMake(originX, originY, moduleWidth, moduleWidth);
 	iconView2 = [[UIImageView alloc]initWithFrame:frame2];
@@ -203,7 +223,7 @@
     [_menuTitleArray addObject: @"Map"];
     [_menuTitleArray addObject: @"SUAPS"];
     [_menuTitleArray addObject: @"Twitter"];
-
+	
     
     for (int i = 0; i < _imagesViewArray.count; i++) {
         [[_imagesViewArray objectAtIndex:i] setImage: [_imagesRefArray objectAtIndex:i]];
@@ -214,9 +234,9 @@
 			// on identifie chaque item
 		
 		cadre.tag = i;
-		//int screenHeight = [UIScreen mainScreen].bounds.size.height;
-		//int screenWidth = [UIScreen mainScreen].bounds.size.width;
-		//float moduleWidth = screenWidth/4;
+			//int screenHeight = [UIScreen mainScreen].bounds.size.height;
+			//int screenWidth = [UIScreen mainScreen].bounds.size.width;
+			//float moduleWidth = screenWidth/4;
 		
         mImv.frame = CGRectMake(10,10,moduleWidth-20,moduleWidth-20);
 		[cadre addSubview:mImv];
@@ -226,9 +246,9 @@
 		cadre.layer.borderWidth=2.0;
 		cadre.contentMode = UIViewContentModeCenter;
 		cadre.backgroundColor=nil;
-
 		
-		// gestion des clicks
+		
+			// gestion des clicks
 		[cadre setUserInteractionEnabled:YES];
         
         UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector (singleTapping:)];
@@ -252,7 +272,7 @@
     _settings = [[UIBarButtonItem alloc] initWithImage:img style: UIBarButtonItemStylePlain target:self action:@selector(goToSettings:)];
     [self.navigationItem setLeftBarButtonItem:_settings animated:NO];
     
-
+	
     _listMenu = [[UIBarButtonItem alloc] initWithImage:[self createIconForNavigationBarWithImage:@"List_icon.png"] style: UIBarButtonItemStylePlain target:self action:@selector(changeDisplayMode:)];
     [self.navigationItem setRightBarButtonItem:_listMenu animated:NO];
     
@@ -261,7 +281,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+		// Dispose of any resources that can be recreated.
 }
 
 -(void)changeDisplayMode:(id)sender{
@@ -359,7 +379,7 @@
     {
         case 0: // Page Vitrine
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView1.backgroundColor = [UIColor grayColor];
 			
             
@@ -388,7 +408,7 @@
             break;
         case 1: // Post Bac UIViewController accordion
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView2.backgroundColor = [UIColor grayColor];
 			
             PostBacViewController *viewController = [[PostBacViewController alloc] initWithNibName:@"PostBacViewController" bundle:nil];
@@ -398,7 +418,7 @@
             break;
         case 2: // Notes UIViewController accordion
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView3.backgroundColor = [UIColor grayColor];
             
             
@@ -436,8 +456,8 @@
             
             
             
-           
-                
+			
+			
             
             
             
@@ -448,7 +468,7 @@
             break;
         case 3: // EDT lib calendarView
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView4.backgroundColor = [UIColor grayColor];
 			
             
@@ -490,13 +510,13 @@
             
             
             
-
+			
 			
         }
             break;
         case 4: // Annuaire UItableView
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView5.backgroundColor = [UIColor grayColor];
             
             
@@ -543,11 +563,11 @@
             break;
         case 5: // Job Dating UIViewController accordion
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView6.backgroundColor = [UIColor grayColor];
 			
             /*JobDatingViewController *viewController = [[JobDatingViewController alloc] initWithNibName:@"JobDatingViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];*/
+			 [self.navigationController pushViewController:viewController animated:YES];*/
             UIAlertView *alert = [[UIAlertView alloc]
                                   initWithTitle:@"Désolé..."
                                   message:@"Ce module est indisponible pour le moment. Son contenu est actuellement en construction."
@@ -560,7 +580,7 @@
             break;
         case 6: // Map UiVIewController
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView7.backgroundColor = [UIColor grayColor];
             
             
@@ -589,7 +609,7 @@
             break;
         case 7: // SUAPS UIViewController accordion
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView8.backgroundColor = [UIColor grayColor];
 			
             SUAPSViewController *viewController = [[SUAPSViewController alloc] initWithNibName:@"SUAPSViewController" bundle:nil];
@@ -599,7 +619,7 @@
             break;
         case 8: // Twitter webview
         {
-            // Set vertical effect
+				// Set vertical effect
 			iconView9.backgroundColor = [UIColor grayColor];
             
             if(status == NotReachable)
@@ -624,16 +644,16 @@
         }
             break;
         default:
-            // lancer une exception ? ..
+				// lancer une exception ? ..
             break;
             
     }
-
+	
 }
 
 -(void)singleTapping:(id)sender
 {
-
+	
     UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
     NSLog(@"image click N°:%ld",(long)gesture.view.tag);
     [self choixMenu:(long)gesture.view.tag];
@@ -642,7 +662,7 @@
 
 
 
-// module de connexion
+	// module de connexion
 
 -(void)connexionLogin
 {
@@ -684,14 +704,14 @@
                 UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"UEListViewController" bundle:nil];
                 [self.navigationController pushViewController:viewController animated:YES];
             }else
-            if (tagInfo == 3) {
-                EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
-                [self.navigationController pushViewController:viewController animated:YES];
-            }else
-            if (tagInfo == 4) {
-                AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
-                [self.navigationController pushViewController:viewController animated:YES];
-            }
+				if (tagInfo == 3) {
+					EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+					[self.navigationController pushViewController:viewController animated:YES];
+				}else
+					if (tagInfo == 4) {
+						AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
+						[self.navigationController pushViewController:viewController animated:YES];
+					}
             
             
             

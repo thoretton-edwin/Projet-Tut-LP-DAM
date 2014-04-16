@@ -12,7 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    RootNavigationController *navigationController = [[RootNavigationController alloc] initWithRootViewController:[[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil]];
+	_mainMenu = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
+	
+	_menu = [[MenuViewController alloc]initWithNibName:nil bundle:nil];
+	
+    RootNavigationController *navigationController = [[RootNavigationController alloc] initWithRootViewController:_menu];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setRootViewController:navigationController];

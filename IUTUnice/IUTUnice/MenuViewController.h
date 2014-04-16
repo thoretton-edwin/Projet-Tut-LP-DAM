@@ -1,10 +1,10 @@
-//
-//  MainMenuViewController.h
-//  IUTUnice
-//
-//  Created by macos on 31/01/2014.
-//  Copyright (c) 2014 UNS. All rights reserved.
-//
+	//
+	//  MainMenuViewController.h
+	//  IUTUnice
+	//
+	//  Created by macos on 31/01/2014.
+	//  Copyright (c) 2014 UNS. All rights reserved.
+	//
 
 #import <UIKit/UIKit.h>
 #import "VitrinePageViewController.h"
@@ -19,7 +19,7 @@
 #import "SettingsViewController.h"
 #import "Reachability.h"
 
-@interface MainMenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
+@interface MenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
 {
     UITableView* menuTableView;
 }
