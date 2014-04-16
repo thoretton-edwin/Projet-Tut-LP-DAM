@@ -31,6 +31,7 @@
 {
     [super viewDidLoad];
     
+	self.tableView.bounces =NO;
     self.lieux = [[NSMutableArray alloc]init];
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];

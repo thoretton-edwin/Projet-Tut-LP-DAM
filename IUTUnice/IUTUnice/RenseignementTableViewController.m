@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.tableView.bounces =NO;
 	mailView = [[MFMailComposeViewController alloc]init];
 	mailView.mailComposeDelegate = self;
 	
