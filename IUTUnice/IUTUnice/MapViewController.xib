@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController">
@@ -18,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6P-dq-dqs">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6P-dq-dqs">
                     <rect key="frame" x="20" y="85" width="280" height="184"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </mapView>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p19-OJ-zyw">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p19-OJ-zyw">
                     <rect key="frame" x="20" y="284" width="280" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
@@ -33,16 +33,19 @@
                         <action selector="mapChoice:" destination="-1" eventType="valueChanged" id="xKN-3E-Ube"/>
                     </connections>
                 </segmentedControl>
-                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" alpha="0.64999999999999969" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tBY-xl-qww">
+                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" alpha="0.64999999999999969" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBY-xl-qww">
                     <rect key="frame" x="20" y="328" width="280" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.86472437137330749" green="0.86472437137330749" blue="0.86472437137330749" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="mhS-Ki-5Ni"/>
+                    </constraints>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna </string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
                 </textView>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cY5-V9-CC8">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cY5-V9-CC8">
                     <rect key="frame" x="20" y="442" width="280" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
@@ -58,8 +61,24 @@
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Y6P-dq-dqs" firstAttribute="top" secondItem="1" secondAttribute="top" constant="85" id="3dA-Nu-nb8"/>
+                <constraint firstItem="cY5-V9-CC8" firstAttribute="top" secondItem="tBY-xl-qww" secondAttribute="bottom" constant="14" id="7eV-jj-g6H"/>
+                <constraint firstItem="p19-OJ-zyw" firstAttribute="top" secondItem="Y6P-dq-dqs" secondAttribute="bottom" constant="15" id="8Tu-8P-m3b"/>
+                <constraint firstAttribute="trailing" secondItem="Y6P-dq-dqs" secondAttribute="trailing" constant="20" symbolic="YES" id="8c9-u2-Inm"/>
+                <constraint firstItem="Y6P-dq-dqs" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="9ju-vs-yr3"/>
+                <constraint firstItem="tBY-xl-qww" firstAttribute="leading" secondItem="cY5-V9-CC8" secondAttribute="leading" id="A7r-s5-LlS"/>
+                <constraint firstItem="tBY-xl-qww" firstAttribute="leading" secondItem="p19-OJ-zyw" secondAttribute="leading" id="HMi-tZ-M8w"/>
+                <constraint firstItem="Y6P-dq-dqs" firstAttribute="leading" secondItem="p19-OJ-zyw" secondAttribute="leading" id="LJ9-2Y-n0N"/>
+                <constraint firstAttribute="bottom" secondItem="cY5-V9-CC8" secondAttribute="bottom" constant="10" id="Url-W1-4qN"/>
+                <constraint firstItem="tBY-xl-qww" firstAttribute="trailing" secondItem="cY5-V9-CC8" secondAttribute="trailing" id="aMg-2I-Jf6"/>
+                <constraint firstItem="Y6P-dq-dqs" firstAttribute="trailing" secondItem="p19-OJ-zyw" secondAttribute="trailing" id="nGi-Fc-Vgu"/>
+                <constraint firstItem="tBY-xl-qww" firstAttribute="top" secondItem="p19-OJ-zyw" secondAttribute="bottom" constant="16" id="pap-0x-Dca"/>
+                <constraint firstItem="p19-OJ-zyw" firstAttribute="trailing" secondItem="tBY-xl-qww" secondAttribute="trailing" id="rB7-LR-2sS"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>

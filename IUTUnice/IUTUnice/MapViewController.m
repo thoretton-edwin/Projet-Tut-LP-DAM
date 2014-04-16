@@ -172,8 +172,12 @@
 	
 	//Background design
 	UIGraphicsBeginImageContext(self.view.frame.size);
+	CGSize newSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+	UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+   // [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+
     UIGraphicsEndImageContext();
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
