@@ -379,7 +379,7 @@
                 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
                 NSString *idUser = [prefs stringForKey:@"idUser"];
                 
-                
+                tagInfo = tag;
                 
                 NSLog(@"connexion sux : %@", idUser);
                 
@@ -423,9 +423,8 @@
             }
             else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
             {
-                AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
-                [self.navigationController pushViewController:viewController animated:YES];
                 
+                tagInfo = tag;
                 
                 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
                 NSString *idUser = [prefs stringForKey:@"idUser"];
@@ -435,7 +434,7 @@
                 if(![idUser isEqualToString:@"noUser"])
                 {
                     
-                    EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                    AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
                     [self.navigationController pushViewController:viewController animated:YES];
                     
                 }else
@@ -588,13 +587,20 @@
             [prefs setValue:userId  forKey:@"idUser"];
             [prefs synchronize];
             
-            
+            NSLog(@"tag info : %d", tagInfo);
             
             if (tagInfo == 2) {
                 UEListViewController *viewController = [[UEListViewController alloc] initWithNibName:@"UEListViewController" bundle:nil];
                 [self.navigationController pushViewController:viewController animated:YES];
+            }else
+            if (tagInfo == 3) {
+                EDTViewController *viewController = [[EDTViewController alloc] initWithNibName:@"EDTViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+            }else
+            if (tagInfo == 4) {
+                AnnuaireViewController *viewController = [[AnnuaireViewController alloc] initWithNibName:@"AnnuaireViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
             }
-            
             
             
             
