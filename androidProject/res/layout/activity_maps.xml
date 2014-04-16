@@ -26,35 +26,35 @@
         android:layout_weight="0.67" >
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnMapsNice"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nice" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnMapsMenton"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Menton" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMapsCannesLB"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="76dp"
             android:layout_height="wrap_content"
             android:text="Cannes la Bocca" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnMapsCannes"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cannes" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btnMapsSophia"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
