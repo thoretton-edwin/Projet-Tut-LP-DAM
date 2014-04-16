@@ -157,6 +157,14 @@
 	
 }
 
+- (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size {
+    UIGraphicsBeginImageContext(size);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *destImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return destImage;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -171,16 +179,14 @@
 
 	
 	//Background design
-	UIGraphicsBeginImageContext(self.view.frame.size);
-	CGSize newSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
-    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
-	UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
-   // [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+	
+	UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
+	[[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-
     UIGraphicsEndImageContext();
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+	self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+	
+
 	
 	mapView.clipsToBounds=YES;
 	mapView.layer.cornerRadius=6.0;

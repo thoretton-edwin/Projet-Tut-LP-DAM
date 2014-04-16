@@ -64,8 +64,8 @@
     
     
 	//background
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
+	[[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];

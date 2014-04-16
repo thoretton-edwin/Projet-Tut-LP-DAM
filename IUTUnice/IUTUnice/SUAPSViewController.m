@@ -42,6 +42,7 @@
     [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+	 self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 	
 	tableView.delegate=self;
 	tableView.dataSource=self;
@@ -51,7 +52,7 @@
 	
 	
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+   
 	self.title = @"SUAPS";
 	
 	
