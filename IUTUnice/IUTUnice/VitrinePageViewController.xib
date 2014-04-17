@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -22,7 +22,7 @@
                     <rect key="frame" x="20" y="78" width="280" height="141"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="141" id="EaP-YY-YBz"/>
+                        <constraint firstAttribute="height" constant="141" id="jAU-WL-N2t"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-Mw-TDN">
@@ -43,8 +43,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-XH-h6u">
-                    <rect key="frame" x="57" y="439" width="62" height="30"/>
+                    <rect key="frame" x="0.0" y="439" width="152" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="qRs-db-lLa"/>
+                    </constraints>
                     <state key="normal" title="Sondage">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -53,7 +56,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYn-XT-X6L">
-                    <rect key="frame" x="197" y="439" width="78" height="30"/>
+                    <rect key="frame" x="153" y="439" width="167" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Formations">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,21 +75,22 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="7db-v9-GtB"/>
-                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="Hov-oF-BP3" secondAttribute="leading" id="8ZM-tA-hMI"/>
-                <constraint firstItem="MYn-XT-X6L" firstAttribute="leading" secondItem="1eh-XH-h6u" secondAttribute="trailing" constant="78" id="BB9-6k-8kM"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="baseline" secondItem="MYn-XT-X6L" secondAttribute="baseline" id="FT2-Nk-qfn"/>
-                <constraint firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" constant="20" symbolic="YES" id="Ks0-Es-PbS"/>
-                <constraint firstItem="Hov-oF-BP3" firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" id="NBL-MM-1fr"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="leading" secondItem="rmw-Mw-TDN" secondAttribute="leading" id="TDa-cv-436"/>
-                <constraint firstItem="MYn-XT-X6L" firstAttribute="leading" secondItem="fLf-Tf-bS3" secondAttribute="leading" id="TOl-gI-n2u"/>
-                <constraint firstAttribute="bottom" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="11" id="V4g-6d-xAi"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="57" id="XTw-0d-abW"/>
-                <constraint firstItem="52l-rG-sai" firstAttribute="top" secondItem="1" secondAttribute="top" constant="78" id="YvH-Te-L5T"/>
-                <constraint firstItem="rmw-Mw-TDN" firstAttribute="top" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="58" id="cAc-JO-2Pb"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="top" secondItem="Hov-oF-BP3" secondAttribute="bottom" constant="8" symbolic="YES" id="rd2-Ev-kqc"/>
-                <constraint firstItem="Hov-oF-BP3" firstAttribute="top" secondItem="52l-rG-sai" secondAttribute="bottom" constant="23" id="wKe-Mc-RoW"/>
-                <constraint firstItem="rmw-Mw-TDN" firstAttribute="baseline" secondItem="fLf-Tf-bS3" secondAttribute="baseline" id="wfy-iN-BgB"/>
+                <constraint firstItem="fLf-Tf-bS3" firstAttribute="baseline" secondItem="rmw-Mw-TDN" secondAttribute="baseline" id="2AS-x7-ZPL"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="trailing" secondItem="Hov-oF-BP3" secondAttribute="trailing" id="30D-Zr-BnV"/>
+                <constraint firstItem="rmw-Mw-TDN" firstAttribute="top" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="58" id="7WN-HS-4vV"/>
+                <constraint firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" constant="20" symbolic="YES" id="F7K-C6-rNy"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="FLh-aE-RzA"/>
+                <constraint firstItem="1eh-XH-h6u" firstAttribute="baseline" secondItem="MYn-XT-X6L" secondAttribute="baseline" id="Hfs-IF-rCg"/>
+                <constraint firstItem="1eh-XH-h6u" firstAttribute="top" secondItem="Hov-oF-BP3" secondAttribute="bottom" constant="8" symbolic="YES" id="T2L-Xy-dQO"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="top" secondItem="1" secondAttribute="top" constant="78" id="WhR-Ws-Lae"/>
+                <constraint firstItem="rmw-Mw-TDN" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="57" id="XYk-Zr-WEh"/>
+                <constraint firstAttribute="bottom" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="11" id="Xka-vU-2a6"/>
+                <constraint firstItem="fLf-Tf-bS3" firstAttribute="leading" secondItem="rmw-Mw-TDN" secondAttribute="trailing" constant="78" id="dX3-Zn-2Gf"/>
+                <constraint firstItem="1eh-XH-h6u" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="ecg-4D-lXO"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="Hov-oF-BP3" secondAttribute="leading" id="kkC-sT-jDz"/>
+                <constraint firstAttribute="trailing" secondItem="MYn-XT-X6L" secondAttribute="trailing" id="p8g-1h-ve6"/>
+                <constraint firstItem="MYn-XT-X6L" firstAttribute="leading" secondItem="1eh-XH-h6u" secondAttribute="trailing" constant="1" id="r80-i5-450"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="top" secondItem="52l-rG-sai" secondAttribute="bottom" constant="23" id="ryM-0d-cKd"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
