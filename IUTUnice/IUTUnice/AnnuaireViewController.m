@@ -10,7 +10,7 @@
 
 @interface AnnuaireViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *searchLabelField;
+
 @property NSURL *url;
 @property (weak, nonatomic) IBOutlet UITextView *textField;
 @property NSMutableString *email;

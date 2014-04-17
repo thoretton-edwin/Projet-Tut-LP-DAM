@@ -11,4 +11,6 @@
 
 @interface AnnuaireViewController : UIViewController <UITextFieldDelegate, MFMailComposeViewControllerDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField *searchLabelField;
+
 @end

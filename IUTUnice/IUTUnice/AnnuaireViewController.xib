@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnnuaireViewController">
             <connections>
-                <outlet property="searchLabelField" destination="DcZ-Sh-3fp" id="4Cw-Bx-dyU"/>
+                <outlet property="searchLabelField" destination="2sP-Cy-IVI" id="PlZ-OD-zQF"/>
                 <outlet property="textField" destination="FWM-Pc-N9S" id="iIj-dS-fyJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,15 +17,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez votre recherche :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNY-hZ-GQs">
-                    <rect key="frame" x="20" y="79" width="182" height="21"/>
+                    <rect key="frame" x="20" y="79" width="280" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-nT-Tvh">
-                    <rect key="frame" x="20" y="152" width="280" height="30"/>
+                    <rect key="frame" x="-120" y="152" width="560" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="560" id="Xkm-Vb-kjF"/>
+                    </constraints>
                     <state key="normal" title="GO">
                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,20 +37,17 @@
                         <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="rAJ-D6-L3F"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Nom et prénom" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-Sh-3fp">
-                    <rect key="frame" x="20" y="114" width="280" height="30"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" text="informations..." translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Pc-N9S">
+                    <rect key="frame" x="20" y="178" width="560" height="258"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="informations..." translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Pc-N9S">
-                    <rect key="frame" x="20" y="178" width="280" height="258"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="560" id="kUc-Fi-4uY"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i33-BM-CeT">
-                    <rect key="frame" x="106" y="444" width="109" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i33-BM-CeT">
+                    <rect key="frame" x="0.0" y="444" width="320" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Envoyer un mail">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,23 +56,29 @@
                         <action selector="sendEmail:" destination="-1" eventType="touchUpInside" id="sVq-gZ-xp7"/>
                     </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom et prénom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sP-Cy-IVI">
+                    <rect key="frame" x="20" y="108" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Mit-nT-Tvh" firstAttribute="leading" secondItem="FWM-Pc-N9S" secondAttribute="leading" id="0rd-GZ-Xoa"/>
-                <constraint firstItem="DcZ-Sh-3fp" firstAttribute="leading" secondItem="iNY-hZ-GQs" secondAttribute="leading" id="3F9-4g-25n"/>
-                <constraint firstItem="iNY-hZ-GQs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="4DF-41-YId"/>
-                <constraint firstItem="FWM-Pc-N9S" firstAttribute="trailing" secondItem="Mit-nT-Tvh" secondAttribute="trailing" id="4jv-NQ-yfr"/>
-                <constraint firstItem="i33-BM-CeT" firstAttribute="top" secondItem="FWM-Pc-N9S" secondAttribute="bottom" constant="8" symbolic="YES" id="8In-wM-d8q"/>
-                <constraint firstItem="FWM-Pc-N9S" firstAttribute="top" secondItem="DcZ-Sh-3fp" secondAttribute="bottom" constant="34" id="DYF-7r-qcW"/>
-                <constraint firstAttribute="bottom" secondItem="i33-BM-CeT" secondAttribute="bottom" constant="6" id="OWq-Bm-iJQ"/>
-                <constraint firstItem="Mit-nT-Tvh" firstAttribute="top" secondItem="DcZ-Sh-3fp" secondAttribute="bottom" constant="8" symbolic="YES" id="ULJ-4S-7bg"/>
-                <constraint firstItem="DcZ-Sh-3fp" firstAttribute="top" secondItem="iNY-hZ-GQs" secondAttribute="bottom" constant="14" id="Uve-jS-ClN"/>
-                <constraint firstItem="Mit-nT-Tvh" firstAttribute="leading" secondItem="DcZ-Sh-3fp" secondAttribute="leading" id="dc7-mf-YT3"/>
-                <constraint firstItem="Mit-nT-Tvh" firstAttribute="trailing" secondItem="DcZ-Sh-3fp" secondAttribute="trailing" id="fB3-EW-lOW"/>
-                <constraint firstItem="i33-BM-CeT" firstAttribute="centerX" secondItem="FWM-Pc-N9S" secondAttribute="centerX" id="hnA-o2-Gex"/>
-                <constraint firstItem="iNY-hZ-GQs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="oWo-aB-YYh"/>
-                <constraint firstAttribute="trailing" secondItem="DcZ-Sh-3fp" secondAttribute="trailing" constant="20" symbolic="YES" id="pNy-3t-rRA"/>
+                <constraint firstItem="i33-BM-CeT" firstAttribute="top" secondItem="FWM-Pc-N9S" secondAttribute="bottom" constant="8" symbolic="YES" id="0wC-wR-8va"/>
+                <constraint firstItem="iNY-hZ-GQs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="138-Yq-YF4"/>
+                <constraint firstItem="i33-BM-CeT" firstAttribute="centerX" secondItem="Mit-nT-Tvh" secondAttribute="centerX" id="46N-TP-JkB"/>
+                <constraint firstItem="2sP-Cy-IVI" firstAttribute="trailing" secondItem="iNY-hZ-GQs" secondAttribute="trailing" id="E88-w7-pRZ"/>
+                <constraint firstItem="FWM-Pc-N9S" firstAttribute="leading" secondItem="2sP-Cy-IVI" secondAttribute="leading" id="Ehy-Pb-Myk"/>
+                <constraint firstItem="i33-BM-CeT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ffy-OC-SKB"/>
+                <constraint firstItem="FWM-Pc-N9S" firstAttribute="top" secondItem="2sP-Cy-IVI" secondAttribute="bottom" constant="40" id="Hcl-L8-DkD"/>
+                <constraint firstAttribute="bottom" secondItem="i33-BM-CeT" secondAttribute="bottom" constant="6" id="NeF-jE-Wih"/>
+                <constraint firstItem="Mit-nT-Tvh" firstAttribute="top" secondItem="2sP-Cy-IVI" secondAttribute="bottom" constant="14" id="P37-Gs-ggf"/>
+                <constraint firstItem="iNY-hZ-GQs" firstAttribute="leading" secondItem="2sP-Cy-IVI" secondAttribute="leading" id="V6w-yx-EMi"/>
+                <constraint firstItem="2sP-Cy-IVI" firstAttribute="top" secondItem="iNY-hZ-GQs" secondAttribute="bottom" constant="8" symbolic="YES" id="Yzo-iy-y5w"/>
+                <constraint firstAttribute="trailing" secondItem="iNY-hZ-GQs" secondAttribute="trailing" constant="20" symbolic="YES" id="ZWR-c1-KJM"/>
+                <constraint firstItem="iNY-hZ-GQs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="m2L-i4-hIz"/>
+                <constraint firstItem="2sP-Cy-IVI" firstAttribute="centerX" secondItem="Mit-nT-Tvh" secondAttribute="centerX" id="ru5-GP-UgM"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
