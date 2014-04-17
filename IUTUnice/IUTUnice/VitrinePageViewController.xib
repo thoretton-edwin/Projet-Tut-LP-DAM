@@ -6,89 +6,67 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VitrinePageViewController">
             <connections>
-                <outlet property="formationButton" destination="fLf-Tf-bS3" id="ZcU-EX-Opd"/>
                 <outlet property="myUiscrollView" destination="Hov-oF-BP3" id="7Fh-qs-qqI"/>
                 <outlet property="presentationImage" destination="52l-rG-sai" id="GCH-iG-dAa"/>
-                <outlet property="sondageButton" destination="rmw-Mw-TDN" id="dqV-fA-67C"/>
+                <outlet property="toolBarVitrine" destination="s8t-vW-bZQ" id="Tu6-Rm-P3O"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="326" height="547"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52l-rG-sai">
-                    <rect key="frame" x="20" y="78" width="280" height="141"/>
+                    <rect key="frame" x="20" y="54" width="286" height="206"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="141" id="Wz1-GA-mpI"/>
+                        <constraint firstAttribute="height" constant="206" id="imW-av-aVs"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-Mw-TDN">
-                    <rect key="frame" x="57" y="527" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sondage">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-Tf-bS3">
-                    <rect key="frame" x="197" y="527" width="78" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Formations">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="goToFormationListPage:" destination="-1" eventType="touchDown" id="Fc3-f9-1bi"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="left" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-XH-h6u">
-                    <rect key="frame" x="0.0" y="444" width="119" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sondage">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="goToSondageIUTPage:" destination="-1" eventType="touchDown" id="qIV-nf-nag"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="bottomLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYn-XT-X6L">
-                    <rect key="frame" x="197" y="444" width="123" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Formations">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="goToFormationListPage:" destination="-1" eventType="touchDown" id="gtw-uC-xpA"/>
-                    </connections>
-                </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hov-oF-BP3">
-                    <rect key="frame" x="20" y="242" width="280" height="189"/>
+                    <rect key="frame" x="20" y="268" width="286" height="228"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-vW-bZQ">
+                    <rect key="frame" x="0.0" y="506" width="326" height="41"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="y2n-gs-qDX"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Gbf-fv-wny"/>
+                        <barButtonItem title="Sondage" id="Yo6-dn-gP5">
+                            <connections>
+                                <action selector="goToSondageIUTPage:" destination="-1" id="fdd-fL-OTI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="oNZ-uc-9h1"/>
+                        <barButtonItem title="Formation" id="t8d-Qy-Biv">
+                            <connections>
+                                <action selector="goToFormationListPage:" destination="-1" id="mG7-Hq-y3r"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TsX-5W-CSa"/>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="rmw-Mw-TDN" firstAttribute="top" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="53" id="00u-P9-WZX"/>
-                <constraint firstItem="MYn-XT-X6L" firstAttribute="baseline" secondItem="1eh-XH-h6u" secondAttribute="baseline" id="59z-Tz-Q6q"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="5zo-dH-DDb"/>
-                <constraint firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" constant="20" symbolic="YES" id="AsR-N8-Vrh"/>
-                <constraint firstItem="rmw-Mw-TDN" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="57" id="EqL-Gp-ekP"/>
-                <constraint firstItem="MYn-XT-X6L" firstAttribute="leading" secondItem="fLf-Tf-bS3" secondAttribute="leading" id="JfG-1U-MR9"/>
-                <constraint firstAttribute="bottom" secondItem="1eh-XH-h6u" secondAttribute="bottom" constant="6" id="KgA-I1-NVK"/>
-                <constraint firstAttribute="trailing" secondItem="MYn-XT-X6L" secondAttribute="trailing" id="RXd-FI-U0h"/>
-                <constraint firstItem="MYn-XT-X6L" firstAttribute="leading" secondItem="1eh-XH-h6u" secondAttribute="trailing" constant="78" id="TWp-nf-ti1"/>
-                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="U7T-AZ-eF0"/>
-                <constraint firstItem="rmw-Mw-TDN" firstAttribute="baseline" secondItem="fLf-Tf-bS3" secondAttribute="baseline" id="XOM-fi-gAh"/>
-                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="Hov-oF-BP3" secondAttribute="leading" id="XOW-aV-gNV"/>
-                <constraint firstItem="Hov-oF-BP3" firstAttribute="top" secondItem="52l-rG-sai" secondAttribute="bottom" constant="23" id="bRN-DX-hvq"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="trailing" secondItem="rmw-Mw-TDN" secondAttribute="trailing" id="g0C-gm-tjJ"/>
-                <constraint firstItem="52l-rG-sai" firstAttribute="top" secondItem="1" secondAttribute="top" constant="78" id="koD-Wh-get"/>
-                <constraint firstItem="1eh-XH-h6u" firstAttribute="top" secondItem="Hov-oF-BP3" secondAttribute="bottom" constant="13" id="qX2-7D-dOm"/>
-                <constraint firstItem="Hov-oF-BP3" firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" id="z8H-Yb-8JI"/>
+                <constraint firstAttribute="bottom" secondItem="s8t-vW-bZQ" secondAttribute="bottom" id="06p-ol-Nx9"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="top" secondItem="1" secondAttribute="top" constant="54" id="2dp-VH-wZI"/>
+                <constraint firstItem="s8t-vW-bZQ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="72o-bK-2xQ"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="Mid-5S-EXu"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="top" secondItem="52l-rG-sai" secondAttribute="bottom" constant="8" symbolic="YES" id="RN6-Vz-Ls7"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="centerX" secondItem="s8t-vW-bZQ" secondAttribute="centerX" id="piL-NE-0as"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="trailing" secondItem="Hov-oF-BP3" secondAttribute="trailing" id="saA-e5-tmv"/>
+                <constraint firstItem="s8t-vW-bZQ" firstAttribute="top" secondItem="Hov-oF-BP3" secondAttribute="bottom" constant="10" id="tIs-QO-1cm"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="leading" secondItem="52l-rG-sai" secondAttribute="leading" id="tcS-L6-rr8"/>
+                <constraint firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" constant="20" symbolic="YES" id="yqE-TG-grb"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -17,8 +17,8 @@
 @interface VitrinePageViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *presentationImage;
-@property (weak, nonatomic) IBOutlet UIButton *sondageButton;
-@property (weak, nonatomic) IBOutlet UIButton *formationButton;
+
+@property (strong, nonatomic) IBOutlet UIToolbar *toolBarVitrine;
 
 @property (strong, nonatomic) IBOutlet UITextView *myUiscrollView;
 @property (nonatomic) int imageCount;

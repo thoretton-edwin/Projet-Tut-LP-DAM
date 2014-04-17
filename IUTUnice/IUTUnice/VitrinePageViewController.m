@@ -32,6 +32,14 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    
+    _toolBarVitrine = [[UIToolbar alloc] init];
+    //_toolBarVitrine.backgroundColor = [UIColor redColor];
+
+    //self.toolBarVitrine.translucent=YES;
+    //self.toolBarVitrine.alpha=0;
+    
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
     _sondageArray = [[NSMutableArray alloc] init];
@@ -97,11 +105,13 @@
 
 }
 
+
 - (IBAction)goToSondageIUTPage:(id)sender {
     SondageViewController *viewController = [[SondageViewController alloc] initWithNibName:@"SondageViewController" bundle:nil];
     viewController.typeSondage = @"IUT";
     [_slideshowTimer invalidate];
     [self.navigationController performSelectorOnMainThread:@selector(pushViewController:animated:) withObject:viewController waitUntilDone:NO];
 }
+
 
 @end
