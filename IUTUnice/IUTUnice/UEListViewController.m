@@ -131,7 +131,7 @@
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		}
 	}
-	
+	tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 	
     return cell;
 }
