@@ -29,8 +29,8 @@
     // Do any additional setup after loading the view from its nib.
     
     //background
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
@@ -62,7 +62,7 @@
 
 -(void) createAndFillAccordion:(NSString*)title AndSection:(NSString*)section{
     UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    UITextView* descr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, containerView.frame.size.width,350)];
+    UITextView* descr = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width ,350)];
     
     NSString *path = [[NSBundle mainBundle]pathForResource:section ofType:@"txt"];
     NSString *text = [[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
