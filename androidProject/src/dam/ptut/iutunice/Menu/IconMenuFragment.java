@@ -4,14 +4,17 @@ import java.util.List;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 
@@ -27,6 +30,11 @@ public class IconMenuFragment extends Fragment implements OnItemClickListener {
 		
 		final List<IconMenuListItem> iconItemList = app.iconItemList;
 		GridView gvMenu = (GridView) content.findViewById(R.id.gridview);
+		
+		//récupère la taille du layout de l'activité
+		FrameLayout flContent = (FrameLayout) getActivity().findViewById(R.id.flContent);
+		final int height = flContent.getHeight();
+		
 		gvMenu.setAdapter(new BaseAdapter() {
 			
 			@Override
@@ -34,8 +42,11 @@ public class IconMenuFragment extends Fragment implements OnItemClickListener {
 				// TODO Auto-generated method stub
 								
 				ImageView imageView = (ImageView) inflater.inflate(R.layout.item_grid_menu, parent, false);
+			
 		        IconMenuListItem iconMenuListItem = getItem(position);
 		        imageView.setImageResource(iconMenuListItem.img);
+		        //rend visible sur tout les appareils (sans scroll)
+		        imageView.getLayoutParams().height = height/5;
 		        return imageView;
 			}
 			
