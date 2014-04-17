@@ -16,14 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entrez votre recherche :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNY-hZ-GQs">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez votre recherche :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNY-hZ-GQs">
                     <rect key="frame" x="20" y="79" width="182" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-nT-Tvh">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-nT-Tvh">
                     <rect key="frame" x="20" y="152" width="280" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="GO">
@@ -34,20 +34,19 @@
                         <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="rAJ-D6-L3F"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-Sh-3fp">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom et prénom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-Sh-3fp">
                     <rect key="frame" x="20" y="114" width="280" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="informations..." translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Pc-N9S">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="informations..." translatesAutoresizingMaskIntoConstraints="NO" id="FWM-Pc-N9S">
                     <rect key="frame" x="20" y="178" width="280" height="258"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i33-BM-CeT">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i33-BM-CeT">
                     <rect key="frame" x="106" y="444" width="109" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Envoyer un mail">
@@ -59,8 +58,24 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mit-nT-Tvh" firstAttribute="leading" secondItem="FWM-Pc-N9S" secondAttribute="leading" id="0rd-GZ-Xoa"/>
+                <constraint firstItem="DcZ-Sh-3fp" firstAttribute="leading" secondItem="iNY-hZ-GQs" secondAttribute="leading" id="3F9-4g-25n"/>
+                <constraint firstItem="iNY-hZ-GQs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="4DF-41-YId"/>
+                <constraint firstItem="FWM-Pc-N9S" firstAttribute="trailing" secondItem="Mit-nT-Tvh" secondAttribute="trailing" id="4jv-NQ-yfr"/>
+                <constraint firstItem="i33-BM-CeT" firstAttribute="top" secondItem="FWM-Pc-N9S" secondAttribute="bottom" constant="8" symbolic="YES" id="8In-wM-d8q"/>
+                <constraint firstItem="FWM-Pc-N9S" firstAttribute="top" secondItem="DcZ-Sh-3fp" secondAttribute="bottom" constant="34" id="DYF-7r-qcW"/>
+                <constraint firstAttribute="bottom" secondItem="i33-BM-CeT" secondAttribute="bottom" constant="6" id="OWq-Bm-iJQ"/>
+                <constraint firstItem="Mit-nT-Tvh" firstAttribute="top" secondItem="DcZ-Sh-3fp" secondAttribute="bottom" constant="8" symbolic="YES" id="ULJ-4S-7bg"/>
+                <constraint firstItem="DcZ-Sh-3fp" firstAttribute="top" secondItem="iNY-hZ-GQs" secondAttribute="bottom" constant="14" id="Uve-jS-ClN"/>
+                <constraint firstItem="Mit-nT-Tvh" firstAttribute="leading" secondItem="DcZ-Sh-3fp" secondAttribute="leading" id="dc7-mf-YT3"/>
+                <constraint firstItem="Mit-nT-Tvh" firstAttribute="trailing" secondItem="DcZ-Sh-3fp" secondAttribute="trailing" id="fB3-EW-lOW"/>
+                <constraint firstItem="i33-BM-CeT" firstAttribute="centerX" secondItem="FWM-Pc-N9S" secondAttribute="centerX" id="hnA-o2-Gex"/>
+                <constraint firstItem="iNY-hZ-GQs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="oWo-aB-YYh"/>
+                <constraint firstAttribute="trailing" secondItem="DcZ-Sh-3fp" secondAttribute="trailing" constant="20" symbolic="YES" id="pNy-3t-rRA"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>

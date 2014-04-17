@@ -45,7 +45,7 @@
 
 	[mailView setSubject:@"Demande de contact"];
 	[mailView setTitle:@"[Contact]"];
-	self.title = @"Annuaire";
+	
 	[mailView setToRecipients:[[NSArray alloc]initWithObjects:self.email, nil ]];
 	
 	[self presentViewController:mailView animated:YES completion:nil];
@@ -63,8 +63,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    
+    self.title = @"Annuaire";
+	UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

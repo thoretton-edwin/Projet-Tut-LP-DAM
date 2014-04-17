@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDataXMLNode.h"
 #import "Question.h"
 #import "Reponse.h"
 
@@ -15,6 +16,7 @@
 @property NSString* typeSondage;
 @property NSMutableArray *sondage;
 @property int globalIndex;
+@property NSMutableArray *answerArray;
 
 @property (weak, nonatomic) IBOutlet UILabel *questionNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionIntituleLabel;

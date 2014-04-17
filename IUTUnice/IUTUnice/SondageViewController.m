@@ -33,6 +33,7 @@
     TBXMLElement *questionnaire = [TBXML childElementNamed:@"questionnaire" parentElement:root];
     
     _sondage = [[NSMutableArray alloc] init];
+    _answerArray = [[NSMutableArray alloc] init];
     
     [self traverseElement: questionnaire];
     
@@ -206,6 +207,7 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     cell.textLabel.text =[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] intitule];
+    cell.textLabel.numberOfLines = 0;
     cell.backgroundColor = [UIColor clearColor];
     
     return cell;
@@ -215,10 +217,92 @@
     
     NSLog(@"ANSWER: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] intitule]);
     NSLog(@"ID: %@",[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] identifiant]);
+    
+    Reponse *newAnswer = [[Reponse alloc] initWithId:[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] identifiant] andIntitule:[[[[_sondage objectAtIndex: _globalIndex] reponseArray] objectAtIndex:indexPath.row] intitule]];
+    
+    [_answerArray addObject: newAnswer];
+    
+    
+    //load next question
     if(_globalIndex+1 < [_sondage count]){
         _globalIndex ++;
         [self displayQuestionAtIndex:_globalIndex];
         [_answerTableView reloadData];
+    }
+    //end of survey
+    else if(_globalIndex+1 == [_sondage count]){
+        [self saveParty:_answerArray];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fin du sondage"
+                                                        message:@"Merci de votre participation."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    // the user clicked OK
+    if (buttonIndex == 0) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+- (void)saveParty:(NSMutableArray*)answer {
+    
+    int i =0;
+    
+    GDataXMLElement *sondageElement = [GDataXMLNode elementWithName:@"sondage"];
+    GDataXMLNode* attLang = [GDataXMLNode attributeWithName:@"xml:lang" stringValue:@"fr"];
+    [sondageElement addAttribute: attLang] ;
+    
+        GDataXMLElement *questionnaireElement = [GDataXMLNode elementWithName:@"questionnaire"];
+        GDataXMLNode* attType = [GDataXMLNode attributeWithName:@"type" stringValue:_typeSondage];
+        [questionnaireElement addAttribute: attType] ;
+    
+    for(Question *qt in _sondage) {
+        
+        //<question>...
+        GDataXMLElement * questionElement = [GDataXMLNode elementWithName:@"question"];
+            //<id>Qx</id>
+            GDataXMLElement * idQuestionElement = [GDataXMLNode elementWithName:@"id" stringValue:[qt identifiant]];
+            //<reponse>...
+            GDataXMLElement * reponseElement = [GDataXMLNode elementWithName:@"reponse"];
+                //<id>Rx</id>
+                GDataXMLElement * idReponseElement = [GDataXMLNode elementWithName:@"id" stringValue:[[answer objectAtIndex:i]identifiant]];
+        i++;
+        
+        [reponseElement addChild:idReponseElement];
+        [questionElement addChild:idQuestionElement];
+        [questionElement addChild:reponseElement];
+        [questionnaireElement addChild:questionElement];
+    }
+    
+    [sondageElement addChild:questionnaireElement];
+    
+    GDataXMLDocument *document = [[GDataXMLDocument alloc]initWithRootElement:sondageElement];
+    [document setCharacterEncoding:@"UTF-8"];
+    NSData *xmlData = document.XMLData;
+    
+    NSString *filePath = [self dataFilePath:TRUE];
+    NSLog(@"Saving xml data to %@...", filePath);
+    [xmlData writeToFile:filePath atomically:YES];
+    
+}
+
+- (NSString *)dataFilePath:(BOOL)forSave {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *documentsPath = [documentsDirectory
+                               stringByAppendingPathComponent:@"rep_sondage.xml"];
+    if (forSave ||
+        [[NSFileManager defaultManager] fileExistsAtPath:documentsPath]) {
+        return documentsPath;
+    } else {
+        return [[NSBundle mainBundle] pathForResource:@"rep_sondage" ofType:@"xml"];
     }
     
 }
