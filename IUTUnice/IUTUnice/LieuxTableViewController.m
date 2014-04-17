@@ -151,6 +151,7 @@
 
 	int width = tableView.frame.size.width;
 	int height = 200;
+	
 	Lieu* item =[lieux objectAtIndex:indexPath.row];
 	NSString *index =[NSString stringWithFormat:@"identifier%d",(indexPath.section*10+ indexPath.row)];
 	
@@ -162,6 +163,8 @@
 	
 	UILabel *titre = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, width-10, 20)];
 	titre.text = item.nom;
+	titre.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+	
 	[cell.contentView addSubview:titre];
 	
 	UIView *separatorLineView2 = [[UIView alloc] initWithFrame:CGRectMake(0,30, width, 20)];
@@ -169,7 +172,8 @@
 	[cell.contentView addSubview:separatorLineView2];
 	
 	UILabel *addr = [[UILabel alloc] initWithFrame:CGRectMake(30, 50, width-30, 80)];
-	addr.numberOfLines=4;
+	addr.numberOfLines=2;
+	addr.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 	//addr.textAlignment = NSTextAlignmentCenter;
 	addr.text = item.postal;
 	[cell.contentView addSubview:addr];
@@ -178,6 +182,7 @@
 	{
 		UILabel *tel = [[UILabel alloc] initWithFrame:CGRectMake(30,130, width-30, 20)];
 		tel.text = [NSString stringWithFormat:@"Tel: %@",item.tel];
+		tel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
 		[cell.contentView addSubview:tel];
 	}
 	
@@ -185,6 +190,7 @@
 	{
 		UILabel *fax = [[UILabel alloc] initWithFrame:CGRectMake(30,150, width-30, 20)];
 		fax.text = [NSString stringWithFormat:@"Fax: %@",item.fax];
+		fax.font = [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
 		[cell.contentView addSubview:fax];
 	}
 	

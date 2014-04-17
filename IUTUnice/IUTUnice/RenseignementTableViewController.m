@@ -63,7 +63,19 @@
         
     }
 	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(preferredContentSizeChanged:)
+	 name:UIContentSizeCategoryDidChangeNotification
+	 object:nil];
 	
+	
+}
+
+- (void)preferredContentSizeChanged:(NSNotification *)notification {
+    //self.textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+	NSLog(@"change size");
+	[self.tableView reloadData];
 }
 
 - (void) traverseElement:(TBXMLElement *)element
@@ -157,6 +169,8 @@
 
 		UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:index];
 		
+		cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+		cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 		cell.textLabel.text = [adr objectForKey:@"name"] ;
 		cell.detailTextLabel.text = [adr objectForKey:@"mail"] ;
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

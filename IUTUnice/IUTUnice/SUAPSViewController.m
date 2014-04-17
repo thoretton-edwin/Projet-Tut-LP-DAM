@@ -127,6 +127,7 @@
 		cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[titres objectAtIndex:indexPath.row]];
 		
 		cell.textLabel.text = [titres objectAtIndex:indexPath.row];
+		cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
 		if([[titres objectAtIndex:indexPath.row] isEqualToString:@"Bonus"])
 		{
 			cell.accessoryType = UITableViewCellAccessoryDetailButton;
