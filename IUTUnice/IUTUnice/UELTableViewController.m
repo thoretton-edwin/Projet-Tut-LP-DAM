@@ -58,7 +58,16 @@
 		}
         
     }
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(preferredContentSizeChanged:)
+	 name:UIContentSizeCategoryDidChangeNotification
+	 object:nil];
 	
+}
+
+- (void)preferredContentSizeChanged:(NSNotification *)notification {
+    [self.tableView reloadData];
 }
 
 - (void) traverseElement:(TBXMLElement *)element
@@ -140,7 +149,7 @@
 	NSString *index =[NSString stringWithFormat:@"identifier%d",(indexPath.section*10+ indexPath.row)];
 	
 	UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:index];
-	
+	cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 	cell.textLabel.text = item.nom ;
 		//cell.detailTextLabel.text = [NSString]jour.seance.count;
 	cell.accessoryType = UITableViewCellAccessoryDetailButton;

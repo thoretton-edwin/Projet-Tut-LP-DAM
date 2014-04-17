@@ -72,8 +72,8 @@
 	
 }
 
-- (void)preferredContentSizeChanged:(NSNotification *)notification {
-    //self.textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+- (void)preferredContentSizeChanged:(NSNotification *)notification
+{
 	NSLog(@"change size");
 	[self.tableView reloadData];
 }

@@ -177,6 +177,7 @@
 	// center map to user location
 	userLocation = mapView.userLocation;
 
+	self.title = @"Map";
 	
 	//Background design
 	

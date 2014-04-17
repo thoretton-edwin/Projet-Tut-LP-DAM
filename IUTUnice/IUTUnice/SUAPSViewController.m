@@ -55,7 +55,11 @@
    
 	self.title = @"SUAPS";
 	
-	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(preferredContentSizeChanged:)
+	 name:UIContentSizeCategoryDidChangeNotification
+	 object:nil];
 
 	
 	
@@ -88,6 +92,7 @@
 							  
 							  alert.alertViewStyle=UIAlertViewStyleDefault;
 							  [alert show];
+							  
 	}
 	else if([[titres objectAtIndex:indexPath.row] isEqualToString:@"Renseignements"])
 	{
@@ -114,6 +119,12 @@
 		LieuxTableViewController* view = [[LieuxTableViewController alloc]initWithStyle:UITableViewStylePlain];
 		[self.navigationController pushViewController:view animated:YES];
 	}
+}
+
+- (void)preferredContentSizeChanged:(NSNotification *)notification
+{
+	NSLog(@"change size");
+	[self.tableView reloadData];
 }
 
 

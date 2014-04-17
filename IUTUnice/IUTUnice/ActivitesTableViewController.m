@@ -61,7 +61,17 @@
         
     }
 	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(preferredContentSizeChanged:)
+	 name:UIContentSizeCategoryDidChangeNotification
+	 object:nil];
+	
 
+}
+
+- (void)preferredContentSizeChanged:(NSNotification *)notification {
+   [self.tableView reloadData];
 }
 
 - (void) traverseElement:(TBXMLElement *)element
@@ -183,7 +193,7 @@
 	UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:index];
 	
 	cell.textLabel.text = item.nom ;
-	//cell.detailTextLabel.text = [NSString]jour.seance.count;
+	cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 	cell.accessoryType = UITableViewCellAccessoryDetailButton;
     
     return cell;
