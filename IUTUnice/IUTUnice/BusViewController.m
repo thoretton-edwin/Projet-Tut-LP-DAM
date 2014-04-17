@@ -166,6 +166,8 @@
 		NSLog(@"cell detail\n: %@",textLignes);
 		[cell.detailTextLabel setText:textLignes];
 		cell.detailTextLabel.numberOfLines=4;
+		cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+		cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 		
 		//[[cell textLabel]setFont:[UIFont boldSystemFontOfSize:24]];
 		//[[cell detailTextLabel]setFont:[UIFont systemFontOfSize:16]];

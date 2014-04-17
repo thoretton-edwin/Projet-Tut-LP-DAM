@@ -69,12 +69,15 @@
     descr.text = text;
     descr.backgroundColor= [UIColor clearColor];
     descr.textColor = [UIColor blackColor];
-    descr.font = [UIFont systemFontOfSize:14];
+    descr.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+	//[UIFont systemFontOfSize:14];
     descr.editable = NO;
     descr.scrollEnabled = YES;
     [containerView addSubview:descr];
     [_accordion addSectionWithTitle:title andView:containerView];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

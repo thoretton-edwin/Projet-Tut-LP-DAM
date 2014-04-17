@@ -127,6 +127,7 @@
 		{
 			Module *mod =   [[[bulletin objectAtIndex:inc-1]modules]objectAtIndex:indexPath.row];
 			cell.textLabel.text  = [NSString stringWithFormat:@"%@",mod.nom];
+			cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		}
 	}

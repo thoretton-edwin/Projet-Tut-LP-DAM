@@ -149,7 +149,8 @@
     
     cell.backgroundView = [[UIView alloc] init];
     [cell.backgroundView setBackgroundColor:[UIColor clearColor]];
-    cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
+    //cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
+	cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     cell.textLabel.frame = CGRectMake(0,0,400,30);
     cell.textLabel.numberOfLines = 3;
     //cell.textLabel.text = [[_mDisplayedArray objectAtIndex: indexPath.row] getTitle];

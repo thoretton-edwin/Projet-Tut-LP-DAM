@@ -41,8 +41,19 @@
     
     
     NSLog(@"count tabinfowifi viewdidload : %d" , _infosTabWifi.count);
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(preferredContentSizeChanged:)
+	 name:UIContentSizeCategoryDidChangeNotification
+	 object:nil];
     
 
+}
+
+- (void)preferredContentSizeChanged:(NSNotification *)notification
+{
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -90,7 +101,7 @@
         UILabel *name_wifi = [[UILabel alloc] initWithFrame:CGRectMake(0, 10,self.tableView.frame.size.width ,20)];
         
         cell.textLabel.text = [NSString stringWithFormat:@"Nom Wifi : %@", wifiInfo.nom_Wifi];
-        
+        cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
         [cell addSubview:name_wifi];
         [cell sizeToFit];
         

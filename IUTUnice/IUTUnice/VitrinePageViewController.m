@@ -59,7 +59,7 @@
     
     myUITextView.text = presentationText;
     myUITextView.textColor = [UIColor blackColor];
-    myUITextView.font = [UIFont systemFontOfSize:14];
+    myUITextView.font =[UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     [myUITextView setBackgroundColor:[UIColor clearColor]];
     myUITextView.editable = NO;
     myUITextView.scrollEnabled = YES;

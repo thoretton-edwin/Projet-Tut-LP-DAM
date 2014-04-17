@@ -66,7 +66,9 @@
 	UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
 	Note* note = [[module notes]objectAtIndex:indexPath.row];
 	cell.textLabel.text = [NSString stringWithFormat:@"%@ : %@",note.nom,note.note];
+	cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
 	cell.detailTextLabel.text = note.date;
+	cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     
 	
     return cell;

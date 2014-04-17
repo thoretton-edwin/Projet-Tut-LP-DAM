@@ -73,8 +73,10 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 	email = [[NSMutableString alloc]init];
 	self.searchLabelField.delegate=self;
+	[self.searchLabelField sizeToFit];
 	self.textField.scrollEnabled = NO;
 	[self.textField setText:@"Entrez le nom et prenom.."];
+	self.textField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 	[self.textField sizeToFit];
 	self.textField.editable = NO;
 	
