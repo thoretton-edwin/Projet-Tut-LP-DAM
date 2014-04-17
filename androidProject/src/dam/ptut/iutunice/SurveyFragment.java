@@ -6,6 +6,7 @@ import java.util.HashMap;
 import dam.ptut.iutunice.IutWindows.SurveyIutActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -206,32 +207,67 @@ public class SurveyFragment extends Fragment {
 					AlertDialog dialog = alertDialog.create();
 					dialog.show();
 				}else{
+					//progressBar
+					ProgressBar progressBarSurvey = (ProgressBar) content.findViewById(R.id.progressBarSurvey);
+					int totalQuestion = oneSurvey.questionArray.size();
+					int perQuestion = (100/totalQuestion);
+					
 					SurveyAnswer surveyAnswer = surveyAnswerArray.get(childPosition);
-
 					surveyAnswer.isCheck = true;
+					
 					CheckBox checkBoxSurvey = (CheckBox) v.findViewById(R.id.checkBoxSurvey);
 					if(checkBoxSurvey.isChecked()){
 						//l'utilisateur souhaite décocher
 						surveyAnswer.isCheck = false;
 						checkBoxSurvey.setChecked(false);
 						//progressBar
-						ProgressBar progressBarSurvey = (ProgressBar) content.findViewById(R.id.progressBarSurvey);
-						int progress = progressBarSurvey.getProgress();
-						lastPercent -= progress;
+						lastPercent -= perQuestion;
 						progressBarSurvey.setProgress(lastPercent);
 					}else{
 						//l'utilisateur souhaite cocher
 						surveyAnswer.isCheck = true;
 						checkBoxSurvey.setChecked(true);
-						//avancé du progressbar
-						ProgressBar progressBarSurvey = (ProgressBar) content.findViewById(R.id.progressBarSurvey);
-						//1 réponse par question
-						int totalQuestion = oneSurvey.questionArray.size();
-						int perQuestion = (100/totalQuestion);
-						
+						//avancé du progressbar, 1 réponse par question
 						progressBarSurvey.setProgress(lastPercent+perQuestion);
 						lastPercent += perQuestion;
-					}			
+					}
+					
+					//test si tout rempli
+					if(lastPercent == (perQuestion*totalQuestion) ){
+						AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+						//langue fr
+						if("fr".equals(language)){
+							alertDialog.setTitle("Sondage terminé.");
+							alertDialog
+									.setMessage("Voulez-vous l'enregistrer ?");
+							alertDialog.setNegativeButton("Non, modifier le sondage", null);
+							alertDialog.setPositiveButton("Oui", new OnClickListener() {
+								
+								@Override
+								public void onClick(DialogInterface dialog, int which) {
+									// TODO Auto-generated method stub
+									
+								}
+							});
+						}else{
+							alertDialog.setTitle("Survey completed.");
+							alertDialog
+									.setMessage("Do you want to save?");
+							alertDialog.setNegativeButton("No, change the survey.", null);
+							alertDialog.setPositiveButton("Yes", new OnClickListener() {
+								
+								@Override
+								public void onClick(DialogInterface dialog, int which) {
+									// TODO Auto-generated method stub
+									
+								}
+							});
+						}
+						
+						AlertDialog dialog = alertDialog.create();
+						dialog.show();
+					}
+					
 				}
 				
 				
