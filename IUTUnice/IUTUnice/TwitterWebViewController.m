@@ -35,7 +35,7 @@
 	//init
 	webView =
 	[[UIWebView alloc]initWithFrame:
-	 CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height)];
+	 CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)];
 	 
 	[self.webView setDelegate:self];
 	 
@@ -56,7 +56,7 @@
 {
 	NSLog(@"start web view");
 
-    activityIndicator.frame = CGRectMake(30,50, 250, 250);
+    activityIndicator.frame = CGRectMake(50,50, [UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
     activityIndicator.color = [UIColor blueColor];
     [self.view addSubview:activityIndicator];
     

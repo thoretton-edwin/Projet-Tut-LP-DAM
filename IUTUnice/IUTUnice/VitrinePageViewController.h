@@ -17,10 +17,10 @@
 @interface VitrinePageViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *presentationImage;
-@property (weak, nonatomic) IBOutlet UIScrollView *descriptionScrollView;
 @property (weak, nonatomic) IBOutlet UIButton *sondageButton;
 @property (weak, nonatomic) IBOutlet UIButton *formationButton;
 
+@property (strong, nonatomic) IBOutlet UITextView *myUiscrollView;
 @property (nonatomic) int imageCount;
 @property (nonatomic) NSMutableArray *sondageArray;
 @property (nonatomic) NSTimer *slideshowTimer;

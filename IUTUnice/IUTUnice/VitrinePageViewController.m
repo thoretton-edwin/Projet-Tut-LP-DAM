@@ -27,8 +27,8 @@
     [super viewDidLoad];
     
     self.title = @"Bienvenue à l'IUT";
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
@@ -49,21 +49,20 @@
     
     NSString *presentationText = [[NSString alloc]initWithContentsOfFile:myPath encoding:NSUTF8StringEncoding error:nil];
     
-    UITextView *myUITextView = [[UITextView alloc] initWithFrame:CGRectMake(0,0,_descriptionScrollView.frame.size.width,_descriptionScrollView.frame.size.height)];
     
-    _descriptionScrollView.clipsToBounds=YES;
-    _descriptionScrollView.layer.cornerRadius=6.0;
-    _descriptionScrollView.layer.borderColor=[UIColor grayColor].CGColor;
-    _descriptionScrollView.layer.borderWidth=1.0;
-    _descriptionScrollView.contentMode = UIViewContentModeCenter;
+    _myUiscrollView.layer.cornerRadius=6.0;
+    _myUiscrollView.layer.borderColor=[UIColor grayColor].CGColor;
+    _myUiscrollView.layer.borderWidth=1.0;
+    _myUiscrollView.contentMode = UIViewContentModeCenter;
+
     
-    myUITextView.text = presentationText;
-    myUITextView.textColor = [UIColor blackColor];
-    myUITextView.font =[UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    [myUITextView setBackgroundColor:[UIColor clearColor]];
-    myUITextView.editable = NO;
-    myUITextView.scrollEnabled = YES;
-    [_descriptionScrollView addSubview:myUITextView];
+    _myUiscrollView.text = presentationText;
+    _myUiscrollView.textColor = [UIColor blackColor];
+    _myUiscrollView.font =[UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    //[_myUiscrollView setBackgroundColor:[UIColor clearColor]];
+    _myUiscrollView.editable = NO;
+    _myUiscrollView.scrollEnabled = YES;
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{

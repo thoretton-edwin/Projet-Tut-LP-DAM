@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SondageViewController">
@@ -17,22 +17,31 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question n°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-oD-RVA">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question n°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-oD-RVA">
                     <rect key="frame" x="20" y="75" width="280" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="NbD-fp-hY0"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="intitu" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-ZH-E8U">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="intitu" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-ZH-E8U">
                     <rect key="frame" x="20" y="104" width="280" height="94"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="NKS-aJ-WnM"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-W3-TKS">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-W3-TKS">
                     <rect key="frame" x="0.0" y="227" width="320" height="214"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="214" id="bma-ZU-Jeq"/>
+                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="1" id="7pK-jG-ZrK"/>
                         <outlet property="delegate" destination="1" id="acj-1j-xbN"/>
@@ -40,9 +49,20 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lqU-oD-RVA" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="E6n-3N-wZF"/>
+                <constraint firstItem="lqU-oD-RVA" firstAttribute="top" secondItem="1" secondAttribute="top" constant="75" id="Nap-lz-j50"/>
+                <constraint firstItem="Y3K-ZH-E8U" firstAttribute="top" secondItem="lqU-oD-RVA" secondAttribute="bottom" constant="8" symbolic="YES" id="RBr-mU-gkd"/>
+                <constraint firstItem="v6L-W3-TKS" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="X7p-Ex-m3A"/>
+                <constraint firstItem="Y3K-ZH-E8U" firstAttribute="centerX" secondItem="v6L-W3-TKS" secondAttribute="centerX" id="ZHh-JC-dxT"/>
+                <constraint firstItem="Y3K-ZH-E8U" firstAttribute="leading" secondItem="lqU-oD-RVA" secondAttribute="leading" id="g43-d5-stI"/>
+                <constraint firstItem="lqU-oD-RVA" firstAttribute="trailing" secondItem="Y3K-ZH-E8U" secondAttribute="trailing" id="kTr-JG-eJ6"/>
+                <constraint firstItem="v6L-W3-TKS" firstAttribute="top" secondItem="Y3K-ZH-E8U" secondAttribute="bottom" constant="29" id="p2H-b0-Z6l"/>
+                <constraint firstAttribute="trailing" secondItem="lqU-oD-RVA" secondAttribute="trailing" constant="20" symbolic="YES" id="siH-NU-Xds"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>

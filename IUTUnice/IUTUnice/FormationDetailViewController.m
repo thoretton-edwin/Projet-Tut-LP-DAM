@@ -27,13 +27,13 @@
 {
     [super viewDidLoad];
     
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"appBackground.png"] drawInRect:self.view.bounds];
+    UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
+    [[UIImage imageNamed:@"appBackground.png"] drawInRect:[UIScreen mainScreen].bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
-    _webView = [[UIWebView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    _webView = [[UIWebView alloc] initWithFrame: CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [_webView setBackgroundColor: [UIColor clearColor]];
     [_webView setOpaque:NO];
     [_webView loadHTMLString:_htmlBody baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
