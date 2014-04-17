@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="5dp"
-    android:orientation="vertical" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp" >
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal" >
-
-        <ImageView
-            android:id="@+id/imgParameterItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/sondage" />
-
-        <TextView
-            android:id="@+id/txtIdQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="-10dp"
-            android:text="Q1"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="5dp"
-            android:text="Comment jugez-vous l&apos;ergonomie/l&apos;interface de l&apos;application ?"
-            android:textSize="15dp" />
-
-    </LinearLayout>
-
-    <RadioButton
-        android:id="@+id/radioButton1"
-        android:layout_width="match_parent"
+    <CheckBox
+        android:id="@+id/checkBoxSurvey"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RadioButton" />
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:id="@+id/textViewCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -108,7 +108,7 @@ public class SurveyIutActivity extends FragmentActivity {
 								SurveyIutActivity.this);
 						alertDialog.setTitle("Langue du Sondage.");
 						alertDialog
-								.setMessage("Choisissez dans quelle langue voulez-vous afficher le sondage. Choose the language in which you want to view the survey.");
+								.setMessage("Choisissez dans quelle langue voulez-vous afficher le sondage. Choose the language of the survey.");
 						alertDialog.setPositiveButton("Français",
 								new DialogInterface.OnClickListener() {
 									@Override
