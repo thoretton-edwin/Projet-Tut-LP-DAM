@@ -140,33 +140,33 @@ public class MainActivity extends FragmentActivity {
 		app.iconItemList = list;
 	}
 
-	// ouvre les autres pages depuis le menu en liste
+	// ouvre les autres pages depuis les menu en icones et en liste
 	void itemClick(int position) {
 		Intent intent;
 		App app = (App) getApplication();
 		IconMenuListItem iconMenuListItem = app.iconItemList.get(position);
 		switch (iconMenuListItem.img) {
-		case R.drawable.logo_iut_window:
+		case R.drawable.logo_iut_window_256:
 			intent = new Intent(this, IutWindowsActivity.class);
 			startActivity(intent);
 			break;
-		case R.drawable.logo_grades:
+		case R.drawable.logo_grades_256:
 			break;
-		case R.drawable.logo_calendar:
+		case R.drawable.logo_schedule_256:
 			break;
 		case R.drawable.logo_maps:
 			break;
-		case R.drawable.logo_suaps:
+		case R.drawable.logo_suaps_256:
 			break;
 		case R.drawable.logo_post_bac:
 			intent = new Intent(this, PostBacActivity.class);
 			startActivity(intent);
 			break;
-		case R.drawable.logo_addressbook:
+		case R.drawable.logo_directory_256:
 			break;
 		case R.drawable.logo_compagny_partnership:
 			break;
-		case R.drawable.logo_twitter:
+		case R.drawable.logo_twitter_256:
 			intent = new Intent(this, TwitterActivity.class);
 			startActivity(intent);
 			break;
