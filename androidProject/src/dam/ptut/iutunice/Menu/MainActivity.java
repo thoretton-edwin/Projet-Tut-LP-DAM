@@ -23,7 +23,7 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		this.setTitle("IUT Nice Côte d'Azur");
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -33,18 +33,20 @@ public class MainActivity extends FragmentActivity {
 		IconMenuFragment iconMenuFragment = new IconMenuFragment();
 		IconMenuCarouselFragment iconMenuCarouselFragment = new IconMenuCarouselFragment();
 
+		App app = (App) getApplication();
 		int orientation = getResources().getConfiguration().orientation;
-		if (orientation == 1)// portrait
+		if (orientation == 1){// portrait
+			app.menuType = 0;//menu icons by default
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.flContent, iconMenuFragment).commit();
-		else
+		}else{
 			// 2 = paysage
+			app.menuType = 2;//menu carousel
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.flContent, iconMenuCarouselFragment).commit();
 
-		// getSupportFragmentManager().beginTransaction().replace(R.id.flContent,
-		// iconMenuFragment).commit();
-
+		
+		}
 		return super.onCreateOptionsMenu(menu);
 
 	}
@@ -57,27 +59,34 @@ public class MainActivity extends FragmentActivity {
 			openSettings();
 		case R.id.action_list:
 			switchListMenu();
-			// case R.id.action_icon:
-			// switchIconMenu();
 		default:
 			return super.onOptionsItemSelected(item);
 		}
 
 	}
 
-	private void switchIconMenu() {
-		IconMenuFragment iconMenuFragment = new IconMenuFragment();
-		getSupportFragmentManager().beginTransaction()
-				.replace(R.id.flContent, iconMenuFragment).commit();
-
-	}
-
 	private void switchListMenu() {
-		// TODO Auto-generated method stub
-		collectMenuList();
-		IconMenuListFragment iconMenuListFragment = new IconMenuListFragment();
-		getSupportFragmentManager().beginTransaction()
-				.replace(R.id.flContent, iconMenuListFragment).commit();
+		App app = (App) getApplication();
+		if(app.menuType == 0){//icons menu
+			collectMenuList();
+			IconMenuListFragment iconMenuListFragment = new IconMenuListFragment();
+			getSupportFragmentManager().beginTransaction()
+					.replace(R.id.flContent, iconMenuListFragment).commit();
+			app.menuType = 1;
+		}else if(app.menuType == 1){//list menu
+			IconMenuFragment iconMenuFragment = new IconMenuFragment();
+			getSupportFragmentManager().beginTransaction()
+			.replace(R.id.flContent, iconMenuFragment).commit();
+			app.menuType = 0;
+		}else{
+			//carousel menu
+			collectMenuList();
+			IconMenuListFragment iconMenuListFragment = new IconMenuListFragment();
+			getSupportFragmentManager().beginTransaction()
+					.replace(R.id.flContent, iconMenuListFragment).commit();
+			app.menuType = 1;
+		}
+		
 	}
 
 	private void openSettings() {
@@ -172,4 +181,5 @@ public class MainActivity extends FragmentActivity {
 			break;
 		}
 	}
+
 }
