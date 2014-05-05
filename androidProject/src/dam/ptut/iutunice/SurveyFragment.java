@@ -47,7 +47,18 @@ public class SurveyFragment extends Fragment {
 	public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		final String language = getArguments().getString(LANGUAGE);
 		final String type = getArguments().getString(TYPE);
-		App app = (App) getActivity().getApplication();
+		final App app = (App) getActivity().getApplication();
+		
+		//test si sondage déjà rempli
+		if(app.iutSurveyIsCheck == true){
+			AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+				alertDialog.setTitle("Sondage déjà rempli");
+				alertDialog.setPositiveButton("OK", null);
+			AlertDialog dialog = alertDialog.create();
+			dialog.show();
+			getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
+		}
+		
 		
 		Log.v("language :", language);
 		Log.v("type :", type);
@@ -137,8 +148,6 @@ public class SurveyFragment extends Fragment {
 					convertView = inflater.inflate(R.layout.item_list_survey, parent,
 							false);				
 				}
-//				RadioButton radioBt = (RadioButton) convertView.findViewById(R.id.radioButton);
-//				radioBt.setText(answer.entitled);
 				TextView txtView = (TextView) convertView.findViewById(R.id.textViewCheck);
 				txtView.setText(answer.entitled);
 				
@@ -246,7 +255,7 @@ public class SurveyFragment extends Fragment {
 								@Override
 								public void onClick(DialogInterface dialog, int which) {
 									// TODO Auto-generated method stub
-									
+									surveySave();
 								}
 							});
 						}else{
@@ -259,7 +268,7 @@ public class SurveyFragment extends Fragment {
 								@Override
 								public void onClick(DialogInterface dialog, int which) {
 									// TODO Auto-generated method stub
-									
+									surveySave();
 								}
 							});
 						}
@@ -269,102 +278,21 @@ public class SurveyFragment extends Fragment {
 					}
 					
 				}
-				
-				
-				
-//				TextView txtValid = (TextView) v.findViewById(R.id.txtValid);
-//				txtValid.setText("hello");
-//				Toast.makeText(
-//                        getApplicationContext(),
-//                        listDataHeader.get(groupPosition)
-//                                + " : "
-//                                + listDataChild.get(
-//                                        listDataHeader.get(groupPosition)).get(
-//                                        childPosition), Toast.LENGTH_SHORT)
-//                        .show();
 				return true;
 				
 			}
 		});
+		return content;	
+	}
+	
+	private void surveySave(){
+		App app = (App) getActivity().getApplication();
+		//évite de refaire le sondage
+		app.iutSurveyIsCheck = true;
+		//enregistrer le sondage
+		// ? 
 		
-//		// Listview Group expanded listener
-//		expandableListViewSurvey.setOnGroupExpandListener(new OnGroupExpandListener() {
-//		 
-//		    @Override
-//		    public void onGroupExpand(int groupPosition) {
-//		        Toast.makeText(getActivity().getApplicationContext(),
-//		        		oneSurvey.questionArray.get(groupPosition) + " Expanded",
-//		                Toast.LENGTH_SHORT).show();
-//		    }
-//		});
-//		
-//		// Listview Group collasped listener
-//		expandableListViewSurvey.setOnGroupCollapseListener(new OnGroupCollapseListener() {
-//		 
-//		    @Override
-//		    public void onGroupCollapse(int groupPosition) {
-//		        Toast.makeText(getActivity().getApplicationContext(),
-//		        		oneSurvey.questionArray.get(groupPosition) + " Collapsed",
-//		                Toast.LENGTH_SHORT).show();
-//		 
-//		    }
-//		});
-		
-//		ListView listView = (ListView) content.findViewById(R.id.listViewSurvey);
-//		listView.setAdapter(new BaseAdapter() {
-//			
-//			@Override
-//			public View getView(int position, View convertView, ViewGroup parent) {
-//				View itemView = inflater.inflate(R.layout.item_list_survey, parent,
-//						false);
-//
-//				SurveyQuestion surveyQuestion = (SurveyQuestion) getItem(position);
-//				TextView txtIdQuestion = (TextView) itemView.findViewById(R.id.txtIdQuestion);
-//				txtIdQuestion.setText(surveyQuestion.id);
-//				TextView txtQuestion = (TextView) itemView.findViewById(R.id.txtQuestion);
-//				txtQuestion.setText(surveyQuestion.entitled);
-//				
-//				return itemView;
-//			}
-//			
-//			@Override
-//			public long getItemId(int position) {
-//				// TODO Auto-generated method stub
-//				return 0;
-//			}
-//			
-//			@Override
-//			public Object getItem(int position) {
-//				// TODO Auto-generated method stub
-//				return oneSurvey.questionArray.get(position);
-//			}
-//			
-//			@Override
-//			public int getCount() {
-//				// TODO Auto-generated method stub
-//				return oneSurvey.questionArray.size();
-//			}
-//		});
-		
-//		if(oneSurvey.equals(null)){
-//			AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-//			alertDialog.setTitle("Affichage sondage impossible...");
-//			alertDialog
-//					.setMessage("Sondage incorrect à afficher.");
-//			alertDialog.setPositiveButton("Retour",
-//					new DialogInterface.OnClickListener() {
-//						@Override
-//						public void onClick(DialogInterface dialog, int id) {
-//							getActivity().finish();
-//						}
-//					});
-//			AlertDialog dialog = alertDialog.create();
-//			dialog.show();
-//		}
-		
-		
-		
-		return content;
-		
+		//delete fragment
+		getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
 	}
 }

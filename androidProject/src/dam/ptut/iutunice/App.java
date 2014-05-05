@@ -12,4 +12,5 @@ public class App extends Application {
 	public List<IconMenuListItem> iconItemList;
 	public List<SurveyItem> surveyList;
 	public int menuType; //0=icons 1=list 2=carousel
+	public boolean iutSurveyIsCheck = false;
 }
