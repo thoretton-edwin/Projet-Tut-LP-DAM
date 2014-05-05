@@ -122,6 +122,10 @@
             android:name="dam.ptut.iutunice.Maps.MapsActivity"
             android:label="@string/title_activity_maps" >
         </activity>
+        <activity
+            android:name="dam.ptut.iutunice.Calendar.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
     </application>
 
 </manifest>
