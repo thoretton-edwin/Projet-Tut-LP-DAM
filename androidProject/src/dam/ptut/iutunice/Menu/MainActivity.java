@@ -6,12 +6,15 @@ import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.Calendar.CalendarActivity;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
+import dam.ptut.iutunice.Maps.MapActivity;
+import dam.ptut.iutunice.Maps.MapsActivity;
 import dam.ptut.iutunice.Parameter.ParameterActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.Twitter.TwitterActivity;
@@ -166,7 +169,9 @@ public class MainActivity extends FragmentActivity {
 			intent = new Intent(this, CalendarActivity.class);
 			startActivity(intent);
 			break;
-		case R.drawable.logo_maps:
+		case R.drawable.logo_maps_256:
+			intent = new Intent(this, MapActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_suaps_256:
 			break;

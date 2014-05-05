@@ -20,5 +20,6 @@
     <string name="title_activity_survey_iut">SurveyIutActivity</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_map">MapActivity</string>
 
 </resources>

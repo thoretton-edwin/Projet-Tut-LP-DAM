@@ -1,6 +1,7 @@
 package dam.ptut.iutunice.Menu;
 
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.Maps.MapsActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.R.id;
 import dam.ptut.iutunice.R.layout;
@@ -144,8 +145,8 @@ public class IconMenuCarouselFragment extends Fragment {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 
+				
 			}
 		});
 		// Affichage msg quand long click
