@@ -60,12 +60,12 @@ public class SurveyFragment extends Fragment {
 		}
 		
 		
-		Log.v("language :", language);
-		Log.v("type :", type);
+		//Log.v("language :", language);
+		//Log.v("type :", type);
 		for(int i=0 ; i<app.surveyList.size() ; i++){
 			surveyItem = app.surveyList.get(i);
 			if(surveyItem.language.equals(language) && surveyItem.type.equals(type)){
-				Log.v("nombre de passage",""+i);
+				//Log.v("nombre de passage",""+i);
 				oneSurvey = surveyItem;
 			}
 		}
