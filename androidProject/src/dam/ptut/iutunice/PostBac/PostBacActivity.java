@@ -111,13 +111,14 @@ public class PostBacActivity extends Activity {
 					convertView = inflater.inflate(R.layout.item_list_postbac, parent,
 							false);				
 				}
-				WebView webViewPostBac = (WebView) convertView.findViewById(R.id.webViewPostBac);
-				String typeMime = "text/html";
-				String encoding = "utf-8";
-				webViewPostBac.getSettings().setJavaScriptEnabled(true);
-				webViewPostBac.loadDataWithBaseURL(null, description, typeMime, encoding, null);
-				webViewPostBac.setBackgroundColor(Color.TRANSPARENT);
-				
+				//WebView webViewPostBac = (WebView) convertView.findViewById(R.id.webViewPostBac);
+				TextView webViewPostBac = (TextView) convertView.findViewById(R.id.webViewPostBac);
+//				String typeMime = "text/html";
+//				String encoding = "utf-8";
+//				webViewPostBac.getSettings().setJavaScriptEnabled(true);
+//				webViewPostBac.loadDataWithBaseURL(null, description, typeMime, encoding, null);
+//				webViewPostBac.setBackgroundColor(Color.TRANSPARENT);
+				webViewPostBac.setText(description);
 				return convertView;
 			}
 			
