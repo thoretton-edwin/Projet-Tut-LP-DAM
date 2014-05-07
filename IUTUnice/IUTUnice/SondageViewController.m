@@ -173,19 +173,24 @@
 
 - (void) displayQuestionAtIndex:(NSInteger)index{
     NSString *strIndex = [NSString stringWithFormat:@"%d", _globalIndex+1];
-    [_questionNumberLabel setText: [@"Question n° " stringByAppendingString:strIndex]];
+   
         _questionNumberLabel.clipsToBounds=YES;
         _questionNumberLabel.layer.cornerRadius=6.0;
         _questionNumberLabel.layer.borderColor=[UIColor grayColor].CGColor;
         _questionNumberLabel.layer.borderWidth=1.0;
         _questionNumberLabel.contentMode = UIViewContentModeCenter;
+		
+		 [_questionNumberLabel setText: [@"Question n° " stringByAppendingString:strIndex]];
+		  _questionNumberLabel.contentMode = UIViewContentModeRight;
+    	_questionNumberLabel.textAlignment = NSTextAlignmentCenter;
     
-    _questionIntituleLabel.text = [[_sondage objectAtIndex:index] intitule];
         _questionIntituleLabel.clipsToBounds=YES;
         _questionIntituleLabel.layer.cornerRadius=6.0;
         _questionIntituleLabel.layer.borderColor=[UIColor grayColor].CGColor;
         _questionIntituleLabel.layer.borderWidth=1.0;
         _questionIntituleLabel.contentMode = UIViewContentModeCenter;
+		_questionIntituleLabel.text = [[_sondage objectAtIndex:index] intitule];
+		_questionIntituleLabel.textAlignment = NSTextAlignmentCenter;
 
 }
 
