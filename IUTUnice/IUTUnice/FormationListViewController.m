@@ -37,6 +37,7 @@
 	_mDegreeSelector.tintColor = [UIColor grayColor];
     
     _mFormationArray = [[NSMutableArray alloc] init];
+    _mFilteredArray = [[NSMutableArray alloc] init];
     
     dispatch_queue_t queue = dispatch_queue_create("com.yourdomain.yourappname", NULL);
     dispatch_async(queue, ^{
@@ -74,9 +75,6 @@
     [_mDegreeSelector addTarget:self
                                 action:@selector(changeDegree:)
                       forControlEvents:UIControlEventValueChanged];
-    
-    _mFilteredArray = [NSMutableArray arrayWithCapacity:[_mDisplayedArray count]];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,27 +86,20 @@
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
-    [_mFilteredArray removeAllObjects];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.mTitle contains[c] %@",searchText];
-    _mFilteredArray = [NSMutableArray arrayWithArray:[_mDisplayedArray filteredArrayUsingPredicate:predicate]];
+    NSLog(@"%@", @"SAERCHING");
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
+    _mFilteredArray = (NSMutableArray*) [_mFormationArray filteredArrayUsingPredicate:resultPredicate];
 }
 
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
-    // Tells the table data source to reload when text changes
-    [self filterContentForSearchText:searchString scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
-    // Return YES to cause the search result table view to be reloaded.
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
     return YES;
 }
-
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
-    // Tells the table data source to reload when scope bar selection changes
-    [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
-    // Return YES to cause the search result table view to be reloaded.
-    return YES;
-}
-
 
 - (void) changeDegree:(UISegmentedControl *)paramSender{
     [_mDisplayedArray removeAllObjects];
@@ -137,7 +128,13 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_mDisplayedArray count];
+    
+    if (self->tableView == self.searchDisplayController.searchResultsTableView) {
+        return [_mFilteredArray count];
+    } else {
+        return [_mDisplayedArray count];
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -149,11 +146,9 @@
     
     cell.backgroundView = [[UIView alloc] init];
     [cell.backgroundView setBackgroundColor:[UIColor clearColor]];
-    //cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
 	cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     cell.textLabel.frame = CGRectMake(0,0,400,30);
     cell.textLabel.numberOfLines = 3;
-    //cell.textLabel.text = [[_mDisplayedArray objectAtIndex: indexPath.row] getTitle];
     
     if (self->tableView == self.searchDisplayController.searchResultsTableView) {
         cell.textLabel.text = [[_mFilteredArray objectAtIndex: indexPath.row] getTitle];
