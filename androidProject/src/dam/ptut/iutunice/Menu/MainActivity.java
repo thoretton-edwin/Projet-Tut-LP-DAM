@@ -14,7 +14,6 @@ import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.Calendar.CalendarActivity;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
 import dam.ptut.iutunice.Maps.MapActivity;
-import dam.ptut.iutunice.Maps.MapsActivity;
 import dam.ptut.iutunice.Parameter.ParameterActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.Twitter.TwitterActivity;

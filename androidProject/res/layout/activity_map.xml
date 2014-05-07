@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="top"
     android:background="@drawable/app_background"
     android:orientation="vertical"
     tools:context=".ParameterActivity" >
@@ -17,55 +18,62 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:layout_weight="0.00" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textViewAdress"
             android:layout_width="wrap_content"
             android:layout_height="127dp"
             android:layout_weight="0.83"
-            android:text="TextView" />
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="32sp" />
+        
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:layout_weight="0.01" >
 
         <Button
             android:id="@+id/btnMapsNice"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Nice" />
 
         <Button
             android:id="@+id/btnMapsMenton"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Menton" />
 
         <Button
             android:id="@+id/btnMapsCannesLB"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="76dp"
-            android:layout_height="wrap_content"
-            android:text="Cannes la Bocca" />
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:text="Bocca" />
 
         <Button
             android:id="@+id/btnMapsCannes"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Cannes" />
 
         <Button
             android:id="@+id/btnMapsSophia"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sophia Antipolis" />
+            android:layout_height="match_parent"
+            android:text="Sophia" />
 
     </LinearLayout>
 
