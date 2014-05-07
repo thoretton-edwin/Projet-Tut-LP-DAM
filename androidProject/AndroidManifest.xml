@@ -130,16 +130,19 @@ android:value="@integer/google_play_services_version" />
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
         <activity
-            android:name="dam.ptut.iutunice.Maps.MapsActivity"
-            android:label="@string/title_activity_maps" >
-        </activity>
-        <activity
             android:name="dam.ptut.iutunice.Calendar.CalendarActivity"
             android:label="@string/title_activity_calendar" >
         </activity>
+        
+        <!-- A child of the main activity -->
         <activity
             android:name="dam.ptut.iutunice.Maps.MapActivity"
-            android:label="@string/title_activity_map" >
+            android:label="@string/title_activity_map"
+            android:parentActivityName="dam.ptut.iutunice.Menu.MainActivity" >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
         
         <meta-data

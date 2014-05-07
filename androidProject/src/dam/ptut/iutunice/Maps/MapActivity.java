@@ -8,14 +8,19 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MapActivity extends FragmentActivity {
 	
@@ -26,7 +31,7 @@ public class MapActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
 		
-		this.setTitle("Détails de la formation");
+		this.setTitle("Plan des sites");
 		
 		map = ((SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map)).getMap();
@@ -43,6 +48,9 @@ public class MapActivity extends FragmentActivity {
 				final String adrCannesBocca = "IUT Nice Côte d'Azur \n54, Rue de Cannes \n06150 Cannes La Bocca";
 				final String adrMenton = "IUT Nice Côte d'Azur \n58, chemin du Collège \n06500 Menton";
 				final String adrNice = "IUT Nice Côte d'Azur \n41, Bd Napoléon III \n06206 Nice Cedex 3";
+				
+				final TextView textview = (TextView) findViewById(R.id.textViewAdress);
+				textview.setText(adrSophia);
 				
 				int hue = 0;
 				map.addMarker(new MarkerOptions().title("iut Sophia")
@@ -69,6 +77,7 @@ public class MapActivity extends FragmentActivity {
 					public void onClick(View v) {
 						 // Do something in response to button click
 						 map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutNice, 15));
+						 textview.setText(adrNice);
 					}
 				});
 						
@@ -78,6 +87,7 @@ public class MapActivity extends FragmentActivity {
 				public void onClick(View v) {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutMenton, 15));
+						textview.setText(adrMenton);
 					}
 				});
 				
@@ -87,6 +97,7 @@ public class MapActivity extends FragmentActivity {
 					public void onClick(View v) {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutCannesBocca, 15));
+						textview.setText(adrCannesBocca);
 					}
 				});
 				
@@ -96,6 +107,7 @@ public class MapActivity extends FragmentActivity {
 						public void onClick(View v) {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutCannes, 15));
+						textview.setText(adrCannes);
 					}
 				});
 				
@@ -105,8 +117,44 @@ public class MapActivity extends FragmentActivity {
 					public void onClick(View v) {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));
+						textview.setText(adrSophia);
 					}
 				});
+	}
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		// animation de "retour"
+		overridePendingTransition(R.anim.in_details, R.anim.out_list);
+	}
+
+	// active sur l'action bar le bouton retour
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		// Respond to the action bar's Up/Home button
+		case android.R.id.home:
+			NavUtils.navigateUpFromSameTask(this);
+			overridePendingTransition(R.anim.in_details, R.anim.out_list);
+			return true;
+		case R.id.action_bus:
+			switchListMenu();
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	private void switchListMenu() {
+		Intent intent = new Intent(this, PostBacActivity.class);
+		startActivity(intent);
+	}
+
+	// desactive sur l'action bar le bouton parametre
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		MenuItem item = menu.findItem(R.id.action_settings);
+		item.setVisible(false);
+		return true;
 	}
 
 	@Override
