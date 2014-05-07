@@ -51,9 +51,7 @@
     
     
     [tabSettings addObject:@"Infos WIfi"];
-    [tabSettings addObject:@"A propos"];
     [tabSettings addObject:@"Sondage"];
-    [tabSettings addObject:@"Langue"];
     [tabSettings addObject:@"Credits"];
     
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -193,14 +191,7 @@
             
         }
             break;
-        case 2: // A propos
-        {
-            AboutViewController *viewController = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
-            
-        }
-            break;
-        case 3: // Sondage
+        case 2: // Sondage
         {
             
             if(status == NotReachable)
@@ -225,15 +216,7 @@
             
         }
             break;
-        case 4: // Langue
-        {
-            LangueViewController *viewController = [[LangueViewController alloc] initWithNibName:@"LangueViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
-            
-            
-        }
-            break;
-        case 5: // Crédit
+        case 3: // Crédit
         {
             
             CreditsViewController *viewController = [[CreditsViewController alloc] initWithNibName:@"CreditsViewController" bundle:nil];

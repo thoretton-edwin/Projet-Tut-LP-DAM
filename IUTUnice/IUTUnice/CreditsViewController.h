@@ -10,4 +10,6 @@
 
 @interface CreditsViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextView *crew;
+
 @end

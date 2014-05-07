@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ConnexionViewController.h"
 #import "infosWifiTableViewController.h"
-#import "AboutViewController.h"
 #import "SondageViewController.h"
-#import "LangueViewController.h"
 #import "CreditsViewController.h"
 #import "Reachability.h"
 

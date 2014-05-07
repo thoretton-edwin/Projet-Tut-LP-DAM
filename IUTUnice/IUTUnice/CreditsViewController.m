@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title=@"Crédits";
     }
     return self;
 }
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _crew.text= @"Responsable Développement:\n\tRIVAS Guillaume  \n\nDéveloppeurs: \n\tPALOULACK Maxime \n\tTHORETTON Edwin";
 }
 
 - (void)didReceiveMemoryWarning
