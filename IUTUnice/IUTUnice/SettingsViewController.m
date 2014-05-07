@@ -50,7 +50,7 @@
     }
     
     
-    [tabSettings addObject:@"Infos WIfi"];
+    [tabSettings addObject:@"Infos WIFI"];
     [tabSettings addObject:@"Sondage"];
     [tabSettings addObject:@"Credits"];
     

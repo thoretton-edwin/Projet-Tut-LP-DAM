@@ -672,7 +672,7 @@
         NSString *passwd = password.text;
         
         
-        if ([user isEqual:@"aa"] && [passwd isEqual:@""]) {
+        if ([user isEqual:@"lpdam"] && [passwd isEqual:@"test"]) {
             userId = user;
             NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
             [prefs setValue:userId  forKey:@"idUser"];
