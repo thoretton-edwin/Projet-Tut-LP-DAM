@@ -2,18 +2,126 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="5dp" >
-    
-   <!--  <WebView
-        android:id="@+id/webViewPostBac"
+
+    <TextView
+        android:id="@+id/txtTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp" />
-     -->
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title1"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
     <TextView
-        android:id="@+id/webViewPostBac"
+        android:id="@+id/txtDescription1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="description1"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title2"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description2"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/txtTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title3"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description3"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/txtTitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title4"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description4"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/txtTitle5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title5"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description5"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/txtTitle6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title6"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description6"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/txtTitle7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="title7"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description7"
+        android:textSize="13dp" />
 
 </LinearLayout>
