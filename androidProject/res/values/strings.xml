@@ -22,5 +22,6 @@
     <string name="title_activity_calendar">CalendarActivity</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_suaps">SuapsActivity</string>
+    <string name="title_activity_grade">GradeActivity</string>
 
 </resources>

@@ -153,6 +153,10 @@
             android:name="dam.ptut.iutunice.Suaps.SuapsActivity"
             android:label="@string/title_activity_suaps" >
         </activity>
+        <activity
+            android:name="dam.ptut.iutunice.Grade.GradeActivity"
+            android:label="@string/title_activity_grade" >
+        </activity>
     </application>
 
 </manifest>
