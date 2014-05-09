@@ -51,6 +51,8 @@
 - (void) searchBarTextDidBeginEditing: (UISearchBar*) searchBar
 {
     [searchBar setShowsCancelButton: YES animated: YES];
+	
+	
 }
 
 
@@ -63,23 +65,23 @@
 	
 	//search init
 	searchData = [[NSMutableArray alloc]init];
-	searchController = [[UISearchDisplayController alloc]
-						initWithSearchBar:searchBar contentsController:self];
+	
 			
 	int width = [UIScreen mainScreen].bounds.size.width;
 	int y = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
 	
 	searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,y,width,50)];
 	searchBar.delegate = self;
+	searchController = [[UISearchDisplayController alloc]
+						initWithSearchBar:searchBar contentsController:self];
+	
 	[self.view addSubview:searchBar];
 	[searchBar sizeToFit];
 	
 	searchController.delegate = self;
 	searchController.searchResultsDataSource = self;
 	searchController.searchResultsDelegate = self;
-	//searchController.displaysSearchBarInNavigationBar = YES;
-	searchController.searchResultsTitle=@"titre";
-	self.navigationController.title=@"titre2";
+	searchController.displaysSearchBarInNavigationBar = YES;
     
     //select design
 	_mDegreeSelector.clipsToBounds=YES;
@@ -117,16 +119,17 @@
         });
     });
     
-	int height = [UIScreen mainScreen].bounds.size.height - searchBar.frame.size.height - y - _mDegreeSelector.frame.size.height;
+	int height = [UIScreen mainScreen].bounds.size.height - searchBar.frame.size.height - y - _mDegreeSelector.frame.size.height-10;
     CGRect fr = CGRectMake(0,y+50,self.view.frame.size.width,height);
     
     tableView = [[UITableView alloc] initWithFrame:fr style:UITableViewStylePlain];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     tableView.delegate = self;
     tableView.dataSource = self;
-	[tableView sizeToFit];
+	
     [tableView reloadData];
     [self.view addSubview: tableView];
+	//[tableView sizeToFit];
     
     [_mDegreeSelector addTarget:self
                                 action:@selector(changeDegree:)
@@ -138,24 +141,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
--(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
-    // Update the filtered array based on the search text and scope.
-    // Remove all objects from the filtered search array
-    NSLog(@"%@", @"SAERCHING");
-    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
-    _mFilteredArray = (NSMutableArray*) [_mFormationArray filteredArrayUsingPredicate:resultPredicate];
-}
-*/
+
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-/*
-    [self filterContentForSearchText:searchString
-                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-                                      objectAtIndex:[self.searchDisplayController.searchBar
-                                                     selectedScopeButtonIndex]]];
-													 */
 				
 	[searchData removeAllObjects];
 	NSLog(@"search string : %@",searchString);
