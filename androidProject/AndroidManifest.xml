@@ -152,6 +152,17 @@
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
 
+        <!-- A child of the main activity -->
+        <activity
+            android:name="dam.ptut.iutunice.Grade.GradeActivity"
+            android:label="@string/title_activity_grade"
+            android:parentActivityName="dam.ptut.iutunice.Menu.MainActivity" >
+            
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.Menu.MainActivity" />
+        </activity>
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBU61XWeylwh0Mxn9ugScCNVa1DVlGMvOI" />
@@ -160,10 +171,7 @@
             android:name="dam.ptut.iutunice.Suaps.SuapsActivity"
             android:label="@string/title_activity_suaps" >
         </activity>
-        <activity
-            android:name="dam.ptut.iutunice.Grade.GradeActivity"
-            android:label="@string/title_activity_grade" >
-        </activity>
+        
     </application>
 
 </manifest>

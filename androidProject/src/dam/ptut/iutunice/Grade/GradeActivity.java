@@ -9,9 +9,12 @@ import android.app.Activity;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ExpandableListView;
 
 public class GradeActivity extends Activity {
 
+	ExpandableListView expandableListViewGrade;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,15 +24,18 @@ public class GradeActivity extends Activity {
 		// permet le retour sur la page principale
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		expandableListViewGrade = (ExpandableListView) findViewById(R.id.expandableListViewGrade);
+		
+		// charge les informations qui s'afficheront sur la page
+		//ceci est de la simulation
+		completeList();
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.grade, menu);
-		return true;
+	private void completeList() {
+		
 	}
-
+	
 	// active sur l'action bar le bouton retour
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -49,6 +55,20 @@ public class GradeActivity extends Activity {
 		MenuItem item = menu.findItem(R.id.action_settings);
 		item.setVisible(false);
 		return true;
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.grade, menu);
+		return true;
+	}
+
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		// animation de "retour"
+		overridePendingTransition(R.anim.in_details, R.anim.out_list);
 	}
 
 }

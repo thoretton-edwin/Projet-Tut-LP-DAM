@@ -43,21 +43,36 @@ public class SurveyFragment extends Fragment {
 	//pourcentage bar de progression
 	int lastPercent = 0;
 	
+	//type de sondage
+	String type;
+	
 	@Override
 	public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		final String language = getArguments().getString(LANGUAGE);
-		final String type = getArguments().getString(TYPE);
+		type = getArguments().getString(TYPE);
 		final App app = (App) getActivity().getApplication();
 		
 		//test si sondage déjà rempli
-		if(app.iutSurveyIsCheck == true){
-			AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-				alertDialog.setTitle("Sondage déjà rempli");
-				alertDialog.setPositiveButton("OK", null);
-			AlertDialog dialog = alertDialog.create();
-			dialog.show();
-			getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
+		if("feedback".equals(type)){
+			if(app.feedbackSurveyIsCheck == true){
+				AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+					alertDialog.setTitle("Sondage feedback déjà rempli");
+					alertDialog.setPositiveButton("OK", null);
+				AlertDialog dialog = alertDialog.create();
+				dialog.show();
+				getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
+			}
+		}else if("IUT".equals(type)){
+			if(app.iutSurveyIsCheck == true){
+				AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+					alertDialog.setTitle("Sondage déjà rempli");
+					alertDialog.setPositiveButton("OK", null);
+				AlertDialog dialog = alertDialog.create();
+				dialog.show();
+				getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
+			}
 		}
+		
 		
 		
 		//Log.v("language :", language);
@@ -288,7 +303,12 @@ public class SurveyFragment extends Fragment {
 	private void surveySave(){
 		App app = (App) getActivity().getApplication();
 		//évite de refaire le sondage
-		app.iutSurveyIsCheck = true;
+		if("feedback".equals(type)){
+			app.feedbackSurveyIsCheck = true;
+		}else if("IUT".equals(type)){
+			app.iutSurveyIsCheck = true;
+		}
+		
 		//enregistrer le sondage
 		// ? 
 		
