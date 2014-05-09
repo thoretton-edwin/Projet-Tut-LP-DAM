@@ -3,11 +3,17 @@ package dam.ptut.iutunice.Menu;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.Calendar.CalendarActivity;
@@ -19,13 +25,57 @@ import dam.ptut.iutunice.Suaps.SuapsActivity;
 import dam.ptut.iutunice.Twitter.TwitterActivity;
 
 public class MainActivity extends FragmentActivity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		this.setTitle("IUT Nice Côte d'Azur");
-	}
+		
+		// Create Object of Dialog class
+        final Dialog login = new Dialog(this);
+        // Set GUI of login screen
+        login.setContentView(R.layout.login_screen);
+        login.setTitle("Connexion a l'IUT");
+
+        // Init button of login GUI
+        Button btnLogin = (Button) login.findViewById(R.id.btnLogin);
+        Button btnCancel = (Button) login.findViewById(R.id.btnCancel);
+        final EditText txtUsername = (EditText)login.findViewById(R.id.txtUsername);
+        final EditText txtPassword = (EditText)login.findViewById(R.id.txtPassword);
+
+        // Attached listener for login GUI button
+        btnLogin.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(txtUsername.getText().toString().trim().length() > 0 && txtPassword.getText().toString().trim().length() > 0)
+                {
+                // Validate Your login credential here than display message
+                Toast.makeText(MainActivity.this,
+                        "Identification réussie", Toast.LENGTH_LONG).show();
+
+                // Redirect to dashboard / home screen.
+                login.dismiss();
+                }
+                else
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Please enter Username and Password", Toast.LENGTH_LONG).show();
+
+                }
+            }
+        });
+        btnCancel.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login.dismiss();
+            }
+        });
+
+        // Make dialog box visible.
+        login.show();
+    }
+		
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
