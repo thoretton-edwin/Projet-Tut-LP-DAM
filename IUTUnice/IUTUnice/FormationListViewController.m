@@ -11,6 +11,7 @@
 @interface FormationListViewController ()
 @property UISearchDisplayController* searchController;
 @property NSMutableArray *searchData;
+@property UISearchBar *searchBar;
 
 @end
 
@@ -20,6 +21,7 @@
 @implementation FormationListViewController
 @synthesize searchController;
 @synthesize searchData;
+@synthesize searchBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +30,30 @@
     }
     return self;
 }
+
+
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+	NSLog(@"search button");
+	[searchController setActive:NO];
+	[searchBar resignFirstResponder];
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+	NSLog(@"cancel button");
+	[searchController setActive:NO];
+	[searchBar setShowsCancelButton: NO animated: YES];
+	[searchBar resignFirstResponder];
+}
+
+- (void) searchBarTextDidBeginEditing: (UISearchBar*) searchBar
+{
+    [searchBar setShowsCancelButton: YES animated: YES];
+}
+
+
 
 - (void)viewDidLoad
 {
@@ -38,12 +64,22 @@
 	//search init
 	searchData = [[NSMutableArray alloc]init];
 	searchController = [[UISearchDisplayController alloc]
-						initWithSearchBar:_mSearchBar contentsController:self];
-				
-
+						initWithSearchBar:searchBar contentsController:self];
+			
+	int width = [UIScreen mainScreen].bounds.size.width;
+	int y = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
+	
+	searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,y,width,50)];
+	searchBar.delegate = self;
+	[self.view addSubview:searchBar];
+	[searchBar sizeToFit];
+	
 	searchController.delegate = self;
 	searchController.searchResultsDataSource = self;
 	searchController.searchResultsDelegate = self;
+	//searchController.displaysSearchBarInNavigationBar = YES;
+	searchController.searchResultsTitle=@"titre";
+	self.navigationController.title=@"titre2";
     
     //select design
 	_mDegreeSelector.clipsToBounds=YES;
@@ -81,12 +117,14 @@
         });
     });
     
-    CGRect fr = CGRectMake(0,108,self.view.frame.size.width,344);
+	int height = [UIScreen mainScreen].bounds.size.height - searchBar.frame.size.height - y - _mDegreeSelector.frame.size.height;
+    CGRect fr = CGRectMake(0,y+50,self.view.frame.size.width,height);
     
     tableView = [[UITableView alloc] initWithFrame:fr style:UITableViewStylePlain];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     tableView.delegate = self;
     tableView.dataSource = self;
+	[tableView sizeToFit];
     [tableView reloadData];
     [self.view addSubview: tableView];
     

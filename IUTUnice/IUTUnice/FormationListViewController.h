@@ -15,7 +15,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mDegreeSelector;
-@property (weak, nonatomic) IBOutlet UISearchBar *mSearchBar;
+//@property (weak, nonatomic) IBOutlet UISearchBar *mSearchBar;
 @property NSMutableArray *mFormationArray ,*mDisplayedArray, *mFilteredArray;
 
 @property NSDictionary* formation;
