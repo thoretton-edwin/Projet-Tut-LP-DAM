@@ -16,6 +16,9 @@ public class App extends Application {
 	public int menuType; //0=icons 1=list 2=carousel
 	public boolean iutSurveyIsCheck = false;
 	public boolean feedbackSurveyIsCheck = false;
+	public ArrayList<String> arrayID;
+	public ArrayList<String> arrayPWD;
+	public int firstTime = 0;
 
 	public User user; //identification de l'utilisateur
 	//pour Allan :

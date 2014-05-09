@@ -15,7 +15,9 @@ import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.SurveyFragment;
 import dam.ptut.iutunice.SurveyItem;
+import dam.ptut.iutunice.User;
 import dam.ptut.iutunice.IutWindows.SurveyIutActivity;
+import dam.ptut.iutunice.Menu.MainActivity;
 import dam.ptut.iutunice.R.anim;
 import dam.ptut.iutunice.R.drawable;
 import dam.ptut.iutunice.R.id;
@@ -29,6 +31,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -38,6 +41,11 @@ import android.util.Log;
 import android.util.Xml;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class ParameterActivity extends FragmentActivity {
 
@@ -135,6 +143,15 @@ public class ParameterActivity extends FragmentActivity {
 		ParameterItem parameterItem = app.parameterListe.get(position);
 		switch (parameterItem.image) {
 		case R.drawable.connexion:
+			if (app.user.getId().equals(""))
+			{
+				openLogin();
+			}
+			else
+			{
+				Toast.makeText(ParameterActivity.this,
+                        "Vous êtes déjà connecté", Toast.LENGTH_LONG).show();
+			}
 			break;
 		case R.drawable.wifi:
 			ParameterWifiFragment wifiFragment = new ParameterWifiFragment();
@@ -335,5 +352,65 @@ public class ParameterActivity extends FragmentActivity {
 		
 		App app = (App) getApplication();
 		app.surveyList = listSurvey;
+	}
+	
+	private void openLogin() {
+		final App app = (App) getApplication();
+		// Create Object of Dialog class
+        final Dialog login = new Dialog(this);
+        // Set GUI of login screen
+        login.setContentView(R.layout.login_screen);
+        login.setTitle("Connexion a l'IUT");
+
+        // Init button of login GUI
+        Button btnLogin = (Button) login.findViewById(R.id.btnLogin);
+        Button btnCancel = (Button) login.findViewById(R.id.btnCancel);
+        final EditText txtUsername = (EditText)login.findViewById(R.id.txtUsername);
+        final EditText txtPassword = (EditText)login.findViewById(R.id.txtPassword);
+
+        // Attached listener for login GUI button
+        btnLogin.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(txtUsername.getText().toString().trim().length() > 0 && txtPassword.getText().toString().trim().length() > 0)
+                {
+                	for(int i = 0; i<app.arrayID.size(); i++)
+                	{
+                		if(app.arrayID.get(i).equals(txtUsername.getText().toString()) && app.arrayPWD.get(i).equals(txtPassword.getText().toString()))
+                		{
+                			// Validate Your login credential here than display message
+        	                Toast.makeText(ParameterActivity.this,
+        	                        "Identification réussie", Toast.LENGTH_LONG).show();
+        	                User myUser = new User(txtUsername.getText().toString(), "SCHERER", "NICOLAS", "LP_SIL_DAM_trad");
+        	                app.user = myUser;
+        	                // Redirect to dashboard / home screen.
+        	                login.dismiss();
+                		}
+                		 else
+                         {
+                             Toast.makeText(ParameterActivity.this,
+                                     "Identifiant ou mot de passe incorrect(s)", Toast.LENGTH_LONG).show();
+                         }
+                	}
+                }
+                else
+                {
+                    Toast.makeText(ParameterActivity.this,
+                            "Entrez votre identifiant et votre mot de passe", Toast.LENGTH_LONG).show();
+
+                }
+            }
+        });
+        btnCancel.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	User myUser = new User("", "", "", "");
+                app.user = myUser;
+                login.dismiss();
+            }
+        });
+
+        // Make dialog box visible.
+        login.show();
 	}
 }
