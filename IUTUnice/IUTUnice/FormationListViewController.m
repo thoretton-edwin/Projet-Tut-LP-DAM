@@ -9,10 +9,17 @@
 #import "FormationListViewController.h"
 
 @interface FormationListViewController ()
+@property UISearchDisplayController* searchController;
+@property NSMutableArray *searchData;
 
 @end
 
+
+
+
 @implementation FormationListViewController
+@synthesize searchController;
+@synthesize searchData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +33,17 @@
 {
     [super viewDidLoad];
     self.title = @"Formations";
+	
+	
+	//search init
+	searchData = [[NSMutableArray alloc]init];
+	searchController = [[UISearchDisplayController alloc]
+						initWithSearchBar:_mSearchBar contentsController:self];
+				
+
+	searchController.delegate = self;
+	searchController.searchResultsDataSource = self;
+	searchController.searchResultsDelegate = self;
     
     //select design
 	_mDegreeSelector.clipsToBounds=YES;
@@ -82,7 +100,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
@@ -90,14 +108,47 @@
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
     _mFilteredArray = (NSMutableArray*) [_mFormationArray filteredArrayUsingPredicate:resultPredicate];
 }
+*/
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
+/*
     [self filterContentForSearchText:searchString
                                scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                       objectAtIndex:[self.searchDisplayController.searchBar
                                                      selectedScopeButtonIndex]]];
-    
+													 */
+				
+	[searchData removeAllObjects];
+	NSLog(@"search string : %@",searchString);
+	
+    NSString *word=@"";
+	int bestRange=1;
+	Formation *element;
+	
+    for(element in _mDisplayedArray) //take the n group (eg. group1, group2, group3)
+						  //in the original data
+    {
+		
+		NSRange range = [[element getTitle] rangeOfString:searchString
+									options:NSCaseInsensitiveSearch];
+		/*
+		 searchString = [searchString lowercaseString];
+		 if([searchString isEqual:word])[searchData addObject:word];
+		 */
+		
+		
+		if(range.length>=bestRange)
+		{
+				//NSLog(@"range : %d",range.length);
+			NSLog(@"word  : %@",word);
+			bestRange = range.length;
+			[searchData addObject:element];
+		}
+		
+		
+		
+    }
     return YES;
 }
 
@@ -129,13 +180,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    if (self->tableView == self.searchDisplayController.searchResultsTableView) {
-        return [_mFilteredArray count];
+    //if (self->tableView == self.searchDisplayController.searchResultsTableView)
+	if(self.searchController.isActive)
+	{
+        return [searchData count];
     } else {
         return [_mDisplayedArray count];
     }
     
 }
+
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = [[_mDisplayedArray objectAtIndex:indexPath.row] getId];
@@ -150,8 +206,10 @@
     cell.textLabel.frame = CGRectMake(0,0,400,30);
     cell.textLabel.numberOfLines = 3;
     
-    if (self->tableView == self.searchDisplayController.searchResultsTableView) {
-        cell.textLabel.text = [[_mFilteredArray objectAtIndex: indexPath.row] getTitle];
+    //if (self->tableView == self.searchDisplayController.searchResultsTableView)
+	if(self.searchController.isActive)
+	{
+        cell.textLabel.text = [[searchData objectAtIndex: indexPath.row] getTitle];
     } else {
         cell.textLabel.text = [[_mDisplayedArray objectAtIndex: indexPath.row] getTitle];
     }
