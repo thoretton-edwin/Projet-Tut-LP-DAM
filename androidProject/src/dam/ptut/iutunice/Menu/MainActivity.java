@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.Calendar.CalendarActivity;
+import dam.ptut.iutunice.Grade.GradeActivity;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
 import dam.ptut.iutunice.Maps.MapActivity;
 import dam.ptut.iutunice.Parameter.ParameterActivity;
@@ -163,6 +164,8 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);
 			break;
 		case R.drawable.logo_grades_256:
+			intent = new Intent(this, GradeActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_schedule_256:
 			intent = new Intent(this, CalendarActivity.class);

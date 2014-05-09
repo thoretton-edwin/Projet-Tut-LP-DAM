@@ -53,7 +53,7 @@
     </LinearLayout>
 
     <ExpandableListView
-        android:id="@+id/expandableListView1"
+        android:id="@+id/expandableListViewGrade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ExpandableListView>
