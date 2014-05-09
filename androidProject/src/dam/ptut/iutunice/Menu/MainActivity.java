@@ -6,7 +6,6 @@ import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import dam.ptut.iutunice.App;
@@ -16,6 +15,7 @@ import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
 import dam.ptut.iutunice.Maps.MapActivity;
 import dam.ptut.iutunice.Parameter.ParameterActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
+import dam.ptut.iutunice.Suaps.SuapsActivity;
 import dam.ptut.iutunice.Twitter.TwitterActivity;
 
 public class MainActivity extends FragmentActivity {
@@ -173,6 +173,8 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);
 			break;
 		case R.drawable.logo_suaps_256:
+			intent = new Intent(this, SuapsActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_post_bac:
 			intent = new Intent(this, PostBacActivity.class);

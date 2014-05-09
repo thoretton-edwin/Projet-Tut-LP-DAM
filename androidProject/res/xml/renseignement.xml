@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<renseignement type="adressbook">
+		<nom>Carnet d'adresse des enseignants</nom>
+		<adresse>
+			<nom>Laurence ANDREOLETTI</nom>
+			<email>laurence.andreoletti@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Didier CHOUVY</nom>
+			<email>didier.chouvy@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Jo DELREY</nom>
+			<email>jdelrey@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Gerard DENIS</nom>
+			<email>gerard.denis@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Olivia HASSAN</nom>
+			<email>olivia.hassan@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Michèle LEBARD</nom>
+			<email>michele.lebard@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Erick MARTINEZ</nom>
+			<email>erick.martinez@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Eric MONTAGNON</nom>
+			<email>eric.montagnon@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Marc SERRA</nom>
+			<email>marc.serra@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Pierre VIGOT</nom>
+			<email>pierre.vigot@unice.fr</email>
+		</adresse>
+	</renseignement>
+	<renseignement type="adressbook">
+		Carnet d'adresses Secrétaires SUAPS
+		<adresse>
+			<nom>Evelyne BERNARDI</nom>
+			<email>evelyne.bernardi@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Patricia COLOMB</nom>
+			<email>patricia.colomb@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Christine PALUMBO</nom>
+			<email>christine.palumbo@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Christiane PEILLON</nom>
+			<email>christiane.peillon@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Pour les informations</nom>
+			<email>suaps@unice.fr</email>
+		</adresse>
+	</renseignement>
+
+	<renseignement type="adressbook">
+		<nom>Carnet d'adresses Comité Regional du Sport</nom>
+		<adresse>
+			<nom>Laurence ANTIMI-LOPPIN</nom>
+			<email>laurence.antimi-loppin@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Veronique ANDRIOT</nom>
+			<email>veronique.andriot@unice.fr</email>
+		</adresse>
+		<adresse>
+			<nom>Christophe TOUCAS</nom>
+			<email>toucas@unice.fr</email>
+		</adresse>
+	</renseignement>
+	
+	<renseignement type ="infos">
+	<infos>
+		Fermeture des installations sportives :
+		Toussaint : du 26/10 au 03/11
+		Noël : du 21/12 au 05/01
+		Hiver : du 22/02 au 02/03
+		Printemps : du 26/04 au 04/05
+	</infos>
+	</renseignement>
+</root>
