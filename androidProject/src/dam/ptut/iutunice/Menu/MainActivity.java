@@ -108,21 +108,14 @@ public class MainActivity extends FragmentActivity {
 	private void collectMenuList() {
 		List<IconMenuListItem> list = new ArrayList<IconMenuListItem>();
 
-		//int imgIutWindow = R.drawable.logo_iut_window;
 		int imgIutWindow = R.drawable.logo_iut_window_256;
-		//int imgGrades = R.drawable.logo_grades;
 		int imgGrades = R.drawable.logo_grades_256;
-		//int imgCalendar = R.drawable.logo_calendar;
 		int imgCalendar = R.drawable.logo_schedule_256;
-		//int imgMap = R.drawable.logo_maps;
 		int imgMap = R.drawable.logo_maps_256;
-		//int imgSuaps = R.drawable.logo_suaps;
 		int imgSuaps = R.drawable.logo_suaps_256;
 		int imgPostBac = R.drawable.logo_post_bac;
-		//int imgAddressBook = R.drawable.logo_addressbook;
 		int imgAddressBook = R.drawable.logo_directory_256;
 		int imgCompanyPartnership = R.drawable.logo_compagny_partnership;
-		//int imgTwitter = R.drawable.logo_twitter;
 		int imgTwitter = R.drawable.logo_twitter_256;
 
 		IconMenuListItem i1 = new IconMenuListItem(imgIutWindow, "Vitrine IUT");
