@@ -12,7 +12,7 @@
 @property UISearchDisplayController* searchController;
 @property NSMutableArray *searchData;
 @property UISearchBar *searchBar;
-
+@property BOOL searchIsActive;
 @end
 
 
@@ -22,6 +22,7 @@
 @synthesize searchController;
 @synthesize searchData;
 @synthesize searchBar;
+@synthesize searchIsActive;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,29 +34,56 @@
 
 
 
--(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+-(void)searchBarSearchButtonClicked:(UISearchBar *)_searchBar
 {
 	NSLog(@"search button");
-	[searchController setActive:NO];
+	[searchBar setShowsCancelButton: NO animated: YES];
+	//searchController.active = NO;
 	[searchBar resignFirstResponder];
+	if(searchBar.isHidden)
+	{
+		NSLog(@"is hidden");
+	}
+	
+	if(searchBar.isFirstResponder)
+	{
+		NSLog(@"is first responder");
+	}
+	self.navigationItem.titleView=nil;
+	
 }
 
--(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+-(void)searchBarCancelButtonClicked:(UISearchBar *)_searchBar
 {
 	NSLog(@"cancel button");
-	[searchController setActive:NO];
 	[searchBar setShowsCancelButton: NO animated: YES];
+	searchIsActive = NO;
 	[searchBar resignFirstResponder];
+	self.navigationItem.titleView=nil;
+	[self changeDegree:_mDegreeSelector];
+	
 }
 
-- (void) searchBarTextDidBeginEditing: (UISearchBar*) searchBar
+- (void) searchBarTextDidBeginEditing: (UISearchBar*) _searchBar
 {
     [searchBar setShowsCancelButton: YES animated: YES];
-	
-	
 }
 
-
+-(void)actionSearch
+{
+	NSLog(@"action search");
+	if(!self.navigationItem.titleView)
+	{
+		self.navigationItem.titleView = searchBar;
+		searchIsActive=YES;
+	}
+	else
+	{
+		[self searchBarCancelButtonClicked:searchBar];
+	}
+	
+	//searchController.displaysSearchBarInNavigationBar = YES;
+}
 
 - (void)viewDidLoad
 {
@@ -75,13 +103,18 @@
 	searchController = [[UISearchDisplayController alloc]
 						initWithSearchBar:searchBar contentsController:self];
 	
-	[self.view addSubview:searchBar];
+	//[self.view addSubview:searchBar];
 	[searchBar sizeToFit];
 	
 	searchController.delegate = self;
 	searchController.searchResultsDataSource = self;
 	searchController.searchResultsDelegate = self;
-	searchController.displaysSearchBarInNavigationBar = YES;
+	
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+											  initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+											  target:self
+											  action:@selector(actionSearch)];
+
     
     //select design
 	_mDegreeSelector.clipsToBounds=YES;
@@ -119,8 +152,8 @@
         });
     });
     
-	int height = [UIScreen mainScreen].bounds.size.height - searchBar.frame.size.height - y - _mDegreeSelector.frame.size.height-10;
-    CGRect fr = CGRectMake(0,y+50,self.view.frame.size.width,height);
+	int height = [UIScreen mainScreen].bounds.size.height - y - _mDegreeSelector.frame.size.height;
+    CGRect fr = CGRectMake(0,y,self.view.frame.size.width,height);
     
     tableView = [[UITableView alloc] initWithFrame:fr style:UITableViewStylePlain];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
@@ -168,7 +201,7 @@
 		if(range.length>=bestRange)
 		{
 				//NSLog(@"range : %d",range.length);
-			NSLog(@"word  : %@",word);
+			NSLog(@"word  : %@",element);
 			bestRange = range.length;
 			[searchData addObject:element];
 		}
@@ -176,10 +209,14 @@
 		
 		
     }
+	[tableView reloadData];
     return YES;
 }
 
 - (void) changeDegree:(UISegmentedControl *)paramSender{
+
+	NSLog(@"selection");
+	searchIsActive = NO;
     [_mDisplayedArray removeAllObjects];
     
     if (_mDegreeSelector.selectedSegmentIndex == 0){
@@ -208,7 +245,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     //if (self->tableView == self.searchDisplayController.searchResultsTableView)
-	if(self.searchController.isActive)
+	if(searchIsActive)
 	{
         return [searchData count];
     } else {
@@ -234,7 +271,7 @@
     cell.textLabel.numberOfLines = 3;
     
     //if (self->tableView == self.searchDisplayController.searchResultsTableView)
-	if(self.searchController.isActive)
+	if(searchIsActive)
 	{
         cell.textLabel.text = [[searchData objectAtIndex: indexPath.row] getTitle];
     } else {
