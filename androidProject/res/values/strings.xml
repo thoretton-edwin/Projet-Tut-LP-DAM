@@ -23,5 +23,6 @@
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_suaps">SuapsActivity</string>
     <string name="title_activity_grade">GradeActivity</string>
+    <string name="title_activity_details_grade">DetailsGradeActivity</string>
 
 </resources>

@@ -7,6 +7,8 @@ import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.SurveyAnswer;
 import dam.ptut.iutunice.SurveyQuestion;
+import dam.ptut.iutunice.IutWindows.DetailsFormationActivity;
+import dam.ptut.iutunice.Parameter.ParameterWifiFragment;
 import dam.ptut.iutunice.PostBac.PostBac;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
@@ -14,16 +16,24 @@ import dam.ptut.iutunice.User;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.DialogInterface.OnClickListener;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.CheckBox;
 import android.widget.ExpandableListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.ExpandableListView.OnChildClickListener;
 
 public class GradeActivity extends Activity {
 
@@ -136,6 +146,26 @@ public class GradeActivity extends Activity {
 			}
 		});
 
+		expandableListViewGrade.setOnChildClickListener(new OnChildClickListener() {
+			
+			@Override
+			public boolean onChildClick(ExpandableListView parent, View v,
+					int groupPosition, int childPosition, long id) {
+				
+				String ue = ueArray.get(groupPosition);
+				ArrayList<Subject> subjectArray = listDataChild.get(ue);
+				
+				Subject subject = subjectArray.get(childPosition);
+				
+				Intent intent = new Intent(getApplicationContext(), DetailsGradeActivity.class);
+				intent.putExtra("subject", subject.entitled);
+				
+				startActivity(intent);
+				overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
+				return true;
+			}
+		});
+		
 	}
 
 	private void completeList() {
