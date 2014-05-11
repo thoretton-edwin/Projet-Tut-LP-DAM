@@ -360,7 +360,7 @@ public class ParameterActivity extends FragmentActivity {
         final Dialog login = new Dialog(this);
         // Set GUI of login screen
         login.setContentView(R.layout.login_screen);
-        login.setTitle("Connexion a l'IUT");
+        login.setTitle("Connexion à l'IUT");
 
         // Init button of login GUI
         Button btnLogin = (Button) login.findViewById(R.id.btnLogin);

@@ -38,12 +38,12 @@ public class MainActivity extends FragmentActivity {
 		app.arrayID.add("damtest");
 		app.arrayID.add("damtest1");
 		app.arrayID.add("damtest2");
-		app.arrayID.add("damtest3");
+		app.arrayID.add("test");
 		app.arrayPWD = new ArrayList<String>();
 		app.arrayPWD.add("passe");
 		app.arrayPWD.add("passe1");
 		app.arrayPWD.add("passe2");
-		app.arrayPWD.add("passe3");
+		app.arrayPWD.add("pass");
 		if(app.firstTime == 0){
 			openLogin();
 			app.firstTime++;
@@ -127,7 +127,7 @@ public class MainActivity extends FragmentActivity {
         final Dialog login = new Dialog(this);
         // Set GUI of login screen
         login.setContentView(R.layout.login_screen);
-        login.setTitle("Connexion a l'IUT");
+        login.setTitle("Connexion à l'IUT");
 
         // Init button of login GUI
         Button btnLogin = (Button) login.findViewById(R.id.btnLogin);

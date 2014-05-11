@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_height="match_parent"
-    android:paddingLeft="10dp" android:paddingRight="10dp"
-    android:background="#fff" android:layout_width="300dp"
-    android:paddingTop="10dp">
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
 
     <TextView
         android:id="@+id/textView1"
@@ -12,9 +15,13 @@
         android:text="Identifiant :"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText android:layout_height="wrap_content" android:id="@+id/txtUsername"
-        android:layout_width="match_parent">
-        <requestFocus></requestFocus>
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <requestFocus>
+        </requestFocus>
     </EditText>
 
     <TextView
@@ -24,16 +31,37 @@
         android:text="Mot de passe :"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText android:layout_height="wrap_content"
-        android:inputType="textPassword" android:id="@+id/txtPassword"
-        android:layout_width="match_parent"></EditText>
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/linearLayout1">
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_weight="0.5"
-            android:id="@+id/btnLogin" android:text="Login"></Button>
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_weight="0.5"
-            android:id="@+id/btnCancel" android:text="Cancel"></Button>
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bt_iut_windows"
+            android:text="OK" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bt_iut_windows"
+            android:text="Annuler" >
+        </Button>
     </LinearLayout>
+
 </LinearLayout>
