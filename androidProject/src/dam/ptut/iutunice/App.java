@@ -6,13 +6,13 @@ import java.util.List;
 import android.app.Application;
 import dam.ptut.iutunice.Menu.IconMenuListItem;
 import dam.ptut.iutunice.Parameter.ParameterItem;
-import dam.ptut.iutunice.Suaps.SuapsActivitiesChild;
+import dam.ptut.iutunice.Suaps.SuapsChild;
 
 public class App extends Application {
 	public List<ParameterItem> parameterListe;
 	public List<IconMenuListItem> iconItemList;
 	public List<SurveyItem> surveyList;
-	public ArrayList<SuapsActivitiesChild> suapsList;
+	public ArrayList<SuapsChild> suapsList;
 	public int menuType; //0=icons 1=list 2=carousel
 	public boolean iutSurveyIsCheck = false;
 	public boolean feedbackSurveyIsCheck = false;
