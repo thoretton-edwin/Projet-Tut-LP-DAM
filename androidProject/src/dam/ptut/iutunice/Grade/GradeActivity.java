@@ -1,8 +1,14 @@
 package dam.ptut.iutunice.Grade;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.SurveyAnswer;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
+import dam.ptut.iutunice.User;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
@@ -10,10 +16,12 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 public class GradeActivity extends Activity {
 
 	ExpandableListView expandableListViewGrade;
+	HashMap<String, ArrayList<Subject>> listDataChild;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +41,16 @@ public class GradeActivity extends Activity {
 	}
 
 	private void completeList() {
+		App app = (App) getApplication();
+		User user = app.user;
+		TextView txtStudentId = (TextView) findViewById(R.id.txtStudentId);
+		txtStudentId.setText(user.getId());
+		TextView txtStudentName = (TextView) findViewById(R.id.txtStudentName);
+		txtStudentName.setText(user.getName());
+		TextView txtStudentFirstName = (TextView) findViewById(R.id.txtStudentFirstName);
+		txtStudentFirstName.setText(user.getFirstName());
+		TextView txtStudentFormation = (TextView) findViewById(R.id.txtStudentFormation);
+		txtStudentFormation.setText(user.getFormation());
 		
 	}
 	

@@ -21,7 +21,6 @@ import dam.ptut.iutunice.R;
 
 public class PostBacActivity extends Activity {
 
-	ExpandableListAdapter listAdapter;
 	ExpandableListView expandableListViewPostBac;
 	HashMap<String, PostBac> listDataChild; // formations, description
 	ArrayList<String> formations;
