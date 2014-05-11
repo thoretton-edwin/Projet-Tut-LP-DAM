@@ -38,12 +38,12 @@ public class MainActivity extends FragmentActivity {
 		app.arrayID.add("damtest");
 		app.arrayID.add("damtest1");
 		app.arrayID.add("damtest2");
-		app.arrayID.add("test");
+		app.arrayID.add("aa");
 		app.arrayPWD = new ArrayList<String>();
 		app.arrayPWD.add("passe");
 		app.arrayPWD.add("passe1");
 		app.arrayPWD.add("passe2");
-		app.arrayPWD.add("pass");
+		app.arrayPWD.add("aa");
 		if(app.firstTime == 0){
 			openLogin();
 			app.firstTime++;
