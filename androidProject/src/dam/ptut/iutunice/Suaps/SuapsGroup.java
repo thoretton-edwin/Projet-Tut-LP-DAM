@@ -12,28 +12,59 @@ import android.util.Log;
 public class SuapsGroup {
 	int ID;
 	String Title;
-	ArrayList<SuapsActivitiesChild> SuapsArray;
-	
+	ArrayList<SuapsChild> SuapsArray;
+
 	public SuapsGroup(int id, String title, XmlResourceParser xpp)
-			throws XmlPullParserException, IOException{
+			throws XmlPullParserException, IOException {
 		this.ID = id;
 		this.Title = title;
-		
-		SuapsArray = new ArrayList<SuapsActivitiesChild>();
-		
-		Log.v("sur balise response (début)", ""+xpp.getName() );
-		while (xpp.getEventType() != XmlPullParser.END_DOCUMENT) {
-			// if (xpp.getEventType() == XmlPullParser.START_TAG &&
-			// "activite".equals(xpp.getName())) {
-			if (xpp.getEventType() == XmlPullParser.START_TAG) {
-				// Log.v("debug", "xpp = " + xpp.getName());
-				if ("nom".equals(xpp.getName())) {
-					SuapsActivitiesChild item = new SuapsActivitiesChild(xpp);
-					SuapsArray.add(item);
-				}
-			}
-			xpp.next();
+
+		String type = null;
+		switch (ID) {
+		case 0:
+			type = "activite";
+			break;
+		case 1:
+			type = "renseignement";
+			break;
+		case 2:
+			type = "lieux";
+			break;
+		case 3:
+			type = "uel";
+			break;
+		case 4:
+			type = null;
+			break;
+
+		default:
+			break;
 		}
-		Log.v("Parse", "suapsItem = " + SuapsArray.toString());
+
+		SuapsArray = new ArrayList<SuapsChild>();
+
+		xpp.next();
+		// Log.v("test", "xpp = " + xpp.getName()); // null
+		xpp.require(XmlPullParser.START_DOCUMENT, null, null);
+		xpp.nextTag();
+		Log.v("debug", "xpp.nextTag = " + xpp.getName()); // root
+
+		while (xpp.getEventType() == XmlPullParser.START_TAG) {
+			if (xpp.getEventType() == XmlPullParser.START_TAG
+					&& type.equals(xpp.getName())) {
+				// Log.v("debug", "xpp.nextTag in While = " + xpp.getName());
+				SuapsChild child = new SuapsChild(xpp, ID);
+				SuapsArray.add(child);
+			} else {
+				xpp.next();
+			}
+			Log.v("suaps array", "suaps array = " + SuapsArray.toString());
+		}
+		// Log.v("end parse", "xpp.getName = " + xpp.getName());
+		// xpp.require(XmlPullParser.END_TAG, null, type);
+		xpp.next();
+		Log.v("end parse", "xpp.getName = " + xpp.getName());
+		xpp.require(XmlPullParser.END_DOCUMENT, null, null);
+
 	}
 }

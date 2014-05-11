@@ -12,7 +12,6 @@ import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,8 +24,8 @@ import dam.ptut.iutunice.R;
 
 public class SuapsActivity extends Activity {
 	private ArrayList<SuapsGroup> SuapsArray;
-	private ArrayList<SuapsActivitiesChild> suapsItem;
-	HashMap<String, ArrayList<SuapsActivitiesChild>> listDataChild;
+	private ArrayList<SuapsChild> suapsItem;
+	HashMap<String, ArrayList<SuapsChild>> listDataChild;
 	LayoutInflater inflater;
 
 	@Override
@@ -107,7 +106,7 @@ public class SuapsActivity extends Activity {
 			public int getChildrenCount(int groupPosition) {
 				// TODO Auto-generated method stub
 				SuapsGroup suapsGroup = SuapsArray.get(groupPosition);
-				ArrayList<SuapsActivitiesChild> suapsChild = listDataChild.get(suapsGroup.Title);
+				ArrayList<SuapsChild> suapsChild = listDataChild.get(suapsGroup.Title);
 				return suapsChild.size();
 			}
 
@@ -116,7 +115,7 @@ public class SuapsActivity extends Activity {
 					boolean isLastChild, View convertView, ViewGroup parent) {
 				// TODO Auto-generated method stub
 
-				SuapsActivitiesChild child = (SuapsActivitiesChild) getChild(
+				SuapsChild child = (SuapsChild) getChild(
 						groupPosition, childPosition);
 				if (convertView == null) {
 					convertView = inflater.inflate(R.layout.item_list_suaps,
@@ -124,7 +123,7 @@ public class SuapsActivity extends Activity {
 				}
 				TextView tvChild = (TextView) convertView
 						.findViewById(R.id.tvSuapsChild);
-				 Log.v("debug", "name = " + child.Name);
+//				 Log.v("debug", "name = " + child.Name);
 				tvChild.setText(child.Name);
 
 				return convertView;
@@ -137,12 +136,12 @@ public class SuapsActivity extends Activity {
 			}
 
 			@Override
-			public SuapsActivitiesChild getChild(int groupPosition,
+			public SuapsChild getChild(int groupPosition,
 					int childPosition) {
 				// TODO Auto-generated method stub
 				
 				SuapsGroup suapsGroup = SuapsArray.get(groupPosition);
-				ArrayList<SuapsActivitiesChild> suapsChildArray = listDataChild.get(suapsGroup.Title);
+				ArrayList<SuapsChild> suapsChildArray = listDataChild.get(suapsGroup.Title);
 				return suapsChildArray.get(childPosition);
 			}
 		});
@@ -151,12 +150,20 @@ public class SuapsActivity extends Activity {
 
 	private void FillList() throws XmlPullParserException, IOException {
 		// TODO Auto-generated method stub
-		XmlResourceParser xpp = getResources().getXml(R.xml.activites);
 		SuapsArray = new ArrayList<SuapsGroup>();
+		
+		XmlResourceParser xpp = getResources().getXml(R.xml.activites);
 		SuapsGroup s1 = new SuapsGroup(0, "Activités", xpp);
+		
+		xpp = getResources().getXml(R.xml.renseignement);
 		SuapsGroup s2 = new SuapsGroup(1, "Renseignements", xpp);
+		
+		xpp = getResources().getXml(R.xml.lieux);
 		SuapsGroup s3 = new SuapsGroup(2, "Lieux", xpp);
+		
+		xpp = getResources().getXml(R.xml.uel);
 		SuapsGroup s4 = new SuapsGroup(3, "UEL", xpp);
+		
 		SuapsGroup s5 = new SuapsGroup(4, "Bonus", xpp);
 		
 		SuapsArray.add(s1);
@@ -165,10 +172,10 @@ public class SuapsActivity extends Activity {
 		SuapsArray.add(s4);
 		SuapsArray.add(s5);
 		
-		listDataChild = new HashMap<String, ArrayList<SuapsActivitiesChild>>();
+		listDataChild = new HashMap<String, ArrayList<SuapsChild>>();
 		for (int i = 0; i < SuapsArray.size(); i++) {
 			SuapsGroup suapsGroup = (SuapsGroup) SuapsArray.get(i);
-			ArrayList<SuapsActivitiesChild> childArray = suapsGroup.SuapsArray;
+			ArrayList<SuapsChild> childArray = suapsGroup.SuapsArray;
 			listDataChild.put(suapsGroup.Title, childArray);
 		}
 	}
@@ -192,5 +199,13 @@ public class SuapsActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	// desactive sur l'action bar le bouton parametre
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		MenuItem item = menu.findItem(R.id.action_settings);
+		item.setVisible(false);
+		return true;
 	}
 }
