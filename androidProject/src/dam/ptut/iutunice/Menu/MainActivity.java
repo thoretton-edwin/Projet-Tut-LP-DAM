@@ -57,22 +57,12 @@ public class MainActivity extends FragmentActivity {
 
 		collectMenuList();
 		IconMenuFragment iconMenuFragment = new IconMenuFragment();
-		IconMenuCarouselFragment iconMenuCarouselFragment = new IconMenuCarouselFragment();
-
-		App app = (App) getApplication();
-		int orientation = getResources().getConfiguration().orientation;
-		if (orientation == 1){// portrait
-			app.menuType = 0;//menu icons by default
-			getSupportFragmentManager().beginTransaction()
-					.replace(R.id.flContent, iconMenuFragment).commit();
-		}else{
-			// 2 = paysage
-			app.menuType = 2;//menu carousel
-			getSupportFragmentManager().beginTransaction()
-					.replace(R.id.flContent, iconMenuCarouselFragment).commit();
-
 		
-		}
+		App app = (App) getApplication();
+		app.listMenu = false; //menu icons by default
+		getSupportFragmentManager().beginTransaction()
+				.replace(R.id.flContent, iconMenuFragment).commit();
+		
 		return super.onCreateOptionsMenu(menu);
 
 	}
@@ -83,34 +73,30 @@ public class MainActivity extends FragmentActivity {
 		switch (item.getItemId()) {
 		case R.id.action_settings:
 			openSettings();
+			break;
 		case R.id.action_list:
 			switchListMenu();
+			break;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
+		return false;
 
 	}
 
 	private void switchListMenu() {
 		App app = (App) getApplication();
-		if(app.menuType == 0){//icons menu
+		if(!app.listMenu){ //icons menu
 			collectMenuList();
 			IconMenuListFragment iconMenuListFragment = new IconMenuListFragment();
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.flContent, iconMenuListFragment).commit();
-			app.menuType = 1;
-		}else if(app.menuType == 1){//list menu
+			app.listMenu = true;
+		}else{//list menu
 			IconMenuFragment iconMenuFragment = new IconMenuFragment();
 			getSupportFragmentManager().beginTransaction()
 			.replace(R.id.flContent, iconMenuFragment).commit();
-			app.menuType = 0;
-		}else{
-			//carousel menu
-			collectMenuList();
-			IconMenuListFragment iconMenuListFragment = new IconMenuListFragment();
-			getSupportFragmentManager().beginTransaction()
-					.replace(R.id.flContent, iconMenuListFragment).commit();
-			app.menuType = 1;
+			app.listMenu = false;
 		}
 		
 	}

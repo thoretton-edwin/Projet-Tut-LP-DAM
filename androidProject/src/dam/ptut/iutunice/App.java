@@ -13,7 +13,7 @@ public class App extends Application {
 	public List<IconMenuListItem> iconItemList;
 	public List<SurveyItem> surveyList;
 	public ArrayList<SuapsChild> suapsList;
-	public int menuType; //0=icons 1=list 2=carousel
+	public boolean listMenu;
 	public boolean iutSurveyIsCheck = false;
 	public boolean feedbackSurveyIsCheck = false;
 	public ArrayList<String> arrayID;
