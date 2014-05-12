@@ -104,26 +104,18 @@ public class ParameterActivity extends FragmentActivity {
 		String infosWifi = "Infos Wifi";
 		String aPropos = "A propos";
 		String sondage = "Sondage";
-		String langue = "Langues";
-		String credit = "Crédits";
 		int imgc = R.drawable.connexion;
 		int imgi = R.drawable.wifi;
 		int imga = R.drawable.apropos;
 		int imgs = R.drawable.sondage;
-		int imgl = R.drawable.flag;
-		int imgcr = R.drawable.credit;
 		ParameterItem i1 = new ParameterItem(connexion, imgc);
 		ParameterItem i2 = new ParameterItem(infosWifi, imgi);
 		ParameterItem i3 = new ParameterItem(aPropos, imga);
 		ParameterItem i4 = new ParameterItem(sondage, imgs);
-		ParameterItem i5 = new ParameterItem(langue, imgl);
-		ParameterItem i6 = new ParameterItem(credit, imgcr);
 		liste.add(i1);
 		liste.add(i2);
 		liste.add(i3);
 		liste.add(i4);
-		liste.add(i5);
-		liste.add(i6);
 		App app = (App) getApplication();
 		app.parameterListe = liste;
 	}
@@ -164,13 +156,17 @@ public class ParameterActivity extends FragmentActivity {
 					.commit();
 			break;
 		case R.drawable.apropos:
+			ParameterCreditsFragment creditsFragment = new ParameterCreditsFragment();
+			getSupportFragmentManager()
+					.beginTransaction()
+					.setCustomAnimations(R.anim.in_from_right,
+							R.anim.out_to_left, R.anim.in_details,
+							R.anim.out_list)
+					.replace(R.id.vgContent, creditsFragment).addToBackStack(null)
+					.commit();
 			break;
 		case R.drawable.sondage:
 				surveyClick();
-			break;
-		case R.drawable.flag:
-			break;
-		case R.drawable.credit:
 			break;
 		}
 	}

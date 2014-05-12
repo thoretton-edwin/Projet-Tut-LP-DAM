@@ -43,31 +43,7 @@ public class ParameterWifiFragment extends Fragment {
 		View content = inflater.inflate(R.layout.fragment_wifi, container,
 				false);
 		
-		recoveryXmlWifi(content, inflater);
-		
-		
-
-//		TableLayout tLayout = (TableLayout) content.findViewById(R.id.tableWifi);
-//		TableRow tRow;
-//		LinearLayout lLayout = new LinearLayout(getActivity());
-//		lLayout.setOrientation(LinearLayout.VERTICAL);
-//		tLayout.
-//
-//        LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT,
-//                        LayoutParams.WRAP_CONTENT);
-//        layoutParams.setMargins(5, 5, 5, 5);
-//
-//        for (int i = 0; i < 10; i++) {
-//                tRow = new TableRow(getActivity());
-//                tRow.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
-//                                LayoutParams.WRAP_CONTENT));
-//                
-//                tRow.addView(generateTextView("je vais y arriver", layoutParams));
-//                tRow.addView(generateTextView(String.valueOf(i), layoutParams));
-//                tLayout.addView(tRow, layoutParams);
-//        }
-//        
-//		
+		recoveryXmlWifi(content, inflater);	
 		
 		return content;
 	}
@@ -191,17 +167,5 @@ public class ParameterWifiFragment extends Fragment {
 		parser.next();
 		parser.require(XmlPullParser.END_DOCUMENT, null, null);
 	}
-//	public TextView generateTextView(String texte, LayoutParams ly) {
-//        TextView result = new TextView(getActivity());
-//        result.setBackgroundColor(Color.LTGRAY);
-//        result.setTextColor(Color.DKGRAY);
-//        result.setGravity(Gravity.CENTER);
-//        result.setPadding(2, 2, 2, 2);
-//        result.setText(texte);
-//        result.setTextSize(20);
-//        result.setVisibility(View.VISIBLE);
-//        result.setLayoutParams(ly);
-//        return result;
-//    }
 
 }
