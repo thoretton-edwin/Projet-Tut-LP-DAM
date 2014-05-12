@@ -64,6 +64,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self connexionLogin];
 	
 	for (UIView *subView in self.view.subviews)
 	{
@@ -130,8 +132,10 @@
 	float moduleWidth = globalWidth/4;
 	float margin = globalWidth/16;
 	
-	float offset = screenHeight-3*moduleWidth-3*margin;
+	//float offset = screenHeight-3*moduleWidth-3*margin;
 	
+    float offset = screenHeight-4*moduleWidth-4*margin;
+    
 	int originY=offset;
 	int originX=margin;
 	
@@ -692,7 +696,7 @@
         NSString *passwd = password.text;
         
         
-        if ([user isEqual:@"aa"] && [passwd isEqual:@""]) {
+        if ([user isEqual:@"lpdam"] && [passwd isEqual:@"test"]) {
             userId = user;
             NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
             [prefs setValue:userId  forKey:@"idUser"];
@@ -721,16 +725,17 @@
                                            initWithTitle:@"Erreur"
                                            message:@"erreur mdp/pwd"
                                            delegate:self
-                                           cancelButtonTitle:@"ok"
-                                           otherButtonTitles:@"reconnexion", nil];
+                                           cancelButtonTitle:@"reconnexion"
+                                           otherButtonTitles:nil, nil];
             [errorConnexion show];
         }
         
         
         
         
+        
     }else
-        if([title isEqualToString:@"Ok"])
+        if([title isEqualToString:@"Cancel"])
         {
             iconView1.backgroundColor = [UIColor clearColor];
             iconView2.backgroundColor = [UIColor clearColor];
@@ -742,6 +747,10 @@
             iconView8.backgroundColor = [UIColor clearColor];
             
         }
+    if([title isEqualToString:@"reconnexion"])
+    {
+        [self connexionLogin];
+    }
 }
 
 @end

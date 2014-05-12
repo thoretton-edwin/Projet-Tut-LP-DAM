@@ -57,6 +57,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self connexionLogin];
+    
 	
 	for (UIView *subView in self.view.subviews)
 	{
@@ -68,8 +71,12 @@
     [prefs setValue:userId  forKey:@"idUser"];
     [prefs synchronize];
     
-
     NSString *idUser = [prefs stringForKey:@"idUser"];
+    
+    NSLog(@"connexion sux : %@", idUser);
+    
+    
+    
     
     NSLog(@"iduser mainmenu : %@", idUser);
     
