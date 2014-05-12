@@ -32,43 +32,33 @@
     return self;
 }
 
-
-
+// affiche les resultats, ferme la searchBar
 -(void)searchBarSearchButtonClicked:(UISearchBar *)_searchBar
 {
 	NSLog(@"search button");
-	[searchBar setShowsCancelButton: NO animated: YES];
-	//searchController.active = NO;
 	[searchBar resignFirstResponder];
-	if(searchBar.isHidden)
-	{
-		NSLog(@"is hidden");
-	}
-	
-	if(searchBar.isFirstResponder)
-	{
-		NSLog(@"is first responder");
-	}
 	self.navigationItem.titleView=nil;
 	
 }
 
+//ferme la searchBar, pas d'affichage des resultats
 -(void)searchBarCancelButtonClicked:(UISearchBar *)_searchBar
 {
 	NSLog(@"cancel button");
-	[searchBar setShowsCancelButton: NO animated: YES];
+	//[searchBar setShowsCancelButton: NO animated: YES];
 	searchIsActive = NO;
+	searchBar.text=@"";
 	[searchBar resignFirstResponder];
 	self.navigationItem.titleView=nil;
 	[self changeDegree:_mDegreeSelector];
 	
 }
-
+/*
 - (void) searchBarTextDidBeginEditing: (UISearchBar*) _searchBar
-{
-    [searchBar setShowsCancelButton: YES animated: YES];
-}
+{[searchBar setShowsCancelButton: YES animated: YES];}
+*/
 
+//gestion du bouton recherche
 -(void)actionSearch
 {
 	NSLog(@"action search");
@@ -81,8 +71,6 @@
 	{
 		[self searchBarCancelButtonClicked:searchBar];
 	}
-	
-	//searchController.displaysSearchBarInNavigationBar = YES;
 }
 
 - (void)viewDidLoad
@@ -91,7 +79,7 @@
     self.title = @"Formations";
 	
 	
-	//search init
+	//init searchBar
 	searchData = [[NSMutableArray alloc]init];
 	
 			
@@ -103,7 +91,6 @@
 	searchController = [[UISearchDisplayController alloc]
 						initWithSearchBar:searchBar contentsController:self];
 	
-	//[self.view addSubview:searchBar];
 	[searchBar sizeToFit];
 	
 	searchController.delegate = self;
@@ -114,6 +101,7 @@
 											  initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
 											  target:self
 											  action:@selector(actionSearch)];
+	
 
     
     //select design
