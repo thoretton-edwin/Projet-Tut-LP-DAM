@@ -25,9 +25,11 @@ public class SuapsChildActivities {
 		xpp.next();
 		xpp.require(XmlPullParser.START_TAG, null, "seance");
 
-		while (xpp.getEventType() == XmlPullParser.START_TAG) {
+		while (xpp.getEventType() == XmlPullParser.START_TAG
+				|| "seance".equals(xpp.getName())) {
 
-			if ("seance".equals(xpp.getName())) {
+			if (xpp.getEventType() == XmlPullParser.START_TAG
+					&& "seance".equals(xpp.getName())) {
 
 				xpp.next();
 				xpp.require(XmlPullParser.START_TAG, null, "heure");
