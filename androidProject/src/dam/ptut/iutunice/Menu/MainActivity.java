@@ -266,6 +266,7 @@ public class MainActivity extends FragmentActivity {
 		case R.drawable.logo_directory_256:
 			break;
 		case R.drawable.logo_compagny_partnership:
+			Toast.makeText(MainActivity.this,"Module 'Job Dating' non disponible", Toast.LENGTH_LONG).show();
 			break;
 		case R.drawable.logo_twitter_256:
 			intent = new Intent(this, TwitterActivity.class);
