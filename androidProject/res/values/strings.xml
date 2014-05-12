@@ -24,6 +24,6 @@
     <string name="title_activity_suaps">SuapsActivity</string>
     <string name="title_activity_grade">GradeActivity</string>
     <string name="title_activity_details_grade">DetailsGradeActivity</string>
-    <string name="title_activity_parameter_credits_fragment">ParameterCreditsFragment</string>
+    <string name="title_activity_bus">BusActivity</string>
 
 </resources>
