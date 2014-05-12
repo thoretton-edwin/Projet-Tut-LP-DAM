@@ -78,7 +78,7 @@ public class SuapsChild {
 		while (xpp.getEventType() == XmlPullParser.START_TAG) {
 
 			if (xpp.getEventType() == XmlPullParser.START_TAG
-					&& "jour".equals(xpp.getName())) {
+					&& "jour".equals(xpp.getName()) && !"".equals(xpp.getAttributeValue(null, "nom"))) {
 				Log.v("debug",
 						"xpp jour = " + xpp.getAttributeValue(null, "nom"));
 				SuapsChildActivities childDay = new SuapsChildActivities(

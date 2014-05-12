@@ -49,7 +49,7 @@ public class SuapsGroup {
 		xpp.nextTag();
 		Log.v("debug", "xpp.nextTag = " + xpp.getName()); // root
 
-		while (xpp.getEventType() == XmlPullParser.START_TAG) {
+		while (xpp.getEventType() == XmlPullParser.START_TAG || type.equals(xpp.getName())) {
 			if (xpp.getEventType() == XmlPullParser.START_TAG
 					&& type.equals(xpp.getName())) {
 				// Log.v("debug", "xpp.nextTag in While = " + xpp.getName());

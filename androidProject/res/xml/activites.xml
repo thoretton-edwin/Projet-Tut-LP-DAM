@@ -237,8 +237,7 @@ Priorité E.P.U. Compétition
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 19H-20H30
@@ -272,8 +271,7 @@ Loisir Masculin et Féminin
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour  nom="Jeudi">
             <seance>
                 <heure>
 A partir de 13H30
@@ -290,8 +288,7 @@ Stade C.Erhmann – RDV Terrain 9 et Terrain de la Valmasque (Sophia)
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 10H30-12H30
@@ -368,8 +365,7 @@ Lettres - Gymnase Carlone
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 14H-16H
@@ -403,8 +399,7 @@ Lettres - Gymnase Carlone
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom = "Mercredi">
             <seance>
                 <heure>
 17H30-19H
@@ -430,8 +425,7 @@ Ultimate Frisbee
         <renseignement>
         </renseignement>
 
-        <jour>
- Jeudi
+        <jour nom ="Jeudi">
             <seance>
                 <heure>
 20H30-22H
@@ -457,8 +451,7 @@ Handball
         <renseignement>
         </renseignement>
 
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 18H30-20H30
@@ -494,8 +487,7 @@ J.DELREY
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 18H30-20H15
@@ -513,8 +505,7 @@ J.DELREY
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 12H-14H
@@ -533,8 +524,7 @@ J.DELREY
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 16H-17H30
@@ -561,8 +551,7 @@ Multisports (Volley-Ball, Basket-Ball, Handball)
         <renseignement>
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 12H-14H
@@ -597,8 +586,7 @@ Sophia – Collège Nikky de St Phalle
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 12H-14H
@@ -663,8 +651,7 @@ Féminin et Masculin
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 19H-22H
@@ -683,8 +670,7 @@ J.DELREY
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 14H-17H
@@ -703,8 +689,7 @@ J.DELREY
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 14H-17H
@@ -753,8 +738,7 @@ E.MONTAGNON
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 10H-12H
@@ -807,8 +791,7 @@ E.MARTINEZ
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 10H-12H
@@ -892,8 +875,7 @@ Pratique Encadrée
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 14H-16H30
@@ -1004,8 +986,7 @@ Gym Tonic/ Stretching
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 10H-12H
@@ -1090,8 +1071,7 @@ Gym d’entretien – Réservé Personnel
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 12H-13H30
@@ -1174,8 +1154,7 @@ Gym d’entretien
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 12H30-14H
@@ -1226,8 +1205,7 @@ Body-Sculpt
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 12H-13H
@@ -1310,8 +1288,7 @@ M.SERRA
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 15H30-17H30
@@ -1345,8 +1322,7 @@ T.PEYRAN
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 16H-18H
@@ -1424,8 +1400,7 @@ Droit – Salle de Combat Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 12H-13H
@@ -1473,8 +1448,7 @@ Sophia-Antipolis – Salle du SKEMA
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 12H-13H
@@ -1506,8 +1480,7 @@ Droit – Salle de Combat Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 12H15-13H30
@@ -1524,8 +1497,7 @@ Sciences - Salle Combat Valrose
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 12H30-14H
@@ -1596,8 +1568,7 @@ Lettres – Piscine Fielding
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 17H30-18H30
@@ -1614,8 +1585,7 @@ Lettres – Piscine Fielding
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 17H30-18H30 
@@ -1649,7 +1619,7 @@ KAYAK DE MER EN RANDONNEE
 				Inscription auprès des Bureaux des Sports.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -1677,7 +1647,7 @@ KITESURF
 				Contact : Eric.Montagnon@unice.fr
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -1753,8 +1723,7 @@ Libre*
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 12H15-13H45
@@ -1788,8 +1757,7 @@ Libre*
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 8H30-10H
@@ -1856,8 +1824,7 @@ Sophia-Antipolis – Centre Nautipolis
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 12H15-13H45
@@ -1908,8 +1875,7 @@ Libre*
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 12H15-13H45
@@ -1964,8 +1930,7 @@ PLONGEE
 				La pratique en U.E.L. est gratuite pour la formation piscine. Possibilité de validation en mer et délivrance du diplôme = 30€ (Cheque à l’ordre de l’Agent Comptable de l’U.N.S.)
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 17H-19H
@@ -2001,7 +1966,7 @@ VOILE/AVIRON
 				-	Forfait 10 séances = 119€ / Pratique tous les jeudis (9H-12H) = 158 € / Pratique sans limitation = 200€ (du mardi au dimanche de 9H à 12H)
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -2031,7 +1996,7 @@ PLANCHE A VOILE
 				Responsable : Eric MONTAGNON (eric.montagnon@unice.fr)
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -2055,8 +2020,7 @@ WATER-POLO
         <renseignement>
         </renseignement>
 
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 20H30-22H
@@ -2074,8 +2038,7 @@ Partenariat NICAEA
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 19H30-21H30
@@ -2093,8 +2056,7 @@ Partenariat NICAEA + Adhésion
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Samedi
+        <jour nom="Samedi">
             <seance>
                 <heure>
 14H-18H 
@@ -2136,7 +2098,7 @@ FORMATIONS
 				Renseignements et inscription : 06.80.48.59.16
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -2186,8 +2148,7 @@ DANSE AFRICAINE
         <renseignement>
         </renseignement>
 
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 19H30-21H
@@ -2206,8 +2167,7 @@ M.LEBARD
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 19H-20H30
@@ -2225,8 +2185,7 @@ Coupé Décalé
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 10H-12H
@@ -2261,8 +2220,7 @@ Afro Brésilienne
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 14H-16H
@@ -2290,8 +2248,7 @@ DANSE CONTEMPORAINE
         <renseignement>
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 20H-22H
@@ -2351,7 +2308,7 @@ Salsa
                 </responsable>
             </seance>
         </jour>
-        <jour>
+        <jour nom="Mardi">
  Mardi
             <seance>
                 <heure>
@@ -2386,8 +2343,7 @@ Sophia – Salle de l’Ile Verte
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 19H-20H30 
@@ -2405,8 +2361,7 @@ Tango Argentin
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 19H30-21H
@@ -2433,8 +2388,7 @@ FLAMENCO
         <renseignement>
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 19H30-21H
@@ -2460,8 +2414,7 @@ DANSE JAZZ
         <renseignement>
         </renseignement>
 
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 10H-12H
@@ -2495,8 +2448,7 @@ Lettres - Salle de Danse Carlone
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 20H30-22H
@@ -2522,8 +2474,7 @@ DANSE ORIENTALE
         <renseignement>
         </renseignement>
 
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 19H-20H30
@@ -2540,8 +2491,7 @@ Droit - Salle de Danse Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 12H30-13H30
@@ -2604,8 +2554,7 @@ M.LEBARD
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 17H30-19H
@@ -2624,8 +2573,7 @@ M.LEBARD
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi 
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 12H-14H
@@ -2644,8 +2592,7 @@ M.LEBARD
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 18H-20H
@@ -2705,8 +2652,7 @@ Sciences – Gymnase A Valrose
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 19H15-20H
@@ -2740,8 +2686,7 @@ Choisir un des deux créneaux
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 12H-13H
@@ -2758,8 +2703,7 @@ St Jean d’Angely – Salle 411 (à confirmer)
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 18H-19H
@@ -2773,8 +2717,7 @@ Droit – Salle de Danse Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 19H-20H30
@@ -2836,8 +2779,7 @@ O.HASSAN
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 14H-16H
@@ -2890,8 +2832,7 @@ O.HASSAN
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 18H30-20H
@@ -2909,8 +2850,7 @@ Ragga Dance hall
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 14H-16H
@@ -3022,8 +2962,7 @@ D.CHOUVY
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 16H-18H
@@ -3073,8 +3012,7 @@ Droit – Gymnase Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 8H-10H
@@ -3142,8 +3080,7 @@ L.ANDREOLETTI
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 12H-14H
@@ -3161,8 +3098,7 @@ Jeu Libre
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 12H-14H
@@ -3190,8 +3126,7 @@ BEACH-TENNIS
         <renseignement>
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 16H-20H
@@ -3220,8 +3155,7 @@ PADEL
 Possibilité de pratique en jeu libre en semaine de 21h à 23h. Tickets de 3€ en vente au Bureau des Sports de Sophia.
         </renseignement>
 
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 14H-15H30
@@ -3252,8 +3186,7 @@ Pour pratiquer, retirer une carte aux bureaux des Sports et réserver les cours 
 				Le tennis Squash Club Vauban se trouve au : 18 rue du Maréchal Vauban 06300 Nice. (Tram T1 « Stade Vauban »). Jeudi 14H-16H + en heures creuses les autres jours après achat du Pass Squash a 16€ pour les étudiants inscrits au SUAPS.
         </renseignement>
 
-        <jour>
- Jeudi
+        <jour  nom="Jeudi">
             <seance>
                 <heure>
 9H-11H
@@ -3287,8 +3220,7 @@ St Augustin – Centre Sport et Loisir
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 14H-16H
@@ -3363,8 +3295,7 @@ Entrainement Tous Niveaux
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 8H-10H
@@ -3400,8 +3331,7 @@ L.ANDREOLETTI
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour  nom="Mercredi">
             <seance>
                 <heure>
 18H-19H*
@@ -3435,8 +3365,7 @@ Perfectionnement
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour  nom="Jeudi">
             <seance>
                 <heure>
 12H-13H
@@ -3512,8 +3441,7 @@ TENNIS DE TABLE (PING-PONG)
         <renseignement>
         </renseignement>
 
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 11H-13H
@@ -3548,8 +3476,7 @@ Tournois Tous Niveaux
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 16H-18H
@@ -3583,8 +3510,7 @@ Sciences – Gymnase A Valrose
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 11H-13H
@@ -3613,7 +3539,7 @@ TOURNOI 3 RAQUETTES
 Premier ou second weekend d’Avril 2014. Tournoi de double mixte de Tennis, Badminton et Tennis de Table. 16 équipes maximum. Possibilité d’un tournoi simple F et M. Inscription et renseignements auprès de laurence.andreoletti@unice.fr ou toucas@unice.fr.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3638,7 +3564,7 @@ RANDONNEE PEDESTRE
 2 sorties par mois en Sept, Oct., et Décembre 2013. Le programme sera indiqué sur le site : www.unice.fr/suapsweb et sur le profil Facebook à chaque début de mois.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3674,7 +3600,7 @@ Weekend du 19/20 oct. 2013 : Challenge sportif en équipe de 4 mixte.
 				Renseignements et Inscriptions avant le 12 Oct. à 12H auprès des bureaux des Sports des Lettres et Valrose.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3700,7 +3626,7 @@ RANDONNEES EN RAQUETTES
 				Attention ! : Les lieux peuvent changer en fonction des conditions météorologiques et des enseignements. Affichage, Informations sur le net et Inscription 10 jours avant chaque sortie auprès des Bureaux des Sports. Nombre de places limité.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3727,7 +3653,7 @@ Responsable : D.CHOUVY
 				Contact : didier.chouvy@unice.fr
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3758,7 +3684,7 @@ Randonnée Transjura durant 5 jours des Chapelle des Bois à Prémanon. Héberge
 				(Transports et location de matériel inclus)
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3796,7 +3722,7 @@ Achat obligatoire de Carte Glisse a 5€ pour les étudiants et personnels compr
 				Attention : Places limitées et conditions particulières voir la fiche sur le portail Unice/activités sportives/ UEL Sports.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3828,7 +3754,7 @@ Pour acquérir la carte glisse, s’inscrire obligatoirement sur le site du SUAP
 				*Possibilité de location de matériel à prix réduit (Valberg et Limone)
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -3852,8 +3778,7 @@ AIKIDO
         <renseignement>
         </renseignement>
 
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 19h-20h30
@@ -3871,8 +3796,7 @@ Partenariat École Niçoise d’Aïkido
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 18h30-20h30
@@ -3899,8 +3823,7 @@ BOXE ANGLAISE
         <renseignement>
         </renseignement>
 
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 19h-20h30
@@ -3944,8 +3867,7 @@ Confirmés (ceinture verte à noire) - Partenariat Azur Judo
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 19h-20h30
@@ -3972,8 +3894,7 @@ KENDO
         <renseignement>
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 20h-22h
@@ -4000,8 +3921,7 @@ KOBUDO D'OKINAWA : ART MARTIAL AVEC ARMES (NUNCHAKU, TONFA)
         <renseignement>
         </renseignement>
 
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 20h30-22h
@@ -4029,8 +3949,7 @@ SHOMEN NIHON TAI JITSU
 Art martial japonais associant des techniques de frappe, de projections et de contrôle par des clés, étranglements. Applications en Self-défense contre un et plusieurs adversaires. Accessible à tous.
         </renseignement>
 
-        <jour>
- Vendredi
+        <jour  nom="Vendredi">
             <seance>
                 <heure>
 18h30-20h30
@@ -4058,8 +3977,7 @@ NINJUTSU
 Self-défense, Technique à mains nues
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 20h30-22h
@@ -4118,8 +4036,7 @@ Droit – Salle de Combat Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 20h30-22h
@@ -4136,8 +4053,7 @@ Droit – Salle de Combat Trotabas
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 18h30-20h
@@ -4184,8 +4100,7 @@ Partenariat CAVIGAL Athlétisme
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 18h-20h
@@ -4205,8 +4120,7 @@ Partenariat CAVIGAL Athlétisme
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 18h-20h
@@ -4226,8 +4140,7 @@ Partenariat CAVIGAL Athlétisme
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 18h-20h
@@ -4247,8 +4160,7 @@ Partenariat CAVIGAL Athlétisme
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 18h-20h
@@ -4315,7 +4227,7 @@ U.E.L. Athlétisme / Endurance
 				*Conditions : Être inscrit au SUAPS, acheter un ticket (12€) dans un Bureau des Sports, et prendre rendez-vous avec le Centre Hippique.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -4339,8 +4251,7 @@ TIR A L'ARC
         <renseignement>
         </renseignement>
 
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 19h-20h30
@@ -4385,7 +4296,7 @@ Pour Vertical (Canyoning, Escalade et Via Ferrata)
 				Inscriptions aux Bureaux des Sports des Lettres, de Droit et des Sciences.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -4414,7 +4325,7 @@ Sorties en milieu naturel
 				Inscriptions aux Bureaux des Sports des Lettres, Droit et des Sciences.
         </renseignement>
 
-        <jour>
+        <jour nom="">
             <seance>
                 <heure>
                 </heure>
@@ -4477,8 +4388,7 @@ Sophia – Garbejaire – Salle de Pan du COV
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mardi
+        <jour nom="Mardi">
             <seance>
                 <heure>
 9h-19h30
@@ -4510,8 +4420,7 @@ Sophia – Garbejaire – Salle de Pan du COV
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Mercredi
+        <jour nom="Mercredi">
             <seance>
                 <heure>
 9h-19h30
@@ -4543,8 +4452,7 @@ Sophia – Garbejaire – Salle de Pan du COV
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Jeudi
+        <jour nom="Jeudi">
             <seance>
                 <heure>
 9h-19h30
@@ -4576,8 +4484,7 @@ Sophia – Garbejaire – Salle de Pan du COV
                 </responsable>
             </seance>
         </jour>
-        <jour>
- Vendredi
+        <jour nom="Vendredi">
             <seance>
                 <heure>
 9h-19h30
