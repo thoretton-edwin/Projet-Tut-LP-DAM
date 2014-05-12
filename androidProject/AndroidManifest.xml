@@ -191,7 +191,11 @@
         </activity>
         <activity
             android:name="dam.ptut.iutunice.Maps.BusActivity"
-            android:label="@string/title_activity_bus">
+            android:label="@string/title_activity_bus" >
+        </activity>
+        <activity
+            android:name="dam.ptut.iutunice.Directory.DirectoryActivity"
+            android:label="@string/title_activity_directory" >
         </activity>
     </application>
 
