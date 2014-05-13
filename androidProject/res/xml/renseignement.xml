@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-	<renseignement type="adressbook">
-		<nom>Carnet d'adresse des enseignants</nom>
+	<renseignement type="Carnet d'adresse des enseignants">
 		<adresse>
 			<nom>Laurence ANDREOLETTI</nom>
 			<email>laurence.andreoletti@unice.fr</email>
@@ -43,8 +42,7 @@
 			<email>pierre.vigot@unice.fr</email>
 		</adresse>
 	</renseignement>
-	<renseignement type="adressbook">
-		Carnet d'adresses Secrétaires SUAPS
+	<renseignement type="Carnet d'adresses Secrétaires SUAPS">		
 		<adresse>
 			<nom>Evelyne BERNARDI</nom>
 			<email>evelyne.bernardi@unice.fr</email>
@@ -67,8 +65,7 @@
 		</adresse>
 	</renseignement>
 
-	<renseignement type="adressbook">
-		<nom>Carnet d'adresses Comité Regional du Sport</nom>
+	<renseignement type="Carnet d'adresses Comité Regional du Sport">
 		<adresse>
 			<nom>Laurence ANTIMI-LOPPIN</nom>
 			<email>laurence.antimi-loppin@unice.fr</email>
@@ -82,14 +79,5 @@
 			<email>toucas@unice.fr</email>
 		</adresse>
 	</renseignement>
-	
-	<renseignement type ="infos">
-	<infos>
-		Fermeture des installations sportives :
-		Toussaint : du 26/10 au 03/11
-		Noël : du 21/12 au 05/01
-		Hiver : du 22/02 au 02/03
-		Printemps : du 26/04 au 04/05
-	</infos>
-	</renseignement>
+
 </root>
