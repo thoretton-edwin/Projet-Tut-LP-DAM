@@ -19,6 +19,7 @@ public class App extends Application {
 	public ArrayList<String> arrayID;
 	public ArrayList<String> arrayPWD;
 	public int firstTime = 0;
+	public int idLieu = 5; // 1 : Nice, 2 :Menton, 3 : Bocca, 4 : Cannes, 5 : Sophia
 
 	public User user; //identification de l'utilisateur
 	//pour Allan :

@@ -7,7 +7,10 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.Menu.MainActivity;
+import dam.ptut.iutunice.Parameter.ParameterActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
@@ -32,6 +35,7 @@ public class MapActivity extends FragmentActivity {
 		setContentView(R.layout.activity_map);
 		
 		this.setTitle("Plan des sites");
+		final App app = (App) getApplication();
 		
 		map = ((SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map)).getMap();
@@ -78,6 +82,7 @@ public class MapActivity extends FragmentActivity {
 						 // Do something in response to button click
 						 map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutNice, 15));
 						 textview.setText(adrNice);
+						 app.idLieu = 1;
 					}
 				});
 						
@@ -88,6 +93,7 @@ public class MapActivity extends FragmentActivity {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutMenton, 15));
 						textview.setText(adrMenton);
+						app.idLieu = 2;
 					}
 				});
 				
@@ -98,6 +104,7 @@ public class MapActivity extends FragmentActivity {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutCannesBocca, 15));
 						textview.setText(adrCannesBocca);
+						app.idLieu = 3;
 					}
 				});
 				
@@ -108,6 +115,7 @@ public class MapActivity extends FragmentActivity {
 						// Do something in response to button click
 						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutCannes, 15));
 						textview.setText(adrCannes);
+						app.idLieu = 4;
 					}
 				});
 				
@@ -116,10 +124,22 @@ public class MapActivity extends FragmentActivity {
 				btnSophia.setOnClickListener(new View.OnClickListener() {
 					public void onClick(View v) {
 						// Do something in response to button click
-						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));
 						textview.setText(adrSophia);
+						app.idLieu = 5;
+						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));
+						
 					}
 				});
+				
+//				// Clic sur le bouton Trajet 
+//				Button btnRoad = (Button) findViewById(R.id.btnTrajet);
+//				btnSophia.setOnClickListener(new View.OnClickListener() {
+//					public void onClick(View v) {
+//						// Do something in response to button click
+//						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));
+//					}
+//				});
+				
 	}
 	
 	@Override
@@ -145,7 +165,7 @@ public class MapActivity extends FragmentActivity {
 	}
 	
 	private void switchListMenu() {
-		Intent intent = new Intent(this, PostBacActivity.class);
+		Intent intent = new Intent(this, BusActivity.class);
 		startActivity(intent);
 	}
 

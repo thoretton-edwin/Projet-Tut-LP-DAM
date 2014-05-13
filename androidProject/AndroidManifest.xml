@@ -151,7 +151,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
+        
+        <!-- A child of the map activity -->
+		<activity
+            android:name="dam.ptut.iutunice.Maps.BusActivity"
+            android:label="@string/title_activity_bus"
+            android:parentActivityName="dam.ptut.iutunice.Maps.MapActivity" >
 
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.Maps.MapActivity" />
+        </activity>
         <!-- A child of the main activity -->
         <activity
             android:name="dam.ptut.iutunice.Grade.GradeActivity"
@@ -189,10 +200,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
-        <activity
-            android:name="dam.ptut.iutunice.Maps.BusActivity"
-            android:label="@string/title_activity_bus">
-        </activity>
+        
     </application>
 
 </manifest>
