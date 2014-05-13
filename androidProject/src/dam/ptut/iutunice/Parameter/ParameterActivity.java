@@ -370,7 +370,8 @@ public class ParameterActivity extends FragmentActivity {
             public void onClick(View v) {
                 if(txtUsername.getText().toString().trim().length() > 0 && txtPassword.getText().toString().trim().length() > 0)
                 {
-                	for(int i = 0; i<app.arrayID.size(); i++)
+                	boolean succeded = false;
+                	for(int i = 0; i < app.arrayID.size(); i++)
                 	{
                 		if(app.arrayID.get(i).equals(txtUsername.getText().toString()) && app.arrayPWD.get(i).equals(txtPassword.getText().toString()))
                 		{
@@ -381,12 +382,12 @@ public class ParameterActivity extends FragmentActivity {
         	                app.user = myUser;
         	                // Redirect to dashboard / home screen.
         	                login.dismiss();
+        	                succeded = true;
                 		}
-                		 else
-                         {
-                             Toast.makeText(ParameterActivity.this,
-                                     "Identifiant ou mot de passe incorrect(s)", Toast.LENGTH_LONG).show();
-                         }
+                	}
+                	if(!succeded){
+                	Toast.makeText(ParameterActivity.this,
+                            "Identifiant ou mot de passe incorrect(s)", Toast.LENGTH_LONG).show();
                 	}
                 }
                 else
