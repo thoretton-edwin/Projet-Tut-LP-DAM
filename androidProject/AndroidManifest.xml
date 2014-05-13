@@ -200,7 +200,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
-        
+
+        <activity
+            android:name="dam.ptut.iutunice.Directory.DirectoryActivity"
+            android:label="@string/title_activity_directory" >
+        </activity>
     </application>
 
 </manifest>

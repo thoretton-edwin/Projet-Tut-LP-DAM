@@ -75,11 +75,13 @@ public class SuapsChild {
 		}
 
 		xpp.require(XmlPullParser.START_TAG, null, "jour");
-		while (xpp.getEventType() == XmlPullParser.START_TAG) {
+		while (xpp.getEventType() == XmlPullParser.START_TAG
+				|| "jour".equals(xpp.getName())) {
 
 			if (xpp.getEventType() == XmlPullParser.START_TAG
-					&& "jour".equals(xpp.getName())) {
-				Log.v("debug",
+					&& "jour".equals(xpp.getName())
+					|| !"".equals(xpp.getAttributeValue(null, "nom"))) {
+				Log.v("AttrValue",
 						"xpp jour = " + xpp.getAttributeValue(null, "nom"));
 				SuapsChildActivities childDay = new SuapsChildActivities(
 						xpp.getAttributeValue(null, "nom"), xpp);
@@ -94,7 +96,7 @@ public class SuapsChild {
 			xpp.nextTag();
 
 		}
-		Log.v("debug end parse", "xpp.getName = " + xpp.getName());
+		// Log.v("debug end parse", "xpp.getName = " + xpp.getName());
 		xpp.require(XmlPullParser.END_TAG, null, "activite");
 	}
 

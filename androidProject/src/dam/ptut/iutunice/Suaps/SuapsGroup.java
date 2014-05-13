@@ -48,22 +48,27 @@ public class SuapsGroup {
 		xpp.require(XmlPullParser.START_DOCUMENT, null, null);
 		xpp.nextTag();
 		Log.v("debug", "xpp.nextTag = " + xpp.getName()); // root
+		xpp.require(XmlPullParser.START_TAG, null, "root");
 
-		while (xpp.getEventType() == XmlPullParser.START_TAG) {
+		while (xpp.getEventType() == XmlPullParser.START_TAG
+				|| type.equals(xpp.getName())) {
 			if (xpp.getEventType() == XmlPullParser.START_TAG
 					&& type.equals(xpp.getName())) {
-				// Log.v("debug", "xpp.nextTag in While = " + xpp.getName());
+				Log.v("debug", "xpp.nextTag in While = " + xpp.getName());
 				SuapsChild child = new SuapsChild(xpp, ID);
 				SuapsArray.add(child);
 			} else {
 				xpp.next();
 			}
-			Log.v("suaps array", "suaps array = " + SuapsArray.toString());
+			// Log.v("suaps array", "suaps array = " + SuapsArray.toString());
 		}
-		// Log.v("end parse", "xpp.getName = " + xpp.getName());
-		// xpp.require(XmlPullParser.END_TAG, null, type);
-		xpp.next();
 		Log.v("end parse", "xpp.getName = " + xpp.getName());
+		// xpp.require(XmlPullParser.END_TAG, null, type);
+		// Log.v("end parse", "xpp.getName = " + xpp.getName());
+		// xpp.next();
+		xpp.require(XmlPullParser.END_TAG, null, "root");
+		// xpp.next();
+		// Log.v("end parse", "xpp.getName = " + xpp.getName());
 		xpp.require(XmlPullParser.END_DOCUMENT, null, null);
 
 	}
