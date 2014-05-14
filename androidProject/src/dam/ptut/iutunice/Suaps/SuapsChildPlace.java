@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import android.util.Log;
-
 public class SuapsChildPlace {
 	ArrayList<SuapsChildPlaceAccountable> accountableArray;
 	String name;
@@ -34,7 +32,7 @@ public class SuapsChildPlace {
 				email = xpp.nextText();
 				xpp.next();
 
-				Log.v("test", "name = " + name);
+				// Log.v("test", "name = " + name);
 				SuapsChildPlaceAccountable childAccountable = new SuapsChildPlaceAccountable(
 						name, email);
 				accountableArray.add(childAccountable);
@@ -44,5 +42,25 @@ public class SuapsChildPlace {
 			xpp.nextTag();
 		}
 
+	}
+
+	public ArrayList<SuapsChildPlaceAccountable> getAccountableArray() {
+		return accountableArray;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getEquipments() {
+		return equipments;
+	}
+
+	public String getPermanency() {
+		return permanency;
 	}
 }

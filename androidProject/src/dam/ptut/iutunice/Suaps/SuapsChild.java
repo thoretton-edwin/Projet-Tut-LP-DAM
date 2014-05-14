@@ -16,6 +16,7 @@ public class SuapsChild {
 	ArrayList<SuapsChildActivities> daysArray;
 	ArrayList<SuapsChildInformation> addressArray;
 	ArrayList<SuapsChildPlace> siteArray;
+	ArrayList<SuapsChildUEL> uelArray;
 
 	// variable pour le parse du lieux
 	String equipment;
@@ -37,6 +38,7 @@ public class SuapsChild {
 			parsePlace(xpp);
 			break;
 		case 3:
+			parserUEL(xpp);
 			break;
 		case 4:
 			break;
@@ -145,7 +147,7 @@ public class SuapsChild {
 		xpp.nextTag();
 		xpp.require(XmlPullParser.START_TAG, null, "postal");
 		this.Name = xpp.nextText();
-		Log.v("debug parsePlace", "name = " + Name);
+		// Log.v("debug parsePlace", "name = " + Name);
 		xpp.next();
 
 		xpp.require(XmlPullParser.START_TAG, null, "responsable");
@@ -201,16 +203,124 @@ public class SuapsChild {
 			}
 			xpp.next();
 		}
-		Log.v("test", "equipment = " + equipment + "\n permanency = "
-				+ permanency + "\n tel = " + tel + "\n fax = " + fax);
-		Log.v("debug", "xpp.getName = " + xpp.getName()
-				+ "\n xpp.getEventType = " + xpp.getEventType());
+		// Log.v("test", "equipment = " + equipment + "\n permanency = "
+		// + permanency + "\n tel = " + tel + "\n fax = " + fax);
+		// Log.v("debug", "xpp.getName = " + xpp.getName()
+		// + "\n xpp.getEventType = " + xpp.getEventType());
 		xpp.require(XmlPullParser.END_TAG, null, "site");
+	}
+
+	private void parserUEL(XmlResourceParser xpp)
+			throws XmlPullParserException, IOException {
+		// TODO Auto-generated method stub
+		uelArray = new ArrayList<SuapsChildUEL>();
+
+		String name = "";
+		String day = "";
+		String startTime = "";
+		String endTime = "";
+		String site = "";
+
+		Log.v("debug parse uel", "xpp.getName = " + xpp.getName());
+		xpp.require(XmlPullParser.START_TAG, null, "uel");
+
+		xpp.nextTag();
+		xpp.require(XmlPullParser.START_TAG, null, "sport");
+		this.Name = "";
+		// this.Name = xpp.getAttributeValue(null, "nom");
+		// Log.v("Test", "name = " + Name);
+		while (xpp.getEventType() == XmlPullParser.START_TAG
+				&& "sport".equals(xpp.getName())) {
+
+			if (xpp.getEventType() == XmlPullParser.START_TAG
+					&& "sport".equals(xpp.getName())) {
+
+				xpp.next();
+
+				xpp.require(XmlPullParser.START_TAG, null, "nom");
+				name = xpp.nextText();
+				xpp.next();
+
+				xpp.require(XmlPullParser.START_TAG, null, "jour");
+				day = xpp.nextText();
+				xpp.next();
+
+				xpp.require(XmlPullParser.START_TAG, null, "heuredeb");
+				startTime = xpp.nextText();
+				xpp.next();
+
+				xpp.require(XmlPullParser.START_TAG, null, "heurefin");
+				endTime = xpp.nextText();
+				xpp.next();
+
+				xpp.require(XmlPullParser.START_TAG, null, "site");
+				site = xpp.nextText();
+				xpp.next();
+
+				SuapsChildUEL childUEL = new SuapsChildUEL(name, day,
+						startTime, endTime, site);
+				uelArray.add(childUEL);
+			}
+
+			// Log.v("debug parse uel after while",
+			// "xpp.getName = " + xpp.getEventType() + " " + xpp.getName());
+			//
+			// Log.v("test", "Nom = " + name + " " + day + " " + startTime + " "
+			// + endTime + " " + site);
+			xpp.require(XmlPullParser.END_TAG, null, "sport");
+			xpp.nextTag();
+
+			// Log.v("debug parse uel after while",
+			// "xpp.getName = " + xpp.getEventType() + " " + xpp.getName());
+		}
+
+		// Log.v("uelArray", "uelArray = " + uelArray.toString());
+		// Log.v("test", "uelArray.size = " + uelArray.size());
+		xpp.require(XmlPullParser.END_TAG, null, "uel");
 	}
 
 	public String toString() {
 		return "nom : " + Name;
+	}
 
+	public String getName() {
+		return Name;
+	}
+
+	public String getInfos() {
+		return Infos;
+	}
+
+	public ArrayList<SuapsChildActivities> getDaysArray() {
+		return daysArray;
+	}
+
+	public ArrayList<SuapsChildInformation> getAddressArray() {
+		return addressArray;
+	}
+
+	public ArrayList<SuapsChildPlace> getSiteArray() {
+		return siteArray;
+	}
+
+	public ArrayList<SuapsChildUEL> getUelArray() {
+		return uelArray;
+	}
+
+	public String getEquipment() {
+		return equipment;
+	}
+
+	public String getPermanency() {
+		return permanency;
+	}
+
+	public String getTel() {
+		return tel;
+	}
+
+	public String getFax() {
+		return fax;
 	}
 
 }

@@ -86,4 +86,12 @@ public class SuapsChildActivities {
 				+ other + " - Responsable : " + accountable;
 
 	}
+
+	public String getDay() {
+		return Day;
+	}
+
+	public ArrayList<SuapsChildActivitiesSession> getSessionArray() {
+		return SessionArray;
+	}
 }

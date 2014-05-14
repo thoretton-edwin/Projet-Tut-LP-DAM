@@ -37,15 +37,15 @@ public class SuapsGroup {
 			break;
 		case 3:
 			type = "uel";
+			parse(xpp, type);
 			break;
-		case 4:
-			type = null;
-			break;
+		// case 4:
+		// type = null;
+		// break;
 
 		default:
 			break;
 		}
-
 	}
 
 	private void parse(XmlResourceParser xpp, String type)
@@ -71,38 +71,22 @@ public class SuapsGroup {
 			}
 			// Log.v("suaps array", "suaps array = " + SuapsArray.toString());
 		}
-		Log.v("end parse", "xpp.getName = " + xpp.getName());
+		Log.v("end parse", "xpp.getName = " + xpp.getName() + " " + type);
 		xpp.require(XmlPullParser.END_TAG, null, "root");
 		xpp.next();
 		// Log.v("end parse", "xpp.getName = " + xpp.getName());
 		xpp.require(XmlPullParser.END_DOCUMENT, null, null);
 	}
 
-	// private void parsePlace(XmlResourceParser xpp, String type)
-	// throws XmlPullParserException, IOException {
-	// // TODO Auto-generated method stub
-	// xpp.next();
-	// xpp.require(XmlPullParser.START_DOCUMENT, null, null);
-	// xpp.nextTag();
-	// Log.v("debug", "xpp.nextTag = " + xpp.getName()); // root
-	// xpp.require(XmlPullParser.START_TAG, null, "root");
-	// xpp.nextTag();
-	// xpp.require(XmlPullParser.START_TAG, null, type);
-	//
-	// while (xpp.getEventType() == XmlPullParser.START_TAG
-	// || "site".equals(xpp.getName())) {
-	// if (xpp.getEventType() == XmlPullParser.START_TAG
-	// && "site".equals(xpp.getName())) {
-	// SuapsChild child = new SuapsChild(xpp, ID);
-	// SuapsArray.add(child);
-	// } else {
-	// xpp.next();
-	// }
-	// }
-	// xpp.require(XmlPullParser.END_TAG, null, type);
-	// xpp.next();
-	// xpp.require(XmlPullParser.END_TAG, null, "root");
-	// xpp.next();
-	// xpp.require(XmlPullParser.END_DOCUMENT, null, null);
-	// }
+	public int getID() {
+		return ID;
+	}
+
+	public String getTitle() {
+		return Title;
+	}
+
+	public ArrayList<SuapsChild> getSuapsArray() {
+		return SuapsArray;
+	}
 }

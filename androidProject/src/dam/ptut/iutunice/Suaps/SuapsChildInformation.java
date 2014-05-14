@@ -9,4 +9,12 @@ public class SuapsChildInformation {
 		this.Email = email;
 
 	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public String getEmail() {
+		return Email;
+	}
 }

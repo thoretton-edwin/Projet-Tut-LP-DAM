@@ -9,9 +9,11 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,14 +21,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.TextView;
+import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.SuapsDetails;
 
 public class SuapsActivity extends Activity {
 	private ArrayList<SuapsGroup> SuapsArray;
-	private ArrayList<SuapsChild> suapsItem;
 	HashMap<String, ArrayList<SuapsChild>> listDataChild;
 	LayoutInflater inflater;
+	App app;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,8 @@ public class SuapsActivity extends Activity {
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+		app = (App) getApplication();
 
 		try {
 			FillList();
@@ -125,7 +132,12 @@ public class SuapsActivity extends Activity {
 				TextView tvChild = (TextView) convertView
 						.findViewById(R.id.tvSuapsChild);
 				// Log.v("debug", "name = " + child.Name);
-				tvChild.setText(child.Name);
+				if (!child.Name.isEmpty()) {
+					tvChild.setText(child.Name);
+				} else {
+					Log.v("uelArray", "uelArray = " + child.uelArray.toString());
+					tvChild.setText(child.uelArray.get(childPosition).Name);
+				}
 
 				return convertView;
 			}
@@ -144,6 +156,31 @@ public class SuapsActivity extends Activity {
 				ArrayList<SuapsChild> suapsChildArray = listDataChild
 						.get(suapsGroup.Title);
 				return suapsChildArray.get(childPosition);
+			}
+		});
+
+		elvSuaps.setOnChildClickListener(new OnChildClickListener() {
+
+			@Override
+			public boolean onChildClick(ExpandableListView parent, View v,
+					int groupPosition, int childPosition, long id) {
+				// TODO Auto-generated method stub
+				app.suapsGroupPos = groupPosition;
+				app.suapsChildPos = childPosition;
+				// SuapsGroup group = SuapsArray.get(groupPosition);
+				// SuapsChild child = group.SuapsArray.get(childPosition);
+				//
+				// Log.v("test", "test = " + child.Name);
+				// if (groupPosition == 3) {
+				// Log.v("test", "test = "
+				// + child.uelArray.get(childPosition).Name);
+				// }
+
+				Intent intent = new Intent(getApplicationContext(),
+						SuapsDetails.class);
+				startActivity(intent);
+				overridePendingTransition(R.anim.out_details, R.anim.in_list);
+				return true;
 			}
 		});
 
@@ -173,6 +210,10 @@ public class SuapsActivity extends Activity {
 		SuapsArray.add(s3);
 		SuapsArray.add(s4);
 		// SuapsArray.add(s5);
+
+		// SuapsArray.get(app.suapsGroupPos).Title;
+		app.suapsGroupList = SuapsArray;
+		// app.suapsList = SuapsArray.get(app.suapsGroupPos).SuapsArray;
 
 		listDataChild = new HashMap<String, ArrayList<SuapsChild>>();
 		for (int i = 0; i < SuapsArray.size(); i++) {

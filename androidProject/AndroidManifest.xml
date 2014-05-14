@@ -151,9 +151,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
-        
+
         <!-- A child of the map activity -->
-		<activity
+        <activity
             android:name="dam.ptut.iutunice.Maps.BusActivity"
             android:label="@string/title_activity_bus"
             android:parentActivityName="dam.ptut.iutunice.Maps.MapActivity" >
@@ -200,10 +200,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dam.ptut.iutunice.Menu.MainActivity" />
         </activity>
-
         <activity
             android:name="dam.ptut.iutunice.Directory.DirectoryActivity"
             android:label="@string/title_activity_directory" >
+        </activity>
+        <activity
+            android:name="dam.ptut.iutunice.SuapsDetails"
+            android:label="@string/title_activity_suaps_details"
+            android:parentActivityName="dam.ptut.iutunice.Suaps.SuapsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dam.ptut.iutunice.Suaps.SuapsActivity" />
         </activity>
     </application>
 

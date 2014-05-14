@@ -8,4 +8,12 @@ public class SuapsChildPlaceAccountable {
 		this.Name = name;
 		this.Email = email;
 	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public String getEmail() {
+		return Email;
+	}
 }
