@@ -179,7 +179,8 @@ public class SuapsActivity extends Activity {
 				Intent intent = new Intent(getApplicationContext(),
 						SuapsDetails.class);
 				startActivity(intent);
-				overridePendingTransition(R.anim.out_details, R.anim.in_list);
+				// overridePendingTransition(R.anim.out_details,
+				// R.anim.in_list);
 				return true;
 			}
 		});
