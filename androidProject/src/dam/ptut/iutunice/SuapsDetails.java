@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import dam.ptut.iutunice.Suaps.SuapsChild;
@@ -41,11 +40,10 @@ public class SuapsDetails extends Activity {
 		// Log.v("test", "childPos = " + childPosition);
 		// Log.v("test", "groupPos = " + groupPosition);
 		// Log.v("test", "SuapsArray = " + SuapsArray.size());
-		Log.v("test", "SuapsChildArray = " + SuapsChildArray.size());
 
 		switch (groupPosition) {
 		case 0:
-			setTitle(SuapsArray.get(groupPosition).getTitle());
+			setTitle(child.getName());
 			createViewActivity(child.getDaysArray());
 			break;
 		case 1:
@@ -70,6 +68,7 @@ public class SuapsDetails extends Activity {
 		// TODO Auto-generated method stub
 		String title = group.getTitle();
 		String infos = child.getInfos();
+
 	}
 
 	/**
