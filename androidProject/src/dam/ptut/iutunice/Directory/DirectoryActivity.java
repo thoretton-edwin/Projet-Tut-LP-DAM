@@ -1,10 +1,7 @@
 package dam.ptut.iutunice.Directory;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
 
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.R.layout;
-import dam.ptut.iutunice.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;

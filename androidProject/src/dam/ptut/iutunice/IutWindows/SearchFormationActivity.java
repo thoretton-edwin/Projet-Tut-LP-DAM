@@ -65,33 +65,37 @@ public class SearchFormationActivity extends Activity {
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 
-		// gère le fonctionnement des boutons de tri
-		btPressed();
-
 		loading = new ProgressDialog(SearchFormationActivity.this);
 		loading.setTitle("Chargement en cours...");
 		loading.setMessage("Récupération des formations depuis internet...");
 		loading.setCancelable(true);
 		loading.show();
 		
+		
 		// test de la connexion internet
 		ConnectivityManager connect = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connect.getActiveNetworkInfo();
 		if (networkInfo == null || !networkInfo.isConnected()) {
 			loading.dismiss();
-			AlertDialog.Builder alertDialog = new AlertDialog.Builder(SearchFormationActivity.this);
+			AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+					SearchFormationActivity.this);
 			alertDialog.setTitle("Connexion internet impossible...");
-			alertDialog.setMessage("Vous n'êtes probablement pas connecté à internet...");
-			alertDialog.setPositiveButton("Retour", new DialogInterface.OnClickListener(){
-				@Override
-				public void onClick(DialogInterface dialog, int id){
-					finish();
-				}
-			});
+			alertDialog
+					.setMessage("Vous n'êtes probablement pas connecté à internet...");
+			alertDialog.setPositiveButton("Retour",
+					new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialog, int id) {
+							finish();
+						}
+					});
 			AlertDialog dialog = alertDialog.create();
 			dialog.show();
 		}
-
+		
+		// gère le fonctionnement des boutons de tri
+		btPressed();
+	
 		// récupère les formations
 		recoveryApiFormation();
 
@@ -404,9 +408,22 @@ public class SearchFormationActivity extends Activity {
 
 					@Override
 					public void onFailure(String responseBody, Throwable error) {
-						loading.setTitle("Erreur !");
-						loading.setMessage("Erreur de connexion ! Vous pouvez retourner sur la page précédente.");
-						loading.setCancelable(true);
+						loading.dismiss();
+						AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+								SearchFormationActivity.this);
+						alertDialog.setTitle("Erreur de connexion !");
+						alertDialog
+								.setMessage("Vous n'êtes probablement pas connecté à internet...");
+						alertDialog.setPositiveButton("Retour",
+								new DialogInterface.OnClickListener() {
+									@Override
+									public void onClick(DialogInterface dialog,
+											int id) {
+										finish();
+									}
+								});
+						AlertDialog dialog = alertDialog.create();
+						dialog.show();
 					}
 
 				});
