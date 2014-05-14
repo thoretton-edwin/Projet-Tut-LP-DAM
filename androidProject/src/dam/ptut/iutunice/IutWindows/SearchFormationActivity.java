@@ -71,28 +71,6 @@ public class SearchFormationActivity extends Activity {
 		loading.setCancelable(true);
 		loading.show();
 		
-		
-		// test de la connexion internet
-		ConnectivityManager connect = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		NetworkInfo networkInfo = connect.getActiveNetworkInfo();
-		if (networkInfo == null || !networkInfo.isConnected()) {
-			loading.dismiss();
-			AlertDialog.Builder alertDialog = new AlertDialog.Builder(
-					SearchFormationActivity.this);
-			alertDialog.setTitle("Connexion internet impossible...");
-			alertDialog
-					.setMessage("Vous n'êtes probablement pas connecté à internet...");
-			alertDialog.setPositiveButton("Retour",
-					new DialogInterface.OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialog, int id) {
-							finish();
-						}
-					});
-			AlertDialog dialog = alertDialog.create();
-			dialog.show();
-		}
-		
 		// gère le fonctionnement des boutons de tri
 		btPressed();
 	
@@ -373,9 +351,6 @@ public class SearchFormationActivity extends Activity {
 	private void recoveryApiFormation() {
 		client.get(this, "http://www.iut.unice.fr/api/formations",
 				new JsonHttpResponseHandler() {
-					@Override
-					public void onFinish() {
-					}
 
 					@Override
 					public void onSuccess(JSONArray response) {
@@ -405,10 +380,10 @@ public class SearchFormationActivity extends Activity {
 						}
 
 					}
-
+					
 					@Override
-					public void onFailure(String responseBody, Throwable error) {
-						loading.dismiss();
+					public void onFailure(Throwable e, String response) {
+					   	loading.dismiss();
 						AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 								SearchFormationActivity.this);
 						alertDialog.setTitle("Erreur de connexion !");
@@ -425,7 +400,6 @@ public class SearchFormationActivity extends Activity {
 						AlertDialog dialog = alertDialog.create();
 						dialog.show();
 					}
-
 				});
 	}
 

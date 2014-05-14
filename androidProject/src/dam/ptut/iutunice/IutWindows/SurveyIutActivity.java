@@ -58,27 +58,6 @@ public class SurveyIutActivity extends FragmentActivity {
 		loading.setCancelable(true);
 		loading.show();
 
-		// test de la connexion internet
-		ConnectivityManager connect = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		NetworkInfo networkInfo = connect.getActiveNetworkInfo();
-		if (networkInfo == null || !networkInfo.isConnected()) {
-			loading.dismiss();
-			AlertDialog.Builder alertDialog = new AlertDialog.Builder(
-					SurveyIutActivity.this);
-			alertDialog.setTitle("Connexion internet impossible...");
-			alertDialog
-					.setMessage("Vous n'êtes probablement pas connecté à internet...");
-			alertDialog.setPositiveButton("Retour",
-					new DialogInterface.OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialog, int id) {
-							finish();
-						}
-					});
-			AlertDialog dialog = alertDialog.create();
-			dialog.show();
-		}
-
 		// récupère le sondage
 		recoveryXmlSurvey();
 	}

@@ -1,6 +1,7 @@
 package dam.ptut.iutunice.Twitter;
 
 import dam.ptut.iutunice.R;
+import dam.ptut.iutunice.Directory.DirectoryActivity;
 import dam.ptut.iutunice.R.id;
 import dam.ptut.iutunice.R.layout;
 import android.net.ConnectivityManager;
@@ -8,8 +9,10 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +40,8 @@ public class TwitterActivity extends Activity {
 		chargement.setMessage("Chargement de la page...");
 		// chargement.setCancelable(false);
 		chargement.show();
+		
+		
 
 		// Connexion Internet en cours ou non
 		ConnectivityManager connect = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -56,10 +61,21 @@ public class TwitterActivity extends Activity {
 					if (progress > 99)
 						chargement.dismiss();
 				} else {
-					Toast.makeText(getApplicationContext(),
-							"Vous n'êtes pas connecté à Internet",
-							Toast.LENGTH_LONG).show();
-					finish();
+					AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+							TwitterActivity.this);
+					alertDialog.setTitle("Connexion internet impossible...");
+					alertDialog
+							.setMessage("Vous n'êtes probablement pas connecté à internet...");
+					alertDialog.setPositiveButton("Retour",
+							new DialogInterface.OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialog, int id) {
+									finish();
+								}
+							});
+					AlertDialog dialog = alertDialog.create();
+					dialog.show();
+		
 				}
 			}
 		});
