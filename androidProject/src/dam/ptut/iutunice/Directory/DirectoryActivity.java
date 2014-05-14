@@ -1,11 +1,16 @@
 package dam.ptut.iutunice.Directory;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class DirectoryActivity extends Activity {
 
@@ -13,6 +18,13 @@ public class DirectoryActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_directory);
+		
+		Button btDirectorySearch = (Button) findViewById(R.id.btDirectorySearch);
+		btDirectorySearch.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				EditText edtName = (EditText) findViewById(R.id.edtName);
+			}
+		});
 	}
 
 	@Override

@@ -19,6 +19,7 @@ import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.User;
 import dam.ptut.iutunice.Calendar.CalendarActivity;
+import dam.ptut.iutunice.Directory.DirectoryActivity;
 import dam.ptut.iutunice.Grade.GradeActivity;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
 import dam.ptut.iutunice.Maps.MapActivity;
@@ -264,6 +265,8 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);
 			break;
 		case R.drawable.logo_directory_256:
+			intent = new Intent(this, DirectoryActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_compagny_partnership:
 			Toast.makeText(MainActivity.this,"Module 'Job Dating' non disponible", Toast.LENGTH_LONG).show();
