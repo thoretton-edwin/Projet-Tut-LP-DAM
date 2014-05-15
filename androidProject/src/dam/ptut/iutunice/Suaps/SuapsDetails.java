@@ -155,6 +155,7 @@ public class SuapsDetails extends Activity {
 								+ suapsChildActivities.getSessionArray().get(j)
 										.getAccountable());
 						builder.setCancelable(true);
+						builder.setPositiveButton("OK", null);
 						builder.show();
 						a++;
 					}

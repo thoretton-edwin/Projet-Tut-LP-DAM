@@ -208,6 +208,7 @@ public class SuapsActivity extends Activity {
 								+ "\nHeure Fin : " + uel.EndTime + "\nSite : "
 								+ uel.Site);
 						builder.setCancelable(true);
+						builder.setPositiveButton("OK", null);
 						builder.show();
 					}
 					// SuapsChildUEL uel = child.uelArray.get(i);
