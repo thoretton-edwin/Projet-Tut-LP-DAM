@@ -8,12 +8,12 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -116,28 +116,23 @@ public class SuapsActivity extends Activity {
 				ArrayList<SuapsChild> suapsChild = listDataChild
 						.get(suapsGroup.Title);
 				return suapsChild.size();
+
 			}
 
 			@Override
 			public View getChildView(int groupPosition, int childPosition,
 					boolean isLastChild, View convertView, ViewGroup parent) {
 				// TODO Auto-generated method stub
-
 				SuapsChild child = (SuapsChild) getChild(groupPosition,
 						childPosition);
 				if (convertView == null) {
 					convertView = inflater.inflate(R.layout.item_list_suaps,
 							parent, false);
 				}
+
 				TextView tvChild = (TextView) convertView
 						.findViewById(R.id.tvSuapsChild);
-				// Log.v("debug", "name = " + child.Name);
-				if (!child.Name.isEmpty()) {
-					tvChild.setText(child.Name);
-				} else {
-					Log.v("uelArray", "uelArray = " + child.uelArray.toString());
-					tvChild.setText(child.uelArray.get(childPosition).Name);
-				}
+				tvChild.setText(child.Name);
 
 				return convertView;
 			}
@@ -167,20 +162,59 @@ public class SuapsActivity extends Activity {
 				// TODO Auto-generated method stub
 				app.suapsGroupPos = groupPosition;
 				app.suapsChildPos = childPosition;
-				// SuapsGroup group = SuapsArray.get(groupPosition);
-				// SuapsChild child = group.SuapsArray.get(childPosition);
-				//
-				// Log.v("test", "test = " + child.Name);
-				// if (groupPosition == 3) {
-				// Log.v("test", "test = "
-				// + child.uelArray.get(childPosition).Name);
-				// }
+				// int i = 0;
+
+				SuapsGroup group = SuapsArray.get(groupPosition);
+				SuapsChild child = group.getSuapsArray().get(childPosition);
+				AlertDialog.Builder builder;
 
 				Intent intent = new Intent(getApplicationContext(),
 						SuapsDetails.class);
-				startActivity(intent);
-				// overridePendingTransition(R.anim.out_details,
-				// R.anim.in_list);
+				switch (groupPosition) {
+				case 0:
+					if (child.daysArray.size() > 1) {
+						intent = new Intent(getApplicationContext(),
+								SuapsDetails.class);
+						startActivity(intent);
+					} else {
+						builder = new AlertDialog.Builder(SuapsActivity.this);
+						builder.setTitle(child.Name);
+						builder.setMessage("Le "
+								+ child.Name
+								+ " n'a pas de séance programmer pour le moment");
+						builder.setCancelable(true);
+						builder.show();
+
+					}
+
+					break;
+				case 1:
+					intent = new Intent(getApplicationContext(),
+							SuapsDetails.class);
+					startActivity(intent);
+					break;
+				case 2:
+					intent = new Intent(getApplicationContext(),
+							SuapsDetails.class);
+					startActivity(intent);
+
+					break;
+				case 3:
+					// marche que pour le premier item
+					SuapsChildUEL uel = child.uelArray.get(childPosition);
+					builder = new AlertDialog.Builder(SuapsActivity.this);
+					builder.setTitle(child.Name);
+					builder.setMessage("Jour : " + uel.Day + "\nHeure Début : "
+							+ uel.StartTime + "\nHeure Fin : " + uel.EndTime
+							+ "\nSite : " + uel.Site);
+					builder.setCancelable(true);
+					builder.show();
+
+					break;
+
+				default:
+					break;
+				}
 				return true;
 			}
 		});

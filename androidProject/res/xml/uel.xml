@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-	<uel type="S1">
 		<sport>
 			<nom>Boxe Francaise</nom>
 			<jour>Lundi</jour>
@@ -323,6 +322,5 @@
 			<heurefin>17H30</heurefin>
 			<site>Valrose</site>
 		</sport>
-	</uel>
 
 </root>

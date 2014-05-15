@@ -7,7 +7,6 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.res.XmlResourceParser;
-import android.util.Log;
 
 public class SuapsChild {
 
@@ -19,6 +18,7 @@ public class SuapsChild {
 	ArrayList<SuapsChildUEL> uelArray;
 
 	// variable pour le parse du lieux
+	String postal;
 	String equipment;
 	String permanency;
 	String tel;
@@ -144,11 +144,12 @@ public class SuapsChild {
 		tel = "";
 		fax = "";
 		xpp.require(XmlPullParser.START_TAG, null, "site");
-		xpp.nextTag();
-		xpp.require(XmlPullParser.START_TAG, null, "postal");
-		this.Name = xpp.nextText();
-		// Log.v("debug parsePlace", "name = " + Name);
+		this.Name = xpp.getAttributeValue(null, "nom");
 		xpp.next();
+		xpp.require(XmlPullParser.START_TAG, null, "postal");
+		this.postal = xpp.nextText();
+		// Log.v("debug parsePlace", "name = " + Name);
+		xpp.nextTag();
 
 		xpp.require(XmlPullParser.START_TAG, null, "responsable");
 		while (xpp.getEventType() == XmlPullParser.START_TAG
@@ -215,68 +216,45 @@ public class SuapsChild {
 		// TODO Auto-generated method stub
 		uelArray = new ArrayList<SuapsChildUEL>();
 
-		String name = "";
 		String day = "";
 		String startTime = "";
 		String endTime = "";
 		String site = "";
 
-		Log.v("debug parse uel", "xpp.getName = " + xpp.getName());
-		xpp.require(XmlPullParser.START_TAG, null, "uel");
+		// xpp.require(XmlPullParser.START_TAG, null, "uel");
 
-		xpp.nextTag();
+		// xpp.nextTag();
 		xpp.require(XmlPullParser.START_TAG, null, "sport");
 		this.Name = "";
-		// this.Name = xpp.getAttributeValue(null, "nom");
-		// Log.v("Test", "name = " + Name);
-		while (xpp.getEventType() == XmlPullParser.START_TAG
-				&& "sport".equals(xpp.getName())) {
 
-			if (xpp.getEventType() == XmlPullParser.START_TAG
-					&& "sport".equals(xpp.getName())) {
+		xpp.next();
 
-				xpp.next();
+		xpp.require(XmlPullParser.START_TAG, null, "nom");
+		this.Name = xpp.nextText();
+		xpp.next();
 
-				xpp.require(XmlPullParser.START_TAG, null, "nom");
-				name = xpp.nextText();
-				xpp.next();
+		xpp.require(XmlPullParser.START_TAG, null, "jour");
+		day = xpp.nextText();
+		xpp.next();
 
-				xpp.require(XmlPullParser.START_TAG, null, "jour");
-				day = xpp.nextText();
-				xpp.next();
+		xpp.require(XmlPullParser.START_TAG, null, "heuredeb");
+		startTime = xpp.nextText();
+		xpp.next();
 
-				xpp.require(XmlPullParser.START_TAG, null, "heuredeb");
-				startTime = xpp.nextText();
-				xpp.next();
+		xpp.require(XmlPullParser.START_TAG, null, "heurefin");
+		endTime = xpp.nextText();
+		xpp.next();
 
-				xpp.require(XmlPullParser.START_TAG, null, "heurefin");
-				endTime = xpp.nextText();
-				xpp.next();
+		xpp.require(XmlPullParser.START_TAG, null, "site");
+		site = xpp.nextText();
+		xpp.next();
 
-				xpp.require(XmlPullParser.START_TAG, null, "site");
-				site = xpp.nextText();
-				xpp.next();
+		SuapsChildUEL childUEL = new SuapsChildUEL(this.Name, day, startTime,
+				endTime, site);
+		uelArray.add(childUEL);
 
-				SuapsChildUEL childUEL = new SuapsChildUEL(name, day,
-						startTime, endTime, site);
-				uelArray.add(childUEL);
-			}
-
-			// Log.v("debug parse uel after while",
-			// "xpp.getName = " + xpp.getEventType() + " " + xpp.getName());
-			//
-			// Log.v("test", "Nom = " + name + " " + day + " " + startTime + " "
-			// + endTime + " " + site);
-			xpp.require(XmlPullParser.END_TAG, null, "sport");
-			xpp.nextTag();
-
-			// Log.v("debug parse uel after while",
-			// "xpp.getName = " + xpp.getEventType() + " " + xpp.getName());
-		}
-
-		// Log.v("uelArray", "uelArray = " + uelArray.toString());
-		// Log.v("test", "uelArray.size = " + uelArray.size());
-		xpp.require(XmlPullParser.END_TAG, null, "uel");
+		xpp.require(XmlPullParser.END_TAG, null, "sport");
+		xpp.nextTag();
 	}
 
 	public String toString() {
@@ -305,6 +283,10 @@ public class SuapsChild {
 
 	public ArrayList<SuapsChildUEL> getUelArray() {
 		return uelArray;
+	}
+
+	public String getPostal() {
+		return postal;
 	}
 
 	public String getEquipment() {

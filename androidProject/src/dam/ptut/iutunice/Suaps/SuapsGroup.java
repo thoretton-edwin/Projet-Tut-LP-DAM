@@ -36,7 +36,7 @@ public class SuapsGroup {
 			parse(xpp, type);
 			break;
 		case 3:
-			type = "uel";
+			type = "sport";
 			parse(xpp, type);
 			break;
 		// case 4:

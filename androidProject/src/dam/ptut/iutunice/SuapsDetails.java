@@ -3,10 +3,11 @@ package dam.ptut.iutunice;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,9 +20,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import dam.ptut.iutunice.Suaps.SuapsChild;
 import dam.ptut.iutunice.Suaps.SuapsChildActivities;
+import dam.ptut.iutunice.Suaps.SuapsChildActivitiesSession;
 import dam.ptut.iutunice.Suaps.SuapsChildInformation;
 import dam.ptut.iutunice.Suaps.SuapsChildPlace;
-import dam.ptut.iutunice.Suaps.SuapsChildUEL;
 import dam.ptut.iutunice.Suaps.SuapsGroup;
 
 public class SuapsDetails extends Activity {
@@ -72,12 +73,12 @@ public class SuapsDetails extends Activity {
 
 			break;
 		case 2:
-			setTitle(child.getName());
+			setTitle("Détails Site");
 			createViewPlace(child.getSiteArray());
 			break;
 		case 3:
-			setTitle(child.getName());
-			createViewUEL(child.getUelArray());
+			// setTitle(child.getName());
+			// createViewUEL(child.getUelArray());
 			break;
 
 		default:
@@ -85,10 +86,11 @@ public class SuapsDetails extends Activity {
 		}
 	}
 
-	private void createViewActivity(ArrayList<SuapsChildActivities> daysArray) {
+	private void createViewActivity(
+			final ArrayList<SuapsChildActivities> daysArray) {
 		// TODO Auto-generated method stub
-		String title = group.getTitle();
-		String infos = child.getInfos();
+		// String title = group.getTitle();
+		// String infos = child.getInfos();
 
 		lvSuaps.setAdapter(new BaseAdapter() {
 
@@ -111,13 +113,13 @@ public class SuapsDetails extends Activity {
 			@Override
 			public SuapsChildActivities getItem(int position) {
 				// TODO Auto-generated method stub
-				return child.getDaysArray().get(position);
+				return daysArray.get(position);
 			}
 
 			@Override
 			public int getCount() {
 				// TODO Auto-generated method stub
-				return child.getDaysArray().size();
+				return daysArray.size();
 			}
 		});
 
@@ -130,19 +132,20 @@ public class SuapsDetails extends Activity {
 				// TODO Auto-generated method stub
 				SuapsChildActivities childActivities = child.getDaysArray()
 						.get(position);
-				Log.v("test", "position = " + position);
-				Log.v("test", "array = "
-						+ childActivities.getSessionArray().toString());
-				// SuapsChildActivitiesSession childSession = childActivities
-				// .getSessionArray().get(position);
-				// Log.v("test", "childSession = " + childSession.getTime());
-				// AlertDialog.Builder builder = new AlertDialog.Builder(
-				// getApplicationContext());
-				// builder.setTitle("Informations :");
-				// builder.setMessage("Heure : " + childSession.getTime()
-				// + "\n Lieux : " + childSession.getPlace()
-				// + "\n Autre : " + childSession.getOther()
-				// + "\n Responsable : " + childSession.getAccountable());
+				SuapsChildActivitiesSession childSession = childActivities
+						.getSessionArray().get(childPosition); // fonctionne
+																// pour le
+																// premier item
+
+				AlertDialog.Builder builder = new AlertDialog.Builder(
+						SuapsDetails.this);
+				builder.setTitle("Informations :");
+				builder.setMessage("Heure : " + childSession.getTime()
+						+ "\n Lieux : " + childSession.getPlace()
+						+ "\n Autre : " + childSession.getOther()
+						+ "\n Responsable : " + childSession.getAccountable());
+				builder.setCancelable(true);
+				builder.show();
 			}
 		});
 	}
@@ -193,8 +196,17 @@ public class SuapsDetails extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+				SuapsChildInformation childInfo = child.getAddressArray().get(
+						position);
 				// TODO Auto-generated method stub
-
+				Intent intent = new Intent(Intent.ACTION_SEND);
+				String[] recipients = { childInfo.getEmail() };
+				intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+				// intent.putExtra(Intent.EXTRA_SUBJECT,"abc");
+				// intent.putExtra(Intent.EXTRA_TEXT,"def");
+				// intent.putExtra(Intent.EXTRA_CC,"ghi");
+				intent.setType("text/html");
+				startActivity(Intent.createChooser(intent, "Send mail"));
 			}
 		});
 	}
@@ -210,6 +222,8 @@ public class SuapsDetails extends Activity {
 				// TODO Auto-generated method stub
 				View itemView = (View) inflater.inflate(
 						R.layout.item_list_suaps_site, parent, false);
+				TextView tvSiteName = (TextView) itemView
+						.findViewById(R.id.tvSiteName);
 				TextView tvSiteAddress = (TextView) itemView
 						.findViewById(R.id.tvSiteAddress);
 				TextView tvSiteTel = (TextView) itemView
@@ -217,7 +231,8 @@ public class SuapsDetails extends Activity {
 				TextView tvSiteFax = (TextView) itemView
 						.findViewById(R.id.tvSiteFax);
 
-				tvSiteAddress.setText(getItem(position).getName());
+				tvSiteName.setText(child.getName());
+				tvSiteAddress.setText(getItem(position).getPostal());
 				tvSiteTel.setText("Tel : " + getItem(position).getTel());
 				tvSiteFax.setText("Fax : " + getItem(position).getFax());
 
@@ -240,51 +255,6 @@ public class SuapsDetails extends Activity {
 			public int getCount() {
 				// TODO Auto-generated method stub
 				return 1;
-			}
-		});
-	}
-
-	private void createViewUEL(ArrayList<SuapsChildUEL> uelArray) {
-		// TODO Auto-generated method stub
-		lvSuaps.setAdapter(new BaseAdapter() {
-
-			@Override
-			public View getView(int position, View convertView, ViewGroup parent) {
-				// TODO Auto-generated method stub
-				View itemView = (View) inflater.inflate(
-						R.layout.item_list_suaps_details, parent, false);
-				TextView tvName = (TextView) itemView.findViewById(R.id.tvName);
-
-				tvName.setText(getItem(position).getName());
-				return itemView;
-			}
-
-			@Override
-			public long getItemId(int position) {
-				// TODO Auto-generated method stub
-				return 0;
-			}
-
-			@Override
-			public SuapsChildUEL getItem(int position) {
-				// TODO Auto-generated method stub
-				return child.getUelArray().get(position);
-			}
-
-			@Override
-			public int getCount() {
-				// TODO Auto-generated method stub
-				return child.getUelArray().size();
-			}
-		});
-
-		lvSuaps.setOnItemClickListener(new OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				// TODO Auto-generated method stub
-
 			}
 		});
 	}
