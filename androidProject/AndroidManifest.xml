@@ -205,7 +205,7 @@
             android:label="@string/title_activity_directory" >
         </activity>
         <activity
-            android:name="dam.ptut.iutunice.SuapsDetails"
+            android:name="dam.ptut.iutunice.Suaps.SuapsDetails"
             android:label="@string/title_activity_suaps_details"
             android:parentActivityName="dam.ptut.iutunice.Suaps.SuapsActivity" >
             <meta-data

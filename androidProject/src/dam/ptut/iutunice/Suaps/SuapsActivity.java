@@ -25,7 +25,6 @@ import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.TextView;
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.SuapsDetails;
 
 public class SuapsActivity extends Activity {
 	private ArrayList<SuapsGroup> SuapsArray;
@@ -179,9 +178,7 @@ public class SuapsActivity extends Activity {
 					} else {
 						builder = new AlertDialog.Builder(SuapsActivity.this);
 						builder.setTitle(child.Name);
-						builder.setMessage("Le "
-								+ child.Name
-								+ " n'a pas de séance programmer pour le moment");
+						builder.setMessage("L'activité sélectionnée n'a pas de séance programmer pour le moment");
 						builder.setCancelable(true);
 						builder.show();
 
@@ -200,15 +197,20 @@ public class SuapsActivity extends Activity {
 
 					break;
 				case 3:
-					// marche que pour le premier item
-					SuapsChildUEL uel = child.uelArray.get(childPosition);
-					builder = new AlertDialog.Builder(SuapsActivity.this);
-					builder.setTitle(child.Name);
-					builder.setMessage("Jour : " + uel.Day + "\nHeure Début : "
-							+ uel.StartTime + "\nHeure Fin : " + uel.EndTime
-							+ "\nSite : " + uel.Site);
-					builder.setCancelable(true);
-					builder.show();
+					int i = 0;
+					for (SuapsChildUEL uel : child.uelArray) {
+						uel = child.uelArray.get(i);
+						i++;
+						builder = new AlertDialog.Builder(SuapsActivity.this);
+						builder.setTitle(child.Name);
+						builder.setMessage("Jour : " + uel.Day
+								+ "\nHeure Début : " + uel.StartTime
+								+ "\nHeure Fin : " + uel.EndTime + "\nSite : "
+								+ uel.Site);
+						builder.setCancelable(true);
+						builder.show();
+					}
+					// SuapsChildUEL uel = child.uelArray.get(i);
 
 					break;
 

@@ -58,6 +58,7 @@ public class SuapsChild {
 
 		xpp.require(XmlPullParser.START_TAG, null, "nom");
 		this.Name = xpp.nextText();
+		this.Name = this.Name.replace("\n", " ");
 		// Log.v("debug", "name = " + this.Name);
 		xpp.next();
 

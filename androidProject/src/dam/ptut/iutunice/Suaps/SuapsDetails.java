@@ -1,13 +1,16 @@
-package dam.ptut.iutunice;
+package dam.ptut.iutunice.Suaps;
 
 import java.util.ArrayList;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,12 +21,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import dam.ptut.iutunice.Suaps.SuapsChild;
-import dam.ptut.iutunice.Suaps.SuapsChildActivities;
-import dam.ptut.iutunice.Suaps.SuapsChildActivitiesSession;
-import dam.ptut.iutunice.Suaps.SuapsChildInformation;
-import dam.ptut.iutunice.Suaps.SuapsChildPlace;
-import dam.ptut.iutunice.Suaps.SuapsGroup;
+import dam.ptut.iutunice.App;
+import dam.ptut.iutunice.R;
 
 public class SuapsDetails extends Activity {
 	App app;
@@ -125,27 +124,41 @@ public class SuapsDetails extends Activity {
 
 		lvSuaps.setOnItemClickListener(new OnItemClickListener() {
 
-			// bug nb seance par jour
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
 				SuapsChildActivities childActivities = child.getDaysArray()
 						.get(position);
-				SuapsChildActivitiesSession childSession = childActivities
-						.getSessionArray().get(childPosition); // fonctionne
-																// pour le
-																// premier item
+				int i = 0;
+				int j = 0;
+				int a = 0;
 
-				AlertDialog.Builder builder = new AlertDialog.Builder(
-						SuapsDetails.this);
-				builder.setTitle("Informations :");
-				builder.setMessage("Heure : " + childSession.getTime()
-						+ "\n Lieux : " + childSession.getPlace()
-						+ "\n Autre : " + childSession.getOther()
-						+ "\n Responsable : " + childSession.getAccountable());
-				builder.setCancelable(true);
-				builder.show();
+				for (SuapsChildActivities suapsChildActivities : daysArray) {
+					suapsChildActivities = daysArray.get(i);
+					Log.v("test", "test = " + suapsChildActivities.Day);
+					i++;
+					AlertDialog.Builder builder = new AlertDialog.Builder(
+							SuapsDetails.this);
+					if (a == 0) {
+						builder.setTitle("Informations :");
+						builder.setMessage("Heure : "
+								+ suapsChildActivities.getSessionArray().get(j)
+										.getTime()
+								+ "\n Lieux : "
+								+ suapsChildActivities.getSessionArray().get(j)
+										.getPlace()
+								+ "\n Autre : "
+								+ suapsChildActivities.getSessionArray().get(j)
+										.getOther()
+								+ "\n Responsable : "
+								+ suapsChildActivities.getSessionArray().get(j)
+										.getAccountable());
+						builder.setCancelable(true);
+						builder.show();
+						a++;
+					}
+				}
 			}
 		});
 	}
@@ -202,9 +215,6 @@ public class SuapsDetails extends Activity {
 				Intent intent = new Intent(Intent.ACTION_SEND);
 				String[] recipients = { childInfo.getEmail() };
 				intent.putExtra(Intent.EXTRA_EMAIL, recipients);
-				// intent.putExtra(Intent.EXTRA_SUBJECT,"abc");
-				// intent.putExtra(Intent.EXTRA_TEXT,"def");
-				// intent.putExtra(Intent.EXTRA_CC,"ghi");
 				intent.setType("text/html");
 				startActivity(Intent.createChooser(intent, "Send mail"));
 			}
@@ -255,6 +265,34 @@ public class SuapsDetails extends Activity {
 			public int getCount() {
 				// TODO Auto-generated method stub
 				return 1;
+			}
+		});
+
+		lvSuaps.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// TODO Auto-generated method stub
+
+				AlertDialog.Builder builder = new AlertDialog.Builder(
+						SuapsDetails.this);
+				builder.setTitle("Appel");
+				builder.setIcon(android.R.drawable.btn_star);
+				builder.setMessage("Voulez-vous appeler le " + child.getName());
+				builder.setPositiveButton(android.R.string.ok,
+						new DialogInterface.OnClickListener() {
+							public void onClick(DialogInterface dialog,
+									int which) {
+								Intent intent = new Intent(Intent.ACTION_DIAL);
+								intent.setData(Uri.parse("tel:"
+										+ child.getTel()));
+								startActivity(intent);
+								return;
+							}
+						});
+				builder.setNegativeButton("CANCEL", null);
+				builder.show();
 			}
 		});
 	}
