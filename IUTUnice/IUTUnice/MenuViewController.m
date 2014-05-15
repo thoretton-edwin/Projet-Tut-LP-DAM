@@ -207,25 +207,27 @@
 	}
     _imagesRefArray = [[NSMutableArray alloc] init];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836131_Library.png"]];
-    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836124_college_3D.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836370_Test-paper-128.png"]];
-    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836150_calendar.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"logo_schedule_256.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"logo_maps_256.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"logo_suaps_256.png"]];
+    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836124_college_3D.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836248_addressbook.png"]];
     [_imagesRefArray addObject: [UIImage imageNamed:@"1383836301_Manager.png"]];
-    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836200_map-icon.png"]];
-    [_imagesRefArray addObject: [UIImage imageNamed:@"1383836168_Soccer_Ball.png"]];
+    
+    
     [_imagesRefArray addObject: [UIImage imageNamed:@"Twitter_logo_blue.png"]];
     
     _menuTitleArray = [[NSMutableArray alloc] init];
 	
     [_menuTitleArray addObject: @"Vitrine"];
-    [_menuTitleArray addObject: @"Post-Bac"];
     [_menuTitleArray addObject: @"Notes"];
     [_menuTitleArray addObject: @"Agenda"];
-    [_menuTitleArray addObject: @"Annuaire"];
-    [_menuTitleArray addObject: @"Job Dating"];
     [_menuTitleArray addObject: @"Map"];
     [_menuTitleArray addObject: @"SUAPS"];
+    [_menuTitleArray addObject: @"Post-Bac"];
+    [_menuTitleArray addObject: @"Annuaire"];
+    [_menuTitleArray addObject: @"Job Dating"];
     [_menuTitleArray addObject: @"Twitter"];
 	
     
@@ -312,7 +314,7 @@
         menuTableView.scrollEnabled = NO;
         [_listViewContainer addSubview: menuTableView];
         
-        
+       menuTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         
         [_listMenu setImage:[self createIconForNavigationBarWithImage:@"small_tiles.png"]];
         _isInList = YES;
@@ -349,7 +351,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 46;
+    return 56;
 }
 
 
@@ -410,20 +412,11 @@
 			
         }
             break;
-        case 1: // Post Bac UIViewController accordion
+        case 1: // Notes
         {
-				// Set vertical effect
+            
+            // Set vertical effect
 			iconView2.backgroundColor = [UIColor grayColor];
-			
-            PostBacViewController *viewController = [[PostBacViewController alloc] initWithNibName:@"PostBacViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
-			
-        }
-            break;
-        case 2: // Notes UIViewController accordion
-        {
-				// Set vertical effect
-			iconView3.backgroundColor = [UIColor grayColor];
             
             
             
@@ -460,20 +453,17 @@
             
             
             
-			
-			
             
             
-            
-			
-            
+				
 			
         }
             break;
-        case 3: // EDT lib calendarView
+        case 2: // Notes UIViewController accordion
         {
-				// Set vertical effect
-			iconView4.backgroundColor = [UIColor grayColor];
+				
+            // Set vertical effect
+			iconView3.backgroundColor = [UIColor grayColor];
 			
             
             
@@ -509,7 +499,42 @@
                     [self connexionLogin];
                 }
             }
+
             
+            
+			
+			
+            
+            
+            
+			
+            
+			
+        }
+            break;
+        case 3: // Map
+        {
+            
+            // Set vertical effect
+			iconView4.backgroundColor = [UIColor grayColor];
+            
+            
+            if(status == NotReachable)
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Pas de connexion"
+                                          message:@"Veuillez vous connecter à internet"
+                                          delegate:self
+                                          cancelButtonTitle:@"Ok"
+                                          otherButtonTitles:nil, nil];
+                
+                [alertView show];
+            }
+            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
+            {
+                MapViewController *viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
+            }
             
             
             
@@ -518,10 +543,35 @@
 			
         }
             break;
-        case 4: // Annuaire UItableView
+        case 4: // SUAPS
         {
-				// Set vertical effect
+            
+            // Set vertical effect
 			iconView5.backgroundColor = [UIColor grayColor];
+			
+            SUAPSViewController *viewController = [[SUAPSViewController alloc] initWithNibName:@"SUAPSViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+            
+			
+        }
+            break;
+        case 5: // Post Bac
+        {
+            
+            // Set vertical effect
+			iconView6.backgroundColor = [UIColor grayColor];
+			
+            PostBacViewController *viewController = [[PostBacViewController alloc] initWithNibName:@"PostBacViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+
+            
+        }
+            break;
+        case 6: // Annuraire
+        {
+            
+            // Set vertical effect
+			iconView7.backgroundColor = [UIColor grayColor];
             
             
             
@@ -557,18 +607,15 @@
                     [self connexionLogin];
                 }
             }
-            
-            
-			
-            
-            
-			
+ 
         }
             break;
-        case 5: // Job Dating UIViewController accordion
+        case 7: // Job Dating
         {
-				// Set vertical effect
-			iconView6.backgroundColor = [UIColor grayColor];
+            
+            
+            // Set vertical effect
+			iconView8.backgroundColor = [UIColor grayColor];
 			
             /*JobDatingViewController *viewController = [[JobDatingViewController alloc] initWithNibName:@"JobDatingViewController" bundle:nil];
 			 [self.navigationController pushViewController:viewController animated:YES];*/
@@ -579,45 +626,7 @@
                                   cancelButtonTitle:@"Ok"
                                   otherButtonTitles:nil, nil];
             [alert show];
-			
-        }
-            break;
-        case 6: // Map UiVIewController
-        {
-				// Set vertical effect
-			iconView7.backgroundColor = [UIColor grayColor];
-            
-            
-            if(status == NotReachable)
-            {
-                UIAlertView *alertView = [[UIAlertView alloc]
-                                          initWithTitle:@"Pas de connexion"
-                                          message:@"Veuillez vous connecter à internet"
-                                          delegate:self
-                                          cancelButtonTitle:@"Ok"
-                                          otherButtonTitles:nil, nil];
-                
-                [alertView show];
-            }
-            else if (status == ReachableViaWiFi || status == ReachableViaWWAN)
-            {
-                MapViewController *viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-                [self.navigationController pushViewController:viewController animated:YES];
-            }
-            
-			
-            
-			
-            
-        }
-            break;
-        case 7: // SUAPS UIViewController accordion
-        {
-				// Set vertical effect
-			iconView8.backgroundColor = [UIColor grayColor];
-			
-            SUAPSViewController *viewController = [[SUAPSViewController alloc] initWithNibName:@"SUAPSViewController" bundle:nil];
-            [self.navigationController pushViewController:viewController animated:YES];
+
 			
         }
             break;
@@ -671,8 +680,8 @@
 -(void)connexionLogin
 {
     UIAlertView *alertView = [[UIAlertView alloc]
-                              initWithTitle:@"Title"
-                              message:@"Message"
+                              initWithTitle:@"Identification"
+                              message:@""
                               delegate:self
                               cancelButtonTitle:@"Cancel"
                               otherButtonTitles:@"Login", nil];

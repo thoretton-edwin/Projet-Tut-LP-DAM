@@ -111,6 +111,10 @@
 		929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E015B189BA45900694030 /* 1383836248_addressbook.png */; };
 		929E0174189BA45900694030 /* 1383836301_Manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E015F189BA45900694030 /* 1383836301_Manager.png */; };
 		929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */; };
+		92A45DF21924BEAE00AC1D9A /* logo_suaps_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A45DEF1924BEAE00AC1D9A /* logo_suaps_256.png */; };
+		92A45DF31924BEAE00AC1D9A /* logo_schedule_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A45DF01924BEAE00AC1D9A /* logo_schedule_256.png */; };
+		92A45DF41924BEAE00AC1D9A /* logo_maps_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A45DF11924BEAE00AC1D9A /* logo_maps_256.png */; };
+		92A45DF61924BFE600AC1D9A /* logo_grades_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A45DF51924BFE600AC1D9A /* logo_grades_256.png */; };
 		92A4E9C018FE7A6A007DDFFC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A4E9BF18FE7A6A007DDFFC /* Reachability.m */; };
 		92A53D0618ACC24D0047DA1E /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0518ACC24D0047DA1E /* RootNavigationController.m */; };
 		92A53D0B18ACD3CC0047DA1E /* VitrinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A53D0918ACD3CC0047DA1E /* VitrinePageViewController.m */; };
@@ -279,6 +283,10 @@
 		929E015B189BA45900694030 /* 1383836248_addressbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836248_addressbook.png; sourceTree = "<group>"; };
 		929E015F189BA45900694030 /* 1383836301_Manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1383836301_Manager.png; sourceTree = "<group>"; };
 		929E0163189BA45900694030 /* 1383836370_Test-paper-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1383836370_Test-paper-128.png"; sourceTree = "<group>"; };
+		92A45DEF1924BEAE00AC1D9A /* logo_suaps_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_suaps_256.png; sourceTree = "<group>"; };
+		92A45DF01924BEAE00AC1D9A /* logo_schedule_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_schedule_256.png; sourceTree = "<group>"; };
+		92A45DF11924BEAE00AC1D9A /* logo_maps_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_maps_256.png; sourceTree = "<group>"; };
+		92A45DF51924BFE600AC1D9A /* logo_grades_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_grades_256.png; sourceTree = "<group>"; };
 		92A4E9BE18FE7A6A007DDFFC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		92A4E9BF18FE7A6A007DDFFC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		92A53D0418ACC24D0047DA1E /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
@@ -567,6 +575,10 @@
 		929E014F189BA45900694030 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				92A45DF51924BFE600AC1D9A /* logo_grades_256.png */,
+				92A45DEF1924BEAE00AC1D9A /* logo_suaps_256.png */,
+				92A45DF01924BEAE00AC1D9A /* logo_schedule_256.png */,
+				92A45DF11924BEAE00AC1D9A /* logo_maps_256.png */,
 				929C43C618F69789004DADEB /* icon29.png */,
 				929C43C718F69789004DADEB /* icon40.png */,
 				929C43C818F69789004DADEB /* icon58.png */,
@@ -747,6 +759,7 @@
 				927A3B8F18E431B6000A61F0 /* CreditsViewController.xib in Resources */,
 				925F21E618F55F9B0037B3D9 /* nice.jpg in Resources */,
 				929E016E189BA45900694030 /* 1383836200_map-icon.png in Resources */,
+				92A45DF61924BFE600AC1D9A /* logo_grades_256.png in Resources */,
 				929E0178189BA45900694030 /* 1383836370_Test-paper-128.png in Resources */,
 				92139A8718B74D2700FF0157 /* FormationDetailViewController.xib in Resources */,
 				925F21E818F55F9B0037B3D9 /* sophia.jpg in Resources */,
@@ -766,6 +779,7 @@
 				92A53D0C18ACD3CC0047DA1E /* VitrinePageViewController.xib in Resources */,
 				920A572918DAF84E00755E48 /* anneeSpeciale.txt in Resources */,
 				929E014A189B9BC900694030 /* MainMenuViewController.xib in Resources */,
+				92A45DF31924BEAE00AC1D9A /* logo_schedule_256.png in Resources */,
 				929E016A189BA45900694030 /* 1383836168_Soccer_Ball.png in Resources */,
 				929C43D318F69789004DADEB /* icon120.png in Resources */,
 				430A29B518ED72DA0015E95E /* suaps.xml in Resources */,
@@ -781,6 +795,7 @@
 				4362221818E2CC53006B091D /* AnnuaireViewController.xib in Resources */,
 				929E0170189BA45900694030 /* 1383836248_addressbook.png in Resources */,
 				430A3FEF18EEA394002C0B5F /* renseignement.xml in Resources */,
+				92A45DF41924BEAE00AC1D9A /* logo_maps_256.png in Resources */,
 				9246DA1618A513BD0087E126 /* settings-24-512.png in Resources */,
 				92A5C27518D3322B004982C4 /* List_icon.png in Resources */,
 				9246DA1818A516BB0087E126 /* Twitter_logo_blue.png in Resources */,
@@ -788,6 +803,7 @@
 				43E6FD4018AE2F88004F709B /* PostBacViewController.xib in Resources */,
 				9213AB6018E2E6C300AF3DDF /* sondage_v3.xml in Resources */,
 				43E6FD3B18AE2F74004F709B /* UEListViewController.xib in Resources */,
+				92A45DF21924BEAE00AC1D9A /* logo_suaps_256.png in Resources */,
 				929C43D518F69789004DADEB /* icon521.png in Resources */,
 				430A3FE918EEA388002C0B5F /* lieux.xml in Resources */,
 				430A3FEB18EEA38D002C0B5F /* UEL.xml in Resources */,

@@ -294,8 +294,8 @@
 -(void)connexionLogin
 {
     UIAlertView *alertView = [[UIAlertView alloc]
-                              initWithTitle:@"Title"
-                              message:@"Message"
+                              initWithTitle:@"Identification"
+                              message:@""
                               delegate:self
                               cancelButtonTitle:@"Cancel"
                               otherButtonTitles:@"Login", nil];

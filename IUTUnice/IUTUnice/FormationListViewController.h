@@ -14,7 +14,7 @@
     UITableView *tableView;
 }
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *mDegreeSelector;
+@property (nonatomic) IBOutlet UISegmentedControl *mDegreeSelector;
 //@property (weak, nonatomic) IBOutlet UISearchBar *mSearchBar;
 @property NSMutableArray *mFormationArray ,*mDisplayedArray, *mFilteredArray;
 

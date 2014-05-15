@@ -85,6 +85,8 @@
 			
 	int width = [UIScreen mainScreen].bounds.size.width;
 	int y = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
+    
+    NSLog(@"taille de la bar : %d", y);
 	
 	searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,y,width,50)];
 	searchBar.delegate = self;
@@ -102,8 +104,6 @@
 											  target:self
 											  action:@selector(actionSearch)];
 	
-
-    
     //select design
 	_mDegreeSelector.clipsToBounds=YES;
 	_mDegreeSelector.layer.cornerRadius=6.0;
@@ -140,8 +140,12 @@
         });
     });
     
-	int height = [UIScreen mainScreen].bounds.size.height - y - _mDegreeSelector.frame.size.height;
-    CGRect fr = CGRectMake(0,y,self.view.frame.size.width,height);
+	int heightTable = [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - _mDegreeSelector.frame.size.height - 25;
+    //int height = 200;
+    //int height = [UIScreen mainScreen].bounds.size.height - 300;
+    NSLog(@"taille height : %d", heightTable);
+    NSLog(@"taille de l'écran hauteur: %f", [UIScreen mainScreen].bounds.size.height );
+    CGRect fr = CGRectMake(0,y,self.view.frame.size.width,heightTable);
     
     tableView = [[UITableView alloc] initWithFrame:fr style:UITableViewStylePlain];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
