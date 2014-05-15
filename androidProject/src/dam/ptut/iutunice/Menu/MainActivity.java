@@ -265,9 +265,8 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);
 			break;
 		case R.drawable.logo_addressbook:
-			Toast.makeText(MainActivity.this,"Module 'Annuaire' non disponible", Toast.LENGTH_LONG).show();
-			//intent = new Intent(this, DirectoryActivity.class);
-			//startActivity(intent);
+			intent = new Intent(this, DirectoryActivity.class);
+			startActivity(intent);
 			break;
 		case R.drawable.logo_compagny_partnership:
 			Toast.makeText(MainActivity.this,"Module 'Job Dating' non disponible", Toast.LENGTH_LONG).show();

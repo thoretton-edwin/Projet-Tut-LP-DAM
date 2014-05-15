@@ -5,35 +5,10 @@
     android:orientation="vertical"
     tools:context=".DirectoryActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
+    <WebView
+        android:id="@+id/webViewAnnuaire"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center"
-        android:text="Tapez le nom d&apos;un enseignant :"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent" />
 
-    <EditText
-        android:id="@+id/edtName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/btDirectorySearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:background="@drawable/bt_iut_windows"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:text="Rechercher" />
 
 </LinearLayout>
