@@ -22,17 +22,19 @@
         <Button
             android:id="@+id/btnTrajet"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+            android:background="@drawable/bt_iut_windows"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.12"
+            android:layout_weight="0.5"
             android:text="Trajet" />
 
         <Button
             android:id="@+id/btnServices"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="153dp"
+            android:background="@drawable/bt_iut_windows"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.01"
+            android:layout_weight="0.5"
             android:text="Services" />
 
     </LinearLayout>
@@ -64,6 +66,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/bt_iut_windows"
             android:text="Nice" />
 
         <Button
@@ -71,6 +75,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/bt_iut_windows"
             android:text="Menton" />
 
         <Button
@@ -79,6 +85,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="top"
+            android:layout_weight="0.25"
+            android:background="@drawable/bt_iut_windows"
             android:text="Bocca" />
 
         <Button
@@ -86,6 +94,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/bt_iut_windows"
             android:text="Cannes" />
 
         <Button
@@ -93,8 +103,9 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/bt_iut_windows"
             android:text="Sophia" />
-
     </LinearLayout>
 
 </LinearLayout>
