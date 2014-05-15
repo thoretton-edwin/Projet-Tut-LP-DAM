@@ -178,13 +178,13 @@ public class MainActivity extends FragmentActivity {
 	private void collectMenuList() {
 		List<IconMenuListItem> list = new ArrayList<IconMenuListItem>();
 
-		int imgIutWindow = R.drawable.logo_iut_window_256;
-		int imgGrades = R.drawable.logo_grades_256;
+		int imgIutWindow = R.drawable.logo_iut_window;
+		int imgGrades = R.drawable.logo_grades;
 		int imgCalendar = R.drawable.logo_schedule_256;
 		int imgMap = R.drawable.logo_maps_256;
 		int imgSuaps = R.drawable.logo_suaps_256;
 		int imgPostBac = R.drawable.logo_post_bac;
-		int imgAddressBook = R.drawable.logo_directory_256;
+		int imgAddressBook = R.drawable.logo_addressbook;
 		int imgCompanyPartnership = R.drawable.logo_compagny_partnership;
 		int imgTwitter = R.drawable.logo_twitter_256;
 
@@ -222,11 +222,11 @@ public class MainActivity extends FragmentActivity {
 		App app = (App) getApplication();
 		IconMenuListItem iconMenuListItem = app.iconItemList.get(position);
 		switch (iconMenuListItem.img) {
-		case R.drawable.logo_iut_window_256:
+		case R.drawable.logo_iut_window:
 			intent = new Intent(this, IutWindowsActivity.class);
 			startActivity(intent);
 			break;
-		case R.drawable.logo_grades_256:
+		case R.drawable.logo_grades:
 			if (app.user.getId().equals(""))
 			{
 				Toast.makeText(MainActivity.this,
@@ -264,9 +264,10 @@ public class MainActivity extends FragmentActivity {
 			intent = new Intent(this, PostBacActivity.class);
 			startActivity(intent);
 			break;
-		case R.drawable.logo_directory_256:
-			intent = new Intent(this, DirectoryActivity.class);
-			startActivity(intent);
+		case R.drawable.logo_addressbook:
+			Toast.makeText(MainActivity.this,"Module 'Annuaire' non disponible", Toast.LENGTH_LONG).show();
+			//intent = new Intent(this, DirectoryActivity.class);
+			//startActivity(intent);
 			break;
 		case R.drawable.logo_compagny_partnership:
 			Toast.makeText(MainActivity.this,"Module 'Job Dating' non disponible", Toast.LENGTH_LONG).show();
