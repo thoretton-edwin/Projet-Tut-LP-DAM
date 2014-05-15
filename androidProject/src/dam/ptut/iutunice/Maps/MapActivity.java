@@ -1,11 +1,27 @@
 package dam.ptut.iutunice.Maps;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.json.JSONObject;
+
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
@@ -14,11 +30,20 @@ import dam.ptut.iutunice.Parameter.ParameterActivity;
 import dam.ptut.iutunice.PostBac.PostBacActivity;
 import dam.ptut.iutunice.R.layout;
 import dam.ptut.iutunice.R.menu;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,6 +53,8 @@ import android.widget.TextView;
 public class MapActivity extends FragmentActivity {
 	
 	private GoogleMap map;
+	final String TAG = "PathGoogleMapActivity";
+	Location mCurrentLocation;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -126,20 +153,65 @@ public class MapActivity extends FragmentActivity {
 						// Do something in response to button click
 						textview.setText(adrSophia);
 						app.idLieu = 5;
-						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));
-						
+						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));								
 					}
 				});
 				
-//				// Clic sur le bouton Trajet 
-//				Button btnRoad = (Button) findViewById(R.id.btnTrajet);
-//				btnSophia.setOnClickListener(new View.OnClickListener() {
-//					public void onClick(View v) {
-//						// Do something in response to button click
-//						map.moveCamera(CameraUpdateFactory.newLatLngZoom(iutSophia, 15));
-//					}
-//				});
-				
+				// Clic sur le bouton Trajet
+				Button btnRoute = (Button) findViewById(R.id.btnTrajet);
+				btnRoute.setOnClickListener(new View.OnClickListener() {
+					public void onClick(View v) {
+						double targetLat = 0;
+						double targetLang = 0;
+						
+						LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+						
+						if(!locationManager.isProviderEnabled( LocationManager.GPS_PROVIDER )){
+							Intent gpsOptionsIntent = new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);  
+			                startActivity(gpsOptionsIntent);
+						}
+						Location location = locationManager.getLastKnownLocation (LocationManager.GPS_PROVIDER);
+						
+						//LatLng de notre position actuelle
+						LatLng loc = new LatLng(location.getLatitude(), location.getLongitude());
+						if (app.idLieu == 1)
+						{
+							//Nice
+							targetLat = iutNice.latitude;
+							targetLang = iutNice.longitude;
+						}
+						else if (app.idLieu == 2)
+						{
+							//Menton
+							targetLat = iutMenton.latitude;
+							targetLang = iutMenton.longitude;
+						}
+						else if (app.idLieu == 3)
+						{
+							//Cannes La bocca
+							targetLat = iutCannesBocca.latitude;
+							targetLang = iutCannesBocca.longitude;
+						}
+						else if (app.idLieu == 4)
+						{
+							//Cannes
+							targetLat = iutCannes.latitude;
+							targetLang = iutCannes.longitude;
+						}
+						else if (app.idLieu == 5)
+						{
+							//Sophia
+							targetLat = iutSophia.latitude;
+							targetLang = iutSophia.longitude;
+						}
+						
+						String url = "http://maps.google.com/maps?saddr="+loc.latitude+","+loc.longitude+"&daddr="+targetLat+","+targetLang+"&dirflg=d";
+						Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(url));
+						intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+						startActivity(intent);
+					}
+					
+				});
 	}
 	
 	@Override
