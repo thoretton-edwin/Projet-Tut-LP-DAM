@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <bus>
+        
+        <ville>
+			<nom>Sophia Antipolis</nom>
+			<arret>
+			<nom>Templiers</nom>
+                <ligne>1</ligne>
+                <ligne>100</ligne>
+                <ligne>230</ligne>
+            </arret>   
+        </ville>
+        
+        <ville>
+			<nom>Cannes</nom>
+			<arret>
+			<nom> Parking Relais Coubertin</nom>
+                <ligne>1</ligne>
+                <ligne>B</ligne>
+                <ligne>C</ligne>
+                <ligne>N1</ligne>
+                <ligne>D</ligne>
+            </arret>   
+        </ville>
+        
+        <ville>
+			<nom>Cannes la Bocca</nom>
+			<arret>
+				<nom>Villa Arson</nom>
+                <ligne>36</ligne>
+            </arret>   
+        </ville>
+        
+        <ville>
+			<nom>Menton</nom>
+			<arret>
+				<nom>none</nom>
+                <ligne></ligne>
+            </arret>   
+        </ville>
+        
+        <ville>
+		<nom>Nice</nom>
+		<arret>
+			<nom>Vittone</nom>
+                <ligne>12</ligne>
+            </arret>
+            <arret>
+			<nom>Carras</nom>
+                <ligne>73</ligne>
+            </arret>  
+            <arret>
+				<nom>Lycée Thierry Maulnier</nom>
+                <ligne>V</ligne>
+            </arret>     
+        </ville>
+        
+        
+        
+        
+        
+    </bus>
+    
+</root>

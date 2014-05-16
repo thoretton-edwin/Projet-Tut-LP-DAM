@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SondageViewController">
+            <connections>
+                <outlet property="answerTableView" destination="v6L-W3-TKS" id="AYd-41-3hR"/>
+                <outlet property="questionIntituleLabel" destination="Y3K-ZH-E8U" id="OWC-ff-l6f"/>
+                <outlet property="questionNumberLabel" destination="lqU-oD-RVA" id="0GE-TF-EKs"/>
+                <outlet property="view" destination="1" id="T7S-Aa-MNY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question n°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-oD-RVA">
+                    <rect key="frame" x="20" y="75" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="G0k-GX-puO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="intitu" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-ZH-E8U">
+                    <rect key="frame" x="20" y="121" width="280" height="94"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="J3e-ei-jKe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-W3-TKS">
+                    <rect key="frame" x="0.0" y="227" width="320" height="214"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="214" id="hcd-ZK-3Gd"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="1" id="7pK-jG-ZrK"/>
+                        <outlet property="delegate" destination="1" id="acj-1j-xbN"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lqU-oD-RVA" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="5G3-vi-zsq"/>
+                <constraint firstItem="Y3K-ZH-E8U" firstAttribute="top" secondItem="lqU-oD-RVA" secondAttribute="bottom" constant="16" id="Gkb-y0-xDF"/>
+                <constraint firstAttribute="trailing" secondItem="lqU-oD-RVA" secondAttribute="trailing" constant="20" symbolic="YES" id="O2g-sY-0T8"/>
+                <constraint firstItem="lqU-oD-RVA" firstAttribute="trailing" secondItem="Y3K-ZH-E8U" secondAttribute="trailing" id="XFa-0d-obO"/>
+                <constraint firstItem="v6L-W3-TKS" firstAttribute="top" secondItem="Y3K-ZH-E8U" secondAttribute="bottom" constant="12" id="iUM-vw-0gt"/>
+                <constraint firstItem="Y3K-ZH-E8U" firstAttribute="leading" secondItem="lqU-oD-RVA" secondAttribute="leading" id="tEZ-xt-ldW"/>
+                <constraint firstItem="lqU-oD-RVA" firstAttribute="top" secondItem="1" secondAttribute="top" constant="75" id="tO6-8e-Lu9"/>
+                <constraint firstItem="Y3K-ZH-E8U" firstAttribute="centerX" secondItem="v6L-W3-TKS" secondAttribute="centerX" id="voj-l6-MId"/>
+                <constraint firstItem="v6L-W3-TKS" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="yGi-8z-wtA"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

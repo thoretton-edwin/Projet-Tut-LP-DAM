@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VitrinePageViewController">
+            <connections>
+                <outlet property="myUiscrollView" destination="Hov-oF-BP3" id="7Fh-qs-qqI"/>
+                <outlet property="presentationImage" destination="52l-rG-sai" id="GCH-iG-dAa"/>
+                <outlet property="toolBarVitrine" destination="s8t-vW-bZQ" id="Tu6-Rm-P3O"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="547"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52l-rG-sai">
+                    <rect key="frame" x="20" y="54" width="286" height="206"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="206" id="imW-av-aVs"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hov-oF-BP3">
+                    <rect key="frame" x="20" y="268" width="286" height="228"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-vW-bZQ">
+                    <rect key="frame" x="0.0" y="506" width="326" height="41"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="y2n-gs-qDX"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Gbf-fv-wny"/>
+                        <barButtonItem title="Sondage" id="Yo6-dn-gP5">
+                            <connections>
+                                <action selector="goToSondageIUTPage:" destination="-1" id="fdd-fL-OTI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="oNZ-uc-9h1"/>
+                        <barButtonItem title="Formation" id="t8d-Qy-Biv">
+                            <connections>
+                                <action selector="goToFormationListPage:" destination="-1" id="mG7-Hq-y3r"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TsX-5W-CSa"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="s8t-vW-bZQ" secondAttribute="bottom" id="06p-ol-Nx9"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="top" secondItem="1" secondAttribute="top" constant="54" id="2dp-VH-wZI"/>
+                <constraint firstItem="s8t-vW-bZQ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="72o-bK-2xQ"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="Mid-5S-EXu"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="top" secondItem="52l-rG-sai" secondAttribute="bottom" constant="8" symbolic="YES" id="RN6-Vz-Ls7"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="centerX" secondItem="s8t-vW-bZQ" secondAttribute="centerX" id="piL-NE-0as"/>
+                <constraint firstItem="52l-rG-sai" firstAttribute="trailing" secondItem="Hov-oF-BP3" secondAttribute="trailing" id="saA-e5-tmv"/>
+                <constraint firstItem="s8t-vW-bZQ" firstAttribute="top" secondItem="Hov-oF-BP3" secondAttribute="bottom" constant="10" id="tIs-QO-1cm"/>
+                <constraint firstItem="Hov-oF-BP3" firstAttribute="leading" secondItem="52l-rG-sai" secondAttribute="leading" id="tcS-L6-rr8"/>
+                <constraint firstAttribute="trailing" secondItem="52l-rG-sai" secondAttribute="trailing" constant="20" symbolic="YES" id="yqE-TG-grb"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

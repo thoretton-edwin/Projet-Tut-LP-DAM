@@ -1,0 +1,19 @@
+PODS:
+  - GDataXML-HTML (1.1.0)
+  - hpple (0.2.0)
+  - OCBorghettiView (0.0.5)
+  - TBXML (1.5)
+
+DEPENDENCIES:
+  - GDataXML-HTML
+  - hpple
+  - OCBorghettiView
+  - TBXML
+
+SPEC CHECKSUMS:
+  GDataXML-HTML: 281ea772a286241f860fa152cff5c7a7cd817336
+  hpple: dde62f905f482bbec50186280d1a1be2c881241b
+  OCBorghettiView: 908b35fc500f63155a93353ffe4e7b34a0030188
+  TBXML: 0511ac325d83e59d3aefa4bc8cd6cbeff07a8d9e
+
+COCOAPODS: 0.29.0
