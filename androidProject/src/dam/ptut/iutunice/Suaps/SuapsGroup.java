@@ -71,7 +71,7 @@ public class SuapsGroup {
 			}
 			// Log.v("suaps array", "suaps array = " + SuapsArray.toString());
 		}
-		Log.v("end parse", "xpp.getName = " + xpp.getName() + " " + type);
+		//Log.v("end parse", "xpp.getName = " + xpp.getName() + " " + type);
 		xpp.require(XmlPullParser.END_TAG, null, "root");
 		xpp.next();
 		// Log.v("end parse", "xpp.getName = " + xpp.getName());

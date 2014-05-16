@@ -16,20 +16,11 @@ import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.SurveyFragment;
 import dam.ptut.iutunice.SurveyItem;
 import dam.ptut.iutunice.User;
-import dam.ptut.iutunice.IutWindows.SurveyIutActivity;
-import dam.ptut.iutunice.Menu.MainActivity;
-import dam.ptut.iutunice.R.anim;
-import dam.ptut.iutunice.R.drawable;
-import dam.ptut.iutunice.R.id;
-import dam.ptut.iutunice.R.layout;
-import dam.ptut.iutunice.R.menu;
 
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.annotation.SuppressLint;
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -37,7 +28,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.util.Xml;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -316,11 +306,11 @@ public class ParameterActivity extends FragmentActivity {
 				switch(parser.getEventType()){
 				case XmlPullParser.START_TAG:
 					lang = parser.getAttributeValue(null, "lang");
-					Log.v("langue : ", ""+lang);
-					Log.v("sur balise sondage (début)", ""+parser.getName() );
+					//Log.v("langue : ", ""+lang);
+					//Log.v("sur balise sondage (début)", ""+parser.getName() );
 					break;
 				case XmlPullParser.END_TAG:
-					Log.v("sur balise sondage (fin)", ""+parser.getName() );
+					//Log.v("sur balise sondage (fin)", ""+parser.getName() );
 					break;
 				}
 
@@ -328,11 +318,11 @@ public class ParameterActivity extends FragmentActivity {
 				switch(parser.getEventType()){
 				case XmlPullParser.START_TAG:
 					type = parser.getAttributeValue(null, "type");
-					Log.v("type : ", type);
-					Log.v("sur balise questionnaire (début)", ""+parser.getName() );
+					//Log.v("type : ", type);
+					//Log.v("sur balise questionnaire (début)", ""+parser.getName() );
 					break;
 				case XmlPullParser.END_TAG:
-					Log.v("sur balise questionnaire (fin)", ""+parser.getName() );
+					//Log.v("sur balise questionnaire (fin)", ""+parser.getName() );
 					break;
 				}
 			

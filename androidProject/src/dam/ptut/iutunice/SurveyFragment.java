@@ -3,31 +3,21 @@ package dam.ptut.iutunice;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import dam.ptut.iutunice.IutWindows.SurveyIutActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.CheckBox;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
-import android.widget.ExpandableListView.OnGroupCollapseListener;
-import android.widget.ExpandableListView.OnGroupExpandListener;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SurveyFragment extends Fragment {
 	public final static String LANGUAGE = "language";
@@ -195,7 +185,7 @@ public class SurveyFragment extends Fragment {
 			public boolean onChildClick(ExpandableListView parent, View v,
 					int groupPosition, int childPosition, long id) {
 				
-				Log.v("clique child","child");
+				//Log.v("clique child","child");
 	
 				SurveyQuestion surveyQuestion = oneSurvey.questionArray.get(groupPosition);	
 				ArrayList<SurveyAnswer> surveyAnswerArray = listDataChild.get(surveyQuestion.entitled);

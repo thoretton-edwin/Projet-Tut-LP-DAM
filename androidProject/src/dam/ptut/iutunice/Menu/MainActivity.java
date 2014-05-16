@@ -7,7 +7,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,7 +18,6 @@ import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
 import dam.ptut.iutunice.User;
 import dam.ptut.iutunice.Calendar.CalendarActivity;
-import dam.ptut.iutunice.Directory.DirectoryActivity;
 import dam.ptut.iutunice.Grade.GradeActivity;
 import dam.ptut.iutunice.IutWindows.IutWindowsActivity;
 import dam.ptut.iutunice.Maps.MapActivity;
@@ -37,12 +35,12 @@ public class MainActivity extends FragmentActivity {
 		final App app = (App) getApplication();
 		app.arrayID = new ArrayList<String>();
 		app.arrayID.add("damtest");
-		app.arrayID.add("damtest1");
+		app.arrayID.add("lpdam");
 		app.arrayID.add("damtest2");
 		app.arrayID.add("aa");
 		app.arrayPWD = new ArrayList<String>();
 		app.arrayPWD.add("passe");
-		app.arrayPWD.add("passe1");
+		app.arrayPWD.add("test");
 		app.arrayPWD.add("passe2");
 		app.arrayPWD.add("aa");
 		if(app.firstTime == 0){
@@ -265,8 +263,7 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);
 			break;
 		case R.drawable.logo_addressbook:
-			intent = new Intent(this, DirectoryActivity.class);
-			startActivity(intent);
+			Toast.makeText(MainActivity.this,"Annuaire non disponible", Toast.LENGTH_LONG).show();
 			break;
 		case R.drawable.logo_compagny_partnership:
 			Toast.makeText(MainActivity.this,"Module 'Job Dating' non disponible", Toast.LENGTH_LONG).show();

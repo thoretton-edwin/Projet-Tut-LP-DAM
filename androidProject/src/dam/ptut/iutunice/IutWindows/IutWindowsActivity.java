@@ -1,11 +1,6 @@
 package dam.ptut.iutunice.IutWindows;
 
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.R.anim;
-import dam.ptut.iutunice.R.drawable;
-import dam.ptut.iutunice.R.id;
-import dam.ptut.iutunice.R.layout;
-import dam.ptut.iutunice.R.menu;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
@@ -13,7 +8,6 @@ import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -23,15 +17,14 @@ import android.widget.ViewFlipper;
 public class IutWindowsActivity extends Activity {
 
 	private ViewFlipper myViewFlipper;
-	int[] image = { R.drawable.iut_menton, R.drawable.iut_menton2,
-			R.drawable.iut_nice, R.drawable.iut_nice2, R.drawable.iut_sophia };
+	int[] image = {R.drawable.iut_nice, R.drawable.iut_nice2,R.drawable.iut_menton2, R.drawable.iut_menton, R.drawable.iut_sophia };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_iut_windows);
 
-		this.setTitle("Vitrine IUT");
+		this.setTitle("Bienvenue à l'IUT");
 		// permet le retour sur la page principale
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);

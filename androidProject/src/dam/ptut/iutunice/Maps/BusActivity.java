@@ -5,8 +5,6 @@ import java.util.List;
 
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.R.layout;
-import dam.ptut.iutunice.R.menu;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;

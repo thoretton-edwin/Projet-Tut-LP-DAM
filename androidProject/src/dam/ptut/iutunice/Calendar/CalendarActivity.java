@@ -1,8 +1,6 @@
 package dam.ptut.iutunice.Calendar;
 
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.R.layout;
-import dam.ptut.iutunice.R.menu;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;

@@ -1,8 +1,6 @@
 package dam.ptut.iutunice.Directory;
 
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.IutWindows.SurveyIutActivity;
-import dam.ptut.iutunice.Twitter.TwitterActivity;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -18,8 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.EditText;
 
 public class DirectoryActivity extends Activity {
 

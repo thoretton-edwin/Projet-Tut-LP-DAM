@@ -4,9 +4,6 @@ import java.util.List;
 
 import dam.ptut.iutunice.App;
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.R.drawable;
-import dam.ptut.iutunice.R.id;
-import dam.ptut.iutunice.R.layout;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

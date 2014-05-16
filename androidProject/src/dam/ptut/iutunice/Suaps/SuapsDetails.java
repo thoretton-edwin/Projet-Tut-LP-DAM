@@ -136,7 +136,7 @@ public class SuapsDetails extends Activity {
 
 				for (SuapsChildActivities suapsChildActivities : daysArray) {
 					suapsChildActivities = daysArray.get(i);
-					Log.v("test", "test = " + suapsChildActivities.Day);
+					//Log.v("test", "test = " + suapsChildActivities.Day);
 					i++;
 					AlertDialog.Builder builder = new AlertDialog.Builder(
 							SuapsDetails.this);

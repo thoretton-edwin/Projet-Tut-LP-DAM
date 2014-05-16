@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import android.util.Log;
 
 public class SurveyItem {
 	String language;
@@ -18,15 +17,15 @@ public class SurveyItem {
 		this.type = type;
 		questionArray = new ArrayList<SurveyQuestion>(); // nouvelle liste
 		
-		Log.v("sur balise question (début)", ""+parser.getName() );
+		//Log.v("sur balise question (début)", ""+parser.getName() );
 		while(parser.nextTag() == XmlPullParser.START_TAG || "question".equals(parser.getName()) ){
 			if("question".equals(parser.getName())){
 				switch(parser.getEventType()){
 				case XmlPullParser.START_TAG:
-					Log.v("sur balise question (début)", ""+parser.getName() );
+					//Log.v("sur balise question (début)", ""+parser.getName() );
 					break;
 				case XmlPullParser.END_TAG:
-					Log.v("sur balise question (fin)", ""+parser.getName() );
+					//Log.v("sur balise question (fin)", ""+parser.getName() );
 					parser.nextTag();
 					break;
 				}
@@ -36,8 +35,8 @@ public class SurveyItem {
 				parser.nextTag();
 				String entitled = parser.nextText();
 				parser.nextTag();
-				Log.v("id question", id );
-				Log.v("entitled question ", entitled );
+				//Log.v("id question", id );
+				//Log.v("entitled question ", entitled );
 				SurveyQuestion surveyQuestion= new SurveyQuestion(parser, id, entitled);
 				this.questionArray.add(surveyQuestion);
 			}

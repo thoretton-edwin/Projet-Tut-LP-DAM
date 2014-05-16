@@ -1,9 +1,6 @@
 package dam.ptut.iutunice.Twitter;
 
 import dam.ptut.iutunice.R;
-import dam.ptut.iutunice.Directory.DirectoryActivity;
-import dam.ptut.iutunice.R.id;
-import dam.ptut.iutunice.R.layout;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -18,7 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 public class TwitterActivity extends Activity {
 
