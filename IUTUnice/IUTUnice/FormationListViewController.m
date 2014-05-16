@@ -84,7 +84,8 @@
 	
 			
 	int width = [UIScreen mainScreen].bounds.size.width;
-	int y = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
+    int heightscreen = [UIScreen mainScreen].bounds.size.height;
+	int y = self.navigationController.navigationBar.frame.size.height;
     
     NSLog(@"taille de la bar : %d", y);
 	
@@ -104,7 +105,13 @@
 											  target:self
 											  action:@selector(actionSearch)];
 	
+    NSArray *itemArray = @[@"DUT",@"LP",@"DU"];
+    
     //select design
+    _mDegreeSelector =[[UISegmentedControl alloc] initWithItems:itemArray];
+    _mDegreeSelector.frame = CGRectMake(0, heightscreen-50, width , 50);
+    _mDegreeSelector.segmentedControlStyle = UISegmentedControlStylePlain;
+    _mDegreeSelector.selectedSegmentIndex = 1;
 	_mDegreeSelector.clipsToBounds=YES;
 	_mDegreeSelector.layer.cornerRadius=6.0;
 	_mDegreeSelector.layer.borderColor=[UIColor grayColor].CGColor;
@@ -112,6 +119,8 @@
 	_mDegreeSelector.contentMode = UIViewContentModeCenter;
 	_mDegreeSelector.backgroundColor=nil;
 	_mDegreeSelector.tintColor = [UIColor grayColor];
+    
+   
     
     _mFormationArray = [[NSMutableArray alloc] init];
     _mFilteredArray = [[NSMutableArray alloc] init];
@@ -139,21 +148,34 @@
             [tableView reloadData];
         });
     });
-    
-	int heightTable = [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - _mDegreeSelector.frame.size.height - 25;
+    int heightTable;
+    if ([UIScreen mainScreen].bounds.size.height != 1024) {
+        heightTable = [UIScreen mainScreen].bounds.size.height - _mDegreeSelector.frame.size.height;
+    }else
+    {
+
+        heightTable = ([UIScreen mainScreen].bounds.size.height  - _mDegreeSelector.frame.size.height );
+        
+    }
+	
     //int height = 200;
     //int height = [UIScreen mainScreen].bounds.size.height - 300;
-    NSLog(@"taille height : %d", heightTable);
+    NSLog(@"taille height tableview : %d", heightTable);
+    NSLog(@"taille height selector : %f", _mDegreeSelector.frame.size.height);
     NSLog(@"taille de l'écran hauteur: %f", [UIScreen mainScreen].bounds.size.height );
-    CGRect fr = CGRectMake(0,y,self.view.frame.size.width,heightTable);
+    CGRect fr = CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,heightTable);
     
     tableView = [[UITableView alloc] initWithFrame:fr style:UITableViewStylePlain];
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+    //tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     tableView.delegate = self;
     tableView.dataSource = self;
+    tableView.bounces = NO;
+    
+    tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 	
     [tableView reloadData];
     [self.view addSubview: tableView];
+     [self.view addSubview:_mDegreeSelector];
 	//[tableView sizeToFit];
     
     [_mDegreeSelector addTarget:self

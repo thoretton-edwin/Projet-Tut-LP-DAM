@@ -133,10 +133,14 @@
 	float margin = globalWidth/16;
 	
 	//float offset = screenHeight-3*moduleWidth-3*margin;
-	
-    float offset = screenHeight-4*moduleWidth-4*margin;
     
-	int originY=offset;
+    float tailleaenlever = 3*moduleWidth+2*margin - self.navigationController.navigationBar.frame.size.height;
+    
+    NSLog(@"taille navbar : %f",tailleaenlever);
+	
+    float offset = screenHeight - tailleaenlever;
+    
+	int originY=offset/2;
 	int originX=margin;
 	
 	
